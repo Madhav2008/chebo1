@@ -87,15 +87,15 @@ class StatusScreen extends StatelessWidget {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => StoryPageView(
-                          name: name,
-                          avatar: avatar,
-                        ),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => StoryPageView(
+                    //       name: name,
+                    //       avatar: avatar,
+                    //     ),
+                    //   ),
+                    // );
                   },
                   child: statusCard(
                     name,
@@ -105,15 +105,15 @@ class StatusScreen extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => StoryPageView(
-                          name: name1,
-                          avatar: avatar1,
-                        ),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => StoryPageView(
+                    //       name: name1,
+                    //       avatar: avatar1,
+                    //     ),
+                    //   ),
+                    // );
                   },
                   child: statusCard(
                     name1,
@@ -123,15 +123,15 @@ class StatusScreen extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => StoryPageView(
-                          name: name2,
-                          avatar: avatar2,
-                        ),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => StoryPageView(
+                    //       name: name2,
+                    //       avatar: avatar2,
+                    //     ),
+                    //   ),
+                    // );
                   },
                   child: statusCard(
                     name2,
@@ -157,15 +157,15 @@ class StatusScreen extends StatelessWidget {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => StoryPageView(
-                                name: name3,
-                                avatar: avatar3,
-                              ),
-                            ),
-                          );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => StoryPageView(
+                          //       name: name3,
+                          //       avatar: avatar3,
+                          //     ),
+                          //   ),
+                          // );
                         },
                         child: statusCard(
                           name3,
@@ -175,15 +175,15 @@ class StatusScreen extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => StoryPageView(
-                                name: name4,
-                                avatar: avatar4,
-                              ),
-                            ),
-                          );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => StoryPageView(
+                          //       name: name4,
+                          //       avatar: avatar4,
+                          //     ),
+                          //   ),
+                          // );
                         },
                         child: statusCard(
                           name4,
@@ -193,15 +193,15 @@ class StatusScreen extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => StoryPageView(
-                                name: name5,
-                                avatar: avatar5,
-                              ),
-                            ),
-                          );
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => StoryPageView(
+                          //       name: name5,
+                          //       avatar: avatar5,
+                          //     ),
+                          //   ),
+                          // );
                         },
                         child: statusCard(
                           name5,

@@ -35,7 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   camera: 
-  story_view: 
+  # story_view: 
   image_picker: 
   url_launcher: 
   flutter_email_sender: 
@@ -43,6 +43,7 @@ dependencies:
   share: 
   get: 
   connectivity: 
+  video_player: 
 
 dev_dependencies:
   flutter_test:
