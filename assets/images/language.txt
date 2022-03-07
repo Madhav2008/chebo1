@@ -1,0 +1,6 @@
+Screens which are comfortable with all languages
+
+Navigation Screen
+Settings Screen
+Account Settings Screen
+Chat Settings Screen
