@@ -1,13 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_void_to_null, prefer_const_constructors_in_immutables
 
 import 'package:camera/camera.dart';
-// import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Screens/No_Connection_Screen/No_Connection_Screen.dart';
-// import 'package:whatsapp/Screens/Navigation/Navigation.dart';
-// import 'package:whatsapp/Screens/Security_Screen/Security_Screen.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
@@ -35,8 +32,6 @@ class MyApp extends StatelessWidget {
             create: (context) {
               ConnectivityChangeNotifier changeNotifier =
                   ConnectivityChangeNotifier();
-              //Inital load is an async function, can use FutureBuilder to show loading
-              //screen while this function running. This is not covered in this tutorial
               changeNotifier.initialLoad();
               return changeNotifier;
             },

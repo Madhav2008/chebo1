@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Screens/Payments_Screen/Payments_Screen.dart';
 import 'package:whatsapp/Screens/Search_Help_Centre/Search_help_Centre.dart';
 
 class PaymentScreen extends StatefulWidget {
@@ -78,12 +79,19 @@ class _PaymentScreenState extends State<PaymentScreen> {
             //   thickness: 2,
             // ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
               ),
               child: ListTile(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (builder) => PaymentsScreen(),
+                    ),
+                  );
+                },
                 leading: Icon(
                   Icons.monetization_on,
                   color: one,

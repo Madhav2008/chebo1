@@ -6,7 +6,8 @@ import 'package:whatsapp/Constants/Constants.dart';
 class AppInfo extends StatelessWidget {
   AppInfo({Key? key}) : super(key: key);
 
-  final version = '2.22.6.8 (Beta)';
+  final version = '1.0.0';
+  final year = '2022-2022';
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +71,7 @@ class AppInfo extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      '2010-2022 WhatsApp Inc.',
+                      year + ' WhatsApp Inc.',
                       style: TextStyle(
                         color: white.withOpacity(
                           0.5,
