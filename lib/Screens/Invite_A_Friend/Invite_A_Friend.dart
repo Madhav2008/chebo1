@@ -1,11 +1,11 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class InviteAFriend extends StatefulWidget {
-  const InviteAFriend({Key? key}) : super(key: key);
+  InviteAFriend({Key? key}) : super(key: key);
 
   @override
   _InviteAFriendState createState() => _InviteAFriendState();
@@ -96,7 +96,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 10.0,
               left: 5.0,
             ),

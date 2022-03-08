@@ -1,9 +1,9 @@
-// ignore_for_file: prefer_const_constructors, file_names
+// ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 
 class ReplyCard extends StatelessWidget {
-  const ReplyCard({
+  ReplyCard({
     Key? key,
     required this.color,
     required this.text,
@@ -28,7 +28,7 @@ class ReplyCard extends StatelessWidget {
           child: Stack(
             children: [
               Padding(
-                padding: const EdgeInsets.only(
+                padding: EdgeInsets.only(
                   left: 8,
                   right: 50,
                   top: 5,

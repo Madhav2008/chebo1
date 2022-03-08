@@ -1,9 +1,9 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 
 class NoConnection extends StatelessWidget {
-  const NoConnection({
+  NoConnection({
     Key? key,
     required this.image,
   }) : super(key: key);

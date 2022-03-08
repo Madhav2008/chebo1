@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -7,7 +7,7 @@ import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Calling_Screen.dart';
 
 class ViewProfile extends StatelessWidget {
-  const ViewProfile({
+  ViewProfile({
     Key? key,
     required this.avatar,
     required this.name,
@@ -45,7 +45,7 @@ class ViewProfile extends StatelessWidget {
                     Align(
                       alignment: Alignment.topLeft,
                       child: Padding(
-                        padding: const EdgeInsets.only(
+                        padding: EdgeInsets.only(
                           top: 8.0,
                           left: 8.0,
                         ),
@@ -61,7 +61,7 @@ class ViewProfile extends StatelessWidget {
                     Align(
                       alignment: Alignment.topRight,
                       child: Padding(
-                        padding: const EdgeInsets.only(
+                        padding: EdgeInsets.only(
                           top: 8.0,
                           right: 8.0,
                         ),
@@ -78,7 +78,7 @@ class ViewProfile extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(
+                        padding: EdgeInsets.only(
                           bottom: 5.0,
                           top: 5.0,
                         ),

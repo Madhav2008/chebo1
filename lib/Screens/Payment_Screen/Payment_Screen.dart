@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -7,7 +7,7 @@ import 'package:whatsapp/Screens/Payments_Screen/Payments_Screen.dart';
 import 'package:whatsapp/Screens/Search_Help_Centre/Search_help_Centre.dart';
 
 class PaymentScreen extends StatefulWidget {
-  const PaymentScreen({Key? key}) : super(key: key);
+  PaymentScreen({Key? key}) : super(key: key);
 
   @override
   _PaymentScreenState createState() => _PaymentScreenState();
@@ -32,52 +32,6 @@ class _PaymentScreenState extends State<PaymentScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Padding(
-            //   padding: const EdgeInsets.only(
-            //     top: 8.0,
-            //     bottom: 8.0,
-            //   ),
-            //   child: ListTile(
-            //     onLongPress: () {
-            //       ScaffoldMessenger.of(context).showSnackBar(
-            //         SnackBar(
-            //           content: Text("UPI ID copied"),
-            //         ),
-            //       );
-            //     },
-            //     leading: CircleAvatar(
-            //       radius: 23,
-            //       backgroundImage: NetworkImage(
-            //         'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-            //       ),
-            //       backgroundColor: one,
-            //     ),
-            //     title: Column(
-            //       crossAxisAlignment: CrossAxisAlignment.start,
-            //       children: [
-            //         Text(
-            //           'VIJAY ARORA',
-            //           style: TextStyle(
-            //             fontSize: 17,
-            //             color: black,
-            //           ),
-            //         ),
-            //         Text(
-            //           'UPI ID: 9999348444.wa.Inj@icici',
-            //           style: TextStyle(
-            //             fontSize: 15,
-            //             fontWeight: FontWeight.bold,
-            //             color: grey,
-            //           ),
-            //         ),
-            //       ],
-            //     ),
-            //   ),
-            // ),
-            // Divider(
-            //   height: 5,
-            //   thickness: 2,
-            // ),
             Padding(
               padding: EdgeInsets.only(
                 top: 8.0,
@@ -106,7 +60,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
               ),
@@ -132,7 +86,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(
+                  padding: EdgeInsets.only(
                     top: 10.0,
                     left: 10.0,
                     bottom: 20.0,
@@ -178,7 +132,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(
+                  padding: EdgeInsets.only(
                     top: 10.0,
                     left: 10.0,
                     bottom: 20.0,
@@ -200,7 +154,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
+                    padding: EdgeInsets.only(
                       top: 8.0,
                       bottom: 8.0,
                     ),
@@ -233,7 +187,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
               ),
@@ -256,7 +210,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
               thickness: 6,
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
               ),

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -11,7 +11,7 @@ import 'package:whatsapp/Screens/Issues_With_Payments/Issues_With_Payments.dart'
 import 'package:whatsapp/Screens/Payments_Data/Payments_data.dart';
 
 class SearchHelpCentre extends StatefulWidget {
-  const SearchHelpCentre({Key? key}) : super(key: key);
+  SearchHelpCentre({Key? key}) : super(key: key);
 
   @override
   _SearchHelpCentreState createState() => _SearchHelpCentreState();
@@ -31,7 +31,7 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 20.0,
                 bottom: 10.0,
                 left: 28.0,
@@ -46,7 +46,7 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
                 left: 10.0,
@@ -75,7 +75,7 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
                 left: 10.0,
@@ -104,7 +104,7 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
                 left: 10.0,
@@ -133,7 +133,7 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
                 left: 10.0,
@@ -156,13 +156,13 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 25.0),
+              padding: EdgeInsets.only(left: 25.0),
               child: Divider(
                 thickness: 1,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
                 left: 10.0,
@@ -185,13 +185,13 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 25.0),
+              padding: EdgeInsets.only(left: 25.0),
               child: Divider(
                 thickness: 1,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
                 bottom: 8.0,
                 left: 10.0,
@@ -217,7 +217,7 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               height: 100,
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 8.0,
               ),
               child: ListTile(

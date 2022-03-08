@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'dart:io';
 
@@ -10,7 +10,7 @@ import 'package:whatsapp/Screens/Change_Number_Screen_One/Change_Number_Screen_O
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({
+  ProfileScreen({
     Key? key,
     required this.avatar,
     required this.name,
@@ -104,7 +104,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(20.0),
               child: Center(
                 child: Stack(
                   children: [
@@ -144,7 +144,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             selectImage();
                           },
                           child: Container(
-                            padding: const EdgeInsets.all(13.0),
+                            padding: EdgeInsets.all(13.0),
                             decoration: BoxDecoration(
                               color: one,
                               borderRadius: BorderRadius.all(
@@ -326,7 +326,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         child: Padding(
-          padding: const EdgeInsets.symmetric(
+          padding: EdgeInsets.symmetric(
             horizontal: 10,
             vertical: 20,
           ),
@@ -334,7 +334,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 15.0),
+                padding: EdgeInsets.only(left: 15.0),
                 child: Text(
                   'Enter your name',
                   style: TextStyle(

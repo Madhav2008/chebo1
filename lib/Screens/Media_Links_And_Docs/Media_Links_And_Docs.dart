@@ -1,10 +1,10 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Screens/Chats_Screen/Chats_Screen.dart';
 
 class MediaLinksAndDocs extends StatefulWidget {
-  const MediaLinksAndDocs({Key? key}) : super(key: key);
+  MediaLinksAndDocs({Key? key}) : super(key: key);
 
   @override
   _MediaLinksAndDocsState createState() => _MediaLinksAndDocsState();

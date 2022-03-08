@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -7,7 +7,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Linked_Devices/Linked_Devices.dart';
 
 class MultiDeviceBetaScreen extends StatefulWidget {
-  const MultiDeviceBetaScreen({
+  MultiDeviceBetaScreen({
     Key? key,
     required this.avatar,
     required this.name,

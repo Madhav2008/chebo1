@@ -99,7 +99,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
               shrinkWrap: true,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: GestureDetector(
                     onTap: () {
                       updateLanguage(locale[index]['locale']);

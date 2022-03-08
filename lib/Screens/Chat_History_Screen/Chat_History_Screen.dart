@@ -1,11 +1,11 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Export_Chat_Screen/Export_Chat_Screen.dart';
 
 class ChatHistoryScreen extends StatelessWidget {
-  const ChatHistoryScreen({Key? key}) : super(key: key);
+  ChatHistoryScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -149,7 +149,7 @@ class ChatHistoryScreen extends StatelessWidget {
 }
 
 class ClearAllChats extends StatefulWidget {
-  const ClearAllChats({Key? key}) : super(key: key);
+  ClearAllChats({Key? key}) : super(key: key);
 
   @override
   _ClearAllChatsState createState() => _ClearAllChatsState();
@@ -258,7 +258,7 @@ class _ClearAllChatsState extends State<ClearAllChats> {
 }
 
 class DeleteAllChats extends StatefulWidget {
-  const DeleteAllChats({Key? key}) : super(key: key);
+  DeleteAllChats({Key? key}) : super(key: key);
 
   @override
   _DeleteAllChatsState createState() => _DeleteAllChatsState();

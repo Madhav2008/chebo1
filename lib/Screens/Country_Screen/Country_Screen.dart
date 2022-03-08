@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -6,7 +6,7 @@ import 'package:whatsapp/Models/Country_Model.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 
 class CountryScreen extends StatefulWidget {
-  const CountryScreen({Key? key}) : super(key: key);
+  CountryScreen({Key? key}) : super(key: key);
 
   @override
   State<CountryScreen> createState() => _CountryScreenState();

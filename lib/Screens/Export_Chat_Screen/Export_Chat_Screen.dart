@@ -1,11 +1,11 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 
 class ExportChatScreen extends StatefulWidget {
-  const ExportChatScreen({Key? key}) : super(key: key);
+  ExportChatScreen({Key? key}) : super(key: key);
 
   @override
   _ExportChatScreenState createState() => _ExportChatScreenState();
@@ -101,7 +101,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                   ],
                 ),
                 subtitle: Container(
-                  padding: const EdgeInsets.only(top: 5.0),
+                  padding: EdgeInsets.only(top: 5.0),
                   child: Row(
                     children: [
                       Icon(

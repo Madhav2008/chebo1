@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, file_names
+// ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Screens/Cant_Receive_Money/Cant_Receive_Money.dart';
@@ -9,7 +9,7 @@ import 'package:whatsapp/Screens/Problems_With_My_Bank_Or_Bank_Account/Problems_
 import 'package:whatsapp/Screens/UPI_PIN/UPI_PIN.dart';
 
 class IssueType extends StatefulWidget {
-  const IssueType({Key? key}) : super(key: key);
+  IssueType({Key? key}) : super(key: key);
 
   @override
   _IssueTypeState createState() => _IssueTypeState();
@@ -28,7 +28,7 @@ class _IssueTypeState extends State<IssueType> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 8.0,
               bottom: 8.0,
               left: 10.0,
@@ -51,7 +51,7 @@ class _IssueTypeState extends State<IssueType> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 8.0,
               bottom: 8.0,
               left: 10.0,
@@ -74,7 +74,7 @@ class _IssueTypeState extends State<IssueType> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 8.0,
               bottom: 8.0,
               left: 10.0,
@@ -97,7 +97,7 @@ class _IssueTypeState extends State<IssueType> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 8.0,
               bottom: 8.0,
               left: 10.0,
@@ -121,7 +121,7 @@ class _IssueTypeState extends State<IssueType> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 8.0,
               bottom: 8.0,
               left: 10.0,
@@ -144,7 +144,7 @@ class _IssueTypeState extends State<IssueType> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
               top: 8.0,
               bottom: 8.0,
               left: 10.0,

@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class ContactSupport extends StatefulWidget {
-  const ContactSupport({Key? key}) : super(key: key);
+  ContactSupport({Key? key}) : super(key: key);
 
   @override
   _ContactSupportState createState() => _ContactSupportState();
@@ -62,7 +62,7 @@ class _ContactSupportState extends State<ContactSupport> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.all(18.0),
+              padding: EdgeInsets.all(18.0),
               child: Text(
                 "Can't find what I'm looking for",
                 style: TextStyle(
@@ -72,7 +72,7 @@ class _ContactSupportState extends State<ContactSupport> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(15.0),
               child: TextFormField(
                 controller: _bodyController,
                 focusNode: focusNode,
@@ -90,7 +90,7 @@ class _ContactSupportState extends State<ContactSupport> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: EdgeInsets.all(12.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -106,6 +106,11 @@ class _ContactSupportState extends State<ContactSupport> {
                       ),
                     ),
                   ),
+                  Expanded(
+                    child: Container(
+                      height: 1,
+                    ),
+                  ),
                   _bodyController.text.isNotEmpty
                       ? GestureDetector(
                           onTap: () {
@@ -114,7 +119,7 @@ class _ContactSupportState extends State<ContactSupport> {
                           child: Container(
                             color: one,
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(
+                              padding: EdgeInsets.symmetric(
                                 horizontal: 30,
                                 vertical: 10,
                               ),
@@ -130,7 +135,7 @@ class _ContactSupportState extends State<ContactSupport> {
                       : Container(
                           color: grey.withOpacity(0.3),
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(
+                            padding: EdgeInsets.symmetric(
                               horizontal: 30,
                               vertical: 10,
                             ),
@@ -142,6 +147,9 @@ class _ContactSupportState extends State<ContactSupport> {
                             ),
                           ),
                         ),
+                  SizedBox(
+                    height: 40,
+                  ),
                 ],
               ),
             ),

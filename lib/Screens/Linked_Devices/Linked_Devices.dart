@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -6,7 +6,7 @@ import 'package:whatsapp/Screens/Multi_Device_Beta_Screen/Multi_Device_Beta_Scre
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class LinkedDevices extends StatefulWidget {
-  const LinkedDevices({
+  LinkedDevices({
     Key? key,
     required this.avatar,
     required this.name,
@@ -106,23 +106,6 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                 ),
               ),
             ),
-            // RaisedButton(
-            //   child: Padding(
-            //     padding: const EdgeInsets.symmetric(
-            //       horizontal: 130,
-            //       vertical: 10,
-            //     ),
-            //     child: Text(
-            //       'LINK A DEVICE',
-            //       style: TextStyle(
-            //         color: white,
-            //       ),
-            //     ),
-            //   ),
-            //   color: one,
-            //   onPressed: () {},
-            // ),
-            // Icon(Icons.phonelink_sharp),
             SizedBox(
               height: 20,
             ),

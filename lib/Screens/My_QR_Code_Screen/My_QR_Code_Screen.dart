@@ -1,10 +1,10 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class MyQRCodeScreen extends StatefulWidget {
-  const MyQRCodeScreen({
+  MyQRCodeScreen({
     Key? key,
     required this.name,
     required this.avatar,

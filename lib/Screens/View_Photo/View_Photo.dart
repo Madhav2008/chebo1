@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, file_names
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, file_names, prefer_const_constructors_in_immutables
 
 import 'dart:io';
 
@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class CameraViewPage extends StatelessWidget {
-  const CameraViewPage({Key? key, required this.path}) : super(key: key);
+  CameraViewPage({Key? key, required this.path}) : super(key: key);
   final String path;
 
   @override

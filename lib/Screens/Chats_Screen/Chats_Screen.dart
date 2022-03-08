@@ -1,11 +1,11 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
 
 class ChatsScreen extends StatelessWidget {
-  const ChatsScreen({Key? key}) : super(key: key);
+  ChatsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

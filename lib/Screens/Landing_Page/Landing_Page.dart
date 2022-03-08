@@ -119,7 +119,7 @@ class LandingPage extends StatelessWidget {
                     ],
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(
+                    padding: EdgeInsets.symmetric(
                       horizontal: 50,
                       vertical: 12,
                     ),

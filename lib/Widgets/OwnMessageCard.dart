@@ -1,9 +1,9 @@
-// ignore_for_file: prefer_const_constructors, file_names
+// ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 
 class OwnMessageCard extends StatelessWidget {
-  const OwnMessageCard({
+  OwnMessageCard({
     Key? key,
     time,
     required this.color,
@@ -29,7 +29,7 @@ class OwnMessageCard extends StatelessWidget {
           child: Stack(
             children: [
               Padding(
-                padding: const EdgeInsets.only(
+                padding: EdgeInsets.only(
                   left: 10,
                   right: 30,
                   top: 5,

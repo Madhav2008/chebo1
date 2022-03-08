@@ -436,7 +436,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(
+                                padding: EdgeInsets.only(
                                   bottom: 8,
                                   right: 2,
                                   left: 2,
@@ -775,7 +775,7 @@ void onSelected1(
 }
 
 class MuteNotifications extends StatefulWidget {
-  const MuteNotifications({Key? key}) : super(key: key);
+  MuteNotifications({Key? key}) : super(key: key);
 
   @override
   _MuteNotificationsState createState() => _MuteNotificationsState();
@@ -833,7 +833,7 @@ class _MuteNotificationsState extends State<MuteNotifications> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                 top: 10.0,
                 bottom: 10.0,
               ),

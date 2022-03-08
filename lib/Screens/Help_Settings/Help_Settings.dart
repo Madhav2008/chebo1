@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -7,7 +7,7 @@ import 'package:whatsapp/Screens/App_Info/App_Info.dart';
 import 'package:whatsapp/Screens/Contact_Us/Contact_Us.dart';
 
 class HelpSettings extends StatelessWidget {
-  const HelpSettings({Key? key}) : super(key: key);
+  HelpSettings({Key? key}) : super(key: key);
 
   _helpCentre() async {
     const url =

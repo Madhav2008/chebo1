@@ -1,10 +1,10 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class StarredMessages extends StatefulWidget {
-  const StarredMessages({Key? key}) : super(key: key);
+  StarredMessages({Key? key}) : super(key: key);
 
   @override
   _StarredMessagesState createState() => _StarredMessagesState();
@@ -93,10 +93,10 @@ class _StarredMessagesState extends State<StarredMessages> {
           Theme(
             data: Theme.of(context).copyWith(
               dividerColor: Colors.black,
-              iconTheme: const IconThemeData(
+              iconTheme: IconThemeData(
                 color: white,
               ),
-              textTheme: const TextTheme().apply(),
+              textTheme: TextTheme().apply(),
             ),
             child: PopupMenuButton<int>(
               onSelected: (item) => onSelected(context, item),

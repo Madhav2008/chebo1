@@ -1,11 +1,11 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Change_Number_Screen_Two/Change_Number_Screen_Two.dart';
 
 class ChangeNumberScreenOne extends StatelessWidget {
-  const ChangeNumberScreenOne({Key? key}) : super(key: key);
+  ChangeNumberScreenOne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

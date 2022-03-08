@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -13,7 +13,7 @@ import 'package:whatsapp/Screens/Storage_And_Data_Settings/Storage_And_Data_Sett
 import 'package:get/get.dart';
 
 class SettingsScreen extends StatelessWidget {
-  const SettingsScreen({
+  SettingsScreen({
     Key? key,
     required this.avatar,
     required this.name,
@@ -50,7 +50,7 @@ class SettingsScreen extends StatelessWidget {
                 );
               },
               leading: Padding(
-                padding: const EdgeInsets.only(top: 5.0),
+                padding: EdgeInsets.only(top: 5.0),
                 child: CircleAvatar(
                   radius: 20,
                   foregroundColor: Theme.of(context).primaryColor,
@@ -114,7 +114,7 @@ class SettingsScreen extends StatelessWidget {
                 color: grey,
               ),
               title: Padding(
-                padding: const EdgeInsets.only(bottom: 5.0),
+                padding: EdgeInsets.only(bottom: 5.0),
                 child: Text(
                   "account".tr,
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -136,7 +136,7 @@ class SettingsScreen extends StatelessWidget {
                 color: grey,
               ),
               title: Padding(
-                padding: const EdgeInsets.only(bottom: 5),
+                padding: EdgeInsets.only(bottom: 5),
                 child: Text(
                   "chats".tr,
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -161,7 +161,7 @@ class SettingsScreen extends StatelessWidget {
                 color: grey,
               ),
               title: Padding(
-                padding: const EdgeInsets.only(bottom: 5),
+                padding: EdgeInsets.only(bottom: 5),
                 child: Text(
                   "notification".tr,
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -186,7 +186,7 @@ class SettingsScreen extends StatelessWidget {
                 color: grey,
               ),
               title: Padding(
-                padding: const EdgeInsets.only(bottom: 5),
+                padding: EdgeInsets.only(bottom: 5),
                 child: Text(
                   "storageData".tr,
                   style: TextStyle(
@@ -213,7 +213,7 @@ class SettingsScreen extends StatelessWidget {
                 color: grey,
               ),
               title: Padding(
-                padding: const EdgeInsets.only(bottom: 5),
+                padding: EdgeInsets.only(bottom: 5),
                 child: Text(
                   "help".tr,
                   style: TextStyle(fontWeight: FontWeight.bold),

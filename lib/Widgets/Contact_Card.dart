@@ -1,11 +1,11 @@
-// ignore_for_file: prefer_const_constructors, file_names, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, file_names, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Contact_Model.dart';
 
 class ContactCard extends StatelessWidget {
-  const ContactCard({Key? key, required this.contact}) : super(key: key);
+  ContactCard({Key? key, required this.contact}) : super(key: key);
   final ChatModel contact;
 
   @override

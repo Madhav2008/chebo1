@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class ContactUs extends StatefulWidget {
-  const ContactUs({Key? key}) : super(key: key);
+  ContactUs({Key? key}) : super(key: key);
 
   @override
   _ContactUsState createState() => _ContactUsState();
@@ -60,10 +60,10 @@ class _ContactUsState extends State<ContactUs> {
           Theme(
             data: Theme.of(context).copyWith(
               dividerColor: Colors.black,
-              iconTheme: const IconThemeData(
+              iconTheme: IconThemeData(
                 color: white,
               ),
-              textTheme: const TextTheme().apply(),
+              textTheme: TextTheme().apply(),
             ),
             child: PopupMenuButton<int>(
               onSelected: (item) => onSelected(context, item),
@@ -93,7 +93,7 @@ class _ContactUsState extends State<ContactUs> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.all(18.0),
+              padding: EdgeInsets.all(18.0),
               child: Text(
                 "Can't find what I'm looking for",
                 style: TextStyle(
@@ -103,7 +103,7 @@ class _ContactUsState extends State<ContactUs> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(15.0),
               child: TextFormField(
                 controller: _bodyController,
                 focusNode: focusNode,
@@ -121,7 +121,7 @@ class _ContactUsState extends State<ContactUs> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: EdgeInsets.all(12.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -137,6 +137,11 @@ class _ContactUsState extends State<ContactUs> {
                       ),
                     ),
                   ),
+                  Expanded(
+                    child: Container(
+                      height: 1,
+                    ),
+                  ),
                   _bodyController.text.isNotEmpty
                       ? GestureDetector(
                           onTap: () {
@@ -145,7 +150,7 @@ class _ContactUsState extends State<ContactUs> {
                           child: Container(
                             color: one,
                             child: Padding(
-                              padding: const EdgeInsets.symmetric(
+                              padding: EdgeInsets.symmetric(
                                 horizontal: 30,
                                 vertical: 10,
                               ),
@@ -161,7 +166,7 @@ class _ContactUsState extends State<ContactUs> {
                       : Container(
                           color: grey.withOpacity(0.3),
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(
+                            padding: EdgeInsets.symmetric(
                               horizontal: 30,
                               vertical: 10,
                             ),
@@ -173,6 +178,9 @@ class _ContactUsState extends State<ContactUs> {
                             ),
                           ),
                         ),
+                  SizedBox(
+                    height: 40,
+                  ),
                 ],
               ),
             ),
