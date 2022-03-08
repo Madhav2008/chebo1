@@ -18,18 +18,7 @@ class SecurityScreen extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          Column(
-            children: [
-              Icon(
-                Icons.security,
-                size: 70,
-              ),
-              Positioned(
-                top: 100,
-                child: Icon(Icons.lock),
-              ),
-            ],
-          ),
+          Column(),
         ],
       ),
     );

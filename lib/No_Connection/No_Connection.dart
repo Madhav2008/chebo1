@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 
@@ -13,32 +13,27 @@ class NoConnection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                height: 100,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              image,
+              width: 300,
+              height: 300,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              'No Internet Connection',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2,
               ),
-              Image.asset(
-                image,
-                width: 300,
-                height: 300,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                'No Internet Connection',
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 2,
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

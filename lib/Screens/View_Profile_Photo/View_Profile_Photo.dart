@@ -19,7 +19,6 @@ class ViewProfilePhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: black,
         title: Text(
           name,
         ),

@@ -1,9 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, dead_code, file_names, avoid_print, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, dead_code, file_names, avoid_print, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
-import 'package:whatsapp/Screens/Story_Page/Story_Page.dart';
 import 'package:whatsapp/Screens/Text_Status_Screen/Text_Status_Screen.dart';
 
 class StatusScreen extends StatelessWidget {
