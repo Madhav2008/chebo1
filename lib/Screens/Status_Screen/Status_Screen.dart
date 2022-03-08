@@ -29,6 +29,7 @@ class StatusScreen extends StatelessWidget {
         'https://4bgowik9viu406fbr2hsu10z-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/Portrait_5-1.jpg';
     String avatar5 =
         'https://upload.wikimedia.org/wikipedia/commons/2/23/Photo_portrait_PP.jpg';
+
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -274,6 +275,7 @@ class StatusScreen extends StatelessWidget {
         backgroundImage: NetworkImage(
           image,
         ),
+        backgroundColor: grey,
       ),
       title: Text(
         name,

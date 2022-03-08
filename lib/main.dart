@@ -1,16 +1,15 @@
 // ignore_for_file: prefer_const_constructors, prefer_void_to_null, prefer_const_constructors_in_immutables
 
 import 'package:camera/camera.dart';
-import 'package:connectivity/connectivity.dart';
 // import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
+import 'package:whatsapp/Screens/No_Connection_Screen/No_Connection_Screen.dart';
 // import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 // import 'package:whatsapp/Screens/Security_Screen/Security_Screen.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
-import 'No_Connection/No_Connection.dart';
 import 'Theme/Provider/Theme_Provider.dart';
 
 late List<CameraDescription> cameras;
@@ -32,27 +31,24 @@ class MyApp extends StatelessWidget {
         create: (context) => ThemeProvider(),
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
-          return GetMaterialApp(
-            translations: LocalString(),
-            locale: Locale('en', 'US'),
-            title: 'WhatsApp',
-            debugShowCheckedModeBanner: false,
-            themeMode: themeProvider.themeMode,
-            theme: MyThemes.lightTheme,
-            darkTheme: MyThemes.darkTheme,
-            home: StreamBuilder(
-              stream: Connectivity().onConnectivityChanged,
-              builder: (BuildContext context,
-                  AsyncSnapshot<ConnectivityResult> snapshot) {
-                if (snapshot != null &&
-                    snapshot.hasData &&
-                    snapshot.data != ConnectivityResult.none) {
-                  //  SecurityScreen(),
-                  return SplashScreen();
-                } else {
-                  return NoConnection();
-                }
-              },
+          return ChangeNotifierProvider(
+            create: (context) {
+              ConnectivityChangeNotifier changeNotifier =
+                  ConnectivityChangeNotifier();
+              //Inital load is an async function, can use FutureBuilder to show loading
+              //screen while this function running. This is not covered in this tutorial
+              changeNotifier.initialLoad();
+              return changeNotifier;
+            },
+            child: GetMaterialApp(
+              translations: LocalString(),
+              locale: Locale('en', 'US'),
+              title: 'WhatsApp',
+              debugShowCheckedModeBanner: false,
+              themeMode: themeProvider.themeMode,
+              theme: MyThemes.lightTheme,
+              darkTheme: MyThemes.darkTheme,
+              home: SplashScreen(),
             ),
           );
         },

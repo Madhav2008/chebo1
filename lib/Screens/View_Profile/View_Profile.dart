@@ -96,10 +96,12 @@ class ViewProfile extends StatelessWidget {
                             );
                           },
                           child: CircleAvatar(
+                            radius: 60,
                             backgroundImage: NetworkImage(
                               avatar,
                             ),
-                            radius: 60,
+                            backgroundColor: grey,
+                            
                           ),
                         ),
                       ),

@@ -118,7 +118,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         widget.avatar,
                       ),
                       radius: 20,
-                      backgroundColor: one,
+                      backgroundColor: grey,
                     ),
                   ],
                 ),

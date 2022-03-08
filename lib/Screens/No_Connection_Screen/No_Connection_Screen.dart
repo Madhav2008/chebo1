@@ -1,63 +1,43 @@
-// // ignore_for_file: file_names
+// ignore_for_file: file_names
 
-// import 'package:flutter/material.dart';
-// import 'package:provider/provider.dart';
-// import 'package:whatsapp/Connection_Check/Connection_Check.dart';
+import 'package:flutter/material.dart';
+import 'package:connectivity/connectivity.dart';
 
-// class NoConnectionScreen extends StatefulWidget {
-//   NoConnectionScreen({Key? key}) : super(key: key);
+class ConnectivityChangeNotifier extends ChangeNotifier {
+  ConnectivityChangeNotifier() {
+    Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
+      resultHandler(result);
+    });
+  }
+  ConnectivityResult _connectivityResult = ConnectivityResult.none;
+  String _svgUrl = '../assets/images/1.png';
+  String _pageText =
+      'Currently connected to no network. Please connect to a wifi network!';
 
-//   @override
-//   State<NoConnectionScreen> createState() => _NoConnectionScreenState();
-// }
+  ConnectivityResult get connectivity => _connectivityResult;
+  String get svgUrl => _svgUrl;
+  String get pageText => _pageText;
 
-// class _NoConnectionScreenState extends State<NoConnectionScreen> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         backgroundColor: Colors.transparent,
-//         elevation: 0,
-//         brightness: Brightness.light,
-//       ),
-//       body: Center(
-//         child: Consumer<ConnectivityChangeNotifier>(
-//           builder: (BuildContext context,
-//               ConnectivityChangeNotifier connectivityChangeNotifier,
-//               Widget child) {
-//             return Column(
-//               mainAxisSize: MainAxisSize.max,
-//               mainAxisAlignment: MainAxisAlignment.center,
-//               crossAxisAlignment: CrossAxisAlignment.center,
-//               children: <Widget>[
-//                 Flexible(
-//                   child: Image.asset(
-//                     connectivityChangeNotifier.svgUrl,
-//                     fit: BoxFit.contain,
-//                   ),
-//                 ),
-//                 Flexible(
-//                   child: Padding(
-//                     padding: const EdgeInsets.fromLTRB(30.0, 20, 30, 100),
-//                     child: Text(
-//                       connectivityChangeNotifier.pageText,
-//                       textAlign: TextAlign.center,
-//                     ),
-//                   ),
-//                 ),
-//                 if (connectivityChangeNotifier.connectivity !=
-//                     ConnectivityResult.wifi)
-//                   Flexible(
-//                     child: RaisedButton(
-//                       child: Text('Open Settings'),
-//                       onPressed: () => AppSettings.openAppSettings(),
-//                     ),
-//                   )
-//               ],
-//             );
-//           },
-//         ),
-//       ),
-//     );
-//   }
-// }
+  void resultHandler(ConnectivityResult result) {
+    _connectivityResult = result;
+    if (result == ConnectivityResult.none) {
+      _svgUrl = '../assets/images/3.png';
+      _pageText =
+          'Currently connected to no network. Please connect to a wifi network!';
+    } else if (result == ConnectivityResult.mobile) {
+      _svgUrl = '../assets/images/1.png';
+      _pageText =
+          'Currently connected to a celluar network. Please connect to a wifi network!';
+    } else if (result == ConnectivityResult.wifi) {
+      _svgUrl = '../assets/images/2.png';
+      _pageText = 'Connected to a wifi network!';
+    }
+    notifyListeners();
+  }
+
+  void initialLoad() async {
+    ConnectivityResult connectivityResult =
+        await (Connectivity().checkConnectivity());
+    resultHandler(connectivityResult);
+  }
+}

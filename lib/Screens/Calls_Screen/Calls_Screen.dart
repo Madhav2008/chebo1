@@ -100,6 +100,7 @@ class CallsScreen extends StatelessWidget {
       leading: CircleAvatar(
         radius: 26,
         backgroundImage: NetworkImage(image),
+        backgroundColor: grey,
       ),
       title: Text(
         name,
