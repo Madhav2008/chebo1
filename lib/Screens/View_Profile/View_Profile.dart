@@ -20,10 +20,10 @@ class ViewProfile extends StatelessWidget {
   final String phoneno;
   final String about;
 
-  final phoneNo = '7982880636';
+  final mediaQuantity = '578';
 
   _makingPhoneCall() async {
-    final url = 'tel:' + phoneNo;
+    final url = 'tel:' + phoneno;
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -101,7 +101,6 @@ class ViewProfile extends StatelessWidget {
                               avatar,
                             ),
                             backgroundColor: grey,
-                            
                           ),
                         ),
                       ),
@@ -249,7 +248,7 @@ class ViewProfile extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '578' '>',
+                        mediaQuantity + ' >',
                         style: TextStyle(
                           color: grey,
                           fontSize: 15,

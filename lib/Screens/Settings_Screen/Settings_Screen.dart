@@ -272,6 +272,7 @@ class SettingsScreen extends StatelessWidget {
                   '../assets/images/meta.png',
                   width: 22,
                   height: 22,
+                  color: secondary,
                 ),
                 Text(
                   'meta'.tr,

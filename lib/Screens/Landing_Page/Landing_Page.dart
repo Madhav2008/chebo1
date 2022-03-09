@@ -19,7 +19,7 @@ class LandingPage extends StatelessWidget {
               child: Text(
                 'Welcome to WhatsApp',
                 style: TextStyle(
-                  fontSize: 25  ,
+                  fontSize: 25,
                   color: one,
                   fontWeight: FontWeight.w600,
                   letterSpacing: 2,
@@ -42,48 +42,44 @@ class LandingPage extends StatelessWidget {
               height: 10,
             ),
           ),
-          RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              children: [
-                TextSpan(
-                  text: 'Tap "Agree and Continue" to accept the ',
-                  style: TextStyle(
-                    color: grey,
-                    fontSize: 17,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10.0),
+            child: RichText(
+              textAlign: TextAlign.center,
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text: 'Read our ',
+                    style: TextStyle(
+                      color: grey,
+                      fontSize: 17,
+                    ),
                   ),
-                ),
-                TextSpan(
-                  text: 'WhatsApp',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 17,
+                  TextSpan(
+                    text: 'Privacy Policy. ',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 17,
+                    ),
                   ),
-                ),
-                TextSpan(
-                  text: ' Terms of Service and Privacy Policy',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 17,
+                  TextSpan(
+                    text: 'Tap "Agree and continue" to accept the ',
+                    style: TextStyle(
+                      color: grey,
+                      fontSize: 17,
+                    ),
                   ),
-                ),
-              ],
+                  TextSpan(
+                    text: 'Terms of service.',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 17,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          // Text(
-          //   'WhatsApp',
-          //   style: TextStyle(
-          //     color: Colors.blue,
-          //     fontSize: 17,
-          //   ),
-          // ),
-          // Text(
-          //   ' Terms of Service and Privacy Policy',
-          //   style: TextStyle(
-          //     color: Colors.blue,
-          //     fontSize: 17,
-          //   ),
-          // ),
           SizedBox(
             height: 10,
           ),
@@ -105,7 +101,7 @@ class LandingPage extends StatelessWidget {
                 padding: EdgeInsets.all(10.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: secondary,
+                    color: one,
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black,
@@ -138,6 +134,37 @@ class LandingPage extends StatelessWidget {
           ),
           SizedBox(
             height: 40,
+          ),
+          Text(
+            'from',
+            style: TextStyle(
+              color: grey,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                '../assets/images/meta.png',
+                width: 22,
+                height: 22,
+                color: secondary,
+              ),
+              Text(
+                'Meta',
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
           ),
         ],
       ),

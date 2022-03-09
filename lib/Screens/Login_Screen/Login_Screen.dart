@@ -82,10 +82,18 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             SizedBox(height: 10),
-            Text(
-              "What's my number?",
-              style: TextStyle(
-                color: one,
+            GestureDetector(
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (builder) => _whatsMyNo(context),
+                );
+              },
+              child: Text(
+                "What's my number?",
+                style: TextStyle(
+                  color: one,
+                ),
               ),
             ),
             SizedBox(height: 30),
@@ -116,7 +124,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Expanded(
                         child: Center(
                           child: Text(
-                           widget.country,
+                            widget.country,
                             style: TextStyle(
                               fontSize: 17,
                             ),
@@ -137,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 20,
             ),
             Container(
-              width: MediaQuery.of(context).size.width - 100,
+              width: MediaQuery.of(context).size.width - 90,
               child: Row(
                 children: [
                   Container(
@@ -279,9 +287,103 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
+                        builder: (BuildContext context) {
+                          return OTPVerificationScreen(
+                            no: _phoneController.text,
+                            countryCode: widget.countryCode,
+                            country: widget.country,
+                          );
+                        },
+                      ),
+                    );
+                  },
+                  child: Text(
+                    'OK',
+                    style: TextStyle(
+                      color: one,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _whatsMyNo(BuildContext context) {
+    return AlertDialog(
+      content: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width,
+              color: one,
+              height: 70,
+              child: Center(
+                child: Icon(
+                  Icons.phone,
+                  color: white,
+                  size: 30,
+                ),
+              ),
+            ),
+            Text(
+              widget.countryCode + ' ' + _phoneController.text,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              "Is this OK, or would you like to edit the number?",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                SizedBox(
+                  width: 15,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text(
+                    'EDIT',
+                    style: TextStyle(
+                      color: one,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
                         builder: (BuildContext context) =>
                             OTPVerificationScreen(
                           no: _phoneController.text,
+                          countryCode: widget.countryCode,
+                          country: widget.country,
                         ),
                       ),
                     );

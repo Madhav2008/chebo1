@@ -2,15 +2,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/User_Details_Screen/User_Details_Screen.dart';
 
 class OTPVerificationScreen extends StatefulWidget {
   OTPVerificationScreen({
     Key? key,
     required this.no,
+    required this.countryCode,
+    required this.country,
   }) : super(key: key);
 
   final String no;
+  final String countryCode;
+  final String country;
 
   @override
   _OTPVerificationScreenState createState() => _OTPVerificationScreenState();
@@ -75,14 +80,30 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 right: 10.0,
               ),
               child: Text(
-                'We have sent a SMS with a code to +91 ' + widget.no,
+                'We have sent a SMS with a code to ' +
+                    widget.countryCode +
+                    ' ' +
+                    widget.no,
               ),
             ),
             SizedBox(height: 10),
-            Text(
-              "Wrong number?",
-              style: TextStyle(
-                color: one,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => LoginScreen(
+                      country: widget.country,
+                      countryCode: widget.countryCode,
+                    ),
+                  ),
+                );
+              },
+              child: Text(
+                "Wrong number?",
+                style: TextStyle(
+                  color: one,
+                ),
               ),
             ),
             SizedBox(
@@ -91,7 +112,6 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
             Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                // color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(

@@ -98,189 +98,189 @@ class _NavigationScreenState extends State<NavigationScreen>
   @override
   Widget build(BuildContext context) => DefaultTabController(
         length: 4,
-        child: StreamBuilder(
-          stream: Connectivity().onConnectivityChanged,
-          builder: (BuildContext context,
-              AsyncSnapshot<ConnectivityResult> snapshot) {
-            if (snapshot != null &&
-                snapshot.hasData &&
-                snapshot.data != ConnectivityResult.none) {
-              return Scaffold(
-                body: NestedScrollView(
-                  headerSliverBuilder:
-                      (BuildContext context, bool innerBoxIsScrolled) {
-                    return <Widget>[
-                      SliverAppBar(
-                        automaticallyImplyLeading: false,
-                        title: appBarTitle,
-                        actions: [
-                          IconButton(
-                            icon: actionIcon,
-                            onPressed: () {
-                              setState(() {
-                                if (actionIcon.icon == Icons.search) {
-                                  _handleSearchStart();
-                                  actionIcon = Icon(Icons.close);
-                                  appBarTitle = TextField(
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                    controller: _hi,
-                                    decoration: InputDecoration(
-                                      prefixIcon: Icon(
-                                        Icons.search,
-                                        size: 26,
-                                        color: white,
-                                      ),
-                                      hintText: "search".tr,
-                                      hintStyle: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  );
-                                } else {
-                                  _handleSearchEnd();
-                                  actionIcon = Icon(
-                                    Icons.search,
-                                    size: 26,
-                                  );
-                                  appBarTitle = Text(
-                                    'WhatsApp',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      letterSpacing: 2,
-                                    ),
-                                  );
-                                }
-                              });
-                            },
-                          ),
-                          Theme(
-                            data: Theme.of(context).copyWith(
-                              dividerColor: Colors.black,
-                              iconTheme: IconThemeData(
-                                color: white,
+        child: Scaffold(
+          body: NestedScrollView(
+            headerSliverBuilder:
+                (BuildContext context, bool innerBoxIsScrolled) {
+              return <Widget>[
+                SliverAppBar(
+                  automaticallyImplyLeading: false,
+                  title: appBarTitle,
+                  actions: [
+                    IconButton(
+                      icon: actionIcon,
+                      onPressed: () {
+                        setState(() {
+                          if (actionIcon.icon == Icons.search) {
+                            _handleSearchStart();
+                            actionIcon = Icon(Icons.close);
+                            appBarTitle = TextField(
+                              style: TextStyle(
+                                color: Colors.white,
                               ),
-                              textTheme: TextTheme().apply(),
+                              controller: _hi,
+                              decoration: InputDecoration(
+                                prefixIcon: Icon(
+                                  Icons.search,
+                                  size: 26,
+                                  color: white,
+                                ),
+                                hintText: "search".tr,
+                                hintStyle: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            );
+                          } else {
+                            _handleSearchEnd();
+                            actionIcon = Icon(
+                              Icons.search,
+                              size: 26,
+                            );
+                            appBarTitle = Text(
+                              'WhatsApp',
+                              style: TextStyle(
+                                fontSize: 20,
+                                letterSpacing: 2,
+                              ),
+                            );
+                          }
+                        });
+                      },
+                    ),
+                    Theme(
+                      data: Theme.of(context).copyWith(
+                        dividerColor: Colors.black,
+                        iconTheme: IconThemeData(
+                          color: white,
+                        ),
+                        textTheme: TextTheme().apply(),
+                      ),
+                      child: PopupMenuButton<int>(
+                        onSelected: (item) => onSelected(context, item),
+                        itemBuilder: (context) => [
+                          PopupMenuItem<int>(
+                            value: 0,
+                            child: Row(
+                              children: [
+                                Text(
+                                  'group'.tr,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ],
                             ),
-                            child: PopupMenuButton<int>(
-                              onSelected: (item) => onSelected(context, item),
-                              itemBuilder: (context) => [
-                                PopupMenuItem<int>(
-                                  value: 0,
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'group'.tr,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
+                          ),
+                          PopupMenuItem<int>(
+                            value: 1,
+                            child: Row(
+                              children: [
+                                Text(
+                                  'broadcast'.tr,
+                                  style: TextStyle(
+                                    fontSize: 14,
                                   ),
                                 ),
-                                PopupMenuItem<int>(
-                                  value: 1,
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'broadcast'.tr,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
+                              ],
+                            ),
+                          ),
+                          PopupMenuItem<int>(
+                            value: 2,
+                            child: Row(
+                              children: [
+                                Text(
+                                  'devices'.tr,
+                                  style: TextStyle(
+                                    fontSize: 14,
                                   ),
                                 ),
-                                PopupMenuItem<int>(
-                                  value: 2,
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'devices'.tr,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
+                              ],
+                            ),
+                          ),
+                          PopupMenuItem<int>(
+                            value: 3,
+                            child: Row(
+                              children: [
+                                Text(
+                                  'starred'.tr,
+                                  style: TextStyle(
+                                    fontSize: 14,
                                   ),
                                 ),
-                                PopupMenuItem<int>(
-                                  value: 3,
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'starred'.tr,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
+                              ],
+                            ),
+                          ),
+                          PopupMenuItem<int>(
+                            value: 4,
+                            child: Row(
+                              children: [
+                                Text(
+                                  'payments'.tr,
+                                  style: TextStyle(
+                                    fontSize: 14,
                                   ),
                                 ),
-                                PopupMenuItem<int>(
-                                  value: 4,
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'payments'.tr,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                PopupMenuItem<int>(
-                                  value: 5,
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        'settings'.tr,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
+                              ],
+                            ),
+                          ),
+                          PopupMenuItem<int>(
+                            value: 5,
+                            child: Row(
+                              children: [
+                                Text(
+                                  'settings'.tr,
+                                  style: TextStyle(
+                                    fontSize: 14,
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ],
-                        floating: true,
-                        pinned: true,
-                        snap: true,
-                        bottom: TabBar(
-                          controller: _tabController,
-                          indicatorColor: white,
-                          indicatorWeight: 3,
-                          labelColor: white,
-                          labelStyle: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                          unselectedLabelColor: lightText,
-                          tabs: [
-                            Tab(
-                              icon: Icon(Icons.camera_alt),
-                            ),
-                            Tab(
-                              text: 'chatsC'.tr,
-                            ),
-                            Tab(
-                              text: 'statusC'.tr,
-                            ),
-                            Tab(
-                              text: 'callsC'.tr,
-                            ),
-                          ],
-                        ),
-                        elevation: 20,
-                        titleSpacing: 20,
                       ),
-                    ];
-                  },
-                  body: TabBarView(
+                    ),
+                  ],
+                  floating: true,
+                  pinned: true,
+                  snap: true,
+                  bottom: TabBar(
+                    controller: _tabController,
+                    indicatorColor: white,
+                    indicatorWeight: 3,
+                    labelColor: white,
+                    labelStyle: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                    unselectedLabelColor: lightText,
+                    tabs: [
+                      Tab(
+                        icon: Icon(Icons.camera_alt),
+                      ),
+                      Tab(
+                        text: 'chatsC'.tr,
+                      ),
+                      Tab(
+                        text: 'statusC'.tr,
+                      ),
+                      Tab(
+                        text: 'callsC'.tr,
+                      ),
+                    ],
+                  ),
+                  elevation: 20,
+                  titleSpacing: 20,
+                ),
+              ];
+            },
+            body: StreamBuilder(
+              stream: Connectivity().onConnectivityChanged,
+              builder: (BuildContext context,
+                  AsyncSnapshot<ConnectivityResult> snapshot) {
+                if (snapshot != null &&
+                    snapshot.hasData &&
+                    snapshot.data != ConnectivityResult.none) {
+                  return TabBarView(
                     controller: _tabController,
                     children: <Widget>[
                       CameraScreen(
@@ -290,28 +290,28 @@ class _NavigationScreenState extends State<NavigationScreen>
                       StatusScreen(),
                       CallsScreen(),
                     ],
+                  );
+                } else {
+                  return NoConnection(image: '../assets/images/1.png');
+                }
+              },
+            ),
+          ),
+          floatingActionButton: showFab
+              ? FloatingActionButton(
+                  backgroundColor: one,
+                  child: Icon(
+                    Icons.message,
+                    color: Colors.white,
                   ),
-                ),
-                floatingActionButton: showFab
-                    ? FloatingActionButton(
-                        backgroundColor: one,
-                        child: Icon(
-                          Icons.message,
-                          color: Colors.white,
-                        ),
-                        onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (builder) => SelectContact(),
-                          ),
-                        ),
-                      )
-                    : null,
-              );
-            } else {
-              return NoConnection(image: '../assets/images/1.png');
-            }
-          },
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (builder) => SelectContact(),
+                    ),
+                  ),
+                )
+              : null,
         ),
       );
 

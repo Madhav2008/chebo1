@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables, prefer_final_fields, sized_box_for_whitespace, file_names
 
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
@@ -451,6 +452,12 @@ class _ChatScreenState extends State<ChatScreen> {
                                     ),
                                     onPressed: () {
                                       if (sendButton) {
+                                        AssetsAudioPlayer.newPlayer().open(
+                                          Audio(
+                                              "../assets/sounds/whatsapp_incoming.mp3"),
+                                          autoStart: true,
+                                          showNotification: true,
+                                        );
                                         _scrollController.animateTo(
                                           _scrollController
                                               .position.maxScrollExtent,
