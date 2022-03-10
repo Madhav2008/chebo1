@@ -269,7 +269,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                             width: 30,
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width - 180,
+                            width: MediaQuery.of(context).size.width - 190,
                             child: TextField(
                               controller: _phoneController,
                               maxLength: 10,
