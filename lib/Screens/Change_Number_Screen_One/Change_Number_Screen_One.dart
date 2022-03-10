@@ -21,6 +21,8 @@ class ChangeNumberScreenOne extends StatelessWidget {
           children: [
             Image.asset(
               '../assets/images/changeNo.png',
+              width: 130,
+              height: 130,
             ),
             SizedBox(
               height: 30,

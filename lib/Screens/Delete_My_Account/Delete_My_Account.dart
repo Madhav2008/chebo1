@@ -5,6 +5,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
 import 'package:whatsapp/Screens/Change_Number_Screen_One/Change_Number_Screen_One.dart';
 import 'package:whatsapp/Screens/Country_Screen/Country_Screen.dart';
+import 'package:whatsapp/Screens/Delete_My_Account_Two/Delete_My_Account_Two.dart';
 
 class DeleteMyAccount extends StatefulWidget {
   DeleteMyAccount({
@@ -191,7 +192,17 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 15,
+                      height: 20,
+                    ),
+                    Text(
+                      'Country',
+                      style: TextStyle(
+                        color: grey,
+                        fontSize: 17,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -219,14 +230,10 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Expanded(
-                                child: Center(
-                                  child: Text(
-                                    countryName,
-                                    style: TextStyle(
-                                      fontSize: 17,
-                                    ),
-                                  ),
+                              Text(
+                                countryName,
+                                style: TextStyle(
+                                  fontSize: 17,
                                 ),
                               ),
                               Icon(
@@ -240,7 +247,17 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 25,
+                    ),
+                    Text(
+                      'Phone',
+                      style: TextStyle(
+                        color: grey,
+                        fontSize: 17,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
                     ),
                     Container(
                       width: MediaQuery.of(context).size.width - 80,
@@ -250,7 +267,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                  width: 1.5,
+                                  width: 1,
                                   color: one,
                                 ),
                               ),
@@ -261,6 +278,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                                 countryCode,
                                 style: TextStyle(
                                   fontSize: 17,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ),
@@ -288,6 +306,43 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                   ],
                 ),
               ),
+            ),
+            GestureDetector(
+              onTap: () {
+                _phoneController.text.isNotEmpty
+                    ? Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => DeleteMyAccountTwo(),
+                        ),
+                      )
+                    : ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text("Phone no. is required"),
+                        ),
+                      );
+              },
+              child: Center(
+                child: Container(
+                  color: Colors.red,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 13.0,
+                      vertical: 10.0,
+                    ),
+                    child: Text(
+                      'DELETE MY ACCOUNT',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
             ),
           ],
         ),
