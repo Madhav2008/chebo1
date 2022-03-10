@@ -19,7 +19,7 @@
 //     final List<StoryItem> storyItems = [
 //       StoryItem.text(
 //         title: '''Hey ! ''' + name + ''' This Side.''',
-//         backgroundColor: Colors.red,
+//         backgroundColor: red,
 //       ),
 //       StoryItem.pageImage(
 //         url: avatar,

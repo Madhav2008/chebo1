@@ -163,7 +163,7 @@ class _MultiDeviceBetaScreenState extends State<MultiDeviceBetaScreen> {
                     Text(
                       ' minor issues',
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: blue,
                         fontSize: 16,
                       ),
                     ),

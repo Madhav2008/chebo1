@@ -95,7 +95,7 @@ class _DeleteMyAccountTwoState extends State<DeleteMyAccountTwo> {
               },
               child: Center(
                 child: Container(
-                  color: Colors.red,
+                  color: red,
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: 13.0,

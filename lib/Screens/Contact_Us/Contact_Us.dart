@@ -59,7 +59,7 @@ class _ContactUsState extends State<ContactUs> {
         actions: [
           Theme(
             data: Theme.of(context).copyWith(
-              dividerColor: Colors.black,
+              dividerColor: black,
               iconTheme: IconThemeData(
                 color: white,
               ),
@@ -114,7 +114,7 @@ class _ContactUsState extends State<ContactUs> {
                 decoration: InputDecoration(
                   hintText: "Describe your problem",
                   hintStyle: TextStyle(
-                    color: Colors.grey,
+                    color: grey,
                   ),
                   contentPadding: EdgeInsets.all(5),
                 ),
@@ -132,7 +132,7 @@ class _ContactUsState extends State<ContactUs> {
                     child: Text(
                       'Visit our Help Centre',
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: blue,
                         fontSize: 20,
                       ),
                     ),

@@ -37,13 +37,13 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
               child: ListTile(
                 leading: Icon(
                   Icons.error,
-                  color: Colors.red,
+                  color: red,
                   size: 25,
                 ),
                 title: Text(
                   'Deleting your account will:',
                   style: TextStyle(
-                    color: Colors.red,
+                    color: red,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -180,7 +180,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                 //   );
                 // },
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'To delete your account, confirm your country code and enter your phone number.',
@@ -324,7 +324,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
               },
               child: Center(
                 child: Container(
-                  color: Colors.red,
+                  color: red,
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: 13.0,

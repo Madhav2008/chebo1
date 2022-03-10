@@ -75,7 +75,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
               },
               separatorBuilder: (context, index) {
                 return Divider(
-                  color: Colors.blue,
+                  color: blue,
                   thickness: 2,
                 );
               },
@@ -112,7 +112,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
               },
               separatorBuilder: (context, index) {
                 return Divider(
-                  color: Colors.blue,
+                  color: blue,
                   thickness: 2,
                 );
               },
@@ -229,7 +229,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundColor: Colors.transparent,
+                backgroundColor: transparent,
               ),
               title: Text(
                 "enterIsSend".tr,
@@ -258,7 +258,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundColor: Colors.transparent,
+                backgroundColor: transparent,
               ),
               title: Text(
                 "mediaVisibility".tr,
@@ -290,7 +290,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
                 fontSizeDialog(context);
               },
               leading: CircleAvatar(
-                backgroundColor: Colors.transparent,
+                backgroundColor: transparent,
               ),
               title: Text(
                 "fontSize".tr,
@@ -328,7 +328,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
             ),
             ListTile(
               leading: CircleAvatar(
-                backgroundColor: Colors.transparent,
+                backgroundColor: transparent,
               ),
               title: Text(
                 "keepChatsArchived".tr,

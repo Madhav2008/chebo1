@@ -83,7 +83,7 @@ class _ContactSupportState extends State<ContactSupport> {
                 decoration: InputDecoration(
                   hintText: "Describe your problem",
                   hintStyle: TextStyle(
-                    color: Colors.grey,
+                    color: grey,
                   ),
                   contentPadding: EdgeInsets.all(5),
                 ),
@@ -101,7 +101,7 @@ class _ContactSupportState extends State<ContactSupport> {
                     child: Text(
                       'Visit our Help Centre',
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: blue,
                         fontSize: 20,
                       ),
                     ),

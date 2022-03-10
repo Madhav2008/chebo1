@@ -72,7 +72,7 @@ class _DeleteMyAccountThreeState extends State<DeleteMyAccountThree> {
               },
               child: Center(
                 child: Container(
-                  color: Colors.red,
+                  color: red,
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: 13.0,

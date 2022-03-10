@@ -88,7 +88,7 @@ class _ScanQRCodeScreenState extends State<ScanQRCodeScreen> {
           Positioned(
             bottom: 0.0,
             child: Container(
-              color: Colors.transparent,
+              color: transparent,
               padding: EdgeInsets.only(
                 top: 5,
                 bottom: 5,
@@ -107,7 +107,7 @@ class _ScanQRCodeScreenState extends State<ScanQRCodeScreen> {
                             angle: transform,
                             child: Icon(
                               Icons.photo_library,
-                              color: Colors.white,
+                              color: white,
                               size: 28,
                             ),
                           ),
@@ -128,7 +128,7 @@ class _ScanQRCodeScreenState extends State<ScanQRCodeScreen> {
                         IconButton(
                           icon: Icon(
                             flash ? Icons.flash_on : Icons.flash_off,
-                            color: Colors.white,
+                            color: white,
                             size: 28,
                           ),
                           onPressed: () {

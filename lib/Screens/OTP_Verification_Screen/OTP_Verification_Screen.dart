@@ -26,7 +26,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: transparent,
         title: Text(
           'Verify +91 ' + widget.no,
           style: TextStyle(

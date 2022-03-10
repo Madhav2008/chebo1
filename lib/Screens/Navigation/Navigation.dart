@@ -116,7 +116,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                             actionIcon = Icon(Icons.close);
                             appBarTitle = TextField(
                               style: TextStyle(
-                                color: Colors.white,
+                                color: white,
                               ),
                               controller: _hi,
                               decoration: InputDecoration(
@@ -127,7 +127,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                                 ),
                                 hintText: "search".tr,
                                 hintStyle: TextStyle(
-                                  color: Colors.white,
+                                  color: white,
                                 ),
                               ),
                             );
@@ -150,7 +150,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                     ),
                     Theme(
                       data: Theme.of(context).copyWith(
-                        dividerColor: Colors.black,
+                        dividerColor: black,
                         iconTheme: IconThemeData(
                           color: white,
                         ),
@@ -252,7 +252,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                     labelStyle: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
-                    unselectedLabelColor: lightText,
+                    unselectedLabelColor: grey,
                     tabs: [
                       Tab(
                         icon: Icon(Icons.camera_alt),
@@ -302,7 +302,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                   backgroundColor: one,
                   child: Icon(
                     Icons.message,
-                    color: Colors.white,
+                    color: white,
                   ),
                   onPressed: () => Navigator.push(
                     context,

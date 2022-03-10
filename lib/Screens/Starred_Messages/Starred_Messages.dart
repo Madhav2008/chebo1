@@ -62,7 +62,7 @@ class _StarredMessagesState extends State<StarredMessages> {
                   actionIcon = Icon(Icons.close);
                   appBarTitle = TextField(
                     style: TextStyle(
-                      color: Colors.white,
+                      color: white,
                     ),
                     controller: _hi,
                     decoration: InputDecoration(
@@ -75,7 +75,7 @@ class _StarredMessagesState extends State<StarredMessages> {
                       ),
                       hintText: "Search",
                       hintStyle: TextStyle(
-                        color: Colors.white,
+                        color: white,
                       ),
                     ),
                   );
@@ -92,7 +92,7 @@ class _StarredMessagesState extends State<StarredMessages> {
           ),
           Theme(
             data: Theme.of(context).copyWith(
-              dividerColor: Colors.black,
+              dividerColor: black,
               iconTheme: IconThemeData(
                 color: white,
               ),

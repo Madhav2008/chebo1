@@ -178,7 +178,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                         'Learn more',
                         style: TextStyle(
                           fontSize: 15,
-                          color: Colors.blue,
+                          color: blue,
                         ),
                       ),
                     ),

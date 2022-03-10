@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
 
@@ -32,7 +33,7 @@ class ChatsScreen extends StatelessWidget {
             },
             leading: CircleAvatar(
               foregroundColor: Theme.of(context).primaryColor,
-              backgroundColor: Colors.grey,
+              backgroundColor: grey,
               backgroundImage: NetworkImage(dummyData[i].avatarUrl),
             ),
             title: Row(
@@ -47,7 +48,7 @@ class ChatsScreen extends StatelessWidget {
                 Text(
                   dummyData[i].time,
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: grey,
                     fontSize: 14.0,
                   ),
                 ),
@@ -60,7 +61,7 @@ class ChatsScreen extends StatelessWidget {
                   Icon(
                     Icons.done_all,
                     size: 20,
-                    color: Colors.blue,
+                    color: blue,
                   ),
                   SizedBox(
                     width: 5,
@@ -68,7 +69,7 @@ class ChatsScreen extends StatelessWidget {
                   Text(
                     dummyData[i].message,
                     style: TextStyle(
-                      color: Colors.grey,
+                      color: grey,
                       fontSize: 15.0,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -77,9 +78,6 @@ class ChatsScreen extends StatelessWidget {
               ),
             ),
           ),
-          // SizedBox(
-          //   height: 5,
-          // ),
         ],
       ),
     );

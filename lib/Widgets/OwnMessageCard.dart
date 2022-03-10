@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 
 class OwnMessageCard extends StatelessWidget {
   OwnMessageCard({
@@ -12,7 +13,7 @@ class OwnMessageCard extends StatelessWidget {
 
   final Color color;
   final Color text;
-  
+
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -52,7 +53,7 @@ class OwnMessageCard extends StatelessWidget {
                       '3:25PM',
                       style: TextStyle(
                         fontSize: 13,
-                        color: Colors.grey[600],
+                        color: grey[600],
                       ),
                     ),
                     SizedBox(
@@ -61,7 +62,7 @@ class OwnMessageCard extends StatelessWidget {
                     Icon(
                       Icons.done_all,
                       size: 20,
-                      color: Colors.blue,
+                      color: blue,
                     ),
                   ],
                 ),

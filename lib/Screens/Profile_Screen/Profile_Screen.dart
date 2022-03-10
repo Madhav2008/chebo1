@@ -123,7 +123,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       child: CircleAvatar(
                         radius: 80,
                         foregroundColor: Theme.of(context).primaryColor,
-                        backgroundColor: Colors.grey,
+                        backgroundColor: grey,
                         backgroundImage: NetworkImage(
                           widget.avatar,
                         ),
@@ -137,7 +137,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: GestureDetector(
                           onTap: () {
                             // showModalBottomSheet(
-                            //   backgroundColor: Colors.transparent,
+                            //   backgroundColor: transparent,
                             //   context: context,
                             //   builder: (builder) => bottomSheet(context),
                             // );
@@ -167,7 +167,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ListTile(
               onTap: () {
                 showModalBottomSheet(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                   context: context,
                   builder: (builder) => bottomSheet1(context),
                 );

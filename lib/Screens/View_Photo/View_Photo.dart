@@ -12,9 +12,9 @@ class CameraViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: black,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: black,
         actions: [
           IconButton(
             icon: Icon(
@@ -62,12 +62,12 @@ class CameraViewPage extends StatelessWidget {
             Positioned(
               bottom: 0,
               child: Container(
-                color: Colors.black38,
+                color: black,
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(vertical: 5, horizontal: 8),
                 child: TextFormField(
                   style: TextStyle(
-                    color: Colors.white,
+                    color: white,
                     fontSize: 17,
                   ),
                   maxLines: 6,
@@ -77,11 +77,11 @@ class CameraViewPage extends StatelessWidget {
                     hintText: "Add Caption....",
                     prefixIcon: Icon(
                       Icons.add_photo_alternate,
-                      color: Colors.white,
+                      color: white,
                       size: 27,
                     ),
                     hintStyle: TextStyle(
-                      color: Colors.white,
+                      color: white,
                       fontSize: 17,
                     ),
                     suffixIcon: CircleAvatar(
@@ -89,7 +89,7 @@ class CameraViewPage extends StatelessWidget {
                       backgroundColor: one,
                       child: Icon(
                         Icons.check,
-                        color: Colors.white,
+                        color: white,
                         size: 27,
                       ),
                     ),

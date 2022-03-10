@@ -26,7 +26,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
         actions: [
           Theme(
             data: Theme.of(context).copyWith(
-              dividerColor: Colors.black,
+              dividerColor: black,
               iconTheme: IconThemeData(
                 color: white,
               ),

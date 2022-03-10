@@ -63,7 +63,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
                   actionIcon = Icon(Icons.close);
                   appBarTitle = TextField(
                     style: TextStyle(
-                      color: Colors.white,
+                      color: white,
                     ),
                     controller: _hi,
                     decoration: InputDecoration(
@@ -76,7 +76,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
                       ),
                       hintText: "Search...",
                       hintStyle: TextStyle(
-                        color: Colors.white,
+                        color: white,
                       ),
                     ),
                   );

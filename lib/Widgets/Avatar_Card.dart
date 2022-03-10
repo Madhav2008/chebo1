@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Contact_Model.dart';
 
 class AvatarCard extends StatelessWidget {
@@ -10,7 +11,10 @@ class AvatarCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 8,),
+      padding: EdgeInsets.symmetric(
+        vertical: 2,
+        horizontal: 8,
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -19,7 +23,7 @@ class AvatarCard extends StatelessWidget {
               CircleAvatar(
                 radius: 23,
                 foregroundColor: Theme.of(context).primaryColor,
-                backgroundColor: Colors.grey,
+                backgroundColor: grey,
                 backgroundImage: NetworkImage(
                   'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
                 ),
@@ -28,11 +32,11 @@ class AvatarCard extends StatelessWidget {
                 bottom: 0,
                 right: 0,
                 child: CircleAvatar(
-                  backgroundColor: Colors.grey,
+                  backgroundColor: grey,
                   radius: 11,
                   child: Icon(
                     Icons.clear,
-                    color: Colors.white,
+                    color: white,
                     size: 13,
                   ),
                 ),

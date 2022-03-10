@@ -19,7 +19,7 @@ class ContactCard extends StatelessWidget {
             CircleAvatar(
               radius: 23,
               foregroundColor: Theme.of(context).primaryColor,
-              backgroundColor: Colors.grey,
+              backgroundColor: grey,
               backgroundImage: NetworkImage(
                 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
               ),
@@ -33,7 +33,7 @@ class ContactCard extends StatelessWidget {
                       radius: 11,
                       child: Icon(
                         Icons.check,
-                        color: Colors.white,
+                        color: white,
                         size: 13,
                       ),
                     ),

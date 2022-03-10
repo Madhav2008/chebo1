@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 
 class ReplyCard extends StatelessWidget {
   ReplyCard({
@@ -49,7 +50,7 @@ class ReplyCard extends StatelessWidget {
                   '9:50AM',
                   style: TextStyle(
                     fontSize: 13,
-                    color: Colors.grey[600],
+                    color: grey[600],
                   ),
                 ),
               ),

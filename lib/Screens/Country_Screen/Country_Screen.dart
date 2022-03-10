@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
 
 class CountryScreen extends StatefulWidget {
@@ -95,7 +96,7 @@ class _CountryScreenState extends State<CountryScreen> {
         widget.setCountryData(country);
       },
       child: Card(
-        color: Colors.transparent,
+        color: transparent,
         margin: EdgeInsets.all(
           0.15,
         ),

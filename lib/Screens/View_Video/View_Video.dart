@@ -4,6 +4,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 
 class VideoViewPage extends StatefulWidget {
   VideoViewPage({
@@ -31,9 +32,9 @@ class _VideoViewPageState extends State<VideoViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: black,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: black,
         actions: [
           IconButton(
               icon: Icon(
@@ -79,12 +80,12 @@ class _VideoViewPageState extends State<VideoViewPage> {
             Positioned(
               bottom: 0,
               child: Container(
-                color: Colors.black38,
+                color: black,
                 width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.symmetric(vertical: 5, horizontal: 8),
                 child: TextFormField(
                   style: TextStyle(
-                    color: Colors.white,
+                    color: white,
                     fontSize: 17,
                   ),
                   maxLines: 6,
@@ -94,19 +95,19 @@ class _VideoViewPageState extends State<VideoViewPage> {
                       hintText: "Add Caption....",
                       prefixIcon: Icon(
                         Icons.add_photo_alternate,
-                        color: Colors.white,
+                        color: white,
                         size: 27,
                       ),
                       hintStyle: TextStyle(
-                        color: Colors.white,
+                        color: white,
                         fontSize: 17,
                       ),
                       suffixIcon: CircleAvatar(
                         radius: 27,
-                        backgroundColor: Colors.tealAccent[700],
+                        backgroundColor: one,
                         child: Icon(
                           Icons.check,
-                          color: Colors.white,
+                          color: white,
                           size: 27,
                         ),
                       )),
@@ -125,12 +126,12 @@ class _VideoViewPageState extends State<VideoViewPage> {
                 },
                 child: CircleAvatar(
                   radius: 33,
-                  backgroundColor: Colors.black38,
+                  backgroundColor: black,
                   child: Icon(
                     _controller.value.isPlaying
                         ? Icons.pause
                         : Icons.play_arrow,
-                    color: Colors.white,
+                    color: white,
                     size: 50,
                   ),
                 ),

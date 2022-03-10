@@ -54,7 +54,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -133,7 +133,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'Back up to Google Drive',
@@ -154,7 +154,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'Google Account',
@@ -175,7 +175,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'Back up over',
@@ -196,7 +196,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'Include videos',

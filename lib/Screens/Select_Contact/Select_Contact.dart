@@ -233,7 +233,7 @@ class _SelectContactState extends State<SelectContact> {
                   actionIcon = Icon(Icons.close);
                   appBarTitle = TextField(
                     style: TextStyle(
-                      color: Colors.white,
+                      color: white,
                     ),
                     controller: _hi,
                     decoration: InputDecoration(
@@ -244,7 +244,7 @@ class _SelectContactState extends State<SelectContact> {
                       ),
                       hintText: "Search...",
                       hintStyle: TextStyle(
-                        color: Colors.white,
+                        color: white,
                       ),
                     ),
                   );
@@ -280,7 +280,7 @@ class _SelectContactState extends State<SelectContact> {
           ),
           Theme(
             data: Theme.of(context).copyWith(
-              dividerColor: Colors.black,
+              dividerColor: black,
               iconTheme: IconThemeData(
                 color: white,
               ),

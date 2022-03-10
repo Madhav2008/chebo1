@@ -37,7 +37,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                   actionIcon = Icon(Icons.close);
                   appBarTitle = TextField(
                     style: TextStyle(
-                      color: Colors.white,
+                      color: white,
                     ),
                     controller: _hi,
                     decoration: InputDecoration(
@@ -48,7 +48,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                       ),
                       hintText: "Search",
                       hintStyle: TextStyle(
-                        color: Colors.white,
+                        color: white,
                       ),
                     ),
                   );
@@ -81,7 +81,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
               child: ListTile(
                 leading: CircleAvatar(
                   foregroundColor: Theme.of(context).primaryColor,
-                  backgroundColor: Colors.grey,
+                  backgroundColor: grey,
                   backgroundImage: NetworkImage(dummyData[i].avatarUrl),
                 ),
                 title: Row(
@@ -94,7 +94,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                     Text(
                       dummyData[i].time,
                       style: TextStyle(
-                        color: Colors.grey,
+                        color: grey,
                         fontSize: 14.0,
                       ),
                     ),
@@ -107,7 +107,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                       Icon(
                         Icons.done_all,
                         size: 20,
-                        color: Colors.blue,
+                        color: blue,
                       ),
                       SizedBox(
                         width: 5,
@@ -115,7 +115,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                       Text(
                         dummyData[i].message,
                         style: TextStyle(
-                          color: Colors.grey,
+                          color: grey,
                           fontSize: 15.0,
                         ),
                       ),

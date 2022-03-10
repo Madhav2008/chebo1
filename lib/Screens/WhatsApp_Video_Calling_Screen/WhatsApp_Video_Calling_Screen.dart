@@ -85,7 +85,7 @@ class _WhatsAppVideoCallingScreenState
             top: 30.0,
             child: Container(
               decoration: BoxDecoration(
-                // color: Colors.grey.shade900,
+                // color: grey.shade900,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: EdgeInsets.only(
@@ -126,7 +126,7 @@ class _WhatsAppVideoCallingScreenState
             bottom: 0.0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.grey.shade900,
+                color: grey.shade900,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: EdgeInsets.only(
@@ -153,7 +153,7 @@ class _WhatsAppVideoCallingScreenState
                           angle: transform,
                           child: Icon(
                             Icons.flip_camera_ios,
-                            color: Colors.white,
+                            color: white,
                             size: 28,
                           ),
                         ),
@@ -173,7 +173,7 @@ class _WhatsAppVideoCallingScreenState
                       IconButton(
                         icon: Icon(
                           camera ? Icons.videocam : Icons.videocam_off,
-                          color: Colors.white,
+                          color: white,
                           size: 28,
                         ),
                         onPressed: () {
@@ -188,7 +188,7 @@ class _WhatsAppVideoCallingScreenState
                       IconButton(
                         icon: Icon(
                           mic ? Icons.mic : Icons.mic_off,
-                          color: Colors.white,
+                          color: white,
                           size: 28,
                         ),
                         onPressed: () {
@@ -202,14 +202,14 @@ class _WhatsAppVideoCallingScreenState
                         width: 50,
                         height: 50,
                         decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: red,
                           borderRadius: BorderRadius.circular(25),
                         ),
                         child: IconButton(
-                          color: Colors.red,
+                          color: red,
                           icon: Icon(
                             Icons.call_end,
-                            color: Colors.white,
+                            color: white,
                             size: 28,
                           ),
                           onPressed: () {

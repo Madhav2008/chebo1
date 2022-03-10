@@ -54,7 +54,7 @@ class SettingsScreen extends StatelessWidget {
                 child: CircleAvatar(
                   radius: 20,
                   foregroundColor: Theme.of(context).primaryColor,
-                  backgroundColor: Colors.grey,
+                  backgroundColor: grey,
                   backgroundImage: NetworkImage(
                     avatar,
                   ),
@@ -79,7 +79,7 @@ class SettingsScreen extends StatelessWidget {
                 child: Text(
                   about,
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: grey,
                     fontSize: 15.0,
                   ),
                 ),

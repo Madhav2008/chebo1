@@ -53,7 +53,7 @@ class StatusScreen extends StatelessWidget {
                     width: 20,
                     child: Icon(
                       Icons.add,
-                      color: Colors.white,
+                      color: white,
                       size: 15,
                     ),
                     decoration: BoxDecoration(
@@ -77,7 +77,7 @@ class StatusScreen extends StatelessWidget {
             child: Text(
               "Viewed updates",
               style: TextStyle(
-                color: pgrey,
+                color: grey,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -141,7 +141,7 @@ class StatusScreen extends StatelessWidget {
                 ),
                 Theme(
                   data: ThemeData().copyWith(
-                    dividerColor: Colors.transparent,
+                    dividerColor: transparent,
                   ),
                   child: ExpansionTile(
                     tilePadding: EdgeInsets.all(8.0),
@@ -150,7 +150,7 @@ class StatusScreen extends StatelessWidget {
                     title: Text(
                       "Muted updates",
                       style: TextStyle(
-                        color: pgrey,
+                        color: grey,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -223,7 +223,7 @@ class StatusScreen extends StatelessWidget {
           Container(
             height: 48,
             child: FloatingActionButton(
-              backgroundColor: Colors.blueGrey[100],
+              backgroundColor: grey[100],
               elevation: 8,
               onPressed: () {
                 Navigator.push(
@@ -235,7 +235,7 @@ class StatusScreen extends StatelessWidget {
               },
               child: Icon(
                 Icons.edit,
-                color: Colors.blueGrey[900],
+                color: grey[900],
               ),
             ),
           ),
@@ -255,7 +255,7 @@ class StatusScreen extends StatelessWidget {
             },
             child: Icon(
               Icons.camera_alt,
-              color: Colors.white,
+              color: white,
             ),
           ),
         ],

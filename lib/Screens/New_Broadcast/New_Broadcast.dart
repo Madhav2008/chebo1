@@ -98,7 +98,7 @@ class _NewBroadcastState extends State<NewBroadcast> {
                     children: [
                       Container(
                         height: 75,
-                        color: Colors.white,
+                        color: white,
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: contacts.length,
@@ -134,8 +134,7 @@ class _NewBroadcastState extends State<NewBroadcast> {
         onPressed: () {
           broadcastmember.length > 1
               ? Navigator.pop(context)
-              :
-              ScaffoldMessenger.of(context).showSnackBar(
+              : ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text("At least 2 contact must be selected"),
                   ),

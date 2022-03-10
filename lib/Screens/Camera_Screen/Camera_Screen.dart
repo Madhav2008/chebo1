@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables, sized_box_for_whitespace, file_names
 
 import 'dart:math';
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -65,7 +64,7 @@ class _CameraScreenState extends State<CameraScreen> {
           Positioned(
             bottom: 0.0,
             child: Container(
-              color: Colors.transparent,
+              color: transparent,
               padding: EdgeInsets.only(
                 top: 5,
                 bottom: 5,
@@ -80,7 +79,7 @@ class _CameraScreenState extends State<CameraScreen> {
                       IconButton(
                           icon: Icon(
                             flash ? Icons.flash_on : Icons.flash_off,
-                            color: Colors.white,
+                            color: white,
                             size: 28,
                           ),
                           onPressed: () {
@@ -120,12 +119,12 @@ class _CameraScreenState extends State<CameraScreen> {
                         child: isRecoring
                             ? Icon(
                                 Icons.radio_button_on,
-                                color: Colors.red,
+                                color: red,
                                 size: 80,
                               )
                             : Icon(
                                 Icons.panorama_fish_eye,
-                                color: Colors.white,
+                                color: white,
                                 size: 70,
                               ),
                       ),
@@ -134,7 +133,7 @@ class _CameraScreenState extends State<CameraScreen> {
                             angle: transform,
                             child: Icon(
                               Icons.flip_camera_ios,
-                              color: Colors.white,
+                              color: white,
                               size: 28,
                             ),
                           ),
@@ -156,7 +155,7 @@ class _CameraScreenState extends State<CameraScreen> {
                   Text(
                     "Hold for Video, tap for photo",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: white,
                     ),
                     textAlign: TextAlign.center,
                   )

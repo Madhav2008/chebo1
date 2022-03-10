@@ -34,7 +34,7 @@ class CallsScreen extends StatelessWidget {
           callCard(
             "Vijay Arora",
             Icons.call_missed,
-            Colors.red,
+            red,
             "Jan 20, 20:20PM",
             "https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
           ),
@@ -62,14 +62,14 @@ class CallsScreen extends StatelessWidget {
           callCard(
             "Vijay Arora",
             Icons.call_missed,
-            Colors.red,
+            red,
             "Jan 15, 11:30AM",
             "https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
           ),
           callCard(
             "Sonia Arora",
             Icons.call_missed,
-            Colors.red,
+            red,
             "Jan 15, 11:30AM",
             "https://images.pexels.com/photos/586744/pexels-photo-586744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
           ),
@@ -79,7 +79,7 @@ class CallsScreen extends StatelessWidget {
         backgroundColor: one,
         child: Icon(
           Icons.add_call,
-          color: Colors.white,
+          color: white,
         ),
         onPressed: () => Navigator.push(
           context,

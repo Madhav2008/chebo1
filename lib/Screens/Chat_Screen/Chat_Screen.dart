@@ -189,7 +189,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
                 Theme(
                   data: Theme.of(context).copyWith(
-                    dividerColor: Colors.black,
+                    dividerColor: black,
                     iconTheme: IconThemeData(
                       color: white,
                     ),
@@ -371,7 +371,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Type a message",
-                                      hintStyle: TextStyle(color: Colors.grey),
+                                      hintStyle: TextStyle(color: grey),
                                       prefixIcon: IconButton(
                                         icon: Icon(
                                           show
@@ -395,8 +395,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                             icon: Icon(Icons.attach_file),
                                             onPressed: () {
                                               showModalBottomSheet(
-                                                backgroundColor:
-                                                    Colors.transparent,
+                                                backgroundColor: transparent,
                                                 context: context,
                                                 builder: (builder) =>
                                                     bottomSheet(),
@@ -448,7 +447,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                   child: IconButton(
                                     icon: Icon(
                                       sendButton ? Icons.send : Icons.mic,
-                                      color: Colors.white,
+                                      color: white,
                                     ),
                                     onPressed: () {
                                       if (sendButton) {
@@ -526,7 +525,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: [
                   iconCreation(
                     Icons.insert_drive_file,
-                    Colors.deepPurple,
+                    deepPurple,
                     "Document",
                     () {},
                   ),
@@ -535,7 +534,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   iconCreation(
                     Icons.camera_alt,
-                    Colors.pink.shade500,
+                    pink.shade500,
                     "Camera",
                     () {
                       Navigator.push(
@@ -553,7 +552,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   iconCreation(
                     Icons.insert_photo,
-                    Colors.purple,
+                    purple,
                     "Gallery",
                     () async {
                       file = await _picker.pickImage(
@@ -579,7 +578,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: [
                   iconCreation(
                     Icons.headset,
-                    Colors.orange.shade900,
+                    orange.shade900,
                     "Audio",
                     () {},
                   ),
@@ -597,7 +596,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   iconCreation(
                     Icons.location_pin,
-                    Colors.green.shade700,
+                    green.shade700,
                     "Location",
                     () {},
                   ),
@@ -611,7 +610,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 children: [
                   iconCreation(
                     Icons.person,
-                    Colors.blue.shade800,
+                    blue.shade800,
                     "Contact",
                     () {},
                   ),
@@ -640,7 +639,7 @@ class _ChatScreenState extends State<ChatScreen> {
             child: Icon(
               icons,
               size: 29,
-              color: Colors.white,
+              color: white,
             ),
           ),
           SizedBox(

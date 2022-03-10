@@ -36,7 +36,7 @@ class LandingPage extends StatelessWidget {
               '../assets/images/first1.png',
               fit: BoxFit.cover,
               width: MediaQuery.of(context).size.width - 100,
-              color: secondary,
+              color: primary,
             ),
           ),
           Expanded(
@@ -60,7 +60,7 @@ class LandingPage extends StatelessWidget {
                   TextSpan(
                     text: 'Privacy Policy. ',
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: blue,
                       fontSize: 17,
                     ),
                   ),
@@ -74,7 +74,7 @@ class LandingPage extends StatelessWidget {
                   TextSpan(
                     text: 'Terms of service.',
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: blue,
                       fontSize: 17,
                     ),
                   ),
@@ -103,7 +103,7 @@ class LandingPage extends StatelessWidget {
                     color: one,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black,
+                        color: black,
                         blurRadius: 150.0,
                         spreadRadius: 5.0,
                         offset: Offset(

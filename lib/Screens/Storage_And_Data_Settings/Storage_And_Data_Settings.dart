@@ -85,7 +85,7 @@ class _StorageAndDataSettingsState extends State<StorageAndDataSettings> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'Use less data for calls',
@@ -133,7 +133,7 @@ class _StorageAndDataSettingsState extends State<StorageAndDataSettings> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'When using mobile data',
@@ -154,7 +154,7 @@ class _StorageAndDataSettingsState extends State<StorageAndDataSettings> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'When connected on Wi-Fi',
@@ -175,7 +175,7 @@ class _StorageAndDataSettingsState extends State<StorageAndDataSettings> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'When roaming',
@@ -222,7 +222,7 @@ class _StorageAndDataSettingsState extends State<StorageAndDataSettings> {
               ),
               ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: transparent,
                 ),
                 title: Text(
                   'Photo upload quality',

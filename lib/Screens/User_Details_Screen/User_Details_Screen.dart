@@ -49,7 +49,7 @@ class UserDetailsScreen extends StatelessWidget {
             ListTile(
               // onTap: () {
               // showModalBottomSheet(
-              //   backgroundColor: Colors.transparent,
+              //   backgroundColor: transparent,
               //   context: context,
               //   builder: (builder) => bottomSheet1(context),
               // );
@@ -102,7 +102,7 @@ class UserDetailsScreen extends StatelessWidget {
             ListTile(
               // onTap: () {
               // showModalBottomSheet(
-              //   backgroundColor: Colors.transparent,
+              //   backgroundColor: transparent,
               //   context: context,
               //   builder: (builder) => bottomSheet1(context),
               // );
