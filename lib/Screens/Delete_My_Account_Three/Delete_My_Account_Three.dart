@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -58,6 +58,11 @@ class _DeleteMyAccountThreeState extends State<DeleteMyAccountThree> {
             ),
             GestureDetector(
               onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text("Your WhatsApp account has been deleted."),
+                  ),
+                );
                 Navigator.push(
                   context,
                   MaterialPageRoute(

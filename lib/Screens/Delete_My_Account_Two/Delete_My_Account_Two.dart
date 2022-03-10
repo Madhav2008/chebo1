@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -14,7 +14,7 @@ class DeleteMyAccountTwo extends StatefulWidget {
 class _DeleteMyAccountTwoState extends State<DeleteMyAccountTwo> {
   final TextEditingController _improveController = TextEditingController();
 
-  var _reason = [
+  final _reason = [
     'I am changing my device',
     'I am changing my phone number',
     'I am deleting my account temporarily',
