@@ -11,7 +11,9 @@ import 'package:whatsapp/Screens/Two_Step_Verification/Two_Step_Verification.dar
 import 'package:get/get.dart';
 
 class AccountScreen extends StatelessWidget {
-  AccountScreen({Key? key}) : super(key: key);
+  AccountScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

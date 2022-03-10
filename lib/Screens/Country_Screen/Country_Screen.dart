@@ -1,12 +1,12 @@
 // ignore_for_file: file_names, prefer_const_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
-import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
-import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 
 class CountryScreen extends StatefulWidget {
-  CountryScreen({Key? key}) : super(key: key);
+  CountryScreen({Key? key, required this.setCountryData}) : super(key: key);
+
+  final Function setCountryData;
 
   @override
   State<CountryScreen> createState() => _CountryScreenState();
@@ -27,16 +27,16 @@ class _CountryScreenState extends State<CountryScreen> {
           "https://images.emojiterra.com/google/noto-emoji/v2.028/128px/1f1f5-1f1f0.png",
     ),
     CountryModel(
-      name: "United States",
-      code: "+1",
-      flag:
-          "https://images.emojiterra.com/google/noto-emoji/v2.028/128px/1f1fa-1f1f8.png",
-    ),
-    CountryModel(
       name: "South Africa",
       code: "+27",
       flag:
           "https://images.emojiterra.com/google/noto-emoji/v2.028/128px/1f1ff-1f1e6.png",
+    ),
+    CountryModel(
+      name: "United States",
+      code: "+1",
+      flag:
+          "https://images.emojiterra.com/google/noto-emoji/v2.028/128px/1f1fa-1f1f8.png",
     ),
     CountryModel(
       name: "Afghanistan",
@@ -64,7 +64,6 @@ class _CountryScreenState extends State<CountryScreen> {
         title: Text(
           'Choose a country',
           style: TextStyle(
-            color: one,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -73,7 +72,6 @@ class _CountryScreenState extends State<CountryScreen> {
             onPressed: () {},
             icon: Icon(
               Icons.search,
-              color: one,
             ),
           ),
         ],
@@ -94,15 +92,7 @@ class _CountryScreenState extends State<CountryScreen> {
   Widget card(CountryModel country) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (builder) => LoginScreen(
-              country: country.name,
-              countryCode: country.code,
-            ),
-          ),
-        );
+        widget.setCountryData(country);
       },
       child: Card(
         color: Colors.transparent,

@@ -33,8 +33,10 @@ class LandingPage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Image.asset(
-              '../assets/images/first.png',
+              '../assets/images/first1.png',
               fit: BoxFit.cover,
+              width: MediaQuery.of(context).size.width - 100,
+              color: secondary,
             ),
           ),
           Expanded(
@@ -90,10 +92,7 @@ class LandingPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => LoginScreen(
-                      country: "India",
-                      countryCode: "+91",
-                    ),
+                    builder: (BuildContext context) => LoginScreen(),
                   ),
                 );
               },
@@ -122,7 +121,7 @@ class LandingPage extends StatelessWidget {
                     child: Text(
                       'AGREE AND CONTINUE',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: MediaQuery.of(context).size.width / 20,
                         color: white,
                         letterSpacing: 2,
                       ),

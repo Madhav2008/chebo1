@@ -2,24 +2,27 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Country_Model.dart';
 import 'package:whatsapp/Screens/Country_Screen/Country_Screen.dart';
 import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({
     Key? key,
-    required this.country,
-    required this.countryCode,
+    // required this.country,
+    // required this.countryCode,
   }) : super(key: key);
 
-  final String country;
-  final String countryCode;
+  // final String country;
+  // final String countryCode;
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  String countryName = 'India';
+  String countryCode = '+91';
   final TextEditingController _phoneController = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -49,18 +52,6 @@ class _LoginScreenState extends State<LoginScreen> {
             itemBuilder: (BuildContext contesxt) {
               return [
                 PopupMenuItem(
-                  child: Text("Invite a friend"),
-                  value: "Invite a friend",
-                ),
-                PopupMenuItem(
-                  child: Text("Contacts"),
-                  value: "Contacts",
-                ),
-                PopupMenuItem(
-                  child: Text("Refresh"),
-                  value: "Refresh",
-                ),
-                PopupMenuItem(
                   child: Text("Help"),
                   value: "Help",
                 ),
@@ -79,6 +70,9 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               child: Text(
                 'WhatsApp will send an SMS message to verify your phone number.',
+                style: TextStyle(
+                  fontSize: 17,
+                ),
               ),
             ),
             SizedBox(height: 10),
@@ -93,6 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 "What's my number?",
                 style: TextStyle(
                   color: one,
+                  fontSize: 17,
                 ),
               ),
             ),
@@ -102,7 +97,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => CountryScreen(),
+                    builder: (builder) => CountryScreen(
+                      setCountryData: setCountryData,
+                    ),
                   ),
                 );
               },
@@ -124,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Expanded(
                         child: Center(
                           child: Text(
-                            widget.country,
+                            countryName,
                             style: TextStyle(
                               fontSize: 17,
                             ),
@@ -160,7 +157,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Padding(
                       padding: EdgeInsets.all(10.0),
                       child: Text(
-                        widget.countryCode,
+                        countryCode,
                         style: TextStyle(
                           fontSize: 17,
                         ),
@@ -186,10 +183,19 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             SizedBox(
-              height: 100,
+              height: 10,
+            ),
+            Text(
+              "Carrier SMS charges may apply",
+              style: TextStyle(
+                color: grey,
+                fontSize: 17,
+              ),
             ),
             Expanded(
-              child: Container(),
+              child: Container(
+                height: 1,
+              ),
             ),
             GestureDetector(
               onTap: () {
@@ -243,7 +249,7 @@ class _LoginScreenState extends State<LoginScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              widget.countryCode + ' ' + _phoneController.text,
+              countryCode + ' ' + _phoneController.text,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -290,8 +296,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         builder: (BuildContext context) {
                           return OTPVerificationScreen(
                             no: _phoneController.text,
-                            countryCode: widget.countryCode,
-                            country: widget.country,
+                            countryCode: countryCode,
+                            country: countryName,
                           );
                         },
                       ),
@@ -335,7 +341,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Text(
-              widget.countryCode + ' ' + _phoneController.text,
+              countryCode + ' ' + _phoneController.text,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -382,8 +388,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         builder: (BuildContext context) =>
                             OTPVerificationScreen(
                           no: _phoneController.text,
-                          countryCode: widget.countryCode,
-                          country: widget.country,
+                          countryCode: countryCode,
+                          country: countryName,
                         ),
                       ),
                     );
@@ -405,5 +411,13 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
+  }
+
+  void setCountryData(CountryModel countryModel) {
+    setState(() {
+      countryName = countryModel.name;
+      countryCode = countryModel.code;
+    });
+    Navigator.pop(context);
   }
 }

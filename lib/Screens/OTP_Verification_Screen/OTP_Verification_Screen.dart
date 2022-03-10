@@ -92,10 +92,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => LoginScreen(
-                      country: widget.country,
-                      countryCode: widget.countryCode,
-                    ),
+                    builder: (builder) => LoginScreen(),
                   ),
                 );
               },

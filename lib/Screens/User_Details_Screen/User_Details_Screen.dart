@@ -10,7 +10,8 @@ class UserDetailsScreen extends StatelessWidget {
     required this.no,
   }) : super(key: key);
 
-  String no;
+  final String no;
+
   @override
   Widget build(BuildContext context) {
     TextEditingController _nameController = TextEditingController();

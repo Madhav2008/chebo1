@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_constructors_in_immutables, sized_box_for_whitespace, file_names
 
 import 'dart:math';
-
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -39,6 +39,17 @@ class _WhatsAppVideoCallingScreenState
     super.initState();
     _cameraController = CameraController(cameras[0], ResolutionPreset.high);
     cameraValue = _cameraController.initialize();
+  }
+
+  void main() {
+    AssetsAudioPlayer.newPlayer().open(
+      Audio(
+        "../assets/sounds/calling.mp3",
+      ),
+      autoStart: true,
+      showNotification: true,
+      loopMode: LoopMode.single,
+    );
   }
 
   @override

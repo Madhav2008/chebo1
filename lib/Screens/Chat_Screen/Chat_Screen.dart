@@ -454,7 +454,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                       if (sendButton) {
                                         AssetsAudioPlayer.newPlayer().open(
                                           Audio(
-                                              "../assets/sounds/whatsapp_incoming.mp3"),
+                                            "../assets/sounds/message_received.mp3",
+                                          ),
                                           autoStart: true,
                                           showNotification: true,
                                         );
