@@ -26,223 +26,223 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
           'Search Help Centre',
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(
-                top: 20.0,
-                bottom: 10.0,
-                left: 28.0,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(
+              top: 20.0,
+              bottom: 10.0,
+              left: 28.0,
+            ),
+            child: Text(
+              'Is this your question?',
+              style: TextStyle(
+                color: grey,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
               ),
-              child: Text(
-                'Is this your question?',
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+              bottom: 8.0,
+              left: 10.0,
+            ),
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HowToAddBankAccount(),
+                  ),
+                );
+              },
+              title: Text(
+                'How to add your bank account',
                 style: TextStyle(
-                  color: grey,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
+                  fontSize: 20,
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-                bottom: 8.0,
-                left: 10.0,
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 25.0),
+            child: Divider(
+              thickness: 1,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+              bottom: 8.0,
+              left: 10.0,
+            ),
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HowToReceiveMoney(),
+                  ),
+                );
+              },
+              title: Text(
+                'How to receive money',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HowToAddBankAccount(),
-                    ),
-                  );
-                },
-                title: Text(
-                  'How to add your bank account',
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 25.0),
+            child: Divider(
+              thickness: 1,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+              bottom: 8.0,
+              left: 10.0,
+            ),
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HowToSendMoney(),
+                  ),
+                );
+              },
+              title: Text(
+                'How to send money',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 25.0),
+            child: Divider(
+              thickness: 1,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+              bottom: 8.0,
+              left: 10.0,
+            ),
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => AboutUPI(),
+                  ),
+                );
+              },
+              title: Text(
+                'About UPI',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 25.0),
+            child: Divider(
+              thickness: 1,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+              bottom: 8.0,
+              left: 10.0,
+            ),
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => IssuesWithPayments(),
+                  ),
+                );
+              },
+              title: Text(
+                'Issues with payments',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 25.0),
+            child: Divider(
+              thickness: 1,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+              bottom: 8.0,
+              left: 10.0,
+            ),
+            child: ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => PaymentsData(),
+                  ),
+                );
+              },
+              title: Text(
+                'Payments data',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              height: 1,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              top: 8.0,
+            ),
+            child: ListTile(
+              tileColor: one,
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => IssueType(),
+                  ),
+                );
+              },
+              title: Center(
+                child: Text(
+                  "This doesn't answer my question",
                   style: TextStyle(
+                    color: white,
                     fontSize: 20,
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: Divider(
-                thickness: 1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-                bottom: 8.0,
-                left: 10.0,
-              ),
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HowToReceiveMoney(),
-                    ),
-                  );
-                },
-                title: Text(
-                  'How to receive money',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: Divider(
-                thickness: 1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-                bottom: 8.0,
-                left: 10.0,
-              ),
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HowToSendMoney(),
-                    ),
-                  );
-                },
-                title: Text(
-                  'How to send money',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: Divider(
-                thickness: 1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-                bottom: 8.0,
-                left: 10.0,
-              ),
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => AboutUPI(),
-                    ),
-                  );
-                },
-                title: Text(
-                  'About UPI',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: Divider(
-                thickness: 1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-                bottom: 8.0,
-                left: 10.0,
-              ),
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => IssuesWithPayments(),
-                    ),
-                  );
-                },
-                title: Text(
-                  'Issues with payments',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 25.0),
-              child: Divider(
-                thickness: 1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-                bottom: 8.0,
-                left: 10.0,
-              ),
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => PaymentsData(),
-                    ),
-                  );
-                },
-                title: Text(
-                  'Payments data',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 100,
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 8.0,
-              ),
-              child: ListTile(
-                tileColor: one,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => IssueType(),
-                    ),
-                  );
-                },
-                title: Center(
-                  child: Text(
-                    "This doesn't answer my question",
-                    style: TextStyle(
-                      color: white,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
