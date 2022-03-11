@@ -49,7 +49,6 @@ class _DeleteMyAccountTwoState extends State<DeleteMyAccountTwo> {
             Container(
               width: MediaQuery.of(context).size.width,
               child: DropdownButton<String>(
-                alignment: Alignment.center,
                 style: TextStyle(
                   color: grey,
                 ),

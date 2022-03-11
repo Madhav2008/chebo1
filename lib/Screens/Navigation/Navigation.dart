@@ -1,11 +1,9 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable, avoid_print
 
 import 'package:camera/camera.dart';
-import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/No_Connection/No_Connection.dart';
 import 'package:whatsapp/Screens/Calls_Screen/Calls_Screen.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Chats_Screen/Chats_Screen.dart';
@@ -273,29 +271,31 @@ class _NavigationScreenState extends State<NavigationScreen>
                 ),
               ];
             },
-            body: StreamBuilder(
-              stream: Connectivity().onConnectivityChanged,
-              builder: (BuildContext context,
-                  AsyncSnapshot<ConnectivityResult> snapshot) {
-                if (snapshot != null &&
-                    snapshot.hasData &&
-                    snapshot.data != ConnectivityResult.none) {
-                  return TabBarView(
-                    controller: _tabController,
-                    children: <Widget>[
-                      CameraScreen(
-                        cameras: [],
-                      ),
-                      ChatsScreen(),
-                      StatusScreen(),
-                      CallsScreen(),
-                    ],
-                  );
-                } else {
-                  return NoConnection(image: '../assets/images/1.png');
-                }
-              },
+            body:
+                //  StreamBuilder(
+                //   stream: Connectivity().onConnectivityChanged,
+                //   builder: (BuildContext context,
+                //       AsyncSnapshot<ConnectivityResult> snapshot) {
+                //     if (snapshot != null &&
+                //         snapshot.hasData &&
+                //         snapshot.data != ConnectivityResult.none) {
+                //       return
+                TabBarView(
+              controller: _tabController,
+              children: <Widget>[
+                CameraScreen(
+                  cameras: [],
+                ),
+                ChatsScreen(),
+                StatusScreen(),
+                CallsScreen(),
+              ],
             ),
+            // } else {
+            //   return NoConnection(image: '../assets/images/1.png');
+            // }
+            // },
+            // ),
           ),
           floatingActionButton: showFab
               ? FloatingActionButton(

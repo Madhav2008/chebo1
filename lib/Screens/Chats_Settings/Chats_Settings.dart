@@ -75,7 +75,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
               },
               separatorBuilder: (context, index) {
                 return Divider(
-                  color: blue,
+                  color: grey,
                   thickness: 2,
                 );
               },
@@ -112,7 +112,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
               },
               separatorBuilder: (context, index) {
                 return Divider(
-                  color: blue,
+                  color: grey,
                   thickness: 2,
                 );
               },

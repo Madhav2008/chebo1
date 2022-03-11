@@ -239,7 +239,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _nextDialog(BuildContext context) {
     return AlertDialog(
       title: Text(
-        "We will be verifying the phone number:",
+        "You entered the phone number:",
         style: TextStyle(
           fontSize: 20,
         ),
