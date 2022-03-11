@@ -217,27 +217,22 @@ class _SearchHelpCentreState extends State<SearchHelpCentre> {
               height: 1,
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(
-              top: 8.0,
-            ),
-            child: ListTile(
-              tileColor: one,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => IssueType(),
-                  ),
-                );
-              },
-              title: Center(
-                child: Text(
-                  "This doesn't answer my question",
-                  style: TextStyle(
-                    color: white,
-                    fontSize: 20,
-                  ),
+          ListTile(
+            tileColor: one,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => IssueType(),
+                ),
+              );
+            },
+            title: Center(
+              child: Text(
+                "This doesn't answer my question",
+                style: TextStyle(
+                  color: white,
+                  fontSize: 20,
                 ),
               ),
             ),

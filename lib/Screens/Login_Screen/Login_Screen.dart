@@ -5,6 +5,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
 import 'package:whatsapp/Screens/Country_Screen/Country_Screen.dart';
 import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
+import 'package:whatsapp/Screens/Problem_Detected_Screen/Problem_Detected_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({
@@ -47,7 +48,12 @@ class _LoginScreenState extends State<LoginScreen> {
               Icons.more_vert_outlined,
             ),
             onSelected: (value) {
-              print(value);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => ProblemDetectedScreen(),
+                ),
+              );
             },
             itemBuilder: (BuildContext contesxt) {
               return [

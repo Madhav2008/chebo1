@@ -57,83 +57,71 @@ class _ContactSupportState extends State<ContactSupport> {
       appBar: AppBar(
         title: Text('Contact support'),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: EdgeInsets.all(18.0),
-              child: Text(
-                "Can't find what I'm looking for",
-                style: TextStyle(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: EdgeInsets.all(18.0),
+            child: Text(
+              "Can't find what I'm looking for",
+              style: TextStyle(
+                color: grey,
+                fontSize: 18,
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(15.0),
+            child: TextFormField(
+              controller: _bodyController,
+              focusNode: focusNode,
+              textAlignVertical: TextAlignVertical.center,
+              keyboardType: TextInputType.multiline,
+              maxLines: 200,
+              minLines: 5,
+              decoration: InputDecoration(
+                hintText: "Describe your problem",
+                hintStyle: TextStyle(
                   color: grey,
-                  fontSize: 18,
                 ),
+                contentPadding: EdgeInsets.all(5),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.all(15.0),
-              child: TextFormField(
-                controller: _bodyController,
-                focusNode: focusNode,
-                textAlignVertical: TextAlignVertical.center,
-                keyboardType: TextInputType.multiline,
-                maxLines: 200,
-                minLines: 5,
-                decoration: InputDecoration(
-                  hintText: "Describe your problem",
-                  hintStyle: TextStyle(
-                    color: grey,
-                  ),
-                  contentPadding: EdgeInsets.all(5),
-                ),
-              ),
+          ),
+          Expanded(
+            child: Container(
+              height: 1,
             ),
-            Padding(
-              padding: EdgeInsets.all(12.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      _launchURL();
-                    },
-                    child: Text(
-                      'Visit our Help Centre',
-                      style: TextStyle(
-                        color: blue,
-                        fontSize: 20,
-                      ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    _launchURL();
+                  },
+                  child: Text(
+                    'Visit our Help Centre',
+                    style: TextStyle(
+                      color: blue,
+                      fontSize: 20,
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      height: 1,
-                    ),
+                ),
+                Expanded(
+                  child: Container(
+                    height: 1,
                   ),
-                  _bodyController.text.isNotEmpty
-                      ? GestureDetector(
-                          onTap: () {
-                            send();
-                          },
-                          child: Container(
-                            color: one,
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 30,
-                                vertical: 10,
-                              ),
-                              child: Text(
-                                "Next",
-                                style: TextStyle(
-                                  fontSize: 20,
-                                ),
-                              ),
-                            ),
-                          ),
-                        )
-                      : Container(
-                          color: grey.withOpacity(0.3),
+                ),
+                _bodyController.text.isNotEmpty
+                    ? GestureDetector(
+                        onTap: () {
+                          send();
+                        },
+                        child: Container(
+                          color: one,
                           child: Padding(
                             padding: EdgeInsets.symmetric(
                               horizontal: 30,
@@ -147,14 +135,29 @@ class _ContactSupportState extends State<ContactSupport> {
                             ),
                           ),
                         ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                ],
-              ),
+                      )
+                    : Container(
+                        color: grey.withOpacity(0.3),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 30,
+                            vertical: 10,
+                          ),
+                          child: Text(
+                            "Next",
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
+                          ),
+                        ),
+                      ),
+                SizedBox(
+                  height: 40,
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
