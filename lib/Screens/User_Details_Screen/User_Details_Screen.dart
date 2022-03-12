@@ -22,9 +22,6 @@ class UserDetailsScreen extends StatelessWidget {
       text: no,
     );
 
-    // final avatar =
-    //     'https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png';
-
     var avatar = '../assets/images/noProfile.png';
 
     return Scaffold(
@@ -71,44 +68,32 @@ class UserDetailsScreen extends StatelessWidget {
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TextField(
-                    controller: _nameController,
-                    autofocus: true,
-                    style: TextStyle(
-                      fontSize: 18,
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          color: one,
+                        ),
+                      ),
+                    ),
+                    child: TextField(
+                      controller: _nameController,
+                      autofocus: true,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                      ),
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
                     ),
                   ),
-                  // SizedBox(
-                  //   height: 5,
-                  // ),
-                  // Text(
-                  //   'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
-                  //   style: TextStyle(
-                  //     color: grey,
-                  //   ),
-                  // ),
                   SizedBox(
                     height: 10,
                   ),
-                  // Divider(
-                  //   thickness: 1,
-                  // ),
                 ],
               ),
-              // trailing: Icon(
-              //   Icons.edit,
-              //   color: one,
-              //   size: 25,
-              // ),
             ),
             ListTile(
-              // onTap: () {
-              // showModalBottomSheet(
-              //   backgroundColor: transparent,
-              //   context: context,
-              //   builder: (builder) => bottomSheet1(context),
-              // );
-              // },
               leading: Icon(
                 Icons.info_outline,
                 color: grey,
@@ -124,11 +109,23 @@ class UserDetailsScreen extends StatelessWidget {
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TextField(
-                    controller: _aboutController,
-                    autofocus: true,
-                    style: TextStyle(
-                      fontSize: 18,
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          color: one,
+                        ),
+                      ),
+                    ),
+                    child: TextField(
+                      controller: _aboutController,
+                      autofocus: true,
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                      ),
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
                     ),
                   ),
                 ],
