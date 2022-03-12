@@ -11,12 +11,14 @@ class LinkedDevices extends StatefulWidget {
     required this.avatar,
     required this.name,
     required this.phoneno,
+    required this.countryCode,
     required this.about,
   }) : super(key: key);
 
   final String name;
   final String avatar;
   final String phoneno;
+  final String countryCode;
   final String about;
 
   @override
@@ -39,6 +41,7 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                   about: widget.about,
                   phoneno: widget.phoneno,
                   avatar: widget.avatar,
+                  countryCode: widget.countryCode,
                 ),
               ),
             );
@@ -122,6 +125,7 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                       about: widget.about,
                       phoneno: widget.phoneno,
                       avatar: widget.avatar,
+                      countryCode: widget.countryCode,
                     ),
                   ),
                 );

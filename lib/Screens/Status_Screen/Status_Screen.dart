@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
+import 'package:whatsapp/Screens/Story_Page/Story_Page.dart';
 import 'package:whatsapp/Screens/Text_Status_Screen/Text_Status_Screen.dart';
 
 class StatusScreen extends StatelessWidget {
@@ -87,15 +88,15 @@ class StatusScreen extends StatelessWidget {
               children: [
                 GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => StoryPageView(
-                    //       name: name,
-                    //       avatar: avatar,
-                    //     ),
-                    //   ),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => StoryPageView(
+                          name: name,
+                          avatar: avatar,
+                        ),
+                      ),
+                    );
                   },
                   child: statusCard(
                     name,

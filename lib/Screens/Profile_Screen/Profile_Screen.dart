@@ -1,13 +1,12 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/About_Screen/About_Screen.dart';
 import 'package:whatsapp/Screens/Change_Number_Screen_One/Change_Number_Screen_One.dart';
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
+import 'package:get/get.dart';
 
 class ProfileScreen extends StatefulWidget {
   ProfileScreen({
@@ -15,12 +14,14 @@ class ProfileScreen extends StatefulWidget {
     required this.avatar,
     required this.name,
     required this.phoneno,
+    required this.countryCode,
     required this.about,
   }) : super(key: key);
 
   final String name;
   final String avatar;
   final String phoneno;
+  final String countryCode;
   final String about;
 
   @override
@@ -30,8 +31,8 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    File? _imageFile;
-    String uploadedPath = "";
+    // File? _imageFile;
+    // String uploadedPath = "";
     late XFile _image;
     var name = widget.name;
     var about = widget.about;
@@ -75,7 +76,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             children: [
               ListTile(
                 leading: Icon(Icons.camera),
-                title: Text("Camera"),
+                title: Text("camera".tr),
                 onTap: () {
                   Navigator.of(context).pop();
                   imagePickerMethod(ImageSource.camera);
@@ -83,7 +84,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               ListTile(
                 leading: Icon(Icons.filter),
-                title: Text("Gallery"),
+                title: Text("gallery".tr),
                 onTap: () {
                   Navigator.of(context).pop();
                   imagePickerMethod(ImageSource.gallery);
@@ -98,7 +99,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+        title: Text('profile'.tr),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -178,7 +179,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 size: 25,
               ),
               title: Text(
-                "Name",
+                "name".tr,
                 style: TextStyle(
                   color: grey,
                   fontSize: 17,
@@ -197,7 +198,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     height: 5,
                   ),
                   Text(
-                    'This is not your username or pin. This name will be visible to your WhatsApp contacts.',
+                    'nameDown'.tr,
                     style: TextStyle(
                       color: grey,
                     ),
@@ -234,7 +235,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 size: 25,
               ),
               title: Text(
-                "About",
+                "about".tr,
                 style: TextStyle(
                   color: grey,
                   fontSize: 17,
@@ -281,7 +282,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 size: 25,
               ),
               title: Text(
-                "Phone",
+                "phone".tr,
                 style: TextStyle(
                   color: grey,
                   fontSize: 17,
@@ -290,21 +291,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        "+91 ",
-                        style: TextStyle(
-                          fontSize: 18,
-                        ),
-                      ),
-                      Text(
-                        widget.phoneno,
-                        style: TextStyle(
-                          fontSize: 18,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    widget.countryCode + widget.phoneno,
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
                   ),
                   SizedBox(
                     height: 30,
@@ -336,7 +327,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
                 child: Text(
-                  'Enter your name',
+                  'enterYourName'.tr,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -370,7 +361,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Navigator.pop(context);
                     },
                     child: Text(
-                      'Cancel',
+                      'cancel'.tr,
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -386,7 +377,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Navigator.pop(context);
                     },
                     child: Text(
-                      'Save',
+                      'save'.tr,
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

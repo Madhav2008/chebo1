@@ -19,7 +19,12 @@ class ChatsWallpaperScreen extends StatelessWidget {
           appBar,
         ),
       ),
-      body: Container(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset('../assets/images/background.png'),
+        ],
+      ),
     );
   }
 }

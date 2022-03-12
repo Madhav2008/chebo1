@@ -20,9 +20,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Notifications',
-        ),
+        title: Text('notification'.tr),
         actions: [
           Theme(
             data: Theme.of(context).copyWith(
@@ -40,7 +38,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                   child: Row(
                     children: [
                       Text(
-                        'Reset notification settings'.tr,
+                        'resetNotificationSettings'.tr,
                         style: TextStyle(
                           fontSize: 14,
                         ),
@@ -62,13 +60,13 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Conversation tones'.tr,
+                  'conversationTones'.tr,
                   style: TextStyle(
                     fontSize: 20,
                   ),
                 ),
                 subtitle: Text(
-                  'Play sounds for incoming and outgoing messages.'.tr,
+                  'conversationTonesDown'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -98,7 +96,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                     width: 13,
                   ),
                   Text(
-                    'Messages'.tr,
+                    'messages'.tr,
                     style: TextStyle(
                       fontSize: 17,
                       color: grey,
@@ -112,10 +110,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Notification tone'.tr,
+                  'notificationTone'.tr,
                 ),
                 subtitle: Text(
-                  'Default'.tr + '(WaterDrop_preview.ogg)',
+                  'default'.tr + '(WaterDrop_preview.ogg)',
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -128,10 +126,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Vibrate'.tr,
+                  'vibrate'.tr,
                 ),
                 subtitle: Text(
-                  'Default'.tr,
+                  'default'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -144,13 +142,13 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Popup notification',
+                  'popupNotification'.tr,
                   style: TextStyle(
                     color: grey.withOpacity(0.4),
                   ),
                 ),
                 subtitle: Text(
-                  'No popup',
+                  'noPopup'.tr,
                   style: TextStyle(
                     color: grey.withOpacity(0.4),
                     fontSize: 17,
@@ -163,10 +161,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Light',
+                  'light'.tr,
                 ),
                 subtitle: Text(
-                  'White',
+                  'white'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -179,13 +177,13 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Use high priority notifications',
+                  'useHighPriorityNotifications'.tr,
                   style: TextStyle(
                     fontSize: 20,
                   ),
                 ),
                 subtitle: Text(
-                  'Show previews of notifications at the top of the screen',
+                  'useHighPriorityNotificationsDown'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -215,7 +213,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                     width: 13,
                   ),
                   Text(
-                    'Groups',
+                    'groups'.tr,
                     style: TextStyle(
                       fontSize: 17,
                       color: grey,
@@ -229,10 +227,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Notification tone',
+                  'notificationTone'.tr,
                 ),
                 subtitle: Text(
-                  'Default (Daydream)',
+                  'default'.tr + ' (Daydream)',
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -245,10 +243,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Vibrate',
+                  'vibrate'.tr,
                 ),
                 subtitle: Text(
-                  'Default',
+                  'default'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -261,10 +259,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Light',
+                  'light'.tr,
                 ),
                 subtitle: Text(
-                  'Red',
+                  'red'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -277,13 +275,13 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Use high priority notifications',
+                  'useHighPriorityNotifications'.tr,
                   style: TextStyle(
                     fontSize: 20,
                   ),
                 ),
                 subtitle: Text(
-                  'Show previews of notifications at the top of the screen',
+                  'useHighPriorityNotificationsDown'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -313,7 +311,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                     width: 13,
                   ),
                   Text(
-                    'Calls',
+                    'calls'.tr,
                     style: TextStyle(
                       fontSize: 17,
                       color: grey,
@@ -327,10 +325,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Ringtone',
+                  'ringtone'.tr,
                 ),
                 subtitle: Text(
-                  'Default (IPhone)',
+                  'default'.tr +'(IPhone)',
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -343,10 +341,10 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               ListTile(
                 onTap: () {},
                 title: Text(
-                  'Vibrate',
+                  'vibrate'.tr,
                 ),
                 subtitle: Text(
-                  'Default',
+                  'default'.tr,
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,
@@ -377,7 +375,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
   Widget _resetAlert(BuildContext context) {
     return AlertDialog(
       title: Text(
-        "Reset all notification settings, including custom notification settings for your chats?",
+        "resetAllNotificationSettings".tr,
       ),
       content: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -390,7 +388,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               Navigator.pop(context);
             },
             child: Text(
-              'CANCEL',
+              'CANCEL'.tr,
               style: TextStyle(
                 color: one,
                 fontWeight: FontWeight.bold,
@@ -405,7 +403,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
               Navigator.pop(context);
             },
             child: Text(
-              'RESET',
+              'RESET'.tr,
               style: TextStyle(
                 color: one,
                 fontWeight: FontWeight.bold,

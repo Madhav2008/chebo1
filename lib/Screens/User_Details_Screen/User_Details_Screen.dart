@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -8,9 +8,11 @@ class UserDetailsScreen extends StatelessWidget {
   UserDetailsScreen({
     Key? key,
     required this.no,
+    required this.countryCode,
   }) : super(key: key);
 
   final String no;
+  final String countryCode;
 
   @override
   Widget build(BuildContext context) {
@@ -160,6 +162,7 @@ class UserDetailsScreen extends StatelessWidget {
                                 avatar: avatar,
                                 phoneno: _phonenoController.text,
                                 about: _aboutController.text,
+                                countryCode: countryCode,
                               ),
                             ),
                           );

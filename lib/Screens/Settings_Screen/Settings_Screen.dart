@@ -19,12 +19,14 @@ class SettingsScreen extends StatelessWidget {
     required this.name,
     required this.about,
     required this.phoneno,
+    required this.countryCode,
   }) : super(key: key);
 
   final String name;
   final String avatar;
   final String about;
   final String phoneno;
+  final String countryCode;
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +47,7 @@ class SettingsScreen extends StatelessWidget {
                       avatar: avatar,
                       about: about,
                       phoneno: phoneno,
+                      countryCode: countryCode,
                     ),
                   ),
                 );

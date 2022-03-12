@@ -4,3 +4,5 @@ Navigation Screen
 Settings Screen
 Account Settings Screen
 Chat Settings Screen
+Notification Settings Screen
+Profile Screen

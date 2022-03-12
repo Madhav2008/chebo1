@@ -24,6 +24,7 @@ class NavigationScreen extends StatefulWidget {
     required this.name,
     required this.avatar,
     required this.phoneno,
+    required this.countryCode,
     required this.about,
   }) : super(key: key);
 
@@ -31,6 +32,7 @@ class NavigationScreen extends StatefulWidget {
   final String about;
   final String avatar;
   final String phoneno;
+  final String countryCode;
 
   @override
   _NavigationScreenState createState() => _NavigationScreenState();
@@ -339,6 +341,7 @@ class _NavigationScreenState extends State<NavigationScreen>
               about: widget.about,
               phoneno: widget.phoneno,
               avatar: widget.avatar,
+              countryCode: widget.countryCode,
             ),
           ),
         );
@@ -365,6 +368,7 @@ class _NavigationScreenState extends State<NavigationScreen>
               about: widget.about,
               avatar: widget.avatar,
               phoneno: widget.phoneno,
+              countryCode: widget.countryCode,
             ),
           ),
         );
