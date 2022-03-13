@@ -33,7 +33,7 @@ class LandingPage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Image.asset(
-              '../assets/images/Landing.png',
+              '../assets/images/Landing(WI).png',
               fit: BoxFit.cover,
               width: MediaQuery.of(context).size.width - 100,
               color: secondary,
