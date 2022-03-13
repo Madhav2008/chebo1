@@ -1,7 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
-import 'package:whatsapp/Screens/Chats_Screen/Chats_Screen.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 
 class MediaLinksAndDocs extends StatefulWidget {
   MediaLinksAndDocs({Key? key}) : super(key: key);
@@ -34,6 +34,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                 pinned: true,
                 snap: true,
                 bottom: TabBar(
+                  indicatorColor: one,
                   tabs: <Tab>[
                     Tab(text: "MEDIA"),
                     Tab(text: "DOCS"),
@@ -45,9 +46,9 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           },
           body: TabBarView(
             children: <Widget>[
-              ChatsScreen(),
-              ChatsScreen(),
-              ChatsScreen(),
+              Text('Media'),
+              Text('Docs'),
+              Text('Links'),
             ],
           ),
         ),

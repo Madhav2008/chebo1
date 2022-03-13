@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Screens/Media_Links_And_Docs/Media_Links_And_Docs.dart';
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Calling_Screen.dart';
 
@@ -237,24 +238,34 @@ class ViewProfile extends StatelessWidget {
               padding: EdgeInsets.all(10.0),
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Media, links, and docs',
-                        style: TextStyle(
-                          color: grey,
-                          fontSize: 15,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => MediaLinksAndDocs(),
                         ),
-                      ),
-                      Text(
-                        mediaQuantity + ' >',
-                        style: TextStyle(
-                          color: grey,
-                          fontSize: 15,
+                      );
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Media, links, and docs',
+                          style: TextStyle(
+                            color: grey,
+                            fontSize: 15,
+                          ),
                         ),
-                      ),
-                    ],
+                        Text(
+                          mediaQuantity + ' >',
+                          style: TextStyle(
+                            color: grey,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 5,

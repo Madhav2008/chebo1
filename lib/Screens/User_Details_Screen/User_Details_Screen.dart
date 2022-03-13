@@ -46,13 +46,6 @@ class UserDetailsScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              // onTap: () {
-              // showModalBottomSheet(
-              //   backgroundColor: transparent,
-              //   context: context,
-              //   builder: (builder) => bottomSheet1(context),
-              // );
-              // },
               leading: Icon(
                 Icons.person,
                 color: grey,
@@ -79,6 +72,7 @@ class UserDetailsScreen extends StatelessWidget {
                     child: TextField(
                       controller: _nameController,
                       autofocus: true,
+                      cursorColor: one,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                       ),
@@ -120,6 +114,7 @@ class UserDetailsScreen extends StatelessWidget {
                     child: TextField(
                       controller: _aboutController,
                       autofocus: true,
+                      cursorColor: one,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                       ),

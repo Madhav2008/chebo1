@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
+import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 
 class ChatsScreen extends StatelessWidget {
   ChatsScreen({Key? key}) : super(key: key);
@@ -31,10 +32,23 @@ class ChatsScreen extends StatelessWidget {
                 ),
               );
             },
-            leading: CircleAvatar(
-              foregroundColor: Theme.of(context).primaryColor,
-              backgroundColor: grey,
-              backgroundImage: NetworkImage(dummyData[i].avatarUrl),
+            leading: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => ViewProfilePhoto(
+                      name: dummyData[i].name,
+                      avatar: dummyData[i].avatarUrl,
+                    ),
+                  ),
+                );
+              },
+              child: CircleAvatar(
+                foregroundColor: Theme.of(context).primaryColor,
+                backgroundColor: grey,
+                backgroundImage: NetworkImage(dummyData[i].avatarUrl),
+              ),
             ),
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
