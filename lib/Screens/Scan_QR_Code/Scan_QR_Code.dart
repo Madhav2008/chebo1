@@ -77,7 +77,7 @@ class _ScanQRCodeScreenState extends State<ScanQRCodeScreen> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'Scan WhatsApp QR Code',
+                  'Scan WhatsApp India QR Code',
                   style: TextStyle(
                     fontSize: 25,
                   ),
@@ -168,7 +168,7 @@ class _ScanQRCodeScreenState extends State<ScanQRCodeScreen> {
   Widget _aboutScanning(BuildContext context) {
     return AlertDialog(
       title: Text(
-        "Scan WhatsApp QR Code",
+        "Scan WhatsApp India QR Code",
         style: TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,

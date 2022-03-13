@@ -55,7 +55,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                       height: 5,
                     ),
                     Text(
-                      '• Delete your account from WhatsApp',
+                      '• Delete your account from WhatsApp India',
                       style: TextStyle(
                         color: grey,
                         fontSize: 17,
@@ -75,7 +75,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                       height: 5,
                     ),
                     Text(
-                      '• Delete you from all of your WhatsApp group',
+                      '• Delete you from all of your WhatsApp India group',
                       style: TextStyle(
                         color: grey,
                         fontSize: 17,

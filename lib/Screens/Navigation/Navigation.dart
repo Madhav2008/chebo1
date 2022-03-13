@@ -47,7 +47,7 @@ class _NavigationScreenState extends State<NavigationScreen>
   final TextEditingController _hi = TextEditingController();
 
   Widget appBarTitle = Text(
-    'WhatsApp',
+    'WhatsApp India',
     style: TextStyle(
       fontSize: 20,
       letterSpacing: 2,
@@ -138,7 +138,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                               size: 26,
                             );
                             appBarTitle = Text(
-                              'WhatsApp',
+                              'WhatsApp India',
                               style: TextStyle(
                                 fontSize: 20,
                                 letterSpacing: 2,

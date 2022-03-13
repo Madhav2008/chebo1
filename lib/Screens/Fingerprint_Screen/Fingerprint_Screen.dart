@@ -1,10 +1,10 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class FingerprintScreen extends StatefulWidget {
-  const FingerprintScreen({Key? key}) : super(key: key);
+  FingerprintScreen({Key? key}) : super(key: key);
 
   @override
   State<FingerprintScreen> createState() => _FingerprintScreenState();
@@ -30,7 +30,7 @@ class _FingerprintScreenState extends State<FingerprintScreen> {
             ),
           ),
           subtitle: Text(
-            "When enabled, you'll need to use fingerprint to open WhatsApp. You can still answer calls if WhatsApp is locked.",
+            "When enabled, you'll need to use fingerprint to open WhatsApp India. You can still answer calls if WhatsApp India is locked.",
             style: TextStyle(
               color: grey,
               fontSize: 17,

@@ -76,7 +76,7 @@ class _MultiDeviceBetaScreenState extends State<MultiDeviceBetaScreen> {
                   height: 10,
                 ),
                 Text(
-                  'After your devices are linked, your phone will no longer need to stay online to use WhatsApp on web, desktop or Portal. Up to 4 additional devices and 1 phone can be used at once. Learn more.',
+                  'After your devices are linked, your phone will no longer need to stay online to use WhatsApp India on web, desktop or Portal. Up to 4 additional devices and 1 phone can be used at once. Learn more.',
                   style: TextStyle(
                     color: grey,
                     fontSize: 16,
@@ -134,7 +134,7 @@ class _MultiDeviceBetaScreenState extends State<MultiDeviceBetaScreen> {
                   height: 10,
                 ),
                 Text(
-                  '• You cannot message/call from web, desktop or Portal to users who have an outdated version of WhatsApp on their phone',
+                  '• You cannot message/call from web, desktop or Portal to users who have an outdated version of WhatsApp India on their phone',
                   style: TextStyle(
                     color: grey,
                     fontSize: 16,

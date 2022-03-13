@@ -49,7 +49,7 @@ class _MyQRCodeScreenState extends State<MyQRCodeScreen> {
                     height: 5,
                   ),
                   Text(
-                    'WhatsApp contact',
+                    'WhatsApp India contact',
                     style: TextStyle(
                       color: grey,
                     ),
@@ -72,7 +72,7 @@ class _MyQRCodeScreenState extends State<MyQRCodeScreen> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 60.0),
             child: Text(
-              'Your QR code is private. If you share it with someone, they can scan it with their WhatsApp camera to add you as a contact.',
+              'Your QR code is private. If you share it with someone, they can scan it with their WhatsApp India camera to add you as a contact.',
               style: TextStyle(
                 color: grey,
               ),

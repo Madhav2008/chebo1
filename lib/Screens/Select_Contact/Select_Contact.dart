@@ -95,7 +95,7 @@ class _SelectContactState extends State<SelectContact> {
   //   ),
   //   ChatModel(
   //     name: "Raghav Arora",
-  //     message: "Hey I have hacked WhatsApp!",
+  //     message: "Hey I have hacked WhatsApp India!",
   //     time: "5:00",
   //     avatarUrl: "https://avatars.githubusercontent.com/u/66276244?v=4",
   //     about: "Be Kind 🤗😇",
@@ -114,7 +114,7 @@ class _SelectContactState extends State<SelectContact> {
   //     time: "12:30",
   //     avatarUrl:
   //         "https://ebizfiling.com/wp-content/uploads/2017/12/images_20-3.jpg",
-  //     about: "Hey there! I am using WhatsApp.",
+  //     about: "Hey there! I am using WhatsApp India.",
   //   ),
   //   ChatModel(
   //     name: "David",
@@ -146,7 +146,7 @@ class _SelectContactState extends State<SelectContact> {
   //     time: "5:00",
   //     avatarUrl:
   //         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cqFuNuQc-evg5bzAK6Ro5ObXPyuPf4EgYQ&usqp=CAU",
-  //     about: "Can't talk, WhatsApp only",
+  //     about: "Can't talk, WhatsApp India only",
   //   ),
   //   ChatModel(
   //     name: "Amy",

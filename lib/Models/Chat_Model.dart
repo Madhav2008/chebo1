@@ -30,7 +30,7 @@ List<ChatModel> dummyData = [
   ),
   ChatModel(
     name: "Raghav Arora",
-    message: "Hey I have hacked WhatsApp!",
+    message: "Hey I have hacked WhatsApp India!",
     time: "5:00",
     avatarUrl: "https://avatars.githubusercontent.com/u/66276244?v=4",
     about: "Be Kind 🤗😇",
@@ -87,7 +87,7 @@ List<ChatModel> dummyData = [
     time: "5:00",
     avatarUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cqFuNuQc-evg5bzAK6Ro5ObXPyuPf4EgYQ&usqp=CAU",
-    about: "Can't talk, WhatsApp only",
+    about: "Can't talk, WhatsApp India only",
     phoneno: '0000000000',
   ),
   ChatModel(
@@ -107,7 +107,7 @@ List<ChatModel> dummyData = [
         "https://www.mnp.ca/-/media/foundation/integrations/personnel/2020/12/16/13/57/personnel-image-4483.jpg?h=800&w=600&hash=9D5E5FCBEE00EB562DCD8AC8FDA8433D",
     about:
         "Problem is a part of life and facing with strength is art of life 😎🤩",
-        phoneno: '0000000000',
+    phoneno: '0000000000',
   ),
   ChatModel(
     name: "Adam",

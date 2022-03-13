@@ -31,7 +31,7 @@ class ContactsHelpScreen extends StatelessWidget {
               height: 10,
             ),
             Text(
-              "• Make sure that your friend is using WhatsApp Messenger",
+              "• Make sure that your friend is using WhatsApp India",
             ),
           ],
         ),

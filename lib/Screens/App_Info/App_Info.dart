@@ -28,7 +28,7 @@ class AppInfo extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'WhatsApp Messenger',
+                  'WhatsApp India',
                   style: TextStyle(
                     color: white,
                     fontSize: 27,
@@ -50,7 +50,7 @@ class AppInfo extends StatelessWidget {
                   height: 50,
                 ),
                 Image.asset(
-                  '../assets/images/logo.png',
+                  '../assets/images/WhatsAppIndia.png',
                   width: 100,
                   height: 100,
                 ),
@@ -71,7 +71,7 @@ class AppInfo extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      year + ' WhatsApp Inc.',
+                      year + ' WhatsApp India Inc.',
                       style: TextStyle(
                         color: white.withOpacity(
                           0.5,

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Media_Links_And_Docs/Media_Links_And_Docs.dart';
@@ -88,11 +89,12 @@ class ViewProfile extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    ViewProfilePhoto(
-                                  name: name,
-                                  avatar: avatar,
-                                ),
+                                builder: (BuildContext context) {
+                                  return ViewProfilePhoto(
+                                    name: name,
+                                    avatar: avatar,
+                                  );
+                                },
                               ),
                             );
                           },
@@ -145,7 +147,7 @@ class ViewProfile extends StatelessWidget {
                                 height: 5,
                               ),
                               Text(
-                                'Audio',
+                                'audio'.tr,
                                 style: TextStyle(
                                   color: one,
                                   fontSize: 17,
@@ -169,12 +171,13 @@ class ViewProfile extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (builder) =>
-                                          WhatsAppVideoCallingScreen(
+                                      builder: (builder) {
+                                        return WhatsAppVideoCallingScreen(
                                         cameras: [],
                                         avatar: avatar,
                                         name: name,
-                                      ),
+                                      );
+                                      },
                                     ),
                                   );
                                 },
@@ -183,7 +186,7 @@ class ViewProfile extends StatelessWidget {
                                 height: 5,
                               ),
                               Text(
-                                'Video',
+                                'video'.tr,
                                 style: TextStyle(
                                   color: one,
                                   fontSize: 17,
@@ -251,7 +254,7 @@ class ViewProfile extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          'Media, links, and docs',
+                          'mediaLinksAndDocs'.tr,
                           style: TextStyle(
                             color: grey,
                             fontSize: 15,

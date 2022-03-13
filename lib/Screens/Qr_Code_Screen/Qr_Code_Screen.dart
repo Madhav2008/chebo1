@@ -40,7 +40,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
             icon: Icon(Icons.share),
             onPressed: () {
               Share.share(
-                'Add me as a contact on WhatsApp. https://wa.me/qr/GAGIEKDKP3THE1',
+                'Add me as a contact on WhatsApp India. https://wa.me/qr/GAGIEKDKP3THE1',
               );
             },
           ),

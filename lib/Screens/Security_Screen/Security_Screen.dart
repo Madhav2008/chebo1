@@ -37,7 +37,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 children: [
                   TextSpan(
                     text:
-                        'Messages and calls in end-to-end encrypted chats stay between you and the people you choose. Not even WhatsApp can read or listen to them. ',
+                        'Messages and calls in end-to-end encrypted chats stay between you and the people you choose. Not even WhatsApp India can read or listen to them. ',
                     style: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.bold,

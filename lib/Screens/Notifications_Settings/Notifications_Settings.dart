@@ -16,6 +16,193 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
   bool highPriorityNotificationsMessages = true;
   bool highPriorityNotificationsGroups = true;
 
+  final List vibrateMessages = [
+    {'name': 'off'.tr},
+    {'name': 'default'.tr},
+    {'name': 'short'.tr},
+    {'name': 'long'.tr},
+  ];
+  final List lightMessages = [
+    {'name': 'none'.tr},
+    {'name': 'white'.tr},
+    {'name': 'red'.tr},
+    {'name': 'yellow'.tr},
+    {'name': 'green'.tr},
+    {'name': 'cyan'.tr},
+    {'name': 'long'.tr},
+    {'name': 'long'.tr},
+    {'name': 'long'.tr},
+  ];
+  final List vibrateGroups = [
+    {'name': 'off'.tr},
+    {'name': 'default'.tr},
+    {'name': 'short'.tr},
+    {'name': 'long'.tr},
+  ];
+  final List lightGroups = [
+    {'name': 'none'.tr},
+    {'name': 'white'.tr},
+    {'name': 'red'.tr},
+    {'name': 'yellow'.tr},
+    {'name': 'green'.tr},
+    {'name': 'cyan'.tr},
+    {'name': 'long'.tr},
+    {'name': 'long'.tr},
+    {'name': 'long'.tr},
+  ];
+
+  vibrateMessagesDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (builder) {
+        return AlertDialog(
+          title: Text('vibrate'.tr),
+          content: Container(
+            width: double.minPositive,
+            child: ListView.separated(
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.back();
+                      // updateLanguage(locale[index]['locale']);
+                    },
+                    child: Text(
+                      vibrateMessages[index]['name'],
+                    ),
+                  ),
+                );
+              },
+              separatorBuilder: (context, index) {
+                return Divider(
+                  color: grey,
+                  thickness: 2,
+                );
+              },
+              itemCount: vibrateMessages.length,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  lightMessagesDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (builder) {
+        return AlertDialog(
+          title: Text('light'.tr),
+          content: Container(
+            width: double.minPositive,
+            child: ListView.separated(
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.back();
+                      // updateLanguage(locale[index]['locale']);
+                    },
+                    child: Text(
+                      lightMessages[index]['name'],
+                    ),
+                  ),
+                );
+              },
+              separatorBuilder: (context, index) {
+                return Divider(
+                  color: grey,
+                  thickness: 2,
+                );
+              },
+              itemCount: lightMessages.length,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  vibrateGroupsDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (builder) {
+        return AlertDialog(
+          title: Text('vibrate'.tr),
+          content: Container(
+            width: double.minPositive,
+            child: ListView.separated(
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.back();
+                      // updateLanguage(locale[index]['locale']);
+                    },
+                    child: Text(
+                      vibrateGroups[index]['name'],
+                    ),
+                  ),
+                );
+              },
+              separatorBuilder: (context, index) {
+                return Divider(
+                  color: grey,
+                  thickness: 2,
+                );
+              },
+              itemCount: vibrateGroups.length,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  lightGroupsDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (builder) {
+        return AlertDialog(
+          title: Text('light'.tr),
+          content: Container(
+            width: double.minPositive,
+            child: ListView.separated(
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.back();
+                      // updateLanguage(locale[index]['locale']);
+                    },
+                    child: Text(
+                      lightGroups[index]['name'],
+                    ),
+                  ),
+                );
+              },
+              separatorBuilder: (context, index) {
+                return Divider(
+                  color: grey,
+                  thickness: 2,
+                );
+              },
+              itemCount: lightGroups.length,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -124,7 +311,9 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                 height: 10,
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  vibrateMessagesDialog(context);
+                },
                 title: Text(
                   'vibrate'.tr,
                 ),
@@ -159,7 +348,9 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                 height: 10,
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  lightMessagesDialog(context);
+                },
                 title: Text(
                   'light'.tr,
                 ),
@@ -241,7 +432,9 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                 height: 10,
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  vibrateGroupsDialog(context);
+                },
                 title: Text(
                   'vibrate'.tr,
                 ),
@@ -257,7 +450,9 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                 height: 10,
               ),
               ListTile(
-                onTap: () {},
+                onTap: () {
+                  lightGroupsDialog(context);
+                },
                 title: Text(
                   'light'.tr,
                 ),
@@ -328,7 +523,7 @@ class _NotificationsSettingsState extends State<NotificationsSettings> {
                   'ringtone'.tr,
                 ),
                 subtitle: Text(
-                  'default'.tr +'(IPhone)',
+                  'default'.tr + '(IPhone)',
                   style: TextStyle(
                     color: grey,
                     fontSize: 17,

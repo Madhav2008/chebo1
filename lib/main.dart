@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             child: GetMaterialApp(
               translations: LocalString(),
               locale: Locale('en', 'US'),
-              title: 'WhatsApp',
+              title: 'WhatsApp India',
               debugShowCheckedModeBanner: false,
               themeMode: themeProvider.themeMode,
               theme: MyThemes.lightTheme,

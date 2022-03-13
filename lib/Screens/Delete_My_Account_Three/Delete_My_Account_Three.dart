@@ -46,7 +46,7 @@ class _DeleteMyAccountThreeState extends State<DeleteMyAccountThree> {
               height: 10,
             ),
             Text(
-              'Deleting your account is permanent. Your data cannot be recovered if you reactive your WhatsApp account in future.',
+              'Deleting your account is permanent. Your data cannot be recovered if you reactive your WhatsApp India account in future.',
               style: TextStyle(
                 fontSize: 17,
               ),
@@ -60,7 +60,8 @@ class _DeleteMyAccountThreeState extends State<DeleteMyAccountThree> {
               onTap: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text("Your WhatsApp account has been deleted."),
+                    content:
+                        Text("Your WhatsApp India account has been deleted."),
                   ),
                 );
                 Navigator.push(

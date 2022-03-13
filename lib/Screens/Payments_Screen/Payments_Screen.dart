@@ -66,7 +66,7 @@ class PaymentsScreen extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: 'are already using WhatsApp payments.',
+                      text: 'are already using WhatsApp India payments.',
                       style: TextStyle(
                         fontSize: 20,
                         color: grey,

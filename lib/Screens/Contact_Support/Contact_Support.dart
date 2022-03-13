@@ -16,7 +16,7 @@ class _ContactSupportState extends State<ContactSupport> {
   FocusNode focusNode = FocusNode();
 
   final _recipientController = TextEditingController(
-    text: 'support@in.whatsapp.com',
+    text: 'support@in.whatsappIndia.com',
   );
 
   final _subjectController = TextEditingController(

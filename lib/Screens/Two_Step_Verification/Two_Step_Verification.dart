@@ -30,7 +30,7 @@ class TwoStepVerification extends StatelessWidget {
               height: 30,
             ),
             Text(
-              'For added security, enable two-step verification, which will require a PIN when registering your phone number with WhatsApp again.',
+              'For added security, enable two-step verification, which will require a PIN when registering your phone number with WhatsApp India again.',
               style: TextStyle(
                 color: grey,
                 fontSize: 17,

@@ -103,7 +103,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
             child: ListTile(
               onTap: () {
                 Share.share(
-                  "Let's chat on WhatsApp! It's a fast, simple, and secure app we can use to message and call each other for free. Get it at https://whatsapp.com/dl/",
+                  "Let's chat on WhatsApp India! It's a fast, simple, and secure app we can use to message and call each other for free. Get it at https://whatsappIndia.com/dl/",
                 );
               },
               leading: CircleAvatar(

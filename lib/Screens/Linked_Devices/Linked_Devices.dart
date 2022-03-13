@@ -69,7 +69,7 @@ class _LinkedDevicesState extends State<LinkedDevices> {
               color: grey,
             ),
             Text(
-              'Use WhatsApp on other devices',
+              'Use WhatsApp India on other devices',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,

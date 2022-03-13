@@ -18,8 +18,8 @@ class _DeleteMyAccountTwoState extends State<DeleteMyAccountTwo> {
     'I am changing my device',
     'I am changing my phone number',
     'I am deleting my account temporarily',
-    'WhatsApp is missing a feature',
-    'WhatsApp is not working',
+    'WhatsApp India is missing a feature',
+    'WhatsApp India is not working',
     'Other',
   ];
 

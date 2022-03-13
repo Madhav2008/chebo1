@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 right: 10.0,
               ),
               child: Text(
-                'WhatsApp will send an SMS message to verify your phone number.',
+                'WhatsApp India will send an SMS message to verify your phone number.',
                 style: TextStyle(
                   fontSize: 17,
                 ),

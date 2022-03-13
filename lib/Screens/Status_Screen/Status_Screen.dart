@@ -5,6 +5,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Story_Page/Story_Page.dart';
 import 'package:whatsapp/Screens/Text_Status_Screen/Text_Status_Screen.dart';
+import 'package:get/get.dart';
 
 class StatusScreen extends StatelessWidget {
   StatusScreen({Key? key}) : super(key: key);
@@ -66,17 +67,17 @@ class StatusScreen extends StatelessWidget {
               ],
             ),
             title: Text(
-              "My Status",
+              "myStatus".tr,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
-            subtitle: Text("Tap to add status update"),
+            subtitle: Text("tapToAddStatusUpdate".tr),
           ),
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              "Viewed updates",
+              "viewedUpdates".tr,
               style: TextStyle(
                 color: grey,
                 fontWeight: FontWeight.bold,
@@ -149,7 +150,7 @@ class StatusScreen extends StatelessWidget {
                     iconColor: grey,
                     collapsedIconColor: grey,
                     title: Text(
-                      "Muted updates",
+                      "mutedUpdates".tr,
                       style: TextStyle(
                         color: grey,
                         fontWeight: FontWeight.bold,

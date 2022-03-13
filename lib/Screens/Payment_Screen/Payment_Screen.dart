@@ -168,7 +168,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                         size: 30,
                       ),
                       title: Text(
-                        'To protect your security, WhatsApp does not store you UPI PIN or full bank account number.',
+                        'To protect your security, WhatsApp India does not store you UPI PIN or full bank account number.',
                         style: TextStyle(
                           fontSize: 15,
                           color: grey,

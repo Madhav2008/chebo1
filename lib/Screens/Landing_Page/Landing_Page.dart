@@ -17,9 +17,9 @@ class LandingPage extends StatelessWidget {
             child: Align(
               alignment: Alignment.topCenter,
               child: Text(
-                'Welcome to WhatsApp',
+                'Welcome to WhatsApp India',
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 22,
                   color: one,
                   fontWeight: FontWeight.w600,
                   letterSpacing: 2,
@@ -33,10 +33,10 @@ class LandingPage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Image.asset(
-              '../assets/images/first1.png',
+              '../assets/images/Landing.png',
               fit: BoxFit.cover,
               width: MediaQuery.of(context).size.width - 100,
-              color: primary,
+              color: secondary,
             ),
           ),
           Expanded(

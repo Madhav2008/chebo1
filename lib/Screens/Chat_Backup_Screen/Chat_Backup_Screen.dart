@@ -42,7 +42,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
                   ),
                 ),
                 subtitle: Text(
-                  "Back up your messages and media to Google Drive. You can restore them when you reinstall WhatsApp. Your messages will also back up to your phone's internal storage.",
+                  "Back up your messages and media to Google Drive. You can restore them when you reinstall WhatsApp India. Your messages will also back up to your phone's internal storage.",
                   style: TextStyle(
                     color: grey,
                     fontSize: 15,
@@ -121,7 +121,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
                   ),
                 ),
                 subtitle: Text(
-                  "Messages and media backed up in Google Drive are not protected by WhatsApp end-to-end encryption.",
+                  "Messages and media backed up in Google Drive are not protected by WhatsApp India end-to-end encryption.",
                   style: TextStyle(
                     color: grey,
                     fontSize: 15,

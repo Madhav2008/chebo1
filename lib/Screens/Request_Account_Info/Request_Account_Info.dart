@@ -36,7 +36,7 @@ class _RequestAccountInfoState extends State<RequestAccountInfo> {
                 children: [
                   TextSpan(
                     text:
-                        'Create a report of your WhatsApp account information and settings, which you can access or port to another app. This report does not include your messages. ',
+                        'Create a report of your WhatsApp India account information and settings, which you can access or port to another app. This report does not include your messages. ',
                     style: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.bold,
