@@ -2,12 +2,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:get/get.dart';
 
 class AppInfo extends StatelessWidget {
   AppInfo({Key? key}) : super(key: key);
 
   final version = '1.0.0';
-  final year = '2022-2022';
+  final year = '2022-2023';
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ class AppInfo extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  'Version ' + version,
+                  'version'.tr + ' ' + version,
                   style: TextStyle(
                     color: white.withOpacity(
                       0.5,
@@ -50,7 +51,7 @@ class AppInfo extends StatelessWidget {
                   height: 50,
                 ),
                 Image.asset(
-                  '../assets/images/WhatsAppIndia.png',
+                  '../assets/images/WhatsAppIndiaLogo.png',
                   width: 100,
                   height: 100,
                 ),
@@ -82,7 +83,7 @@ class AppInfo extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  'All rights reserved.',
+                  'allRightsReserved'.tr + '.',
                   style: TextStyle(
                     color: white.withOpacity(
                       0.5,

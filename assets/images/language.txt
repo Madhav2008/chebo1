@@ -8,3 +8,4 @@ Notification Settings Screen
 Profile Screen
 Status Screen
 View Profile Screen
+App Info Screen

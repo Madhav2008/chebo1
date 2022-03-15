@@ -45,6 +45,10 @@ dependencies:
   connectivity: 
   video_player: 
   assets_audio_player: 
+  firebase_core:
+  firebase_auth: 
+  firebase: 
+  flutter_spinkit:
 
 dev_dependencies:
   flutter_test:

@@ -104,6 +104,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // HINDI LANGUAGE
@@ -206,6 +208,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // BENGALI LANGUAGE
@@ -309,6 +313,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // PUNJABI LANGUAGE
@@ -410,6 +416,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // TELUGU LANGUAGE
@@ -513,6 +521,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // MARATHI LANGUAGE
@@ -614,6 +624,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // TAMIL LANGUAGE
@@ -717,6 +729,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // URDU LANGUAGE
@@ -819,6 +833,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // GUJARATI LANGUAGE
@@ -920,6 +936,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // KANNADA LANGUAGE
@@ -1021,6 +1039,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
 
         // MALAYALAM LANGUAGE
@@ -1124,6 +1144,8 @@ class LocalString extends Translations {
           'video': 'Video',
           'audio': 'Audio',
           'mediaLinksAndDocs': 'Media, links, and docs',
+          'version': 'Version',
+          'allRightsReserved': 'All rights reserved.',
         },
       };
 }

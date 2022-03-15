@@ -25,7 +25,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(
-        create: (context) => ThemeProvider(),
+        create: (context) {
+          return ThemeProvider();
+        },
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
           return ChangeNotifierProvider(
@@ -49,3 +51,75 @@ class MyApp extends StatelessWidget {
         },
       );
 }
+
+// // ignore_for_file: prefer_const_constructors, prefer_void_to_null, prefer_const_constructors_in_immutables
+
+// import 'package:camera/camera.dart';
+// import 'package:flutter/material.dart';
+// import 'package:flutter_spinkit/flutter_spinkit.dart';
+// import 'package:get/get.dart';
+// import 'package:provider/provider.dart';
+// import 'package:whatsapp/Constants/Constants.dart';
+// import 'package:whatsapp/No_Connection/No_Connection.dart';
+// import 'package:whatsapp/Screens/No_Connection_Screen/No_Connection_Screen.dart';
+// import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
+// import 'Language/Language.dart';
+// import 'Theme/Provider/Theme_Provider.dart';
+// import 'package:firebase_core/firebase_core.dart';
+
+// late List<CameraDescription> cameras;
+// Future<Null> main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   cameras = await availableCameras();
+//   runApp(
+//     MyApp(),
+//   );
+// }
+
+// class MyApp extends StatelessWidget {
+//   MyApp({
+//     Key? key,
+//   }) : super(key: key);
+
+//   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+
+//   @override
+//   Widget build(BuildContext context) => ChangeNotifierProvider(
+//         create: (context) => ThemeProvider(),
+//         builder: (context, _) {
+//           final themeProvider = Provider.of<ThemeProvider>(context);
+//           return FutureBuilder(
+//             future: _initialization,
+//             builder: (context, snapshot) {
+//               if (snapshot.hasError) {
+//                 return NoConnection(image: '../assets/images/2.png');
+//               }
+//               if (snapshot.connectionState == ConnectionState.done) {
+//                 return ChangeNotifierProvider(
+//                   create: (context) {
+//                     ConnectivityChangeNotifier changeNotifier =
+//                         ConnectivityChangeNotifier();
+//                     changeNotifier.initialLoad();
+//                     return changeNotifier;
+//                   },
+//                   child: GetMaterialApp(
+//                     translations: LocalString(),
+//                     locale: Locale('en', 'US'),
+//                     title: 'WhatsApp India',
+//                     debugShowCheckedModeBanner: false,
+//                     themeMode: themeProvider.themeMode,
+//                     theme: MyThemes.lightTheme,
+//                     darkTheme: MyThemes.darkTheme,
+//                     home: SplashScreen(),
+//                   ),
+//                 );
+//               }
+//               return SpinKitFadingCube(
+//                 size: 50,
+//                 color: one,
+//               );
+//             },
+//           );
+//         },
+//       );
+// }
