@@ -1,57 +1,108 @@
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
+// ignore_for_file: file_abouts, prefer_const_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/About_Model.dart';
 
-class AboutScreen extends StatelessWidget {
-  AboutScreen({Key? key}) : super(key: key);
+class AboutScreen extends StatefulWidget {
+  AboutScreen({Key? key, required this.setAboutData}) : super(key: key);
 
+  final Function setAboutData;
+
+  @override
+  State<AboutScreen> createState() => _AboutScreenState();
+}
+
+class _AboutScreenState extends State<AboutScreen> {
+  List<AboutModel> abouts = [
+    AboutModel(about: 'Hey! there I am using WhatsApp India'),
+    AboutModel(
+      about: "Available",
+    ),
+    AboutModel(
+      about: "Busy",
+    ),
+    AboutModel(
+      about: "At school",
+    ),
+    AboutModel(
+      about: "At the movies",
+    ),
+    AboutModel(
+      about: "At the work",
+    ),
+    AboutModel(
+      about: "Battery about to die",
+    ),
+    AboutModel(
+      about: "Can't talk, WhatsApp India only",
+    ),
+    AboutModel(
+      about: "In a meeting",
+    ),
+    AboutModel(
+      about: "At the gym",
+    ),
+    AboutModel(
+      about: "Sleeping",
+    ),
+    AboutModel(
+      about: "Urgent calls only",
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
           'About',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
         ),
         actions: [
-          Theme(
-            data: Theme.of(context).copyWith(
-              iconTheme: IconThemeData(
-                color: white,
-              ),
-              textTheme: TextTheme().apply(),
-            ),
-            child: PopupMenuButton<int>(
-              onSelected: (item) => onSelected(context, item),
-              itemBuilder: (context) => [
-                PopupMenuItem<int>(
-                  value: 0,
-                  height: 30,
-                  child: Row(
-                    children: [
-                      Text(
-                        'Delete all',
-                        style: TextStyle(
-                          fontSize: 15,
-                        ),
-                      ),
-                      SizedBox(width: 30),
-                    ],
-                  ),
-                ),
-              ],
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.more_vert,
+              color: white,
             ),
           ),
         ],
       ),
-      body: Container(),
+      body: ListView.builder(
+        itemCount: abouts.length,
+        itemBuilder: (
+          context,
+          index,
+        ) {
+          return card(
+            abouts[index],
+          );
+        },
+      ),
     );
   }
 
-  void onSelected(BuildContext context, int item) {
-    switch (item) {
-      case 0:
-        break;
-    }
+  Widget card(AboutModel about) {
+    return GestureDetector(
+      onTap: () {
+        widget.setAboutData(about);
+      },
+      child: Card(
+        color: transparent,
+        margin: EdgeInsets.all(
+          0.15,
+        ),
+        child: Container(
+          height: 60,
+          padding: EdgeInsets.symmetric(
+            horizontal: 20.0,
+            vertical: 5.0,
+          ),
+          child: Text(about.about),
+        ),
+      ),
+    );
   }
 }

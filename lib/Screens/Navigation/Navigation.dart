@@ -96,7 +96,11 @@ class _NavigationScreenState extends State<NavigationScreen>
   }
 
   @override
-  Widget build(BuildContext context) => DefaultTabController(
+  Widget build(BuildContext context) =>
+      //  _tabController.index == 0
+      // ? CameraScreen(cameras: [])
+      // :
+      DefaultTabController(
         length: 4,
         child: Scaffold(
           body: NestedScrollView(
