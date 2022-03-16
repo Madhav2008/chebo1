@@ -170,7 +170,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 showModalBottomSheet(
                   backgroundColor: transparent,
                   context: context,
-                  builder: (builder) => bottomSheet1(context),
+                  builder: (builder) => bottomSheet1(context, name),
                 );
               },
               leading: Icon(
@@ -309,7 +309,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  Widget bottomSheet1(context) {
+  Widget bottomSheet1(context, _nameController) {
     TextEditingController _nameController = TextEditingController();
     return Container(
       height: 180,
@@ -374,7 +374,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pop(context);
+                      setNameData(_nameController);
                     },
                     child: Text(
                       'save'.tr,
@@ -395,6 +395,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
       ),
     );
+  }
+
+  void setNameData(name) {
+    setState(() {
+      name = widget.name;
+    });
+    Navigator.pop(context);
   }
 
   Widget iconCreation(IconData icons, String text) {

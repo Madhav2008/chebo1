@@ -185,6 +185,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         counter: Offstage(),
+                        hintText: 'phone number',
                         border: InputBorder.none,
                       ),
                     ),

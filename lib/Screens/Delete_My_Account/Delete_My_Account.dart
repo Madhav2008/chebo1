@@ -293,6 +293,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                               maxLength: 10,
                               keyboardType: TextInputType.number,
                               decoration: InputDecoration(
+                                hintText: 'phone number',
                                 counter: Offstage(),
                               ),
                             ),
@@ -309,7 +310,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
             ),
             GestureDetector(
               onTap: () {
-                _phoneController.text.isNotEmpty
+                _phoneController.text.length < 10
                     ? Navigator.push(
                         context,
                         MaterialPageRoute(

@@ -138,13 +138,13 @@ class ChangeNumberScreenTwo extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                _oldPhoneController.text.isEmpty
+                _oldPhoneController.text.length < 10
                     ? ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text("Old phone no. is required"),
                         ),
                       )
-                    : _newPhoneController.text.isEmpty
+                    : _newPhoneController.text.length < 10
                         ? ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: Text("New phone no. is required"),
