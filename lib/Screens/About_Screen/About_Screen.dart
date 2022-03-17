@@ -1,13 +1,11 @@
-// ignore_for_file: file_abouts, prefer_const_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables
+// ignore_for_file: file_abouts, prefer_const_constructors, sized_box_for_whitespace, prefer_const_constructors_in_immutables, file_names
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/About_Model.dart';
 
 class AboutScreen extends StatefulWidget {
-  AboutScreen({Key? key, required this.setAboutData}) : super(key: key);
-
-  final Function setAboutData;
+  AboutScreen({Key? key}) : super(key: key);
 
   @override
   State<AboutScreen> createState() => _AboutScreenState();
@@ -15,7 +13,9 @@ class AboutScreen extends StatefulWidget {
 
 class _AboutScreenState extends State<AboutScreen> {
   List<AboutModel> abouts = [
-    AboutModel(about: 'Hey! there I am using WhatsApp India'),
+    AboutModel(
+      about: 'Hey! there I am using WhatsApp India.',
+    ),
     AboutModel(
       about: "Available",
     ),
@@ -87,7 +87,7 @@ class _AboutScreenState extends State<AboutScreen> {
   Widget card(AboutModel about) {
     return GestureDetector(
       onTap: () {
-        widget.setAboutData(about);
+        Navigator.pop(context);
       },
       child: Card(
         color: transparent,

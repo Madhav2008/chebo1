@@ -17,7 +17,6 @@ class UserDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextEditingController _nameController = TextEditingController();
-    TextEditingController _aboutController = TextEditingController();
     TextEditingController _phonenoController = TextEditingController(
       text: no,
     );
@@ -81,48 +80,6 @@ class UserDetailsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                ],
-              ),
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.info_outline,
-                color: grey,
-                size: 25,
-              ),
-              title: Text(
-                "About",
-                style: TextStyle(
-                  color: grey,
-                  fontSize: 17,
-                ),
-              ),
-              subtitle: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(
-                          color: one,
-                        ),
-                      ),
-                    ),
-                    child: TextField(
-                      controller: _aboutController,
-                      autofocus: true,
-                      cursorColor: one,
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                      ),
-                      style: TextStyle(
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -136,28 +93,22 @@ class UserDetailsScreen extends StatelessWidget {
                 _nameController.text.isEmpty
                     ? ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
-                          content: Text("All fields are required"),
+                          content: Text("Name is required"),
                         ),
                       )
-                    : _aboutController.text.isEmpty
-                        ? ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text("All fields are required"),
-                            ),
-                          )
-                        : Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (builder) => NavigationScreen(
-                                cameras: [],
-                                name: _nameController.text,
-                                avatar: avatar,
-                                phoneno: _phonenoController.text,
-                                about: _aboutController.text,
-                                countryCode: countryCode,
-                              ),
-                            ),
-                          );
+                    : Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => NavigationScreen(
+                            cameras: [],
+                            name: _nameController.text,
+                            avatar: avatar,
+                            phoneno: _phonenoController.text,
+                            about: 'Hey! there I am using WhatsApp India.',
+                            countryCode: countryCode,
+                          ),
+                        ),
+                      );
               },
               child: Container(
                 color: one,

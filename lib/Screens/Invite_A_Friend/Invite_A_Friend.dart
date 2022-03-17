@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:get/get.dart';
 
 class InviteAFriend extends StatefulWidget {
   InviteAFriend({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class InviteAFriend extends StatefulWidget {
 class _InviteAFriendState extends State<InviteAFriend> {
   final TextEditingController _hi = TextEditingController();
 
-  Widget appBarTitle = Text('Invite a friend');
+  Widget appBarTitle = Text('inviteAFriend'.tr);
 
   Icon actionIcon = Icon(
     Icons.search,
@@ -74,7 +75,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
                         size: 26,
                         color: white,
                       ),
-                      hintText: "Search...",
+                      hintText: "search".tr,
                       hintStyle: TextStyle(
                         color: white,
                       ),
@@ -86,7 +87,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
                     Icons.search,
                     size: 26,
                   );
-                  appBarTitle = Text('Invite a friend');
+                  appBarTitle = Text('inviteAFriend'.tr);
                 }
               });
             },
@@ -103,7 +104,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
             child: ListTile(
               onTap: () {
                 Share.share(
-                  "Let's chat on WhatsApp India! It's a fast, simple, and secure app we can use to message and call each other for free. Get it at https://whatsappIndia.com/dl/",
+                  "shareText".tr + ' ' + "https://whatsappIndia.com/dl/",
                 );
               },
               leading: CircleAvatar(
@@ -115,7 +116,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
                 ),
               ),
               title: Text(
-                'Share link',
+                'shareLink'.tr,
               ),
             ),
           ),

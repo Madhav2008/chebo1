@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/App_Info/App_Info.dart';
 import 'package:whatsapp/Screens/Contact_Us/Contact_Us.dart';
+import 'package:get/get.dart';
 
 class HelpSettings extends StatelessWidget {
   HelpSettings({Key? key}) : super(key: key);
@@ -32,7 +33,7 @@ class HelpSettings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Help'),
+        title: Text('help'.tr),
       ),
       body: Column(
         children: [
@@ -49,7 +50,7 @@ class HelpSettings extends StatelessWidget {
               color: grey,
             ),
             title: Text(
-              'Help Centre',
+              'helpCentre'.tr,
               style: TextStyle(
                 fontSize: 17,
               ),
@@ -70,7 +71,7 @@ class HelpSettings extends StatelessWidget {
               color: grey,
             ),
             title: Text(
-              'Contact us',
+              'contactUs'.tr,
               style: TextStyle(
                 fontSize: 17,
               ),
@@ -82,7 +83,7 @@ class HelpSettings extends StatelessWidget {
                   height: 3,
                 ),
                 Text(
-                  'Questions? Need help?',
+                  'contactUsDown'.tr,
                   style: TextStyle(
                     fontSize: 15,
                     color: grey,
@@ -101,7 +102,7 @@ class HelpSettings extends StatelessWidget {
               color: grey,
             ),
             title: Text(
-              'Terms and Privacy Policy',
+              'termsAndPrivacyPolicy'.tr,
               style: TextStyle(
                 fontSize: 17,
               ),
@@ -122,7 +123,7 @@ class HelpSettings extends StatelessWidget {
               color: grey,
             ),
             title: Text(
-              'App info',
+              'appInfo'.tr,
               style: TextStyle(
                 fontSize: 17,
               ),

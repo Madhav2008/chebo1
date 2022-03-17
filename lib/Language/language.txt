@@ -1,4 +1,4 @@
-Screens which are comfortable with all languages
+Screens which are comfortable with all languages :-
 
 Navigation Screen
 Settings Screen
@@ -9,3 +9,6 @@ Profile Screen
 Status Screen
 View Profile Screen
 App Info Screen
+Invite a friend Screen
+Help Settings Screen
+Contact Us Screen

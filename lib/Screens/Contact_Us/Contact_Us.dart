@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:get/get.dart';
 
 class ContactUs extends StatefulWidget {
   ContactUs({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _ContactUsState extends State<ContactUs> {
   );
 
   final _subjectController = TextEditingController(
-    text: "Can't find what I'm looking for",
+    text: "cantFindWhatImLookingFor".tr,
   );
 
   final _bodyController = TextEditingController();
@@ -55,7 +56,7 @@ class _ContactUsState extends State<ContactUs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contact Us"),
+        title: Text('contactUs'.tr),
         actions: [
           Theme(
             data: Theme.of(context).copyWith(
@@ -74,12 +75,14 @@ class _ContactUsState extends State<ContactUs> {
                   child: Row(
                     children: [
                       Text(
-                        'Send via email',
+                        'sendViaEmail'.tr,
                         style: TextStyle(
                           fontSize: 15,
                         ),
                       ),
-                      SizedBox(width: 30),
+                      SizedBox(
+                        width: 30,
+                      ),
                     ],
                   ),
                 ),
@@ -95,7 +98,7 @@ class _ContactUsState extends State<ContactUs> {
             Padding(
               padding: EdgeInsets.all(18.0),
               child: Text(
-                "Can't find what I'm looking for",
+                'cantFindWhatImLookingFor'.tr,
                 style: TextStyle(
                   color: grey,
                   fontSize: 18,
@@ -112,7 +115,7 @@ class _ContactUsState extends State<ContactUs> {
                 maxLines: 200,
                 minLines: 5,
                 decoration: InputDecoration(
-                  hintText: "Describe your problem",
+                  hintText: 'describeYourProblem'.tr,
                   hintStyle: TextStyle(
                     color: grey,
                   ),
@@ -130,7 +133,7 @@ class _ContactUsState extends State<ContactUs> {
                       _launchURL();
                     },
                     child: Text(
-                      'Visit our Help Centre',
+                      'visitOurHelpCentre'.tr,
                       style: TextStyle(
                         color: blue,
                         fontSize: 20,
@@ -155,7 +158,7 @@ class _ContactUsState extends State<ContactUs> {
                                 vertical: 10,
                               ),
                               child: Text(
-                                "Next",
+                                'next'.tr,
                                 style: TextStyle(
                                   fontSize: 20,
                                 ),
@@ -171,7 +174,7 @@ class _ContactUsState extends State<ContactUs> {
                               vertical: 10,
                             ),
                             child: Text(
-                              "Next",
+                              'next'.tr,
                               style: TextStyle(
                                 fontSize: 20,
                               ),
