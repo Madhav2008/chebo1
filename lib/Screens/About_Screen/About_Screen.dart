@@ -105,7 +105,30 @@ class _AboutScreenState extends State<AboutScreen> {
             horizontal: 20.0,
             vertical: 5.0,
           ),
-          child: Text(about.about),
+          child: Row(
+            children: [
+              // Image.network(
+              //   country.flag,
+              //   width: 30,
+              //   height: 30,
+              // ),
+              SizedBox(
+                width: 15,
+              ),
+              // Text(country.name),
+              Expanded(
+                child: Container(
+                  width: 150,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(about.about),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
