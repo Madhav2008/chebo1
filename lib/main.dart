@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
               //   countryCode: '+91',
               //   about: 'Hey! there I am using WhatsApp India.',
               // ),
-              SplashScreen(),
+              // SplashScreen(),
             ),
           );
         },
