@@ -483,7 +483,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             ],
                           ),
-                          // show ? emojiSelect() : Container(),
+                          show ? emojiSelect() : Container(),
                         ],
                       ),
                     ),
@@ -680,10 +680,10 @@ class _ChatScreenState extends State<ChatScreen> {
       },
       config: Config(
           columns: 7,
-          emojiSizeMax: 32 *
-              (Platform.isIOS
-                  ? 1.30
-                  : 1.0), // Issue: https://github.com/flutter/flutter/issues/28894
+          // emojiSizeMax: 32 *
+          // (Platform.isIOS
+          // ? 1.30
+          // : 1.0), // Issue: https://github.com/flutter/flutter/issues/28894
           verticalSpacing: 0,
           horizontalSpacing: 0,
           initCategory: Category.RECENT,
