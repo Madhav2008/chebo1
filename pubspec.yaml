@@ -49,6 +49,7 @@ dependencies:
   firebase_auth: 
   firebase: 
   flutter_spinkit:
+  emoji_picker_flutter: 
 
 dev_dependencies:
   flutter_test:
