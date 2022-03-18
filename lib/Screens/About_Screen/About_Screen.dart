@@ -119,11 +119,17 @@ class _AboutScreenState extends State<AboutScreen> {
           ),
           child: Row(
             children: [
+              Text(
+                about.logo,
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
               SizedBox(
                 width: 15,
               ),
               Text(
-                about.logo + ' ' + about.about,
+                about.about,
                 style: TextStyle(
                   fontSize: 16,
                 ),
