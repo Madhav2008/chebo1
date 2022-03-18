@@ -92,7 +92,7 @@ class _AboutScreenState extends State<AboutScreen> {
   Widget card(AboutModel about) {
     return GestureDetector(
       onTap: () {
-        Navigator.pop(context);
+        widget.setAboutData(about);
       },
       child: Card(
         color: transparent,

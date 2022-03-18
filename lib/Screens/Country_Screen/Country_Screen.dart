@@ -5,7 +5,10 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
 
 class CountryScreen extends StatefulWidget {
-  CountryScreen({Key? key, required this.setCountryData}) : super(key: key);
+  CountryScreen({
+    Key? key,
+    required this.setCountryData,
+  }) : super(key: key);
 
   final Function setCountryData;
 
