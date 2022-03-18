@@ -30,7 +30,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  String aboutss = 'Hey! there I am using WhatsApp India.';
+  String aboutss = '👋🏻 Hey! there I am using WhatsApp India.';
   @override
   Widget build(BuildContext context) {
     // File? _imageFile;
