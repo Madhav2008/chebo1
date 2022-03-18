@@ -2,7 +2,9 @@
 
 class AboutModel {
   String about;
+  String logo;
   AboutModel({
     required this.about,
+    required this.logo,
   });
 }

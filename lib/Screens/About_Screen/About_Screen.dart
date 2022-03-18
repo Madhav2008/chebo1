@@ -107,6 +107,11 @@ class _AboutScreenState extends State<AboutScreen> {
           ),
           child: Row(
             children: [
+              Image.network(
+                about.logo,
+                width: 30,
+                height: 30,
+              ),
               SizedBox(
                 width: 15,
               ),
