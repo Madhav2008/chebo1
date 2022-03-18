@@ -122,6 +122,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                               style: TextStyle(
                                 color: white,
                               ),
+                              autofocus: true,
                               controller: _hi,
                               decoration: InputDecoration(
                                 prefixIcon: Icon(

@@ -66,6 +66,7 @@ class _InviteAFriendState extends State<InviteAFriend> {
                     style: TextStyle(
                       color: white,
                     ),
+                    autofocus: true,
                     controller: _hi,
                     decoration: InputDecoration(
                       fillColor: one,

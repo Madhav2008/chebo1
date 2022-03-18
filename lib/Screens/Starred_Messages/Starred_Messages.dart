@@ -64,6 +64,7 @@ class _StarredMessagesState extends State<StarredMessages> {
                     style: TextStyle(
                       color: white,
                     ),
+                    autofocus: true,
                     controller: _hi,
                     decoration: InputDecoration(
                       fillColor: one,

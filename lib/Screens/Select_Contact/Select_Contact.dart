@@ -235,6 +235,7 @@ class _SelectContactState extends State<SelectContact> {
                     style: TextStyle(
                       color: white,
                     ),
+                    autofocus: true,
                     controller: _hi,
                     decoration: InputDecoration(
                       prefixIcon: Icon(

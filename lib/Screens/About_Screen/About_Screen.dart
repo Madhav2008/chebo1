@@ -5,7 +5,12 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/About_Model.dart';
 
 class AboutScreen extends StatefulWidget {
-  AboutScreen({Key? key}) : super(key: key);
+  AboutScreen({
+    Key? key,
+    required this.setAboutData,
+  }) : super(key: key);
+
+  final Function setAboutData;
 
   @override
   State<AboutScreen> createState() => _AboutScreenState();

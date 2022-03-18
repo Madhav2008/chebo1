@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/About_Model.dart';
 import 'package:whatsapp/Screens/About_Screen/About_Screen.dart';
 import 'package:whatsapp/Screens/Change_Number_Screen_One/Change_Number_Screen_One.dart';
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
@@ -29,6 +30,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  String aboutss = 'Hey! there I am using WhatsApp India.';
   @override
   Widget build(BuildContext context) {
     // File? _imageFile;
@@ -125,7 +127,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         foregroundColor: Theme.of(context).primaryColor,
                         backgroundColor: grey,
                         backgroundImage: NetworkImage(
-                          widget.avatar,
+                          widget.avatar.isNotEmpty
+                              ? widget.avatar
+                              : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
                         ),
                       ),
                     ),
@@ -224,7 +228,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => AboutScreen(),
+                    builder: (BuildContext context) => AboutScreen(
+                      setAboutData: setAboutData,
+                    ),
                   ),
                 );
               },
@@ -244,7 +250,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    widget.about,
+                    aboutss,
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -434,5 +440,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ],
       ),
     );
+  }
+
+  void setAboutData(AboutModel aboutModel) {
+    setState(() {
+      aboutss = aboutModel.about;
+    });
+    Navigator.pop(context);
   }
 }

@@ -39,6 +39,7 @@ class _ExportChatScreenState extends State<ExportChatScreen> {
                     style: TextStyle(
                       color: white,
                     ),
+                    autofocus: true,
                     controller: _hi,
                     decoration: InputDecoration(
                       prefixIcon: Icon(
