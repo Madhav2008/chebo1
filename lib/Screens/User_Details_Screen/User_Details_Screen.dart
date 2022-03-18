@@ -74,6 +74,7 @@ class UserDetailsScreen extends StatelessWidget {
                       cursorColor: one,
                       maxLength: 17,
                       decoration: InputDecoration(
+                        counter: Offstage(),
                         border: InputBorder.none,
                       ),
                       style: TextStyle(
