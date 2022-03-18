@@ -41,6 +41,12 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final phoneNo = '7982880636';
 
+  // final own = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
+  // ? primary
+  // : Color(0xffdcf8c6);
+
+  bool send = false;
+
   ImagePicker _picker = ImagePicker();
   XFile? file;
 
@@ -71,7 +77,22 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
-  void sendMessage(String message, int sourceId, int targetId) {}
+  void sendMessage(
+    String message,
+    // int sourceId,
+    // int targetId,
+  ) {
+    send
+        ? Container(
+            height: 70,
+            child: OwnMessageCard(
+              color: Color(0xffdcf8c6),
+              textColor: black,
+              message: message,
+            ),
+          )
+        : Container();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -301,37 +322,41 @@ class _ChatScreenState extends State<ChatScreen> {
               child: Column(
                 children: [
                   Expanded(
-                    child: ListView.builder(
-                      shrinkWrap: true,
-                      controller: _scrollController,
-                      itemCount: 5 + 1,
-                      itemBuilder: (context, index) {
-                        if (index == 5) {
-                          return Container(
-                            height: 70,
-                          );
-                        }
-                        if ('hi' == "source") {
-                          return OwnMessageCard(
-                            color: own,
-                            text: text,
-                          );
-                        } else {
-                          return Column(
-                            children: [
-                              ReplyCard(
-                                color: reply,
-                                text: text,
-                              ),
-                              OwnMessageCard(
+                    // child: ListView.builder(
+                    //   shrinkWrap: true,
+                    //   controller: _scrollController,
+                    //   itemCount: 5 + 1,
+                    //   itemBuilder: (context, index) {
+                    //     if (index == 5) {
+                    //       return Container(
+                    //         height: 70,
+                    //       );
+                    //     }
+                    //     if ('hi' == "source") {
+                    //       return OwnMessageCard(
+                    //         color: own,
+                    //         textColor: black,
+                    //         message: '',
+                    //       );
+                    //     } else {
+                    child: Column(
+                      children: [
+                        ReplyCard(
+                          color: reply,
+                          text: text,
+                        ),
+                        send
+                            ? OwnMessageCard(
                                 color: own,
-                                text: text,
-                              ),
-                            ],
-                          );
-                        }
-                      },
+                                textColor: black,
+                                message: _controller.text,
+                              )
+                            : Container(),
+                      ],
                     ),
+                    // }
+                    // },
+                    // ),
                   ),
                   Align(
                     alignment: Alignment.bottomCenter,
@@ -454,6 +479,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                     ),
                                     onPressed: () {
                                       if (sendButton) {
+                                        send = true;
                                         AssetsAudioPlayer.newPlayer().open(
                                           Audio(
                                             "../assets/sounds/message_received.mp3",
@@ -469,8 +495,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                         );
                                         sendMessage(
                                           _controller.text,
-                                          2,
-                                          2,
+                                          // 2,
+                                          // 2,
                                         );
                                         _controller.clear();
                                         setState(() {
@@ -672,37 +698,44 @@ class _ChatScreenState extends State<ChatScreen> {
         //     });
         EmojiPicker(
       onEmojiSelected: (category, emoji) {
-        // Do something when emoji is tapped
+        print(emoji);
+        setState(() {
+          _controller.text = _controller.text + emoji.emoji;
+        });
       },
       onBackspacePressed: () {
         // Backspace-Button tapped logic
         // Remove this line to also remove the button in the UI
       },
       config: Config(
-          columns: 7,
-          // emojiSizeMax: 32 *
-          // (Platform.isIOS
-          // ? 1.30
-          // : 1.0), // Issue: https://github.com/flutter/flutter/issues/28894
-          verticalSpacing: 0,
-          horizontalSpacing: 0,
-          initCategory: Category.RECENT,
-          bgColor: Color(0xFFF2F2F2),
-          indicatorColor: Colors.blue,
-          iconColor: Colors.grey,
-          iconColorSelected: Colors.blue,
-          progressIndicatorColor: Colors.blue,
-          backspaceColor: Colors.blue,
-          skinToneDialogBgColor: Colors.white,
-          skinToneIndicatorColor: Colors.grey,
-          enableSkinTones: true,
-          showRecentsTab: true,
-          recentsLimit: 28,
-          noRecentsText: "No Recents",
-          noRecentsStyle: const TextStyle(fontSize: 20, color: Colors.black26),
-          tabIndicatorAnimDuration: kTabScrollDuration,
-          categoryIcons: const CategoryIcons(),
-          buttonMode: ButtonMode.MATERIAL),
+        columns: 7,
+        emojiSizeMax: 32,
+        // (Platform.isIOS
+        // ? 1.30
+        // : 1.0), // Issue: https://github.com/flutter/flutter/issues/28894
+        verticalSpacing: 0,
+        horizontalSpacing: 0,
+        initCategory: Category.RECENT,
+        bgColor: Color(0xFFF2F2F2),
+        indicatorColor: Colors.blue,
+        iconColor: Colors.grey,
+        iconColorSelected: Colors.blue,
+        progressIndicatorColor: Colors.blue,
+        backspaceColor: Colors.blue,
+        skinToneDialogBgColor: Colors.white,
+        skinToneIndicatorColor: Colors.grey,
+        enableSkinTones: true,
+        showRecentsTab: true,
+        recentsLimit: 28,
+        noRecentsText: "No Recents",
+        noRecentsStyle: TextStyle(
+          fontSize: 20,
+          color: Colors.black26,
+        ),
+        tabIndicatorAnimDuration: kTabScrollDuration,
+        categoryIcons: const CategoryIcons(),
+        buttonMode: ButtonMode.MATERIAL,
+      ),
     );
   }
 }

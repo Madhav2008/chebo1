@@ -8,11 +8,13 @@ class OwnMessageCard extends StatelessWidget {
     Key? key,
     time,
     required this.color,
-    required this.text,
+    required this.textColor,
+    required this.message,
   }) : super(key: key);
 
   final Color color;
-  final Color text;
+  final Color textColor;
+  final String message;
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +34,15 @@ class OwnMessageCard extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(
                   left: 10,
-                  right: 30,
+                  right: 70,
                   top: 5,
                   bottom: 20,
                 ),
                 child: Text(
-                  'Hey ! Madhav',
+                  message,
                   style: TextStyle(
                     fontSize: 16,
-                    color: text,
+                    color: textColor,
                   ),
                 ),
               ),
