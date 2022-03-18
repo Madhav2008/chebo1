@@ -31,7 +31,6 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   String aboutss = 'Hey! there I am using WhatsApp India.';
-  String aboutssLogo = '👋🏻';
   @override
   Widget build(BuildContext context) {
     // File? _imageFile;
@@ -250,22 +249,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      Text(
-                        aboutssLogo,
-                        style: TextStyle(
-                          fontSize: 18,
-                        ),
-                      ),
-                      SizedBox(width: 10,),
-                      Text(
-                        aboutss,
-                        style: TextStyle(
-                          fontSize: 18,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    aboutss,
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
                   ),
                   SizedBox(
                     height: 10,
@@ -456,8 +444,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   void setAboutData(AboutModel aboutModel) {
     setState(() {
-      aboutssLogo = aboutModel.logo;
-      aboutss = aboutModel.about;
+      aboutss = aboutModel.logo + ' ' + aboutModel.about;
     });
     Navigator.pop(context);
   }
