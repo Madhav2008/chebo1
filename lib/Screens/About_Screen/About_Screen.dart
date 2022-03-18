@@ -27,7 +27,7 @@ class _AboutScreenState extends State<AboutScreen> {
       logo: '🙋🏻‍♂️',
     ),
     AboutModel(
-      about: "Busy",
+      about: " Busy",
       logo: '⚒️',
     ),
     AboutModel(
