@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables, prefer_final_fields, sized_box_for_whitespace, file_names
 
+import 'dart:io';
+
 import 'package:assets_audio_player/assets_audio_player.dart';
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
@@ -656,17 +659,52 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
-  // Widget emojiSelect() {
-  // return EmojiPicker(
-  //     rows: 4,
-  //     columns: 7,
-  //     onEmojiSelected: (emoji, category) {
-  //       print(emoji);
-  //       setState(() {
-  //         _controller.text = _controller.text + emoji.emoji;
-  //       });
-  //     });
-  // }
+  Widget emojiSelect() {
+    return
+        //  EmojiPicker(
+        //     rows: 4,
+        //     columns: 7,
+        //     onEmojiSelected: (emoji, category) {
+        //       print(emoji);
+        //       setState(() {
+        //         _controller.text = _controller.text + emoji.emoji;
+        //       });
+        //     });
+        EmojiPicker(
+      onEmojiSelected: (category, emoji) {
+        // Do something when emoji is tapped
+      },
+      onBackspacePressed: () {
+        // Backspace-Button tapped logic
+        // Remove this line to also remove the button in the UI
+      },
+      config: Config(
+          columns: 7,
+          emojiSizeMax: 32 *
+              (Platform.isIOS
+                  ? 1.30
+                  : 1.0), // Issue: https://github.com/flutter/flutter/issues/28894
+          verticalSpacing: 0,
+          horizontalSpacing: 0,
+          initCategory: Category.RECENT,
+          bgColor: Color(0xFFF2F2F2),
+          indicatorColor: Colors.blue,
+          iconColor: Colors.grey,
+          iconColorSelected: Colors.blue,
+          progressIndicatorColor: Colors.blue,
+          backspaceColor: Colors.blue,
+          skinToneDialogBgColor: Colors.white,
+          skinToneIndicatorColor: Colors.grey,
+          enableSkinTones: true,
+          showRecentsTab: true,
+          recentsLimit: 28,
+          noRecentsText: "No Recents",
+          noRecentsStyle: const TextStyle(fontSize: 20, color: Colors.black26),
+          tabIndicatorAnimDuration: kTabScrollDuration,
+          categoryIcons: const CategoryIcons(),
+          buttonMode: ButtonMode.MATERIAL),
+    );
+  }
 }
 
 void onSelected(
