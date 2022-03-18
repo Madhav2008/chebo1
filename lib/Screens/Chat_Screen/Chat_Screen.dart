@@ -443,7 +443,10 @@ class _ChatScreenState extends State<ChatScreen> {
                                             },
                                           ),
                                           IconButton(
-                                            icon: Icon(Icons.camera_alt),
+                                            icon: Icon(
+                                              Icons.camera_alt,
+                                              color: one,
+                                            ),
                                             onPressed: () {
                                               Navigator.push(
                                                 context,
