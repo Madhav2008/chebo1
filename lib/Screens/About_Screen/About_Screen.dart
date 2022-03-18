@@ -20,39 +20,51 @@ class _AboutScreenState extends State<AboutScreen> {
   List<AboutModel> abouts = [
     AboutModel(
       about: 'Hey! there I am using WhatsApp India.',
+      logo: '',
     ),
     AboutModel(
       about: "Available",
+      logo: '',
     ),
     AboutModel(
       about: "Busy",
+      logo: '',
     ),
     AboutModel(
       about: "At school",
+      logo: '',
     ),
     AboutModel(
       about: "At the movies",
+      logo: '',
     ),
     AboutModel(
       about: "At the work",
+      logo: '',
     ),
     AboutModel(
       about: "Battery about to die",
+      logo: '',
     ),
     AboutModel(
       about: "Can't talk, WhatsApp India only",
+      logo: '',
     ),
     AboutModel(
       about: "In a meeting",
+      logo: '',
     ),
     AboutModel(
       about: "At the gym",
+      logo: '',
     ),
     AboutModel(
       about: "Sleeping",
+      logo: '',
     ),
     AboutModel(
       about: "Urgent calls only",
+      logo: '',
     ),
   ];
   @override
