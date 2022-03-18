@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                 avatar:
                     'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
                 phoneno: '9999348666',
-              //   countryCode: '+91',
+                countryCode: '+91',
               //   about: 'Hey! there I am using WhatsApp India.',
               // ),
               // SplashScreen(),
