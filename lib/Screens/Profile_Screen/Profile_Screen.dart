@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -31,6 +32,7 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   String aboutss = '👋🏻 Hey! there I am using WhatsApp India.';
+  final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     // File? _imageFile;
@@ -173,7 +175,95 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 showModalBottomSheet(
                   backgroundColor: transparent,
                   context: context,
-                  builder: (builder) => bottomSheet1(context, name),
+                  builder: (builder) {
+                    return Container(
+                      height: 180,
+                      width: MediaQuery.of(context).size.width,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 20,
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(left: 15.0),
+                                child: Text(
+                                  'enterYourName'.tr,
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              ListTile(
+                                title: TextField(
+                                  controller: _nameController,
+                                  autofocus: true,
+                                  decoration: InputDecoration(
+                                    hintText: widget.name,
+                                  ),
+                                ),
+                                trailing: IconButton(
+                                  onPressed: () {
+                                    emojiSelect();
+                                  },
+                                  icon: Icon(
+                                    Icons.emoji_emotions_outlined,
+                                    color: grey,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: Text(
+                                      'cancel'.tr,
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: grey,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: Text(
+                                      'save'.tr,
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: grey,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
                 );
               },
               leading: Icon(
@@ -314,101 +404,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  Widget bottomSheet1(context, _nameController) {
-    TextEditingController _nameController = TextEditingController();
-    return Container(
-      height: 180,
-      width: MediaQuery.of(context).size.width,
-      child: Card(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        child: Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 10,
-            vertical: 20,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(left: 15.0),
-                child: Text(
-                  'enterYourName'.tr,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              ListTile(
-                title: TextField(
-                  controller: _nameController,
-                  autofocus: true,
-                  decoration: InputDecoration(
-                    hintText: widget.name,
-                  ),
-                ),
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.emoji_emotions_outlined,
-                    color: grey,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: Text(
-                      'cancel'.tr,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: grey,
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      setNameData(_nameController);
-                    },
-                    child: Text(
-                      'save'.tr,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: grey,
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                ],
-              )
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  void setNameData(name) {
-    setState(() {
-      name = widget.name;
-    });
-    Navigator.pop(context);
-  }
-
   Widget iconCreation(IconData icons, String text) {
     return InkWell(
       onTap: () {},
@@ -447,5 +442,59 @@ class _ProfileScreenState extends State<ProfileScreen> {
       aboutss = aboutModel.logo + ' ' + aboutModel.about;
     });
     Navigator.pop(context);
+  }
+
+  Widget emojiSelect() {
+    return
+        //  EmojiPicker(
+        //     rows: 4,
+        //     columns: 7,
+        //     onEmojiSelected: (emoji, category) {
+        //       print(emoji);
+        //       setState(() {
+        //         _controller.text = _controller.text + emoji.emoji;
+        //       });
+        //     });
+        EmojiPicker(
+      onEmojiSelected: (category, emoji) {
+        print(emoji);
+        setState(() {
+          _nameController.text = _nameController.text + emoji.emoji;
+        });
+      },
+      onBackspacePressed: () {
+        // Backspace-Button tapped logic
+        // Remove this line to also remove the button in the UI
+      },
+      config: Config(
+        columns: 7,
+        emojiSizeMax: 32,
+        // (Platform.isIOS
+        // ? 1.30
+        // : 1.0), // Issue: https://github.com/flutter/flutter/issues/28894
+        verticalSpacing: 0,
+        horizontalSpacing: 0,
+        initCategory: Category.RECENT,
+        bgColor: Color(0xFFF2F2F2),
+        indicatorColor: Colors.blue,
+        iconColor: Colors.grey,
+        iconColorSelected: Colors.blue,
+        progressIndicatorColor: Colors.blue,
+        backspaceColor: Colors.blue,
+        skinToneDialogBgColor: Colors.white,
+        skinToneIndicatorColor: Colors.grey,
+        enableSkinTones: true,
+        showRecentsTab: true,
+        recentsLimit: 28,
+        noRecentsText: "No Recents",
+        noRecentsStyle: TextStyle(
+          fontSize: 20,
+          color: Colors.black26,
+        ),
+        tabIndicatorAnimDuration: kTabScrollDuration,
+        categoryIcons: const CategoryIcons(),
+        buttonMode: ButtonMode.MATERIAL,
+      ),
+    );
   }
 }

@@ -399,7 +399,9 @@ class _ChatScreenState extends State<ChatScreen> {
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Type a message",
-                                      hintStyle: TextStyle(color: grey),
+                                      hintStyle: TextStyle(
+                                        color: grey,
+                                      ),
                                       prefixIcon: IconButton(
                                         icon: Icon(
                                           show
@@ -431,7 +433,9 @@ class _ChatScreenState extends State<ChatScreen> {
                                             },
                                           ),
                                           IconButton(
-                                            icon: Icon(Icons.monetization_on),
+                                            icon: Icon(
+                                              Icons.monetization_on,
+                                            ),
                                             onPressed: () {
                                               Navigator.push(
                                                 context,
@@ -445,7 +449,6 @@ class _ChatScreenState extends State<ChatScreen> {
                                           IconButton(
                                             icon: Icon(
                                               Icons.camera_alt,
-                                              color: one,
                                             ),
                                             onPressed: () {
                                               Navigator.push(
