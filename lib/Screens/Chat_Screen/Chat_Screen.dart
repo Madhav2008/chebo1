@@ -9,6 +9,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Message_Model.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Chats_Wallpaper_Screen/Chats_Wallpaper_Screen.dart';
 import 'package:whatsapp/Screens/Media_Links_And_Docs/Media_Links_And_Docs.dart';
@@ -40,6 +41,8 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   final phoneNo = '7982880636';
+
+  List<MessageModel> allMessages = [];
 
   // final own = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
   // ? primary
@@ -82,16 +85,28 @@ class _ChatScreenState extends State<ChatScreen> {
     // int sourceId,
     // int targetId,
   ) {
-    send
-        ? Container(
-            height: 70,
-            child: OwnMessageCard(
-              color: Color(0xffdcf8c6),
-              textColor: black,
-              message: message,
-            ),
-          )
-        : Container();
+    setMessage(
+      "source",
+      message,
+    );
+  }
+
+  void setMessage(
+    String type,
+    String message,
+    // int sourceId,
+    // int targetId,
+  ) {
+    MessageModel messageModel = MessageModel(
+      message: message,
+      type: type,
+      time: '2:30pm',
+    );
+    setState(() {
+      setState(() {
+        allMessages.add(messageModel);
+      });
+    });
   }
 
   @override
@@ -322,41 +337,26 @@ class _ChatScreenState extends State<ChatScreen> {
               child: Column(
                 children: [
                   Expanded(
-                    // child: ListView.builder(
-                    //   shrinkWrap: true,
-                    //   controller: _scrollController,
-                    //   itemCount: 5 + 1,
-                    //   itemBuilder: (context, index) {
-                    //     if (index == 5) {
-                    //       return Container(
-                    //         height: 70,
-                    //       );
-                    //     }
-                    //     if ('hi' == "source") {
-                    //       return OwnMessageCard(
-                    //         color: own,
-                    //         textColor: black,
-                    //         message: '',
-                    //       );
-                    //     } else {
-                    child: Column(
-                      children: [
-                        ReplyCard(
-                          color: reply,
-                          text: text,
-                        ),
-                        send
-                            ? OwnMessageCard(
-                                color: own,
-                                textColor: black,
-                                message: _controller.text,
-                              )
-                            : Container(),
-                      ],
+                    child: ListView.builder(
+                      shrinkWrap: true,
+                      controller: _scrollController,
+                      itemCount: allMessages.length,
+                      itemBuilder: (context, index) {
+                        if (allMessages[index].type == "source") {
+                          return OwnMessageCard(
+                            color: own,
+                            textColor: text,
+                            message: allMessages[index].message,
+                          );
+                        } else {
+                          return ReplyCard(
+                            color: reply,
+                            textColor: text,
+                            message: allMessages[index].message,
+                          );
+                        }
+                      },
                     ),
-                    // }
-                    // },
-                    // ),
                   ),
                   Align(
                     alignment: Alignment.bottomCenter,

@@ -7,10 +7,12 @@ class ReplyCard extends StatelessWidget {
   ReplyCard({
     Key? key,
     required this.color,
-    required this.text,
+    required this.textColor,
+    required this.message,
   }) : super(key: key);
   final Color color;
-  final Color text;
+  final Color textColor;
+  final String message;
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -36,10 +38,10 @@ class ReplyCard extends StatelessWidget {
                   bottom: 20,
                 ),
                 child: Text(
-                  'Kya Haal h ?',
+                  message,
                   style: TextStyle(
                     fontSize: 16,
-                    color: text,
+                    color: textColor,
                   ),
                 ),
               ),
