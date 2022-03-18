@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
               theme: MyThemes.lightTheme,
               darkTheme: MyThemes.darkTheme,
               home:
-              //  NavigationScreen(
+               NavigationScreen(
               //   cameras: cameras,
               //   name: 'Madhav Arora',
               //   avatar:
