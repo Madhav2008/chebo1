@@ -73,7 +73,6 @@ class UserDetailsScreen extends StatelessWidget {
                       autofocus: true,
                       cursorColor: one,
                       maxLength: 17,
-                      
                       decoration: InputDecoration(
                         border: InputBorder.none,
                       ),
