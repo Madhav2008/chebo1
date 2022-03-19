@@ -396,99 +396,96 @@ class _ChatScreenState extends State<ChatScreen> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25),
                                   ),
-                                  child: Expanded(
-                                    child: TextFormField(
-                                      controller: _controller,
-                                      focusNode: focusNode,
-                                      textAlignVertical:
-                                          TextAlignVertical.center,
-                                      keyboardType: TextInputType.multiline,
-                                      maxLines: 6,
-                                      minLines: 1,
-                                      onChanged: (value) {
-                                        if (value.isNotEmpty) {
-                                          setState(() {
-                                            sendButton = true;
-                                          });
-                                        } else {
-                                          setState(() {
-                                            sendButton = false;
-                                          });
-                                        }
-                                      },
-                                      decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: "Type a message",
-                                        hintStyle: TextStyle(
-                                          color: grey,
-                                        ),
-                                        prefixIcon: IconButton(
-                                          icon: Icon(
-                                            show
-                                                ? Icons.keyboard
-                                                : Icons.emoji_emotions_outlined,
-                                          ),
-                                          onPressed: () {
-                                            if (!show) {
-                                              focusNode.unfocus();
-                                              focusNode.canRequestFocus = false;
-                                            }
-                                            setState(() {
-                                              show = !show;
-                                            });
-                                          },
-                                        ),
-                                        suffixIcon: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: Icon(Icons.attach_file),
-                                              onPressed: () {
-                                                showModalBottomSheet(
-                                                  backgroundColor: transparent,
-                                                  context: context,
-                                                  builder: (builder) {
-                                                    return bottomSheet();
-                                                  },
-                                                );
-                                              },
-                                            ),
-                                            IconButton(
-                                              icon: Icon(
-                                                Icons.monetization_on,
-                                              ),
-                                              onPressed: () {
-                                                Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (builder) {
-                                                      return PaymentScreen();
-                                                    },
-                                                  ),
-                                                );
-                                              },
-                                            ),
-                                            IconButton(
-                                              icon: Icon(
-                                                Icons.camera_alt,
-                                              ),
-                                              onPressed: () {
-                                                Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (builder) {
-                                                      return CameraScreen(
-                                                        cameras: [],
-                                                      );
-                                                    },
-                                                  ),
-                                                );
-                                              },
-                                            ),
-                                          ],
-                                        ),
-                                        contentPadding: EdgeInsets.all(5),
+                                  child: TextFormField(
+                                    controller: _controller,
+                                    focusNode: focusNode,
+                                    textAlignVertical: TextAlignVertical.center,
+                                    keyboardType: TextInputType.multiline,
+                                    maxLines: 6,
+                                    minLines: 1,
+                                    onChanged: (value) {
+                                      if (value.isNotEmpty) {
+                                        setState(() {
+                                          sendButton = true;
+                                        });
+                                      } else {
+                                        setState(() {
+                                          sendButton = false;
+                                        });
+                                      }
+                                    },
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintText: "Type a message",
+                                      hintStyle: TextStyle(
+                                        color: grey,
                                       ),
+                                      prefixIcon: IconButton(
+                                        icon: Icon(
+                                          show
+                                              ? Icons.keyboard
+                                              : Icons.emoji_emotions_outlined,
+                                        ),
+                                        onPressed: () {
+                                          if (!show) {
+                                            focusNode.unfocus();
+                                            focusNode.canRequestFocus = false;
+                                          }
+                                          setState(() {
+                                            show = !show;
+                                          });
+                                        },
+                                      ),
+                                      suffixIcon: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          IconButton(
+                                            icon: Icon(Icons.attach_file),
+                                            onPressed: () {
+                                              showModalBottomSheet(
+                                                backgroundColor: transparent,
+                                                context: context,
+                                                builder: (builder) {
+                                                  return bottomSheet();
+                                                },
+                                              );
+                                            },
+                                          ),
+                                          IconButton(
+                                            icon: Icon(
+                                              Icons.monetization_on,
+                                            ),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (builder) {
+                                                    return PaymentScreen();
+                                                  },
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                          IconButton(
+                                            icon: Icon(
+                                              Icons.camera_alt,
+                                            ),
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (builder) {
+                                                    return CameraScreen(
+                                                      cameras: [],
+                                                    );
+                                                  },
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                      contentPadding: EdgeInsets.all(5),
                                     ),
                                   ),
                                 ),
