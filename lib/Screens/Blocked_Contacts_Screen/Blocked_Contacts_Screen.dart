@@ -60,7 +60,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
                         // about: dummyData[i].about,
                       // );
                     // },
-                  ),
+                  // ),
                 );
               },
               leading: CircleAvatar(
