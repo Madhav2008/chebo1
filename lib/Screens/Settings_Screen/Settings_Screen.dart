@@ -101,9 +101,9 @@ class SettingsScreen extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (builder) {
                         return QRCodeScreen(
-                        name: name,
-                        avatar: avatar,
-                      );
+                          name: name,
+                          avatar: avatar,
+                        );
                       },
                     ),
                   );
