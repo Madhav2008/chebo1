@@ -34,7 +34,9 @@ class ChatScreen extends StatefulWidget {
   final String about;
 
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  _ChatScreenState createState() {
+    return _ChatScreenState();
+  }
 }
 
 class _ChatScreenState extends State<ChatScreen> {
