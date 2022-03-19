@@ -49,7 +49,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
             ),
             ListTile(
               onTap: () {
-                Navigator.push(
+                // Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) {
