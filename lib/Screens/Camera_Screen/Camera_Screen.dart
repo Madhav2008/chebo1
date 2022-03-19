@@ -111,8 +111,8 @@ class _CameraScreenState extends State<CameraScreen> {
                             MaterialPageRoute(
                               builder: (builder) {
                                 return VideoViewPage(
-                                path: videopath.path,
-                              );
+                                  path: videopath.path,
+                                );
                               },
                             ),
                           );
