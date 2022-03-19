@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 
 class LocalString extends Translations {
   @override
-  Map<String, Map<String, String>> get keys => {
+  Map<String, Map<String, String>> get keys {
+    return {
         // ENGLISH LANGUAGE
         'en_US': {
           'search': 'Search...',
@@ -1303,4 +1304,5 @@ class LocalString extends Translations {
           'visitOurHelpCentre': 'ഞങ്ങളുടെ സഹായ കേന്ദ്രം സന്ദർശിക്കുക',
         },
       };
+  }
 }
