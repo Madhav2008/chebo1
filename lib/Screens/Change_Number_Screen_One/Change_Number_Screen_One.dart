@@ -64,7 +64,9 @@ class ChangeNumberScreenOne extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => ChangeNumberScreenTwo(),
+                    builder: (builder) {
+                      return ChangeNumberScreenTwo();
+                    },
                   ),
                 );
               },
