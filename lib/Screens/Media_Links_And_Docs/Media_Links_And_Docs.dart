@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class MediaLinksAndDocs extends StatefulWidget {
-  MediaLinksAndDocs({Key? key}) : super(key: key);
+  MediaLinksAndDocs({Key? key, required this.name,}) : super(key: key);
 
   @override
   _MediaLinksAndDocsState createState() => _MediaLinksAndDocsState();
