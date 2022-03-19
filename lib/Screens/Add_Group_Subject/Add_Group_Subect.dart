@@ -9,7 +9,9 @@ class AddGroupSubject extends StatefulWidget {
   AddGroupSubject({Key? key}) : super(key: key);
 
   @override
-  _AddGroupSubjectState createState() => _AddGroupSubjectState();
+  _AddGroupSubjectState createState() {
+    return _AddGroupSubjectState();
+  }
 }
 
 class _AddGroupSubjectState extends State<AddGroupSubject> {
