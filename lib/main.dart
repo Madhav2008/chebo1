@@ -26,41 +26,41 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-        create: (context) {
-          return ThemeProvider();
-        },
-        builder: (context, _) {
-          final themeProvider = Provider.of<ThemeProvider>(context);
-          return ChangeNotifierProvider(
-            create: (context) {
-              ConnectivityChangeNotifier changeNotifier =
-                  ConnectivityChangeNotifier();
-              changeNotifier.initialLoad();
-              return changeNotifier;
-            },
-            child: GetMaterialApp(
-              translations: LocalString(),
-              locale: Locale('en', 'US'),
-              title: 'WhatsApp India',
-              debugShowCheckedModeBanner: false,
-              themeMode: themeProvider.themeMode,
-              theme: MyThemes.lightTheme,
-              darkTheme: MyThemes.darkTheme,
-              home:
-                  //  NavigationScreen(
-                  //   cameras: cameras,
-                  //   name: 'Madhav Arora',
-                  //   avatar:
-                  //       'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-                  //   phoneno: '9999348666',
-                  //   countryCode: '+91',
-                  //   about: '👋🏻 Hey! there I am using WhatsApp India.',
-                  // ),
-                  SplashScreen(),
-            ),
-          );
-        },
-      );
+      create: (context) {
+        return ThemeProvider();
+      },
+      builder: (context, _) {
+        final themeProvider = Provider.of<ThemeProvider>(context);
+        return ChangeNotifierProvider(
+          create: (context) {
+            ConnectivityChangeNotifier changeNotifier =
+                ConnectivityChangeNotifier();
+            changeNotifier.initialLoad();
+            return changeNotifier;
+          },
+          child: GetMaterialApp(
+            translations: LocalString(),
+            locale: Locale('en', 'US'),
+            title: 'WhatsApp India',
+            debugShowCheckedModeBanner: false,
+            themeMode: themeProvider.themeMode,
+            theme: MyThemes.lightTheme,
+            darkTheme: MyThemes.darkTheme,
+            home:
+                //  NavigationScreen(
+                //   cameras: cameras,
+                //   name: 'Madhav Arora',
+                //   avatar:
+                //       'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+                //   phoneno: '9999348666',
+                //   countryCode: '+91',
+                //   about: '👋🏻 Hey! there I am using WhatsApp India.',
+                // ),
+                SplashScreen(),
+          ),
+        );
+      },
+    );
   }
 }
 
