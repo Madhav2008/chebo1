@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => ChangeNotifierProvider(
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
         create: (context) {
           return ThemeProvider();
         },
@@ -61,6 +62,7 @@ class MyApp extends StatelessWidget {
           );
         },
       );
+  }
 }
 
 // // ignore_for_file: prefer_const_constructors, prefer_void_to_null, prefer_const_constructors_in_immutables
