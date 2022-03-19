@@ -153,7 +153,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             showModalBottomSheet(
                               backgroundColor: transparent,
                               context: context,
-                              builder: (builder) => bottomSheet(context),
+                              builder: (builder) {
+                                return bottomSheet(context);
+                              },
                             );
                             selectImage();
                           },
