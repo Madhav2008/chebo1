@@ -89,7 +89,9 @@ class ChatHistoryScreen extends StatelessWidget {
             onTap: () {
               showDialog(
                 context: context,
-                builder: (BuildContext context) => DeleteAllChats(),
+                builder: (BuildContext context) {
+                  return DeleteAllChats();
+                },
               );
             },
             leading: Icon(
