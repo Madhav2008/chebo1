@@ -51,7 +51,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           },
           body: TabBarView(
             children: <Widget>[
-              Text('Media'),
+              Center(child: Text('Media')),
               Text('Docs'),
               Text('Links'),
             ],
