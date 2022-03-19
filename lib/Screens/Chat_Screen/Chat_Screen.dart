@@ -476,8 +476,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                                 MaterialPageRoute(
                                                   builder: (builder) {
                                                     return CameraScreen(
-                                                    cameras: [],
-                                                  );
+                                                      cameras: [],
+                                                    );
                                                   },
                                                 ),
                                               );
@@ -728,7 +728,7 @@ class _ChatScreenState extends State<ChatScreen> {
         print(emoji);
         setState(() {
           _controller.text = _controller.text + emoji.emoji;
-        });
+        },);
       },
       onBackspacePressed: () {
         // Backspace-Button tapped logic
