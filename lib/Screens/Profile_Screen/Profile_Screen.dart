@@ -379,7 +379,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => ChangeNumberScreenOne(),
+                    builder: (BuildContext context) {
+                      return ChangeNumberScreenOne();
+                    },
                   ),
                 );
               },
