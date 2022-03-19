@@ -160,7 +160,9 @@ class SettingsScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ChatsSettings(),
+                    builder: (context) {
+                      return ChatsSettings();
+                    },
                   ),
                 );
               },
