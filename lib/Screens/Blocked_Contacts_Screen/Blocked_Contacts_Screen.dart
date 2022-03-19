@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
 
 class BlockedContactsScreen extends StatefulWidget {
   const BlockedContactsScreen({Key? key}) : super(key: key);
