@@ -99,10 +99,12 @@ class SettingsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (builder) => QRCodeScreen(
+                      builder: (builder) {
+                        return QRCodeScreen(
                         name: name,
                         avatar: avatar,
-                      ),
+                      );
+                      },
                     ),
                   );
                 },
