@@ -246,7 +246,9 @@ class ViewProfile extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (builder) => MediaLinksAndDocs(),
+                          builder: (builder) => MediaLinksAndDocs(
+                            name: name,
+                          ),
                         ),
                       );
                     },
