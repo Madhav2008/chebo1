@@ -50,7 +50,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
             ListTile(
               onTap: () {
                 // Navigator.push(
-                  context,
+                  // context,
                   MaterialPageRoute(
                     builder: (BuildContext context) {
                       return ChatScreen(
