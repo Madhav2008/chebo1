@@ -4,7 +4,6 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-// import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/No_Connection_Screen/No_Connection_Screen.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
