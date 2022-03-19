@@ -25,7 +25,9 @@ class ChatHistoryScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (builder) => ExportChatScreen(),
+                  builder: (builder) {
+                    return ExportChatScreen();
+                  },
                 ),
               );
             },
