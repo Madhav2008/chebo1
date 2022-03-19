@@ -100,7 +100,9 @@ class AccountScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ChangeNumberScreenOne(),
+                  builder: (context) {
+                    return ChangeNumberScreenOne();
+                  },
                 ),
               );
             },
