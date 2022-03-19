@@ -160,7 +160,9 @@ class ClearAllChats extends StatefulWidget {
   ClearAllChats({Key? key}) : super(key: key);
 
   @override
-  _ClearAllChatsState createState() => _ClearAllChatsState();
+  _ClearAllChatsState createState() {
+    return _ClearAllChatsState();
+  }
 }
 
 class _ClearAllChatsState extends State<ClearAllChats> {
