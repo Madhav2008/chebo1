@@ -47,7 +47,9 @@ class ChatHistoryScreen extends StatelessWidget {
             onTap: () {
               showDialog(
                 context: context,
-                builder: (BuildContext context) => _archiveAll(context),
+                builder: (BuildContext context) {
+                  return _archiveAll(context);
+                },
               );
             },
             leading: Icon(
@@ -66,7 +68,9 @@ class ChatHistoryScreen extends StatelessWidget {
             onTap: () {
               showDialog(
                 context: context,
-                builder: (BuildContext context) => ClearAllChats(),
+                builder: (BuildContext context) {
+                  return ClearAllChats();
+                },
               );
             },
             leading: Icon(
