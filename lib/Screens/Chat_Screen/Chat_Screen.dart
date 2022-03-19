@@ -411,6 +411,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       hintStyle: TextStyle(
                                         color: grey,
                                       ),
+                                      
                                       prefixIcon: IconButton(
                                         icon: Icon(
                                           show
