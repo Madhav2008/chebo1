@@ -7,7 +7,9 @@ class BlockedContactsScreen extends StatefulWidget {
   const BlockedContactsScreen({Key? key}) : super(key: key);
 
   @override
-  State<BlockedContactsScreen> createState() => _BlockedContactsScreenState();
+  State<BlockedContactsScreen> createState() {
+    return _BlockedContactsScreenState();
+  }
 }
 
 class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
