@@ -174,10 +174,12 @@ class _CameraScreenState extends State<CameraScreen> {
 
   void takePhoto(BuildContext context) async {
     XFile file = await _cameraController.takePicture();
-    Navigator.push(context, MaterialPageRoute(builder: (builder) {
-      return CameraViewPage(
-        path: file.path,
-      );
-    },));
+    Navigator.push(context, MaterialPageRoute(
+      builder: (builder) {
+        return CameraViewPage(
+          path: file.path,
+        );
+      },
+    ));
   }
 }
