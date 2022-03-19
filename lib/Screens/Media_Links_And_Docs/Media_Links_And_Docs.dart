@@ -9,6 +9,8 @@ class MediaLinksAndDocs extends StatefulWidget {
     required this.name,
   }) : super(key: key);
 
+  final String name;
+
   @override
   _MediaLinksAndDocsState createState() => _MediaLinksAndDocsState();
 }
