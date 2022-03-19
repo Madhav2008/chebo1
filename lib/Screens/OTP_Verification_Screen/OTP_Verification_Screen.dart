@@ -31,57 +31,57 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     // verifyPhoneNumber();
   }
 
-  verifyPhoneNumber() async {
-    try {
-      await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: widget.countryCode + widget.no,
-        verificationCompleted: (PhoneAuthCredential credential) async {
-          await FirebaseAuth.instance
-              .signInWithCredential(credential)
-              .then((value) {
-            if (value.user != null) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (builder) => UserDetailsScreen(
-                    no: '',
-                    countryCode: 'countryCode',
-                  ),
-                ),
-              );
-            }
-          });
-        },
-        verificationFailed: (FirebaseAuthException e) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                e.message.toString(),
-              ),
-            ),
-          );
-        },
-        codeSent: (String vId, int? ResentToken) {
-          setState(() {
-            verificationCode = vId;
-          });
-        },
-        codeAutoRetrievalTimeout: (String vId) {
-          setState(() {
-            verificationCode = vId;
-          });
-        },
-        timeout: Duration(seconds: 60),
-      );
-    } catch (e) {
-      FocusScope.of(context).unfocus();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Invalid OTP'),
-        ),
-      );
-    }
-  }
+  // verifyPhoneNumber() async {
+  //   try {
+  //     await FirebaseAuth.instance.verifyPhoneNumber(
+  //       phoneNumber: widget.countryCode + widget.no,
+  //       verificationCompleted: (PhoneAuthCredential credential) async {
+  //         await FirebaseAuth.instance
+  //             .signInWithCredential(credential)
+  //             .then((value) {
+  //           if (value.user != null) {
+  //             Navigator.push(
+  //               context,
+  //               MaterialPageRoute(
+  //                 builder: (builder) => UserDetailsScreen(
+  //                   no: '',
+  //                   countryCode: 'countryCode',
+  //                 ),
+  //               ),
+  //             );
+  //           }
+  //         });
+  //       },
+  //       verificationFailed: (FirebaseAuthException e) {
+  //         ScaffoldMessenger.of(context).showSnackBar(
+  //           SnackBar(
+  //             content: Text(
+  //               e.message.toString(),
+  //             ),
+  //           ),
+  //         );
+  //       },
+  //       codeSent: (String vId, int? ResentToken) {
+  //         setState(() {
+  //           verificationCode = vId;
+  //         });
+  //       },
+  //       codeAutoRetrievalTimeout: (String vId) {
+  //         setState(() {
+  //           verificationCode = vId;
+  //         });
+  //       },
+  //       timeout: Duration(seconds: 60),
+  //     );
+  //   } catch (e) {
+  //     FocusScope.of(context).unfocus();
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       SnackBar(
+  //         content: Text('Invalid OTP'),
+  //       ),
+  //     );
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
