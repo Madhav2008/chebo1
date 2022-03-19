@@ -281,7 +281,9 @@ class _DeleteAllChatsState extends State<DeleteAllChats> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Are you sure you want to delete all chats?',),
+      title: Text(
+        'Are you sure you want to delete all chats?',
+      ),
       content: SingleChildScrollView(
         child: Column(
           children: [
