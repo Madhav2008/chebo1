@@ -18,8 +18,9 @@ class ChangeNumberScreenThree extends StatefulWidget {
   final String newPhoneNoCountryCode;
 
   @override
-  State<ChangeNumberScreenThree> createState() =>
-      _ChangeNumberScreenThreeState();
+  State<ChangeNumberScreenThree> createState() {
+    return _ChangeNumberScreenThreeState();
+  }
 }
 
 class _ChangeNumberScreenThreeState extends State<ChangeNumberScreenThree> {
