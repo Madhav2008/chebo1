@@ -102,7 +102,9 @@ class _ChangeNumberScreenThreeState extends State<ChangeNumberScreenThree> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => NextScreen(),
+                    builder: (builder) {
+                      return NextScreen();
+                    },
                   ),
                 );
               },
