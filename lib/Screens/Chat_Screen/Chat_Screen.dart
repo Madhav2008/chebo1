@@ -214,11 +214,13 @@ class _ChatScreenState extends State<ChatScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (builder) => WhatsAppVideoCallingScreen(
+                        builder: (builder) {
+                          return WhatsAppVideoCallingScreen(
                           cameras: [],
                           avatar: widget.avatar,
                           name: widget.name,
-                        ),
+                        );
+                        },
                       ),
                     );
                   },
