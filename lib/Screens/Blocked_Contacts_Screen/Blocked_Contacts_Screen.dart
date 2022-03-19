@@ -54,11 +54,11 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
                   MaterialPageRoute(
                     builder: (BuildContext context) {
                       return ChatScreen(
-                      avatar: dummyData[i].avatarUrl,
-                      name: dummyData[i].name,
-                      phoneno: dummyData[i].phoneno,
-                      about: dummyData[i].about,
-                    );
+                        avatar: dummyData[i].avatarUrl,
+                        name: dummyData[i].name,
+                        phoneno: dummyData[i].phoneno,
+                        about: dummyData[i].about,
+                      );
                     },
                   ),
                 );
