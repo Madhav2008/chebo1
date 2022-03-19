@@ -13,7 +13,9 @@ class AboutScreen extends StatefulWidget {
   final Function setAboutData;
 
   @override
-  State<AboutScreen> createState() => _AboutScreenState();
+  State<AboutScreen> createState() {
+    return _AboutScreenState();
+  }
 }
 
 class _AboutScreenState extends State<AboutScreen> {
