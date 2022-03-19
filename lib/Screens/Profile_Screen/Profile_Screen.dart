@@ -150,13 +150,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         cursor: SystemMouseCursors.click,
                         child: GestureDetector(
                           onTap: () {
-                            showModalBottomSheet(
-                              backgroundColor: transparent,
-                              context: context,
-                              builder: (builder) {
-                                return bottomSheet(context);
-                              },
-                            );
+                            // showModalBottomSheet(
+                            //   backgroundColor: transparent,
+                            //   context: context,
+                            //   builder: (builder) {
+                            //     return bottomSheet(context);
+                            //   },
+                            // );
                             selectImage();
                           },
                           child: Container(
