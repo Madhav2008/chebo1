@@ -130,12 +130,14 @@ class SettingsScreen extends StatelessWidget {
               subtitle: Text(
                 "accountDown".tr,
               ),
-              onTap: () => Navigator.push(
+              onTap: () {
+                Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => AccountScreen(),
                 ),
-              ),
+              );
+              },
             ),
             ListTile(
               leading: Icon(
