@@ -99,12 +99,12 @@ class _ChangeNumberScreenThreeState extends State<ChangeNumberScreenThree> {
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (builder) => NextScreen(),
-                //   ),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => NextScreen(),
+                  ),
+                );
               },
               child: Container(
                 color: one,
