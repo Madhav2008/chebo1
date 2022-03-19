@@ -726,9 +726,11 @@ class _ChatScreenState extends State<ChatScreen> {
         EmojiPicker(
       onEmojiSelected: (category, emoji) {
         print(emoji);
-        setState(() {
-          _controller.text = _controller.text + emoji.emoji;
-        },);
+        setState(
+          () {
+            _controller.text = _controller.text + emoji.emoji;
+          },
+        );
       },
       onBackspacePressed: () {
         // Backspace-Button tapped logic
