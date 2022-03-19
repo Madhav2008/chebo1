@@ -171,12 +171,14 @@ class _ChatScreenState extends State<ChatScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (builder) => ViewProfile(
+                      builder: (builder) {
+                        return ViewProfile(
                         name: widget.name,
                         avatar: widget.avatar,
                         phoneno: widget.phoneno,
                         about: widget.about,
-                      ),
+                      );
+                      },
                     ),
                   );
                 },
