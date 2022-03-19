@@ -94,7 +94,7 @@ class CallsScreen extends StatelessWidget {
             MaterialPageRoute(
                 builder: (BuildContext context) {
                   return SelectContact();
-                }),
+                },),
           );
         },
       ),
