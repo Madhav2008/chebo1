@@ -1,10 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables, prefer_final_fields, sized_box_for_whitespace, file_names
 
-import 'dart:io';
-
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -20,6 +19,7 @@ import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Ca
 import 'package:whatsapp/Theme/Provider/Theme_Provider.dart';
 import 'package:whatsapp/Widgets/OwnMessageCard.dart';
 import 'package:whatsapp/Widgets/Reply_Card.dart';
+import 'package:intl/intl.dart';
 
 class ChatScreen extends StatefulWidget {
   ChatScreen({
@@ -67,10 +67,16 @@ class _ChatScreenState extends State<ChatScreen> {
   bool sendButton = false;
   TextEditingController _controller = TextEditingController();
   ScrollController _scrollController = ScrollController();
+
+  // DateTime messageTime1 = DateTime.now();
+  String messageTime = DateFormat('kk:mm:ss \n EEE d MMM').format(
+    DateTime.now(),
+  );
+
   @override
   void initState() {
     super.initState();
-
+    // _initData();
     focusNode.addListener(() {
       if (focusNode.hasFocus) {
         setState(() {
@@ -79,6 +85,23 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     });
   }
+
+  // Future<void> _initData() async {
+  //   try {
+  //     messageTime = await FlutterNativeTimezone.getLocalTimezone();
+  //   } catch (e) {
+  //     print('Could not get the local timezone');
+  //   }
+  //   try {
+  //     _availableTimezones = await FlutterNativeTimezone.getAvailableTimezones();
+  //     _availableTimezones.sort();
+  //   } catch (e) {
+  //     print('Could not get available timezones');
+  //   }
+  //   if (mounted) {
+  //     setState(() {});
+  //   }
+  // }
 
   void sendMessage(
     String message,
@@ -347,12 +370,14 @@ class _ChatScreenState extends State<ChatScreen> {
                             color: own,
                             textColor: text,
                             message: allMessages[index].message,
+                            messageTime: messageTime,
                           );
                         } else {
                           return ReplyCard(
                             color: reply,
                             textColor: text,
                             message: allMessages[index].message,
+                            messageTime: messageTime,
                           );
                         }
                       },

@@ -9,10 +9,12 @@ class ReplyCard extends StatelessWidget {
     required this.color,
     required this.textColor,
     required this.message,
+    required this.messageTime,
   }) : super(key: key);
   final Color color;
   final Color textColor;
   final String message;
+  final String messageTime;
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -49,7 +51,7 @@ class ReplyCard extends StatelessWidget {
                 bottom: 4,
                 right: 10,
                 child: Text(
-                  '9:50AM',
+                  messageTime,
                   style: TextStyle(
                     fontSize: 13,
                     color: grey[600],

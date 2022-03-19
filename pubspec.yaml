@@ -50,6 +50,7 @@ dependencies:
   firebase: 
   flutter_spinkit:
   emoji_picker_flutter: 
+  flutter_native_timezone: 
 
 dev_dependencies:
   flutter_test:

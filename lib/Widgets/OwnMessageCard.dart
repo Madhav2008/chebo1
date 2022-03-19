@@ -10,11 +10,13 @@ class OwnMessageCard extends StatelessWidget {
     required this.color,
     required this.textColor,
     required this.message,
+    required this.messageTime,
   }) : super(key: key);
 
   final Color color;
   final Color textColor;
   final String message;
+  final String messageTime;
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +54,7 @@ class OwnMessageCard extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      '3:25PM',
+                      messageTime,
                       style: TextStyle(
                         fontSize: 13,
                         color: grey[600],
