@@ -93,44 +93,20 @@ class MyApp extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
-
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(
         create: (context) => ThemeProvider(),
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
-          return FutureBuilder(
-            future: _initialization,
-            builder: (context, snapshot) {
-              if (snapshot.hasError) {
-                return NoConnection(image: '../assets/images/2.png');
-              }
-              if (snapshot.connectionState == ConnectionState.done) {
-                return ChangeNotifierProvider(
-                  create: (context) {
-                    ConnectivityChangeNotifier changeNotifier =
-                        ConnectivityChangeNotifier();
-                    changeNotifier.initialLoad();
-                    return changeNotifier;
-                  },
-                  child: GetMaterialApp(
-                    translations: LocalString(),
-                    locale: Locale('en', 'US'),
-                    title: 'WhatsApp India',
-                    debugShowCheckedModeBanner: false,
-                    themeMode: themeProvider.themeMode,
-                    theme: MyThemes.lightTheme,
-                    darkTheme: MyThemes.darkTheme,
-                    home: SplashScreen(),
-                  ),
-                );
-              }
-              return SpinKitFadingCube(
-                size: 50,
-                color: one,
-              );
-            },
+          return GetMaterialApp(
+            translations: LocalString(),
+            locale: Locale('en', 'US'),
+            title: 'WhatsApp India',
+            debugShowCheckedModeBanner: false,
+            themeMode: themeProvider.themeMode,
+            theme: MyThemes.lightTheme,
+            darkTheme: MyThemes.darkTheme,
+            home: SplashScreen(),
           );
         },
       );
