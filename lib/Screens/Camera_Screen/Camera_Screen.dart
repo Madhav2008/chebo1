@@ -180,6 +180,6 @@ class _CameraScreenState extends State<CameraScreen> {
           path: file.path,
         );
       },
-    ));
+    ),);
   }
 }
