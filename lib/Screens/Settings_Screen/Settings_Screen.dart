@@ -216,7 +216,9 @@ class SettingsScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => StorageAndDataSettings(),
+                    builder: (context) {
+                      return StorageAndDataSettings();
+                    },
                   ),
                 );
               },
