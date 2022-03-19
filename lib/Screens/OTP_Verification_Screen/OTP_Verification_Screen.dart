@@ -28,7 +28,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   @override
   void initState() {
     super.initState();
-    verifyPhoneNumber();
+    // verifyPhoneNumber();
   }
 
   verifyPhoneNumber() async {
