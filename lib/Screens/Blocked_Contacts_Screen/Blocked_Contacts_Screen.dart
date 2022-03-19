@@ -61,7 +61,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
                       // );
                     // },
                   // ),
-                );
+                // );
               },
               leading: CircleAvatar(
                 foregroundColor: Theme.of(context).primaryColor,
