@@ -791,7 +791,9 @@ void onSelected(
     case 1:
       Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (context) => MediaLinksAndDocs(),
+          builder: (context) => MediaLinksAndDocs(
+            name: name,
+          ),
         ),
       );
       break;
