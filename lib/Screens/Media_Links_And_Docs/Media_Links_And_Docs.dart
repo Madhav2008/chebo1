@@ -57,7 +57,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
               Center(
                 child: Text('Docs'),
               ),
-              Text('Links'),
+              Center(child: Text('Links')),
             ],
           ),
         ),
