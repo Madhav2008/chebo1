@@ -132,11 +132,13 @@ class SettingsScreen extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => AccountScreen(),
-                ),
-              );
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return AccountScreen();
+                    },
+                  ),
+                );
               },
             ),
             ListTile(
