@@ -123,7 +123,9 @@ class AccountScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => RequestAccountInfo(),
+                  builder: (context) {
+                    return RequestAccountInfo();
+                  },
                 ),
               );
             },
