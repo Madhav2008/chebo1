@@ -75,7 +75,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     selectImage() async {
       await showModalBottomSheet(
         context: context,
-        builder: (context) => BottomSheet(
+        builder: (context) {
+          return BottomSheet(
           builder: (context) => Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -98,7 +99,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ],
           ),
           onClosing: () {},
-        ),
+        );
+        },
       );
     }
 
