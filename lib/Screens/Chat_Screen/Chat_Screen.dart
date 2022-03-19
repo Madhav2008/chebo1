@@ -450,8 +450,9 @@ class _ChatScreenState extends State<ChatScreen> {
                                               Navigator.push(
                                                 context,
                                                 MaterialPageRoute(
-                                                  builder: (builder) =>
-                                                      PaymentScreen(),
+                                                  builder: (builder) {
+                                                    return PaymentScreen();
+                                                  },
                                                 ),
                                               );
                                             },
