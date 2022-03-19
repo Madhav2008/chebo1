@@ -42,13 +42,15 @@ class SettingsScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ProfileScreen(
+                    builder: (context) {
+                      return ProfileScreen(
                       name: name,
                       avatar: avatar,
                       about: about,
                       phoneno: phoneno,
                       countryCode: countryCode,
-                    ),
+                    );
+                    },
                   ),
                 );
               },
