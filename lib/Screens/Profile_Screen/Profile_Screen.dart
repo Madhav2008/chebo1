@@ -77,31 +77,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
         context: context,
         builder: (context) {
           return BottomSheet(
-          builder: (context) {
-            return Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              ListTile(
-                leading: Icon(Icons.camera),
-                title: Text("camera".tr),
-                onTap: () {
-                  Navigator.of(context).pop();
-                  imagePickerMethod(ImageSource.camera);
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.filter),
-                title: Text("gallery".tr),
-                onTap: () {
-                  Navigator.of(context).pop();
-                  imagePickerMethod(ImageSource.gallery);
-                },
-              ),
-            ],
+            builder: (context) {
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ListTile(
+                    leading: Icon(Icons.camera),
+                    title: Text("camera".tr),
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      imagePickerMethod(ImageSource.camera);
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.filter),
+                    title: Text("gallery".tr),
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      imagePickerMethod(ImageSource.gallery);
+                    },
+                  ),
+                ],
+              );
+            },
+            onClosing: () {},
           );
-          },
-          onClosing: () {},
-        );
         },
       );
     }
@@ -125,9 +125,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           MaterialPageRoute(
                             builder: (BuildContext context) {
                               return ViewProfilePhoto(
-                              name: widget.name,
-                              avatar: widget.avatar,
-                            );
+                                name: widget.name,
+                                avatar: widget.avatar,
+                              );
                             },
                           ),
                         );
