@@ -49,19 +49,19 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
             ),
             ListTile(
               onTap: () {
-                // Navigator.push(
-                  // context,
-                  // MaterialPageRoute(
-                    // builder: (BuildContext context) {
-                      // return ChatScreen(
-                        // avatar: dummyData[i].avatarUrl,
-                        // name: dummyData[i].name,
-                        // phoneno: dummyData[i].phoneno,
-                        // about: dummyData[i].about,
-                      // );
-                    // },
-                  // ),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return ChatScreen(
+                        avatar: dummyData[i].avatarUrl,
+                        name: dummyData[i].name,
+                        phoneno: dummyData[i].phoneno,
+                        about: dummyData[i].about,
+                      );
+                    },
+                  ),
+                );
               },
               leading: CircleAvatar(
                 foregroundColor: Theme.of(context).primaryColor,
