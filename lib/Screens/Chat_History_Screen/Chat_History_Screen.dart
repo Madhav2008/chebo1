@@ -271,7 +271,9 @@ class DeleteAllChats extends StatefulWidget {
   DeleteAllChats({Key? key}) : super(key: key);
 
   @override
-  _DeleteAllChatsState createState() => _DeleteAllChatsState();
+  _DeleteAllChatsState createState() {
+    return _DeleteAllChatsState();
+  }
 }
 
 class _DeleteAllChatsState extends State<DeleteAllChats> {
