@@ -58,7 +58,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
                         // name: dummyData[i].name,
                         // phoneno: dummyData[i].phoneno,
                         // about: dummyData[i].about,
-                      );
+                      // );
                     },
                   ),
                 );
