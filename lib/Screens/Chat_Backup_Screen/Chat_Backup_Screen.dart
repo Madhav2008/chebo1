@@ -7,7 +7,9 @@ class ChatBackupScreen extends StatefulWidget {
   ChatBackupScreen({Key? key}) : super(key: key);
 
   @override
-  State<ChatBackupScreen> createState() => _ChatBackupScreenState();
+  State<ChatBackupScreen> createState() {
+    return _ChatBackupScreenState();
+  }
 }
 
 class _ChatBackupScreenState extends State<ChatBackupScreen> {
