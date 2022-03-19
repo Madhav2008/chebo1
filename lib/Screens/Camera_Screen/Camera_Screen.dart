@@ -14,7 +14,9 @@ class CameraScreen extends StatefulWidget {
   final List<CameraDescription> cameras;
 
   @override
-  _CameraScreenState createState() => _CameraScreenState();
+  _CameraScreenState createState() {
+    return _CameraScreenState();
+  }
 }
 
 class _CameraScreenState extends State<CameraScreen> {
