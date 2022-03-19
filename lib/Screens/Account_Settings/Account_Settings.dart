@@ -54,7 +54,9 @@ class AccountScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => SecurityScreen(),
+                  builder: (context) {
+                    return SecurityScreen();
+                  },
                 ),
               );
             },
