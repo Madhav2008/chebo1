@@ -34,7 +34,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
               SliverAppBar(
-                title: Text("Madhav Arora"),
+                title: Text(widget.name),
                 floating: true,
                 pinned: true,
                 snap: true,
