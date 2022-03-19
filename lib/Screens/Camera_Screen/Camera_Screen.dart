@@ -178,6 +178,6 @@ class _CameraScreenState extends State<CameraScreen> {
       return CameraViewPage(
         path: file.path,
       );
-    }));
+    },));
   }
 }
