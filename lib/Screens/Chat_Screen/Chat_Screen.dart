@@ -396,15 +396,13 @@ class _ChatScreenState extends State<ChatScreen> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25),
                                   ),
-                                  child: SingleChildScrollView(
-                                    scrollDirection: Axis.vertical,
-                                    child: TextFormField(
+                                  child:TextFormField(
                                       controller: _controller,
                                       focusNode: focusNode,
                                       textAlignVertical:
                                           TextAlignVertical.center,
                                       keyboardType: TextInputType.multiline,
-                                      maxLines: 6,
+                                      maxLines: 2,
                                       minLines: 1,
                                       onChanged: (value) {
                                         if (value.isNotEmpty) {
@@ -493,7 +491,6 @@ class _ChatScreenState extends State<ChatScreen> {
                                     ),
                                   ),
                                 ),
-                              ),
                               Padding(
                                 padding: EdgeInsets.only(
                                   bottom: 8,
