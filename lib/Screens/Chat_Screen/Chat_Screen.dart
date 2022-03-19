@@ -436,8 +436,9 @@ class _ChatScreenState extends State<ChatScreen> {
                                               showModalBottomSheet(
                                                 backgroundColor: transparent,
                                                 context: context,
-                                                builder: (builder) =>
-                                                    bottomSheet(),
+                                                builder: (builder) {
+                                                  return bottomSheet();
+                                                },
                                               );
                                             },
                                           ),
