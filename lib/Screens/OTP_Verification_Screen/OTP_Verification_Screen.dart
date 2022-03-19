@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_literals_to_create_immutables, prefer_const_constructors, sized_box_for_whitespace
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
@@ -22,6 +23,66 @@ class OTPVerificationScreen extends StatefulWidget {
 }
 
 class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
+  String? verificationCode;
+
+  @override
+  void initState() {
+    super.initState();
+    verifyPhoneNumber();
+  }
+
+  verifyPhoneNumber() async {
+    try {
+      await FirebaseAuth.instance.verifyPhoneNumber(
+        phoneNumber: widget.countryCode + widget.no,
+        verificationCompleted: (PhoneAuthCredential credential) async {
+          await FirebaseAuth.instance
+              .signInWithCredential(credential)
+              .then((value) {
+            if (value.user != null) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => UserDetailsScreen(
+                    no: '',
+                    countryCode: 'countryCode',
+                  ),
+                ),
+              );
+            }
+          });
+        },
+        verificationFailed: (FirebaseAuthException e) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                e.message.toString(),
+              ),
+            ),
+          );
+        },
+        codeSent: (String vId, int? ResentToken) {
+          setState(() {
+            verificationCode = vId;
+          });
+        },
+        codeAutoRetrievalTimeout: (String vId) {
+          setState(() {
+            verificationCode = vId;
+          });
+        },
+        timeout: Duration(seconds: 60),
+      );
+    } catch (e) {
+      FocusScope.of(context).unfocus();
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Invalid OTP'),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -219,7 +280,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
         aspectRatio: 0.5,
         child: TextField(
           autofocus: true,
-          onChanged: (value) {
+          onChanged: (value) async {
             if (value.length == 1 && last == false) {
               FocusScope.of(context).nextFocus();
             }
@@ -227,15 +288,35 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               FocusScope.of(context).previousFocus();
             }
             if (last == true) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (builder) => UserDetailsScreen(
-                    no: widget.no,
-                    countryCode: widget.countryCode,
+              try {
+                await FirebaseAuth.instance
+                    .signInWithCredential(
+                  PhoneAuthProvider.credential(
+                    verificationId: verificationCode!,
+                    smsCode: value,
                   ),
-                ),
-              );
+                )
+                    .then((value) {
+                  if (value.user != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (builder) => UserDetailsScreen(
+                          no: '',
+                          countryCode: 'countryCode',
+                        ),
+                      ),
+                    );
+                  }
+                });
+              } catch (e) {
+                FocusScope.of(context).unfocus();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Invalid OTP'),
+                  ),
+                );
+              }
             }
           },
           showCursor: false,
