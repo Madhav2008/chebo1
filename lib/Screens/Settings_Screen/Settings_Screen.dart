@@ -266,7 +266,9 @@ class SettingsScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => InviteAFriend(),
+                    builder: (context) {
+                      return InviteAFriend();
+                    },
                   ),
                 );
               },
