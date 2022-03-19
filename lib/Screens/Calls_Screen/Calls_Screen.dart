@@ -90,9 +90,10 @@ class CallsScreen extends StatelessWidget {
         ),
         onPressed: () {
           Navigator.push(
-          context,
-          MaterialPageRoute(builder: (BuildContext context) => SelectContact()),
-        );
+            context,
+            MaterialPageRoute(
+                builder: (BuildContext context) => SelectContact()),
+          );
         },
       ),
     );
