@@ -44,12 +44,12 @@ class SettingsScreen extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) {
                       return ProfileScreen(
-                      name: name,
-                      avatar: avatar,
-                      about: about,
-                      phoneno: phoneno,
-                      countryCode: countryCode,
-                    );
+                        name: name,
+                        avatar: avatar,
+                        about: about,
+                        phoneno: phoneno,
+                        countryCode: countryCode,
+                      );
                     },
                   ),
                 );
