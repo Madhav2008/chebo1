@@ -242,14 +242,16 @@ class _ChatScreenState extends State<ChatScreen> {
                     textTheme: TextTheme().apply(),
                   ),
                   child: PopupMenuButton<int>(
-                    onSelected: (item) => onSelected(
+                    onSelected: (item) {
+                      onSelected(
                       context,
                       item,
                       widget.name,
                       widget.avatar,
                       widget.phoneno,
                       widget.about,
-                    ),
+                    );
+                    },
                     itemBuilder: (context) => [
                       PopupMenuItem<int>(
                         value: 0,
