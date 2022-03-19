@@ -52,7 +52,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
                 // Navigator.push(
                   // context,
                   // MaterialPageRoute(
-                    builder: (BuildContext context) {
+                    // builder: (BuildContext context) {
                       return ChatScreen(
                         avatar: dummyData[i].avatarUrl,
                         name: dummyData[i].name,
