@@ -19,6 +19,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String countryName = 'India';
   String countryCode = '+91';
+  int minNumber = 1000;
+  int maxNumber = 6000;
   final TextEditingController _phoneController = TextEditingController();
   @override
   Widget build(BuildContext context) {
