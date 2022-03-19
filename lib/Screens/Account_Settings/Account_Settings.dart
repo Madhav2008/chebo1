@@ -77,7 +77,9 @@ class AccountScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => TwoStepVerification(),
+                  builder: (context) {
+                    return TwoStepVerification();
+                  },
                 ),
               );
             },
