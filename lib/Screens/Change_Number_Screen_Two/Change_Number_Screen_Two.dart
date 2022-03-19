@@ -153,12 +153,14 @@ class ChangeNumberScreenTwo extends StatelessWidget {
                         : Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (builder) => ChangeNumberScreenThree(
+                              builder: (builder) {
+                                return ChangeNumberScreenThree(
                                 oldPhoneNo: _oldPhoneController.text,
                                 newPhoneNo: _newPhoneController.text,
                                 oldPhoneNoCountryCode: oldPhoneCountryCode,
                                 newPhoneNoCountryCode: newPhoneCountryCode,
-                              ),
+                              );
+                              },
                             ),
                           );
               },
