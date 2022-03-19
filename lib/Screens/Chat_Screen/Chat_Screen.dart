@@ -254,87 +254,87 @@ class _ChatScreenState extends State<ChatScreen> {
                     },
                     itemBuilder: (context) {
                       return [
-                      PopupMenuItem<int>(
-                        value: 0,
-                        child: Row(
-                          children: [
-                            Text(
-                              'View contact',
-                              style: TextStyle(
-                                fontSize: 14,
+                        PopupMenuItem<int>(
+                          value: 0,
+                          child: Row(
+                            children: [
+                              Text(
+                                'View contact',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      PopupMenuItem<int>(
-                        value: 1,
-                        child: Row(
-                          children: [
-                            Text(
-                              'Media, links and docs',
-                              style: TextStyle(
-                                fontSize: 14,
+                        PopupMenuItem<int>(
+                          value: 1,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Media, links and docs',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      PopupMenuItem<int>(
-                        value: 2,
-                        child: Row(
-                          children: [
-                            Text(
-                              'Search',
-                              style: TextStyle(
-                                fontSize: 14,
+                        PopupMenuItem<int>(
+                          value: 2,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Search',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      PopupMenuItem<int>(
-                        value: 3,
-                        child: Row(
-                          children: [
-                            Text(
-                              'Mute notifications',
-                              style: TextStyle(
-                                fontSize: 14,
+                        PopupMenuItem<int>(
+                          value: 3,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Mute notifications',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      PopupMenuItem<int>(
-                        value: 4,
-                        child: Row(
-                          children: [
-                            Text(
-                              'Wallpaper',
-                              style: TextStyle(
-                                fontSize: 14,
+                        PopupMenuItem<int>(
+                          value: 4,
+                          child: Row(
+                            children: [
+                              Text(
+                                'Wallpaper',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      PopupMenuItem<int>(
-                        value: 5,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'More',
-                              style: TextStyle(
-                                fontSize: 14,
+                        PopupMenuItem<int>(
+                          value: 5,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'More',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
-                            ),
-                            Icon(Icons.arrow_right)
-                          ],
+                              Icon(Icons.arrow_right)
+                            ],
+                          ),
                         ),
-                      ),
-                    ];
+                      ];
                     },
                   ),
                 ),
