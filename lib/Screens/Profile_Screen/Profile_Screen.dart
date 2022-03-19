@@ -328,9 +328,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => AboutScreen(
+                    builder: (BuildContext context) {
+                      return AboutScreen(
                       setAboutData: setAboutData,
-                    ),
+                    );
+                    },
                   ),
                 );
               },
