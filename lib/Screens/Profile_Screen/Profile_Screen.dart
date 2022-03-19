@@ -77,7 +77,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         context: context,
         builder: (context) {
           return BottomSheet(
-          builder: (context) => Column(
+          builder: (context) {
+            return Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               ListTile(
@@ -97,7 +98,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 },
               ),
             ],
-          ),
+          );
+          },
           onClosing: () {},
         );
         },
