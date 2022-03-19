@@ -56,7 +56,7 @@ class OwnMessageCard extends StatelessWidget {
                     Text(
                       messageTime,
                       style: TextStyle(
-                        fontSize: 13,
+                        fontSize: 14,
                         color: grey[600],
                       ),
                     ),

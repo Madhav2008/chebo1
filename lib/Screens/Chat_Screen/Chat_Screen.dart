@@ -3,7 +3,6 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -68,15 +67,9 @@ class _ChatScreenState extends State<ChatScreen> {
   TextEditingController _controller = TextEditingController();
   ScrollController _scrollController = ScrollController();
 
-  // DateTime messageTime1 = DateTime.now();
-  String messageTime = DateFormat('kk:mm:ss \n EEE d MMM').format(
-    DateTime.now(),
-  );
-
   @override
   void initState() {
     super.initState();
-    // _initData();
     focusNode.addListener(() {
       if (focusNode.hasFocus) {
         setState(() {
@@ -85,23 +78,6 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     });
   }
-
-  // Future<void> _initData() async {
-  //   try {
-  //     messageTime = await FlutterNativeTimezone.getLocalTimezone();
-  //   } catch (e) {
-  //     print('Could not get the local timezone');
-  //   }
-  //   try {
-  //     _availableTimezones = await FlutterNativeTimezone.getAvailableTimezones();
-  //     _availableTimezones.sort();
-  //   } catch (e) {
-  //     print('Could not get available timezones');
-  //   }
-  //   if (mounted) {
-  //     setState(() {});
-  //   }
-  // }
 
   void sendMessage(
     String message,
@@ -123,7 +99,10 @@ class _ChatScreenState extends State<ChatScreen> {
     MessageModel messageModel = MessageModel(
       message: message,
       type: type,
-      time: '2:30pm',
+      time: DateTime.now().toString().substring(
+            10,
+            16,
+          ),
     );
     setState(() {
       setState(() {
@@ -363,21 +342,26 @@ class _ChatScreenState extends State<ChatScreen> {
                     child: ListView.builder(
                       shrinkWrap: true,
                       controller: _scrollController,
-                      itemCount: allMessages.length,
+                      itemCount: allMessages.length + 1,
                       itemBuilder: (context, index) {
+                        if (index == allMessages.length) {
+                          return Container(
+                            height: 70,
+                          );
+                        }
                         if (allMessages[index].type == "source") {
                           return OwnMessageCard(
                             color: own,
                             textColor: text,
                             message: allMessages[index].message,
-                            messageTime: messageTime,
+                            messageTime: allMessages[index].time,
                           );
                         } else {
                           return ReplyCard(
                             color: reply,
                             textColor: text,
                             message: allMessages[index].message,
-                            messageTime: messageTime,
+                            messageTime: allMessages[index].time,
                           );
                         }
                       },
