@@ -330,8 +330,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   MaterialPageRoute(
                     builder: (BuildContext context) {
                       return AboutScreen(
-                      setAboutData: setAboutData,
-                    );
+                        setAboutData: setAboutData,
+                      );
                     },
                   ),
                 );
