@@ -252,7 +252,8 @@ class _ChatScreenState extends State<ChatScreen> {
                         widget.about,
                       );
                     },
-                    itemBuilder: (context) => [
+                    itemBuilder: (context) {
+                      return [
                       PopupMenuItem<int>(
                         value: 0,
                         child: Row(
@@ -333,7 +334,8 @@ class _ChatScreenState extends State<ChatScreen> {
                           ],
                         ),
                       ),
-                    ],
+                    ];
+                    },
                   ),
                 ),
               ],
