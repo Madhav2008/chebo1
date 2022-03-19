@@ -55,7 +55,7 @@ class _BlockedContactsScreenState extends State<BlockedContactsScreen> {
                     // builder: (BuildContext context) {
                       // return ChatScreen(
                         // avatar: dummyData[i].avatarUrl,
-                        name: dummyData[i].name,
+                        // name: dummyData[i].name,
                         phoneno: dummyData[i].phoneno,
                         about: dummyData[i].about,
                       );
