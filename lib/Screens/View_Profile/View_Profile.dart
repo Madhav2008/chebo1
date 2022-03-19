@@ -173,10 +173,10 @@ class ViewProfile extends StatelessWidget {
                                     MaterialPageRoute(
                                       builder: (builder) {
                                         return WhatsAppVideoCallingScreen(
-                                        cameras: [],
-                                        avatar: avatar,
-                                        name: name,
-                                      );
+                                          cameras: [],
+                                          avatar: avatar,
+                                          name: name,
+                                        );
                                       },
                                     ),
                                   );
