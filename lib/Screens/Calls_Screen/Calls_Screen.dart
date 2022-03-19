@@ -88,10 +88,12 @@ class CallsScreen extends StatelessWidget {
           Icons.add_call,
           color: white,
         ),
-        onPressed: () => Navigator.push(
+        onPressed: () {
+          Navigator.push(
           context,
           MaterialPageRoute(builder: (BuildContext context) => SelectContact()),
-        ),
+        );
+        },
       ),
     );
   }
