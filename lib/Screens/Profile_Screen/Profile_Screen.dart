@@ -123,10 +123,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (BuildContext context) => ViewProfilePhoto(
+                            builder: (BuildContext context) {
+                              return ViewProfilePhoto(
                               name: widget.name,
                               avatar: widget.avatar,
-                            ),
+                            );
+                            },
                           ),
                         );
                       },
