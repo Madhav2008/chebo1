@@ -74,7 +74,7 @@ import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
-import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
+// import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
