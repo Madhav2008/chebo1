@@ -31,7 +31,8 @@ class Wrapper extends StatelessWidget {
                   about: '👋🏻 Hey! there I am using WhatsApp India.',
                   avatar:
                       'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-                  countryCode: '+91', phoneno: '9999348444',
+                  countryCode: '+91',
+                  phoneno: '9999348444',
                 );
         } else {
           return Scaffold(
