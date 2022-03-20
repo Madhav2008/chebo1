@@ -1,4 +1,5 @@
-import 'package:Foodybite/auth/user_model.dart';
+// ignore_for_file: file_names
+
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 
 class AuthService{
