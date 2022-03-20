@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Auth/User_Model.dart';
+import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 
 class Wrapper extends StatelessWidget {
   const Wrapper({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class Wrapper extends StatelessWidget {
       builder: (_,AsyncSnapshot<User?>snapshot){
         if(snapshot.connectionState==ConnectionState.active){
           final User?user=snapshot.data;
-          return user == null ? WelcomeScreen() : Navigation();
+          return user == null ? LandingPage() : Navigation();
         } else {
           return Scaffold(
               body: Center(
