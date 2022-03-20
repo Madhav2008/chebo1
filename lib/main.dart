@@ -71,6 +71,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
@@ -110,6 +111,7 @@ class MyApp extends StatelessWidget {
               routes: {
                 '/': (context) => SplashScreen(),
                 '/loginScreen': (context) => LoginScreen(),
+                '/LandingScreen': (context) => LandingPage(),
                 '/otpScreen': (context) => OTPVerificationScreen(
                     no: '9999348666', countryCode: '+91', country: 'India'),
                 '/navigationScreen': (context) => NavigationScreen(
@@ -121,7 +123,6 @@ class MyApp extends StatelessWidget {
                       countryCode: '+91',
                       about: '👋🏻 Hey! there I am using WhatsApp India.',
                     ),
-                '/registerScreen': (context) => RegisterScreen(),
               },
               translations: LocalString(),
               locale: Locale('en', 'US'),
