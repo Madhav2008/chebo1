@@ -68,12 +68,8 @@
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/No_Connection/No_Connection.dart';
-import 'package:whatsapp/Screens/No_Connection_Screen/No_Connection_Screen.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';

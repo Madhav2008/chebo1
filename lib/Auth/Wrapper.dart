@@ -1,8 +1,3 @@
-// import 'package:Foodybite/auth/auth_services.dart';
-// import 'package:Foodybite/auth/user_model.dart';
-// import 'package:Foodybite/screens/navigation_screen/navigation_screen.dart';
-// import 'package:Foodybite/screens/welcome_screen/welcome_screen.dart';
-
 // ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
