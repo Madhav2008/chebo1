@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_literals_to_create_immutables, prefer_const_constructors, sized_box_for_whitespace
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
@@ -19,26 +20,26 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String countryName = 'India';
   String countryCode = '+91';
-  // final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   // final FirebaseAuth _firestore = FirebaseFirestore.instance;
 
   @override
   void initState() {
-    // if (_auth.currentUser != null) {
-    //   Navigator.push(
-    //     context,
-    //     MaterialPageRoute(
-    //       builder: (builder) => NavigationScreen(
-    //         cameras: [],
-    //         name: 'am',
-    //         avatar: 'w',
-    //         phoneno: 'wf',
-    //         countryCode: countryCode,
-    //         about: 'wf',
-    //       ),
-    //     ),
-    //   );
-    // }
+    if (_auth.currentUser != null) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (builder) => NavigationScreen(
+            cameras: [],
+            name: 'am',
+            avatar: 'w',
+            phoneno: 'wf',
+            countryCode: countryCode,
+            about: 'wf',
+          ),
+        ),
+      );
+    }
     super.initState();
   }
 

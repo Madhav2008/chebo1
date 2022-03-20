@@ -70,6 +70,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
+import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
@@ -95,15 +96,22 @@ class MyApp extends StatelessWidget {
         create: (context) => ThemeProvider(),
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
-          return GetMaterialApp(
-            translations: LocalString(),
-            locale: Locale('en', 'US'),
-            title: 'WhatsApp India',
-            debugShowCheckedModeBanner: false,
-            themeMode: themeProvider.themeMode,
-            theme: MyThemes.lightTheme,
-            darkTheme: MyThemes.darkTheme,
-            home: SplashScreen(),
+          return MultiProvider(
+            providers: [
+              Provider<AuthService>(
+                create: (_) => AuthService(),
+              ),
+            ],
+            child: GetMaterialApp(
+              translations: LocalString(),
+              locale: Locale('en', 'US'),
+              title: 'WhatsApp India',
+              debugShowCheckedModeBanner: false,
+              themeMode: themeProvider.themeMode,
+              theme: MyThemes.lightTheme,
+              darkTheme: MyThemes.darkTheme,
+              home: SplashScreen(),
+            ),
           );
         },
       );
