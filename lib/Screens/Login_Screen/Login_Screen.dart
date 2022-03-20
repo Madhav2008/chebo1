@@ -50,167 +50,167 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  // late String smsOTP;
-  // late String verificationId;
-  // String errorMessage = '';
-  // String? verificationCode = '123456';
+  late String smsOTP;
+  late String verificationId;
+  String errorMessage = '';
+  String? verificationCode = '123456';
 
-  // Future<void> verifyPhone() async {
-  //   try {
-  //     await FirebaseAuth.instance.verifyPhoneNumber(
-  //       phoneNumber: '+91 9999348444',
-  //       verificationCompleted: (PhoneAuthCredential credential) async {
-  //         await FirebaseAuth.instance
-  //             .signInWithCredential(credential)
-  //             .then((value) {
-  //           if (value.user != null) {
-  //             Navigator.push(
-  //               context,
-  //               MaterialPageRoute(
-  //                 builder: (builder) => UserDetailsScreen(
-  //                   no: _phoneController.text,
-  //                   countryCode: countryCode,
-  //                 ),
-  //               ),
-  //             );
-  //           }
-  //         });
-  //       },
-  //       verificationFailed: (FirebaseAuthException e) {
-  //         if (e.code == 'invalid-phone-number') {
-  //           ScaffoldMessenger.of(context).showSnackBar(
-  //             SnackBar(
-  //               content: Text(
-  //                 e.message.toString(),
-  //               ),
-  //             ),
-  //           );
-  //         }
-  //       },
-  //       codeSent: (String vId, int? ResentToken) async {
-  //         setState(() {
-  //           verificationCode = vId;
-  //         });
-  //         String smsCode = '123456';
-  //         PhoneAuthCredential credential = PhoneAuthProvider.credential(
-  //             verificationId: vId, smsCode: smsCode);
-  //         await FirebaseAuth.instance.signInWithCredential(credential);
-  //       },
-  //       codeAutoRetrievalTimeout: (String vId) {
-  //         setState(() {
-  //           verificationCode = vId;
-  //         });
-  //       },
-  //       timeout: Duration(seconds: 60),
-  //     );
-  //     // await FirebaseAuth.instance.verifyPhoneNumber(
-  //     // phoneNumber: '+91 9971271272',
-  //     // verificationCompleted: (PhoneAuthCredential credential) {},
-  //     // verificationFailed: (FirebaseAuthException e) {},
-  //     // codeSent: (String verificationId, int? resendToken) {},
-  //     // codeAutoRetrievalTimeout: (String verificationId) {},
-  //     // );
-  //   } catch (e) {
-  //     FocusScope.of(context).unfocus();
-  //     ScaffoldMessenger.of(context).showSnackBar(
-  //       SnackBar(
-  //         content: Text('Invalid OTP'),
-  //       ),
-  //     );
-  //   }
-  // }
+  Future<void> verifyPhone() async {
+    try {
+      await FirebaseAuth.instance.verifyPhoneNumber(
+        phoneNumber: '+91 9999348444',
+        verificationCompleted: (PhoneAuthCredential credential) async {
+          await FirebaseAuth.instance
+              .signInWithCredential(credential)
+              .then((value) {
+            if (value.user != null) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => UserDetailsScreen(
+                    no: _phoneController.text,
+                    countryCode: countryCode,
+                  ),
+                ),
+              );
+            }
+          });
+        },
+        verificationFailed: (FirebaseAuthException e) {
+          if (e.code == 'invalid-phone-number') {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  e.message.toString(),
+                ),
+              ),
+            );
+          }
+        },
+        codeSent: (String vId, int? ResentToken) async {
+          setState(() {
+            verificationCode = vId;
+          });
+          String smsCode = '123456';
+          PhoneAuthCredential credential = PhoneAuthProvider.credential(
+              verificationId: vId, smsCode: smsCode);
+          await FirebaseAuth.instance.signInWithCredential(credential);
+        },
+        codeAutoRetrievalTimeout: (String vId) {
+          setState(() {
+            verificationCode = vId;
+          });
+        },
+        timeout: Duration(seconds: 60),
+      );
+      // await FirebaseAuth.instance.verifyPhoneNumber(
+      // phoneNumber: '+91 9971271272',
+      // verificationCompleted: (PhoneAuthCredential credential) {},
+      // verificationFailed: (FirebaseAuthException e) {},
+      // codeSent: (String verificationId, int? resendToken) {},
+      // codeAutoRetrievalTimeout: (String verificationId) {},
+      // );
+    } catch (e) {
+      FocusScope.of(context).unfocus();
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Invalid OTP'),
+        ),
+      );
+    }
+  }
 
-  // Future smsOTPDialog(BuildContext context) {
-  //   return showDialog(
-  //       context: context,
-  //       barrierDismissible: false,
-  //       builder: (BuildContext context) {
-  //         return AlertDialog(
-  //           title: Text('Enter SMS Code'),
-  //           content: Container(
-  //             height: 85,
-  //             child: Column(children: [
-  //               TextField(
-  //                 onChanged: (value) {
-  //                   smsOTP = value;
-  //                 },
-  //               ),
-  //               (errorMessage != ''
-  //                   ? Text(
-  //                       errorMessage,
-  //                       style: TextStyle(color: Colors.red),
-  //                     )
-  //                   : Container())
-  //             ]),
-  //           ),
-  //           contentPadding: EdgeInsets.all(10),
-  //           actions: <Widget>[
-  //             FlatButton(
-  //               child: Text('Done'),
-  //               onPressed: () {
-  //                 _auth.currentUser.then((user) {
-  //                   if (user != null) {
-  //                     Navigator.of(context).pop();
-  //                     Navigator.of(context).pushReplacement(
-  //                       MaterialPageRoute(
-  //                         builder: (builder) => NavigationScreen(
-  //                           cameras: [],
-  //                           name: 'ed',
-  //                           avatar: 'de',
-  //                           phoneno: 'ed',
-  //                           countryCode: countryCode,
-  //                           about: 'de',
-  //                         ),
-  //                       ),
-  //                     );
-  //                   } else {
-  //                     signIn();
-  //                   }
-  //                 });
-  //               },
-  //             )
-  //           ],
-  //         );
-  //       });
-  // }
+  Future smsOTPDialog(BuildContext context) {
+    return showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Enter SMS Code'),
+            content: Container(
+              height: 85,
+              child: Column(children: [
+                TextField(
+                  onChanged: (value) {
+                    smsOTP = value;
+                  },
+                ),
+                (errorMessage != ''
+                    ? Text(
+                        errorMessage,
+                        style: TextStyle(color: Colors.red),
+                      )
+                    : Container())
+              ]),
+            ),
+            contentPadding: EdgeInsets.all(10),
+            actions: <Widget>[
+              FlatButton(
+                child: Text('Done'),
+                onPressed: () {
+                  _auth.currentUser.then((user) {
+                    if (user != null) {
+                      Navigator.of(context).pop();
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (builder) => NavigationScreen(
+                            cameras: [],
+                            name: 'ed',
+                            avatar: 'de',
+                            phoneno: 'ed',
+                            countryCode: countryCode,
+                            about: 'de',
+                          ),
+                        ),
+                      );
+                    } else {
+                      signIn();
+                    }
+                  });
+                },
+              )
+            ],
+          );
+        });
+  }
 
-  // signIn() async {
-  //   try {
-  //     final AuthCredential credential = PhoneAuthProvider.getCredential(
-  //       verificationId: verificationId,
-  //       smsCode: smsOTP,
-  //     );
-  //     final FirebaseUser user = await _auth.signInWithCredential(credential);
-  //     final FirebaseUser currentUser = await _auth.currentUser;
-  //     assert(user.uid == currentUser.uid);
-  //     Navigator.of(context).pop();
-  //     Navigator.of(context).pushReplacementNamed('/homepage');
-  //   } catch (e) {
-  //     // handleError(e);
-  //   }
-  // }
+  signIn() async {
+    try {
+      final AuthCredential credential = PhoneAuthProvider.getCredential(
+        verificationId: verificationId,
+        smsCode: smsOTP,
+      );
+      final FirebaseUser user = await _auth.signInWithCredential(credential);
+      final FirebaseUser currentUser = await _auth.currentUser;
+      assert(user.uid == currentUser.uid);
+      Navigator.of(context).pop();
+      Navigator.of(context).pushReplacementNamed('/homepage');
+    } catch (e) {
+      // handleError(e);
+    }
+  }
 
-  // handleError(PlatformException error) {
-  //   print(error);
-  //   switch (error.code) {
-  //     case 'ERROR_INVALID_VERIFICATION_CODE':
-  //       FocusScope.of(context).requestFocus(FocusNode());
-  //       setState(() {
-  //         errorMessage = 'Invalid Code';
-  //       });
-  //       Navigator.of(context).pop();
-  //       smsOTPDialog(context).then((value) {
-  //         print('sign in');
-  //       });
-  //       break;
-  //     default:
-  //       setState(() {
-  //         errorMessage = error.message!;
-  //       });
+  handleError(PlatformException error) {
+    print(error);
+    switch (error.code) {
+      case 'ERROR_INVALID_VERIFICATION_CODE':
+        FocusScope.of(context).requestFocus(FocusNode());
+        setState(() {
+          errorMessage = 'Invalid Code';
+        });
+        Navigator.of(context).pop();
+        smsOTPDialog(context).then((value) {
+          print('sign in');
+        });
+        break;
+      default:
+        setState(() {
+          errorMessage = error.message!;
+        });
 
-  //       break;
-  //   }
-  // }
+        break;
+    }
+  }
 
   final TextEditingController _phoneController = TextEditingController();
   @override
