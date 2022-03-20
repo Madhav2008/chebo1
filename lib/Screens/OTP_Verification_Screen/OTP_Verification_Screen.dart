@@ -23,7 +23,7 @@ class OTPVerificationScreen extends StatefulWidget {
 }
 
 class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
-  String? verificationCode;
+  String? verificationCode = '123456';
 
   @override
   void initState() {
@@ -34,7 +34,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   verifyPhoneNumber() async {
     try {
       await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: widget.countryCode + widget.no,
+        phoneNumber: widget.no,
         verificationCompleted: (PhoneAuthCredential credential) async {
           await FirebaseAuth.instance
               .signInWithCredential(credential)
@@ -288,35 +288,35 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               FocusScope.of(context).previousFocus();
             }
             if (last == true) {
-                try {
-                  await FirebaseAuth.instance
-                      .signInWithCredential(
-                    PhoneAuthProvider.credential(
-                      verificationId: verificationCode!,
-                      smsCode: value,
-                    ),
-                  )
-                      .then((value) {
-                    if (value.user != null) {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (builder) => UserDetailsScreen(
-                            no: '',
-                            countryCode: 'countryCode',
-                          ),
+              try {
+                await FirebaseAuth.instance
+                    .signInWithCredential(
+                  PhoneAuthProvider.credential(
+                    verificationId: verificationCode!,
+                    smsCode: value,
+                  ),
+                )
+                    .then((value) {
+                  if (value.user != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (builder) => UserDetailsScreen(
+                          no: '',
+                          countryCode: 'countryCode',
                         ),
-                      );
-                    }
-                  });
-                } catch (e) {
-                  FocusScope.of(context).unfocus();
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text('Invalid OTP'),
-                    ),
-                  );
-                }
+                      ),
+                    );
+                  }
+                });
+              } catch (e) {
+                FocusScope.of(context).unfocus();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Invalid OTP'),
+                  ),
+                );
+              }
             }
           },
           showCursor: false,
