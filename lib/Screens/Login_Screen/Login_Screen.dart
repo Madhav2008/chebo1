@@ -11,6 +11,7 @@ import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 // import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
 import 'package:whatsapp/Screens/Problem_Detected_Screen/Problem_Detected_Screen.dart';
+import 'package:whatsapp/Screens/User_Details_Screen/User_Details_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({
@@ -52,6 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
     _phoneController.dispose();
     super.dispose();
   }
+
   late String smsOTP;
   late String verificationId;
   String errorMessage = '';
