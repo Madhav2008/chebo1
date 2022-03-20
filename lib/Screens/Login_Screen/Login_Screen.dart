@@ -2,6 +2,7 @@
 
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -30,7 +31,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
-    Firebase.initialize
     if (_auth.currentUser != null) {
       Navigator.push(
         context,
