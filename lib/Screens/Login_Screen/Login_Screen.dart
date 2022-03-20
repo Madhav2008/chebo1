@@ -641,7 +641,6 @@ import 'package:whatsapp/Auth/RegisterScreen.dart';
 // import 'package:phone_verification/registerScreen.dart';
 // import 'package:phone_verification/loggedInScreen.dart';
 
-final FirebaseAuth _auth = FirebaseAuth.instance;
 // final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
 class LoginScreen extends StatefulWidget {
@@ -652,12 +651,13 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+final FirebaseAuth _auth = FirebaseAuth.instance;
   final _formKey = GlobalKey<FormState>();
   final _formKeyOTP = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final TextEditingController numberController = new TextEditingController();
-  final TextEditingController otpController = new TextEditingController();
+  final TextEditingController numberController = TextEditingController();
+  final TextEditingController otpController = TextEditingController();
 
   var isLoading = false;
   var isResend = false;
