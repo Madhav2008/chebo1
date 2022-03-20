@@ -633,8 +633,6 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart';
-import 'package:whatsapp/Auth/LoggedInScreen.dart';
-import 'package:whatsapp/Auth/RegisterScreen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 // import 'package:phone_verification/registerScreen.dart';
 // import 'package:phone_verification/loggedInScreen.dart';
