@@ -31,21 +31,21 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
-    if (_auth.currentUser != null) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (builder) => NavigationScreen(
-            cameras: [],
-            name: 'am',
-            avatar: 'w',
-            phoneno: 'wf',
-            countryCode: countryCode,
-            about: 'wf',
-          ),
-        ),
-      );
-    }
+    // if (_auth.currentUser != null) {
+    //   Navigator.push(
+    //     context,
+    //     MaterialPageRoute(
+    //       builder: (builder) => NavigationScreen(
+    //         cameras: [],
+    //         name: 'am',
+    //         avatar: 'w',
+    //         phoneno: 'wf',
+    //         countryCode: countryCode,
+    //         about: 'wf',
+    //       ),
+    //     ),
+    //   );
+    // }
     super.initState();
   }
 
