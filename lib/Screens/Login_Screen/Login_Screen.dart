@@ -30,6 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
+    Firebase.initialize
     if (_auth.currentUser != null) {
       Navigator.push(
         context,
