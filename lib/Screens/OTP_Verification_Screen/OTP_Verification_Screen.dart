@@ -288,35 +288,35 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               FocusScope.of(context).previousFocus();
             }
             if (last == true) {
-              //   try {
-              //     await FirebaseAuth.instance
-              //         .signInWithCredential(
-              //       PhoneAuthProvider.credential(
-              //         verificationId: verificationCode!,
-              //         smsCode: value,
-              //       ),
-              //     )
-              //         .then((value) {
-              //       if (value.user != null) {
-              //         Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (builder) => UserDetailsScreen(
-              //               no: '',
-              //               countryCode: 'countryCode',
-              //             ),
-              //           ),
-              //         );
-              //       }
-              //     });
-              //   } catch (e) {
-              //     FocusScope.of(context).unfocus();
-              //     ScaffoldMessenger.of(context).showSnackBar(
-              //       SnackBar(
-              //         content: Text('Invalid OTP'),
-              //       ),
-              //     );
-              //   }
+                try {
+                  await FirebaseAuth.instance
+                      .signInWithCredential(
+                    PhoneAuthProvider.credential(
+                      verificationId: verificationCode!,
+                      smsCode: value,
+                    ),
+                  )
+                      .then((value) {
+                    if (value.user != null) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => UserDetailsScreen(
+                            no: '',
+                            countryCode: 'countryCode',
+                          ),
+                        ),
+                      );
+                    }
+                  });
+                } catch (e) {
+                  FocusScope.of(context).unfocus();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Invalid OTP'),
+                    ),
+                  );
+                }
             }
           },
           showCursor: false,
