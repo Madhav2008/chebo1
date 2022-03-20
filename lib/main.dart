@@ -71,6 +71,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
@@ -103,6 +104,22 @@ class MyApp extends StatelessWidget {
               ),
             ],
             child: GetMaterialApp(
+              initialRoute: '/',
+        routes: {
+          '/': (context) => SplashScreen(),
+          '/loginScreen': (context) => LoginScreen(),
+          '/navigationScreen': (context) => NavigationScreen(
+                  cameras: cameras,
+                  name: 'Madhav Arora',
+                  avatar:
+                      'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+                  phoneno: '9999348666',
+                  countryCode: '+91',
+                  about: '👋🏻 Hey! there I am using WhatsApp India.',
+                ),
+          '/forgetScreen': (context) => ForgetScreen(),
+          '/registerScreen': (context) => RegisterScreen(),
+        },
               translations: LocalString(),
               locale: Locale('en', 'US'),
               title: 'WhatsApp India',
