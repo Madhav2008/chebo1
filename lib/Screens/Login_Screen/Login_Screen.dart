@@ -34,15 +34,17 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(
           builder: (builder) => NavigationScreen(
             cameras: [],
-            name: 'am',
-            avatar: 'w',
-            phoneno: 'wf',
-            countryCode: countryCode,
-            about: 'wf',
+            name: 'Madhav Arora',
+            avatar:
+                'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+            phoneno: '9999348666',
+            countryCode: '+91',
+            about: '👋🏻 Hey! there I am using WhatsApp India.',
           ),
         ),
       );
     }
+    // verifyPhone();
     super.initState();
   }
 
@@ -52,75 +54,75 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  late String smsOTP;
-  late String verificationId;
-  String errorMessage = '';
-  String? verificationCode = '123456';
+  // late String smsOTP;
+  // late String verificationId;
+  // String errorMessage = '';
+  // String? verificationCode = '123456';
 
-  Future<void> verifyPhone() async {
-    try {
-      await FirebaseAuth.instance.verifyPhoneNumber(
-        phoneNumber: '+91 9999348444',
-        verificationCompleted: (PhoneAuthCredential credential) async {
-          await FirebaseAuth.instance
-              .signInWithCredential(credential)
-              .then((value) {
-            if (value.user != null) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (builder) => UserDetailsScreen(
-                    no: _phoneController.text,
-                    countryCode: countryCode,
-                  ),
-                ),
-              );
-            }
-          });
-        },
-        verificationFailed: (FirebaseAuthException e) {
-          if (e.code == 'invalid-phone-number') {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(
-                  e.message.toString(),
-                ),
-              ),
-            );
-          }
-        },
-        codeSent: (String vId, int? ResentToken) async {
-          setState(() {
-            verificationCode = vId;
-          });
-          String smsCode = '123456';
-          PhoneAuthCredential credential = PhoneAuthProvider.credential(
-              verificationId: vId, smsCode: smsCode);
-          await FirebaseAuth.instance.signInWithCredential(credential);
-        },
-        codeAutoRetrievalTimeout: (String vId) {
-          setState(() {
-            verificationCode = vId;
-          });
-        },
-        timeout: Duration(seconds: 60),
-      );
-      // await FirebaseAuth.instance.verifyPhoneNumber(
-      // phoneNumber: '+91 9971271272',
-      // verificationCompleted: (PhoneAuthCredential credential) {},
-      // verificationFailed: (FirebaseAuthException e) {},
-      // codeSent: (String verificationId, int? resendToken) {},
-      // codeAutoRetrievalTimeout: (String verificationId) {},
-      // );
-    } catch (e) {
-      FocusScope.of(context).unfocus();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Invalid OTP'),
-        ),
-      );
-    }
-  }
+  // Future<void> verifyPhone() async {
+  //   try {
+  //     await FirebaseAuth.instance.verifyPhoneNumber(
+  //       phoneNumber: '+91 9999348444',
+  //       verificationCompleted: (PhoneAuthCredential credential) async {
+  //         await FirebaseAuth.instance
+  //             .signInWithCredential(credential)
+  //             .then((value) {
+  //           if (value.user != null) {
+  //             Navigator.push(
+  //               context,
+  //               MaterialPageRoute(
+  //                 builder: (builder) => UserDetailsScreen(
+  //                   no: _phoneController.text,
+  //                   countryCode: countryCode,
+  //                 ),
+  //               ),
+  //             );
+  //           }
+  //         });
+  //       },
+  //       verificationFailed: (FirebaseAuthException e) {
+  //         if (e.code == 'invalid-phone-number') {
+  //           ScaffoldMessenger.of(context).showSnackBar(
+  //             SnackBar(
+  //               content: Text(
+  //                 e.message.toString(),
+  //               ),
+  //             ),
+  //           );
+  //         }
+  //       },
+  //       codeSent: (String vId, int? ResentToken) async {
+  //         setState(() {
+  //           verificationCode = vId;
+  //         });
+  //         String smsCode = '123456';
+  //         PhoneAuthCredential credential = PhoneAuthProvider.credential(
+  //             verificationId: vId, smsCode: smsCode);
+  //         await FirebaseAuth.instance.signInWithCredential(credential);
+  //       },
+  //       codeAutoRetrievalTimeout: (String vId) {
+  //         setState(() {
+  //           verificationCode = vId;
+  //         });
+  //       },
+  //       timeout: Duration(seconds: 60),
+  //     );
+  //     // await FirebaseAuth.instance.verifyPhoneNumber(
+  //     // phoneNumber: '+91 9971271272',
+  //     // verificationCompleted: (PhoneAuthCredential credential) {},
+  //     // verificationFailed: (FirebaseAuthException e) {},
+  //     // codeSent: (String verificationId, int? resendToken) {},
+  //     // codeAutoRetrievalTimeout: (String verificationId) {},
+  //     // );
+  //   } catch (e) {
+  //     FocusScope.of(context).unfocus();
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       SnackBar(
+  //         content: Text('Invalid OTP'),
+  //       ),
+  //     );
+  //   }
+  // }
 
   // Future smsOTPDialog(BuildContext context) {
   //   return showDialog(
