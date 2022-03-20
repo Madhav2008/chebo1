@@ -121,75 +121,75 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  Future smsOTPDialog(BuildContext context) {
-    return showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (BuildContext context) {
-          return AlertDialog(
-            title: Text('Enter SMS Code'),
-            content: Container(
-              height: 85,
-              child: Column(children: [
-                TextField(
-                  onChanged: (value) {
-                    smsOTP = value;
-                  },
-                ),
-                (errorMessage != ''
-                    ? Text(
-                        errorMessage,
-                        style: TextStyle(color: Colors.red),
-                      )
-                    : Container())
-              ]),
-            ),
-            contentPadding: EdgeInsets.all(10),
-            actions: <Widget>[
-              FlatButton(
-                child: Text('Done'),
-                onPressed: () {
-                  _auth.currentUser.then((user) {
-                    if (user != null) {
-                      Navigator.of(context).pop();
-                      Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(
-                          builder: (builder) => NavigationScreen(
-                            cameras: [],
-                            name: 'ed',
-                            avatar: 'de',
-                            phoneno: 'ed',
-                            countryCode: countryCode,
-                            about: 'de',
-                          ),
-                        ),
-                      );
-                    } else {
-                      signIn();
-                    }
-                  });
-                },
-              )
-            ],
-          );
-        });
-  }
+  // Future smsOTPDialog(BuildContext context) {
+  //   return showDialog(
+  //       context: context,
+  //       barrierDismissible: false,
+  //       builder: (BuildContext context) {
+  //         return AlertDialog(
+  //           title: Text('Enter SMS Code'),
+  //           content: Container(
+  //             height: 85,
+  //             child: Column(children: [
+  //               TextField(
+  //                 onChanged: (value) {
+  //                   smsOTP = value;
+  //                 },
+  //               ),
+  //               (errorMessage != ''
+  //                   ? Text(
+  //                       errorMessage,
+  //                       style: TextStyle(color: Colors.red),
+  //                     )
+  //                   : Container())
+  //             ]),
+  //           ),
+  //           contentPadding: EdgeInsets.all(10),
+  //           actions: <Widget>[
+  //             FlatButton(
+  //               child: Text('Done'),
+  //               onPressed: () {
+  //                 _auth.currentUser.then((user) {
+  //                   if (user != null) {
+  //                     Navigator.of(context).pop();
+  //                     Navigator.of(context).pushReplacement(
+  //                       MaterialPageRoute(
+  //                         builder: (builder) => NavigationScreen(
+  //                           cameras: [],
+  //                           name: 'ed',
+  //                           avatar: 'de',
+  //                           phoneno: 'ed',
+  //                           countryCode: countryCode,
+  //                           about: 'de',
+  //                         ),
+  //                       ),
+  //                     );
+  //                   } else {
+  //                     signIn();
+  //                   }
+  //                 });
+  //               },
+  //             )
+  //           ],
+  //         );
+  //       });
+  // }
 
-  signIn() async {
-    try {
-      final AuthCredential credential = PhoneAuthProvider.getCredential(
-        verificationId: verificationId,
-        smsCode: smsOTP,
-      );
-      final FirebaseUser user = await _auth.signInWithCredential(credential);
-      final FirebaseUser currentUser = await _auth.currentUser;
-      assert(user.uid == currentUser.uid);
-      Navigator.of(context).pop();
-      Navigator.of(context).pushReplacementNamed('/homepage');
-    } catch (e) {
-      // handleError(e);
-    }
-  }
+  // signIn() async {
+  //   try {
+  //     final AuthCredential credential = PhoneAuthProvider.getCredential(
+  //       verificationId: verificationId,
+  //       smsCode: smsOTP,
+  //     );
+  //     final FirebaseUser user = await _auth.signInWithCredential(credential);
+  //     final FirebaseUser currentUser = await _auth.currentUser;
+  //     assert(user.uid == currentUser.uid);
+  //     Navigator.of(context).pop();
+  //     Navigator.of(context).pushReplacementNamed('/homepage');
+  //   } catch (e) {
+  //     // handleError(e);
+  //   }
+  // }
 
   handleError(PlatformException error) {
     print(error);
