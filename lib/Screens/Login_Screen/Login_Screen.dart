@@ -192,27 +192,27 @@ class _LoginScreenState extends State<LoginScreen> {
   //   }
   // }
 
-  handleError(PlatformException error) {
-    print(error);
-    switch (error.code) {
-      case 'ERROR_INVALID_VERIFICATION_CODE':
-        FocusScope.of(context).requestFocus(FocusNode());
-        setState(() {
-          errorMessage = 'Invalid Code';
-        });
-        Navigator.of(context).pop();
-        smsOTPDialog(context).then((value) {
-          print('sign in');
-        });
-        break;
-      default:
-        setState(() {
-          errorMessage = error.message!;
-        });
+  // handleError(PlatformException error) {
+  //   print(error);
+  //   switch (error.code) {
+  //     case 'ERROR_INVALID_VERIFICATION_CODE':
+  //       FocusScope.of(context).requestFocus(FocusNode());
+  //       setState(() {
+  //         errorMessage = 'Invalid Code';
+  //       });
+  //       Navigator.of(context).pop();
+  //       smsOTPDialog(context).then((value) {
+  //         print('sign in');
+  //       });
+  //       break;
+  //     default:
+  //       setState(() {
+  //         errorMessage = error.message!;
+  //       });
 
-        break;
-    }
-  }
+  //       break;
+  //   }
+  // }
 
   final TextEditingController _phoneController = TextEditingController();
   @override
