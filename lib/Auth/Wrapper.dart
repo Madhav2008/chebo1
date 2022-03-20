@@ -27,7 +27,8 @@ class Wrapper extends StatelessWidget {
               ? LandingPage()
               : NavigationScreen(
                   cameras: [],
-                  name: 'Madhav Arora', about: '👋🏻 Hey! there I am using WhatsApp India.',
+                  name: 'Madhav Arora',
+                  about: '👋🏻 Hey! there I am using WhatsApp India.',
                 );
         } else {
           return Scaffold(
