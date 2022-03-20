@@ -53,9 +53,6 @@ dependencies:
   flutter_spinkit:
   emoji_picker_flutter: 
 
-  dependency_overrides:
-    firebase_storage: 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
