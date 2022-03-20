@@ -2,6 +2,7 @@
 // import 'package:Foodybite/auth/user_model.dart';
 // import 'package:Foodybite/screens/navigation_screen/navigation_screen.dart';
 // import 'package:Foodybite/screens/welcome_screen/welcome_screen.dart';
+
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
