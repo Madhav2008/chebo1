@@ -1,11 +1,13 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_literals_to_create_immutables, prefer_const_constructors, sized_box_for_whitespace
 
 // import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
 import 'package:whatsapp/Screens/Country_Screen/Country_Screen.dart';
+import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 // import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
 import 'package:whatsapp/Screens/Problem_Detected_Screen/Problem_Detected_Screen.dart';
@@ -22,7 +24,27 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String countryName = 'India';
   String countryCode = '+91';
-  // FirebaseAuth _auth = FirebaseAuth.instance;
+  FirebaseAuth _auth = FirebaseAuth.instance;
+
+  @override
+  void initState() {
+    if (_auth.currentUser != null) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (builder) => NavigationScreen(
+            cameras: [],
+            name: 'am',
+            avatar: 'w',
+            phoneno: 'wf',
+            countryCode: countryCode,
+            about: 'wf',
+          ),
+        ),
+      );
+    }
+    super.initState();
+  }
   // late String smsOTP;
   // late String verificationId;
   // String errorMessage = '';
