@@ -113,7 +113,7 @@ class MyApp extends StatelessWidget {
                 '/loginScreen': (context) => LoginScreen(),
                 '/LandingScreen': (context) => LandingPage(),
                 '/otpScreen': (context) => OTPVerificationScreen(
-                    no: '9999348666', countryCode: '+91', country: 'India'),
+                    no: '9999348666', countryCode: '+91', country: 'India',),
                 '/navigationScreen': (context) => NavigationScreen(
                       cameras: cameras,
                       name: 'Madhav Arora',
