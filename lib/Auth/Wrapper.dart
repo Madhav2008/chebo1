@@ -3,7 +3,7 @@
 // import 'package:Foodybite/screens/navigation_screen/navigation_screen.dart';
 // import 'package:Foodybite/screens/welcome_screen/welcome_screen.dart';
 
-// ignore_for_file: file_names
+// ignore_for_file: file_names, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
