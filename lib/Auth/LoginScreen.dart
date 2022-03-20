@@ -9,7 +9,7 @@ import 'package:whatsapp/Auth/RegisterScreen.dart';
 // import 'package:phone_verification/loggedInScreen.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
-// final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
