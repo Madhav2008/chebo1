@@ -24,7 +24,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String countryName = 'India';
   String countryCode = '+91';
-  FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  // final FirebaseAuth _firestore = FirebaseFirestore.instance;
 
   @override
   void initState() {
@@ -45,38 +46,81 @@ class _LoginScreenState extends State<LoginScreen> {
     }
     super.initState();
   }
-  // late String smsOTP;
-  // late String verificationId;
-  // String errorMessage = '';
 
-  // Future<void> verifyPhone() async {
-  //   final PhoneCodeSent smsOTPSent = (String verId, [int forceCodeResend]) {
-  //     verificationId = verId;
-  //     smsOTPDialog(context).then((value) {
-  //       print('sign in');
-  //     });
-  //   } as PhoneCodeSent;
-  //   try {
-  //     await _auth.verifyPhoneNumber(
-  //         phoneNumber: _phoneController.text, // PHONE NUMBER TO SEND OTP
-  //         codeAutoRetrievalTimeout: (String verId) {
-  //           //Starts the phone number verification process for the given phone number.
-  //           //Either sends an SMS with a 6 digit code to the phone number specified, or sign's the user in and [verificationCompleted] is called.
-  //           verificationId = verId;
-  //         },
-  //         codeSent:
-  //             smsOTPSent, // WHEN CODE SENT THEN WE OPEN DIALOG TO ENTER OTP.
-  //         timeout: Duration(seconds: 20),
-  //         verificationCompleted: (AuthCredential phoneAuthCredential) {
-  //           print(phoneAuthCredential);
-  //         },
-  //         verificationFailed: (AuthException exceptio) {
-  //           print('${exceptio.message}');
-  //         });
-  //   } catch (e) {
-  //     // handleError(e);
-  //   }
-  // }
+  @override
+  void dispose() {
+    _phoneController.dispose();
+    super.dispose();
+  }
+  late String smsOTP;
+  late String verificationId;
+  String errorMessage = '';
+  String? verificationCode = '123456';
+
+  Future<void> verifyPhone() async {
+    try {
+      await FirebaseAuth.instance.verifyPhoneNumber(
+        phoneNumber: '+91 9999348444',
+        verificationCompleted: (PhoneAuthCredential credential) async {
+          await FirebaseAuth.instance
+              .signInWithCredential(credential)
+              .then((value) {
+            if (value.user != null) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => UserDetailsScreen(
+                    no: _phoneController.text,
+                    countryCode: countryCode,
+                  ),
+                ),
+              );
+            }
+          });
+        },
+        verificationFailed: (FirebaseAuthException e) {
+          if (e.code == 'invalid-phone-number') {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  e.message.toString(),
+                ),
+              ),
+            );
+          }
+        },
+        codeSent: (String vId, int? ResentToken) async {
+          setState(() {
+            verificationCode = vId;
+          });
+          String smsCode = '123456';
+          PhoneAuthCredential credential = PhoneAuthProvider.credential(
+              verificationId: vId, smsCode: smsCode);
+          await FirebaseAuth.instance.signInWithCredential(credential);
+        },
+        codeAutoRetrievalTimeout: (String vId) {
+          setState(() {
+            verificationCode = vId;
+          });
+        },
+        timeout: Duration(seconds: 60),
+      );
+      // await FirebaseAuth.instance.verifyPhoneNumber(
+      // phoneNumber: '+91 9971271272',
+      // verificationCompleted: (PhoneAuthCredential credential) {},
+      // verificationFailed: (FirebaseAuthException e) {},
+      // codeSent: (String verificationId, int? resendToken) {},
+      // codeAutoRetrievalTimeout: (String verificationId) {},
+      // );
+    } catch (e) {
+      FocusScope.of(context).unfocus();
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Invalid OTP'),
+        ),
+      );
+    }
+  }
 
   // Future smsOTPDialog(BuildContext context) {
   //   return showDialog(
