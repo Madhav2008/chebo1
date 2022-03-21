@@ -107,7 +107,8 @@ class MyApp extends StatelessWidget {
                 create: (_) => AuthService(),
               ),
             ],
-            child: GetMaterialApp(
+            child: 
+            GetMaterialApp(
               // initialRoute: '/',
               // routes: {
               //   '/': (context) => SplashScreen(),
