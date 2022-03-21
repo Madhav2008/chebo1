@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class OwnMessageCard extends StatelessWidget {
@@ -21,6 +22,15 @@ class OwnMessageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    _launch(url) async {
+      url = url;
+      if (await canLaunch(url)) {
+        await launch(url);
+      } else {
+        throw 'Could not launch $url';
+      }
+    }
+
     return Align(
       alignment: Alignment.centerRight,
       child: ConstrainedBox(
@@ -42,7 +52,7 @@ class OwnMessageCard extends StatelessWidget {
                   bottom: 20,
                 ),
                 child: Linkify(
-                  onOpen: (link) => link.url,
+                  onOpen: (link) => _launch(link.url),
                   text: message,
                   style: TextStyle(
                     fontSize: 16,
