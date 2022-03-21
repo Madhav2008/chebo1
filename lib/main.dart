@@ -101,13 +101,13 @@ class MyApp extends StatelessWidget {
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
           return 
-          MultiProvider(
-            providers: [
-              Provider<AuthService>(
-                create: (_) => AuthService(),
-              ),
-            ],
-            child: 
+          // MultiProvider(
+          //   providers: [
+          //     Provider<AuthService>(
+          //       create: (_) => AuthService(),
+          //     ),
+          //   ],
+          //   child: 
             GetMaterialApp(
               // initialRoute: '/',
               // routes: {
