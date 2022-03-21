@@ -100,7 +100,8 @@ class MyApp extends StatelessWidget {
         create: (context) => ThemeProvider(),
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
-          return MultiProvider(
+          return 
+          MultiProvider(
             providers: [
               Provider<AuthService>(
                 create: (_) => AuthService(),
