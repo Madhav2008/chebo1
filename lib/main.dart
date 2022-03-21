@@ -78,13 +78,13 @@ import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_core/firebase_core.dart';
 
 late List<CameraDescription> cameras;
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   cameras = await availableCameras();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   runApp(
     MyApp(),
   );
