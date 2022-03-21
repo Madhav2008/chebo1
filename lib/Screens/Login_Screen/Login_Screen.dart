@@ -23,7 +23,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String countryName = 'India';
   String countryCode = '+91';
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  // final FirebaseAuth _auth = FirebaseAuth.instance;
   // final FirebaseAuth _firestore = FirebaseFirestore.instance;
 
   @override
