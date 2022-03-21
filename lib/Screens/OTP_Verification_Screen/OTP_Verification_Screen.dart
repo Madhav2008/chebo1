@@ -311,15 +311,15 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               //   )
               //       .then((value) {
               //     if (value.user != null) {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(
-              //           builder: (builder) => UserDetailsScreen(
-              //             no: '',
-              //             countryCode: 'countryCode',
-              //           ),
-              //         ),
-              //       );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => UserDetailsScreen(
+                    no: widget.no,
+                    countryCode: widget.countryCode,
+                  ),
+                ),
+              );
               //     }
               //   });
               // } catch (e) {
