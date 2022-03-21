@@ -78,7 +78,7 @@ import 'package:provider/provider.dart';
 import 'package:whatsapp/Screens/Splash_Screen/Splash_Screen.dart';
 import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
-// import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 late List<CameraDescription> cameras;
 Future<Null> main() async {
