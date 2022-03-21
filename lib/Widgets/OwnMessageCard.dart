@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class OwnMessageCard extends StatelessWidget {
@@ -40,8 +41,9 @@ class OwnMessageCard extends StatelessWidget {
                   top: 5,
                   bottom: 20,
                 ),
-                child: Text(
-                  message,
+                child: Linkify(
+                  onOpen: (link) => link.url,
+                  text: message,
                   style: TextStyle(
                     fontSize: 16,
                     color: textColor,
