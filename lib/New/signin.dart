@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: 10.0),
-                    child: Image.network(
+                    child: Image.asset(
                       "https://github.com/Madhav2008/App-Assets/blob/main/RecipoLogo.png?raw=true",
                       width: 100,
                       height: 100,
