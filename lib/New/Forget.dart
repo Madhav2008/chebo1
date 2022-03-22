@@ -17,11 +17,14 @@ class _LoginScreenState extends State<ForgetScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(milliseconds: 1000), () {
-      setState(() {
-        _visible = true;
-      });
-    },);
+    Future.delayed(
+      Duration(milliseconds: 1000),
+      () {
+        setState(() {
+          _visible = true;
+        });
+      },
+    );
 
     return Scaffold(
       // backgroundColor: Colors.transparent,
