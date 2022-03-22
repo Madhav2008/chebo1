@@ -19,7 +19,7 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  
+
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
@@ -47,8 +47,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
     await showModalBottomSheet(
         context: context,
         builder: (context) => BottomSheet(
-              builder: (context) =>
-                  Column(mainAxisSize: MainAxisSize.min, children: [
+              builder: (context) {
+                return Column(mainAxisSize: MainAxisSize.min, children: [
                 ListTile(
                     leading: Icon(Icons.camera),
                     title: Text("Camera"),
@@ -63,7 +63,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       Navigator.of(context).pop();
                       imagePickerMethod(ImageSource.gallery);
                     })
-              ]),
+              ]);
+              },
               onClosing: () {},
             ));
   }
