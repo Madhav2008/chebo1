@@ -1,8 +1,10 @@
 import 'dart:io';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:whatsapp/Auth/Auth_Services.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -370,10 +372,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navigation()));
                             final userId = FirebaseAuth.instance.currentUser!.uid;
                             saveUser(userId);
-                            Fluttertoast.showToast(
-                                msg: "User Registered Successfully!!",
-                                toastLength: Toast.LENGTH_SHORT,
-                                gravity: ToastGravity.BOTTOM);
+                            // Fluttertoast.showToast(
+                            //     msg: "User Registered Successfully!!",
+                            //     toastLength: Toast.LENGTH_SHORT,
+                            //     gravity: ToastGravity.BOTTOM);
                           }).catchError((error){
                             showDialog(context: context,
                                 builder: (con) {
@@ -385,11 +387,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     child: Container(
                       width: MediaQuery.of(context).size.width*0.58,
                       height: 50,
-                      child: Buttons(
-                        buttonText: 'Register',
+                      child: Text('Register'),
                       ),
                     ),
-                  ),
                 ),
                     SizedBox(
                       height: 30,
