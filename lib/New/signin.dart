@@ -8,7 +8,7 @@ import 'package:whatsapp/New/Register.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  LoginScreen({Key? key}) : super(key: key);
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -22,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(milliseconds: 100), () {
+    Future.delayed(Duration(milliseconds: 100), () {
       setState(() {
         _visible = true;
       });
@@ -98,17 +98,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   SizedBox(height: 20),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                    padding: EdgeInsets.symmetric(horizontal: 40.0),
                     child: TextField(
                       obscureText: true,
                       controller: passwordController,
                       style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
-                        enabledBorder: const OutlineInputBorder(
-                          borderSide: const BorderSide(color: one, width: 0.0),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: one, width: 0.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: one, width: 0.0),
+                          borderSide: BorderSide(color: one, width: 0.0,),
                         ),
                         prefixIcon: Icon(
                           Icons.lock,
