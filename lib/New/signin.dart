@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
       setState(() {
         _visible = true;
       });
-    });
+    },);
     return Scaffold(
       body: SingleChildScrollView(
         child: AnimatedOpacity(
