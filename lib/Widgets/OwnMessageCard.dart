@@ -48,7 +48,7 @@ class OwnMessageCard extends StatelessWidget {
                 10,
               ),
               bottomLeft: Radius.circular(
-                8,
+                10,
               ),
             ),
           ),
