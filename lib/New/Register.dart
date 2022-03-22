@@ -56,12 +56,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         imagePickerMethod(ImageSource.camera);
                       }),
                   ListTile(
-                      leading: Icon(Icons.filter),
-                      title: Text("Gallery"),
-                      onTap: () {
-                        Navigator.of(context).pop();
-                        imagePickerMethod(ImageSource.gallery);
-                      },),
+                    leading: Icon(Icons.filter),
+                    title: Text("Gallery"),
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      imagePickerMethod(ImageSource.gallery);
+                    },
+                  ),
                 ]);
               },
               onClosing: () {},
