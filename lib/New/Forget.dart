@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-// import 'package:fluttertoast/fluttertoast.dart';
 
 class ForgetScreen extends StatefulWidget {
   ForgetScreen({Key? key}) : super(key: key);
