@@ -108,7 +108,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderSide: BorderSide(color: one, width: 0.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: one, width: 0.0,),
+                          borderSide: BorderSide(
+                            color: one,
+                            width: 0.0,
+                          ),
                         ),
                         prefixIcon: Icon(
                           Icons.lock,
