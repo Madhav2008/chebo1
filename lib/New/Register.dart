@@ -259,7 +259,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                            color: one, width: 0.0),
+                            color: one, width: 0.0,),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
