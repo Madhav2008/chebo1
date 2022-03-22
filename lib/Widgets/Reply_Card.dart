@@ -52,7 +52,10 @@ class ReplyCard extends StatelessWidget {
               ),
             ),
           ),
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 5,),
+          margin: EdgeInsets.symmetric(
+            horizontal: 15,
+            vertical: 5,
+          ),
           child: Stack(
             children: [
               Padding(
