@@ -11,6 +11,7 @@ class ForgetScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<ForgetScreen> {
+  bool _visible = false;
   final TextEditingController emailController = TextEditingController();
 
   @override
