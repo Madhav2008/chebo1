@@ -100,21 +100,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      // backgroundColor: Colors.transparent,
       body: SingleChildScrollView(
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('../assets/images/chat_back.png'),
-              fit: BoxFit.cover,
-            ),
+            // image: DecorationImage(
+            //   image: AssetImage('../assets/images/chat_back.png'),
+            //   fit: BoxFit.cover,
+            // ),
           ),
           child: Container(
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
-              color: Colors.black54,
+              color: Color(0xFF101D24),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
