@@ -355,8 +355,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       itemBuilder: (context, index) {
                         if (index == allMessages.length) {
                           return Container(
-                              // height: 70,
-                              );
+                            // height: 70,
+                          );
                         }
                         if (allMessages[index].type == "source") {
                           return Column(
