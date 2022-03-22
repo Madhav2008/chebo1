@@ -157,7 +157,8 @@ class _SignInState extends State<SignIn> {
                     child: Text(
                       "Sign In with Google",
                       style:
-                          TextStyle(fontSize: 17, color: CustomTheme.textColor),
+                          TextStyle(fontSize: 17, 
+                          color: CustomTheme.textColor),
                       textAlign: TextAlign.center,
                     ),
                   ),
