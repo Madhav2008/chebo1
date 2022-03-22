@@ -501,7 +501,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         );
                       },
                       child: Text(
-                        'Forget password?',
+                        'Login',
                         style: TextStyle(
                           color: one,
                           fontSize: 17,
