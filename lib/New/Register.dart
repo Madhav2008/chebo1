@@ -363,73 +363,72 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: 30,
                 ),
                 Center(
-                    child: GestureDetector(
-                      onTap: () async {
-                        Provider.of<AuthService>(context)
-                            .signInWithEmailAndPassword(
-                                emailController.text, passwordController.text)
-                            .then((auth) {
-                          Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => PaymentScreen()));
-                          // Fluttertoast.showToast(
-                          //     msg: "Login Successfully!!",
-                          //     toastLength: Toast.LENGTH_SHORT,
-                          //     gravity: ToastGravity.BOTTOM);
-                        }).catchError((error) {
-                          showDialog(
-                              context: context,
-                              builder: (con) {
-                                return AlertDialog(
-                                  title: Text("Error"),
-                                  content: Text(error.toString()),
-                                );
-                              });
-                        });
-                      },
-                      child: Container(
-                        width: MediaQuery.of(context).size.width * 0.5,
-                        height: 50,
-                        child: RaisedButton(
-                          color: one,
-                          onPressed: () async {
-                            Provider.of<AuthService>(context)
-                                .signInWithEmailAndPassword(
-                                    emailController.text,
-                                    passwordController.text)
-                                .then((auth) {
-                              Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => PaymentScreen()));
-                              // Fluttertoast.showToast(
-                              //     msg: "Login Successfully!!",
-                              //     toastLength: Toast.LENGTH_SHORT,
-                              //     gravity: ToastGravity.BOTTOM);
-                            }).catchError((error) {
-                              showDialog(
-                                  context: context,
-                                  builder: (con) {
-                                    return AlertDialog(
-                                      title: Text("Error"),
-                                      content: Text(
-                                        error.toString(),
-                                      ),
-                                    );
-                                  });
+                  child: GestureDetector(
+                    onTap: () async {
+                      Provider.of<AuthService>(context)
+                          .signInWithEmailAndPassword(
+                              emailController.text, passwordController.text)
+                          .then((auth) {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => PaymentScreen()));
+                        // Fluttertoast.showToast(
+                        //     msg: "Login Successfully!!",
+                        //     toastLength: Toast.LENGTH_SHORT,
+                        //     gravity: ToastGravity.BOTTOM);
+                      }).catchError((error) {
+                        showDialog(
+                            context: context,
+                            builder: (con) {
+                              return AlertDialog(
+                                title: Text("Error"),
+                                content: Text(error.toString()),
+                              );
                             });
-                          },
-                          child: Text(
-                            'Register',
-                            style: TextStyle(
-                              fontSize: 20,
-                            ),
+                      });
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width * 0.5,
+                      height: 50,
+                      child: RaisedButton(
+                        color: one,
+                        onPressed: () async {
+                          Provider.of<AuthService>(context)
+                              .signInWithEmailAndPassword(
+                                  emailController.text, passwordController.text)
+                              .then((auth) {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PaymentScreen()));
+                            // Fluttertoast.showToast(
+                            //     msg: "Login Successfully!!",
+                            //     toastLength: Toast.LENGTH_SHORT,
+                            //     gravity: ToastGravity.BOTTOM);
+                          }).catchError((error) {
+                            showDialog(
+                                context: context,
+                                builder: (con) {
+                                  return AlertDialog(
+                                    title: Text("Error"),
+                                    content: Text(
+                                      error.toString(),
+                                    ),
+                                  );
+                                });
+                          });
+                        },
+                        child: Text(
+                          'Register',
+                          style: TextStyle(
+                            fontSize: 20,
                           ),
                         ),
                       ),
                     ),
                   ),
+                ),
                 SizedBox(
                   height: 30,
                 ),
