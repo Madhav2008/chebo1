@@ -118,8 +118,17 @@ class _LoginScreenState extends State<ForgetScreen> {
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       height: 50,
-                      child: Buttons(
-                        buttonText: 'Send',
+                      // ignore: deprecated_member_use
+                      child: RaisedButton(
+                        color: one,
+                        onPressed: () async {
+                        },
+                        child: Text(
+                          'Send',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
                       ),
                     ),
                   ),
