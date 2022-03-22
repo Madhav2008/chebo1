@@ -36,7 +36,7 @@ class ReplyCard extends StatelessWidget {
               topRight: Radius.circular(
                 10,
               ),
-              bottomLeft: Radius.circular(
+              bottomRight: Radius.circular(
                 10,
               ),
             ),
