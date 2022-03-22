@@ -204,7 +204,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   builder: (con) {
                                     return AlertDialog(
                                       title: Text("Error"),
-                                      content: Text(error.toString()),
+                                      content: Text(error.toString(),),
                                     );
                                   });
                             });
