@@ -99,7 +99,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final authService = Provider.of<AuthService>(context);
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: SingleChildScrollView(
@@ -108,7 +107,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/Register.png'),
+              image: AssetImage('assets/images/chat_back.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -369,7 +368,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 Center(
                   child: GestureDetector(
                     onTap: () async {
-                      await authService
+                      await Provider.of<AuthService>(context)
                           .createUserWithEmailAndPassword(
                               emailController.text, passwordController.text)
                           .then((value) {
