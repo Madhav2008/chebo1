@@ -107,7 +107,7 @@ class _ChatScreenState extends State<ChatScreen> {
             10,
             16,
           ),
-    read: read,
+      read: read,
     );
     setState(() {
       setState(() {
@@ -531,7 +531,9 @@ class _ChatScreenState extends State<ChatScreen> {
                                         _scrollController.animateTo(
                                           _scrollController
                                               .position.maxScrollExtent,
-                                          duration: Duration(milliseconds: 300,),
+                                          duration: Duration(
+                                            milliseconds: 300,
+                                          ),
                                           curve: Curves.easeOut,
                                         );
                                         sendMessage(
