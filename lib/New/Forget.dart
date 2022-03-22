@@ -21,7 +21,7 @@ class _LoginScreenState extends State<ForgetScreen> {
     });
 
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      // backgroundColor: Colors.transparent,
       body: SingleChildScrollView(
         child: Container(
           width: MediaQuery.of(context).size.width,
