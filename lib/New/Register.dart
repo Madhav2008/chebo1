@@ -119,7 +119,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset("../assets/images/WhatsAppIndiaLogo.png",
-                    width: 100, height: 100),
+                    width: 100, height: 100,),
                 Text(
                   'Recipo',
                   style: TextStyle(
