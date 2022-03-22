@@ -477,7 +477,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       'Already have an account?',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 17,
                       ),
                     ),
                     SizedBox(
