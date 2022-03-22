@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
