@@ -115,13 +115,13 @@ class _LoginScreenState extends State<ForgetScreen> {
                       //   gravity: ToastGravity.BOTTOM,
                       // );
                     },
-                    // child: Container(
-                    //   width: MediaQuery.of(context).size.width * 0.5,
-                    //   height: 50,
-                    //   child: Buttons(
-                    //     buttonText: 'Send',
-                    //   ),
-                    // ),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width * 0.5,
+                      height: 50,
+                      child: Buttons(
+                        buttonText: 'Send',
+                      ),
+                    ),
                   ),
                 ),
               ],
