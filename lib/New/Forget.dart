@@ -121,8 +121,7 @@ class _LoginScreenState extends State<ForgetScreen> {
                       // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: one,
-                        onPressed: () async {
-                        },
+                        onPressed: () async {},
                         child: Text(
                           'Send',
                           style: TextStyle(
