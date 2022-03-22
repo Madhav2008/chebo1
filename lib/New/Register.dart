@@ -67,7 +67,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ]);
               },
               onClosing: () {},
-            ));
+            ),);
   }
 
   imagePickerMethod(ImageSource source) async {
