@@ -3,7 +3,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
 
 class ForgetScreen extends StatefulWidget {
-  const ForgetScreen({Key? key}) : super(key: key);
+  ForgetScreen({Key? key}) : super(key: key);
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -15,7 +15,7 @@ class _LoginScreenState extends State<ForgetScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(milliseconds: 1000), () {
+    Future.delayed(Duration(milliseconds: 1000), () {
       setState(() {
         _visible = true;
       });
@@ -40,7 +40,7 @@ class _LoginScreenState extends State<ForgetScreen> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 20.0, left: 15.0),
+                  padding: EdgeInsets.only(top: 20.0, left: 15.0),
                   child: Row(
                     children: [
                       IconButton(
@@ -77,13 +77,13 @@ class _LoginScreenState extends State<ForgetScreen> {
                 ),
                 SizedBox(height: 55),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
                     controller: emailController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
                             color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
