@@ -32,7 +32,6 @@ class _LoginScreenState extends State<LoginScreen> {
           opacity: _visible ? 1.0 : 0.0,
           duration: Duration(seconds: 1),
           child: Container(
-            color: Colors.red,
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
