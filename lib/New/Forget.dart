@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
 
 class ForgetScreen extends StatefulWidget {
@@ -27,14 +28,14 @@ class _LoginScreenState extends State<ForgetScreen> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/images/Login.png'),
-              fit: BoxFit.cover,
-            ),
-          ),
+              // image: DecorationImage(
+              //   image: AssetImage('assets/images/Login.png'),
+              //   fit: BoxFit.cover,
+              // ),s
+              ),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.black54,
+              color: Color(0xFF101D24),
             ),
             child: Column(
               children: [
@@ -83,11 +84,11 @@ class _LoginScreenState extends State<ForgetScreen> {
                     decoration: InputDecoration(
                       enabledBorder: const OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                            color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                        borderSide:
+                            BorderSide(color: Colors.redAccent, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.mail,
