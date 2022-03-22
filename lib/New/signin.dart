@@ -147,6 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         'Forget password?',
                         style: TextStyle(
                           color: one,
+                          fontSize: 16,
                         ),
                       ),
                     ),
