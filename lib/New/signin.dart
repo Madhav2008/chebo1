@@ -123,9 +123,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 10,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 180),
-                    child: Container(
-                      child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),
+                    padding: EdgeInsets.only(left: 180),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ForgetScreen()));
+                      
+                      },
+                      child: Container(
+                        child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),
+                      ),
                     ),
                   ),
                   SizedBox(
