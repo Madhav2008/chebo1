@@ -104,8 +104,10 @@ class _LoginScreenState extends State<ForgetScreen> {
                     ),
                   ),
                 ),
-                Container(
-                  height: 1,
+                Expanded(
+                  child: Container(
+                    height: 1,
+                  ),
                 ),
                 Center(
                   child: GestureDetector(
