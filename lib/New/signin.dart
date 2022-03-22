@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding: EdgeInsets.only(top: 10.0),
                     child: Image.asset(
-                      "../assets/images/",
+                      "../assets/images/WhatsAppIndiaLogo.png",
                       width: 100,
                       height: 100,
                     ),
@@ -66,18 +66,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   SizedBox(height: 70),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                    padding: EdgeInsets.symmetric(horizontal: 40.0),
                     child: TextField(
                       controller: emailController,
                       style: TextStyle(color: Colors.white),
                       decoration: InputDecoration(
-                        enabledBorder: const OutlineInputBorder(
-                          borderSide: const BorderSide(
-                              color: Colors.redAccent, width: 0.0),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                              color: one, width: 0.0,),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              BorderSide(color: Colors.redAccent, width: 0.0),
+                              BorderSide(color: one, width: 0.0),
                         ),
                         prefixIcon: Icon(
                           Icons.mail,
@@ -102,11 +102,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       decoration: InputDecoration(
                         enabledBorder: const OutlineInputBorder(
                           borderSide: const BorderSide(
-                              color: Colors.redAccent, width: 0.0),
+                              color: one, width: 0.0),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              BorderSide(color: Colors.redAccent, width: 0.0),
+                              BorderSide(color: one, width: 0.0),
                         ),
                         prefixIcon: Icon(
                           Icons.lock,
@@ -136,7 +136,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Text(
                         'Forget password?',
                         style: TextStyle(
-                          color: Colors.redAccent,
+                          color: one,
                         ),
                       ),
                     ),
@@ -229,7 +229,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Text(
                           'Register',
                           style: TextStyle(
-                            color: Colors.redAccent,
+                            color: one,
                           ),
                         ),
                       ),
