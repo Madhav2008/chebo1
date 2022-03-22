@@ -104,6 +104,7 @@ class _ChatScreenState extends State<ChatScreen> {
             10,
             16,
           ),
+    read: true,
     );
     setState(() {
       setState(() {
