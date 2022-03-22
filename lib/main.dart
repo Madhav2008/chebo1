@@ -71,6 +71,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/New/signin.dart';
 // import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 // import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 // import 'package:whatsapp/Screens/Navigation/Navigation.dart';
@@ -136,7 +137,7 @@ class MyApp extends StatelessWidget {
             themeMode: themeProvider.themeMode,
             theme: MyThemes.lightTheme,
             darkTheme: MyThemes.darkTheme,
-            home: SplashScreen(),
+            home: LoginScreen(),
             // ),
           );
         },
