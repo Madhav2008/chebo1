@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 10.0),
+                    padding: EdgeInsets.only(top: 10.0),
                     child: Image.network(
                       "https://github.com/Madhav2008/App-Assets/blob/main/RecipoLogo.png?raw=true",
                       width: 100,
@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   Text(
-                    'Recipo',
+                    'WhatsApp India',
                     style: TextStyle(
                       fontSize: 40.0,
                       fontWeight: FontWeight.bold,
