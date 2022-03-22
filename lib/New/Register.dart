@@ -230,12 +230,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.supervised_user_circle_outlined,
@@ -259,11 +257,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                            color: one, width: 0.0,),
+                          color: one,
+                          
+                          width: 0.0,
+                        ),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.assignment_outlined,
@@ -286,12 +286,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.mail,
@@ -315,12 +313,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.lock,
@@ -343,12 +339,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide:
-                            BorderSide(color: one, width: 0.0),
+                        borderSide: BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.phone,
