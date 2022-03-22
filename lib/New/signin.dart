@@ -194,14 +194,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: 5,
                       ),
                       GestureDetector(
-                      onTap: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ForgetScreen()));
-                      
-                      },
-                      child: Text('Register',style: TextStyle(color: Colors.redAccent,),),),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ForgetScreen()));
+                        },
+                        child: Text(
+                          'Register',
+                          style: TextStyle(
+                            color: Colors.redAccent,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],
