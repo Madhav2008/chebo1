@@ -107,7 +107,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/chat_back.png'),
+              image: AssetImage('../assets/images/chat_back.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -119,10 +119,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                    "../assets/images/WhatsAppIndiaLogo.png",
-                    width: 100,
-                    height: 100),
+                Image.asset("../assets/images/WhatsAppIndiaLogo.png",
+                    width: 100, height: 100),
                 Text(
                   'Recipo',
                   style: TextStyle(
