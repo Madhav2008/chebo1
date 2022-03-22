@@ -104,7 +104,9 @@ class _LoginScreenState extends State<ForgetScreen> {
                     ),
                   ),
                 ),
-                Container(height: 1,),
+                Container(
+                  height: 1,
+                ),
                 Center(
                   child: GestureDetector(
                     onTap: () async {
