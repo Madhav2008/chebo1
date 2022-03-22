@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors_in_immutables, file_names, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors_in_immutables, file_names, prefer_const_constructors, sized_box_for_whitespace, deprecated_member_use
 
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -400,7 +400,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       height: 50,
-                      // ignore: deprecated_member_use
                       child: RaisedButton(
                         color: one,
                         onPressed: () async {
