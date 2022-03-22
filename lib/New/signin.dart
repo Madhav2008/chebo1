@@ -171,7 +171,7 @@ class _SignInState extends State<SignIn> {
                     children: [
                       Text(
                         "Don't have account? ",
-                        style: simpleTextStyle(),
+                        // style: simpleTextStyle(),
                       ),
                       GestureDetector(
                         onTap: () {
