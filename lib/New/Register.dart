@@ -10,7 +10,7 @@ import 'package:whatsapp/New/signin.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 
 class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({Key? key}) : super(key: key);
+  RegisterScreen({Key? key}) : super(key: key);
 
   @override
   _RegisterScreenState createState() => _RegisterScreenState();
@@ -224,13 +224,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 //   ),
                 // ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
                     controller: nameController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
                             color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -252,13 +252,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
                     controller: bioController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
                             color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -280,13 +280,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
                     controller: emailController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
                             color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -308,14 +308,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
                     obscureText: true,
                     controller: passwordController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
                             color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -337,13 +337,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40.0),
+                  padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
                     controller: contactController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      enabledBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
                             color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
