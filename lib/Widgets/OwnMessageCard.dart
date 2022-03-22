@@ -22,7 +22,6 @@ class OwnMessageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     _launch(url) async {
       url = url;
       if (await canLaunch(url)) {
@@ -54,7 +53,10 @@ class OwnMessageCard extends StatelessWidget {
             ),
           ),
           color: color,
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 5,),
+          margin: EdgeInsets.symmetric(
+            horizontal: 15,
+            vertical: 5,
+          ),
           child: Stack(
             children: [
               Padding(
