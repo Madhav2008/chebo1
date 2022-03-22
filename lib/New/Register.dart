@@ -64,7 +64,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 imagePickerMethod(ImageSource.gallery);
               },
             ),
-          ]);
+          ],);
         },
         onClosing: () {},
       ),
