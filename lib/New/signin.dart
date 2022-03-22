@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 180),
                     child: Container(
-                      child: Text('Forget password?',style: TextStyle(color: blue,),),
+                      child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),
                       // colors: Colors.redAccent,
                       onPress: () {
                         Navigator.push(
