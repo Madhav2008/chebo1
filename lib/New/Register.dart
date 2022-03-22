@@ -494,7 +494,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         'Forget password?',
                         style: TextStyle(
                           color: one,
-                          
+                          fontSize: 17,
                         ),
                       ),
                     ),
