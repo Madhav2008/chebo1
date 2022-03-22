@@ -201,7 +201,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 builder: (context) => ForgetScreen()));
                       
                       },
-                      child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),),
+                      child: Text('Register',style: TextStyle(color: Colors.redAccent,),),),
                     ],
                   ),
                 ],
