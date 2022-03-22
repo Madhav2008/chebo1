@@ -168,7 +168,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Container(
                         width: MediaQuery.of(context).size.width*0.5,
                         height: 50,
-                        child: Text('Login'),
+                        child: RaisedButton(onPressed: () {  },
+                        child: Text('Login')),
                         ),
                       ),
                   ),
