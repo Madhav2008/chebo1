@@ -47,24 +47,27 @@ class _RegisterScreenState extends State<RegisterScreen> {
       context: context,
       builder: (context) => BottomSheet(
         builder: (context) {
-          return Column(mainAxisSize: MainAxisSize.min, children: [
-            ListTile(
-              leading: Icon(Icons.camera),
-              title: Text("Camera"),
-              onTap: () {
-                Navigator.of(context).pop();
-                imagePickerMethod(ImageSource.camera);
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.filter),
-              title: Text("Gallery"),
-              onTap: () {
-                Navigator.of(context).pop();
-                imagePickerMethod(ImageSource.gallery);
-              },
-            ),
-          ],);
+          return Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                leading: Icon(Icons.camera),
+                title: Text("Camera"),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  imagePickerMethod(ImageSource.camera);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.filter),
+                title: Text("Gallery"),
+                onTap: () {
+                  Navigator.of(context).pop();
+                  imagePickerMethod(ImageSource.gallery);
+                },
+              ),
+            ],
+          );
         },
         onClosing: () {},
       ),
