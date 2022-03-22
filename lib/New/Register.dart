@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors_in_immutables
+// ignore_for_file: prefer_const_constructors_in_immutables, file_names
 
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
