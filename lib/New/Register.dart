@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/New/signin.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 
@@ -181,7 +182,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 //                       Icon(
                 //                         Icons
                 //                             .cloud_upload_outlined,
-                //                         color: Colors.redAccent,
+                //                         color: one,
                 //                         size: 100,
                 //                       ),
                 //                       Padding(
@@ -230,11 +231,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: const OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                            color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Colors.redAccent, width: 0.0),
+                            BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.supervised_user_circle_outlined,
@@ -258,11 +259,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: const OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                            color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Colors.redAccent, width: 0.0),
+                            BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.assignment_outlined,
@@ -286,11 +287,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: const OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                            color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Colors.redAccent, width: 0.0),
+                            BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.mail,
@@ -315,11 +316,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: const OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                            color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Colors.redAccent, width: 0.0),
+                            BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.lock,
@@ -343,11 +344,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     decoration: InputDecoration(
                       enabledBorder: const OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Colors.redAccent, width: 0.0),
+                            color: one, width: 0.0),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Colors.redAccent, width: 0.0),
+                            BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.phone,
@@ -426,7 +427,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       child: Text(
                         'Forget password?',
                         style: TextStyle(
-                          color: Colors.redAccent,
+                          color: one,
                         ),
                       ),
                     ),
