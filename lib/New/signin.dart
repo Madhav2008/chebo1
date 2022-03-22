@@ -193,16 +193,15 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(
                         width: 5,
                       ),
-                      TextSimpleButton(
-                        title: 'Register',
-                        colors: Colors.redAccent,
-                        onPress: () {
-                          Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => RegisterScreen()));
-                        },
-                      ),
+                      GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ForgetScreen()));
+                      
+                      },
+                      child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),),
                     ],
                   ),
                 ],
