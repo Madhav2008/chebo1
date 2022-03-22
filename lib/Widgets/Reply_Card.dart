@@ -21,6 +21,7 @@ class ReplyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     _launch(url) async {
       url = url;
       if (await canLaunch(url)) {
