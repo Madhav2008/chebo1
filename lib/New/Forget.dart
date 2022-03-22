@@ -21,7 +21,7 @@ class _LoginScreenState extends State<ForgetScreen> {
       setState(() {
         _visible = true;
       });
-    });
+    },);
 
     return Scaffold(
       // backgroundColor: Colors.transparent,
