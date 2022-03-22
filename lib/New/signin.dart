@@ -132,9 +132,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 builder: (context) => ForgetScreen()));
                       
                       },
-                      child: Container(
-                        child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),
-                      ),
+                      child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),
                     ),
                   ),
                   SizedBox(
