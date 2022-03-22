@@ -30,7 +30,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   late XFile _image;
   ImagePicker imagePicker = ImagePicker();
   bool _isLoading = false;
-  bool _visible = false;
+  final bool _visible = false;
 
   void saveUser(uid) {
     // UserDatabase.addUser(
