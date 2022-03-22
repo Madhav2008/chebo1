@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class ReplyCard extends StatelessWidget {
@@ -51,7 +52,9 @@ class ReplyCard extends StatelessWidget {
                   top: 5,
                   bottom: 20,
                 ),
-                child: Text(
+                child: Linkify(
+                  onOpen: (link) => _launch(link.url),
+                  text: 
                   message,
                   style: TextStyle(
                     fontSize: 16,
