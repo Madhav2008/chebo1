@@ -11,6 +11,7 @@ class ReplyCard extends StatelessWidget {
     required this.message,
     required this.messageTime,
   }) : super(key: key);
+  
   final Color color;
   final Color textColor;
   final String message;
