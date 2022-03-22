@@ -125,7 +125,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: 100,
                 ),
                 Text(
-                  'Recipo',
+                  'WhatsApp India',
                   style: TextStyle(
                     fontSize: 40.0,
                     fontWeight: FontWeight.bold,
