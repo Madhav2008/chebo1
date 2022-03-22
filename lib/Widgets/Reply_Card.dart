@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class ReplyCard extends StatelessWidget {
@@ -20,6 +21,14 @@ class ReplyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    _launch(url) async {
+      url = url;
+      if (await canLaunch(url)) {
+        await launch(url);
+      } else {
+        throw 'Could not launch $url';
+      }
+    }
     return Align(
       alignment: Alignment.centerLeft,
       child: ConstrainedBox(
