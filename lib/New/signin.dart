@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         'Forget password?',
                         style: TextStyle(
                           color: one,
-                          fontSize: 16,
+                          fontSize: 17,
                         ),
                       ),
                     ),
@@ -233,7 +233,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         'Create new account?',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 15,
+                          fontSize: 17,
                         ),
                       ),
                       SizedBox(
@@ -250,6 +250,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           'Register',
                           style: TextStyle(
                             color: one,
+                            fontSize: 17,
                           ),
                         ),
                       ),
