@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -31,14 +32,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool _isLoading = false;
 
   void saveUser(uid) {
-    UserDatabase.addUser(
-        userId: uid,
-        userName: nameController.text,
-        bio: bioController.text,
-        userEmail: emailController.text,
-        contact: contactController.text,
-        img: uploadedPath
-    );
+    // UserDatabase.addUser(
+    //     userId: uid,
+    //     userName: nameController.text,
+    //     bio: bioController.text,
+    //     userEmail: emailController.text,
+    //     contact: contactController.text,
+    //     img: uploadedPath
+    // );
   }
 
   selectImage() async {
