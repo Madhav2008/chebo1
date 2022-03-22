@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/New/signin.dart';
+import 'package:whatsapp/New/SignIn.dart';
 
 class LandingPage extends StatelessWidget {
   LandingPage({Key? key}) : super(key: key);
