@@ -54,7 +54,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       onTap: () {
                         Navigator.of(context).pop();
                         imagePickerMethod(ImageSource.camera);
-                      }),
+                      },),
                   ListTile(
                     leading: Icon(Icons.filter),
                     title: Text("Gallery"),
