@@ -126,13 +126,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.only(left: 180),
                     child: Container(
                       child: Text('Forget password?',style: TextStyle(color: Colors.redAccent,),),
-                      // colors: Colors.redAccent,
-                      onPress: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ForgetScreen()));
-                      },
                     ),
                   ),
                   SizedBox(
