@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
           .signInWithEmailAndPassword(
               emailEditingController.text, passwordEditingController.text)
           .then((result) async {
-        if (result != null)  {
+        if (result != null) {
           QuerySnapshot userInfoSnapshot =
               await DatabaseMethods().getUserInfo(emailEditingController.text);
 
@@ -55,7 +55,9 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('e'),),
+      appBar: AppBar(
+        title: Text('e'),
+      ),
       body: isLoading
           ? Container(
               child: Center(child: CircularProgressIndicator()),
