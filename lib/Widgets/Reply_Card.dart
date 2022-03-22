@@ -16,7 +16,7 @@ class ReplyCard extends StatelessWidget {
   final Color textColor;
   final String message;
   final String messageTime;
-  
+
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -29,7 +29,17 @@ class ReplyCard extends StatelessWidget {
           color: color,
           elevation: 1,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(
+                10,
+              ),
+              topRight: Radius.circular(
+                10,
+              ),
+              bottomLeft: Radius.circular(
+                10,
+              ),
+            ),
           ),
           margin: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
           child: Stack(
