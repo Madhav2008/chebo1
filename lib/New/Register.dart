@@ -29,7 +29,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   String uploadedPath = "";
   late XFile _image;
   ImagePicker imagePicker = ImagePicker();
-  bool _isLoading = false;
+  final bool _isLoading = false;
   final bool _visible = false;
 
   void saveUser(uid) {
