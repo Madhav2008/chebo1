@@ -209,7 +209,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     });
                               });
                             },
-                            child: Text('Login')),
+                            child: Text('Login'),),
                       ),
                     ),
                   ),
