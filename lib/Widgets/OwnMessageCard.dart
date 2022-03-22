@@ -43,7 +43,9 @@ class OwnMessageCard extends StatelessWidget {
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(8),
               topRight: Radius.circular(8),
-              bottomLeft: Radius.circular(8,),
+              bottomLeft: Radius.circular(
+                8,
+              ),
             ),
           ),
           color: color,
