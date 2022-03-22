@@ -21,7 +21,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final authService = Provider.of<AuthService>(context);
     Future.delayed(const Duration(milliseconds: 100), () {
       setState(() {
         _visible = true;
@@ -147,7 +146,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Center(
                     child: GestureDetector(
                       onTap: () async {
-                        authService
+                        Provider.of<AuthService>(context)
                             .signInWithEmailAndPassword(
                                 emailController.text, passwordController.text)
                             .then((auth) {
