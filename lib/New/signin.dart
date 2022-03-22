@@ -75,24 +75,24 @@ class _SignInState extends State<SignIn> {
                           validator: (val) {
                             return RegExp(
                                         r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-                                    .hasMatch(val)
+                                    .hasMatch(val!)
                                 ? null
                                 : "Please Enter Correct Email";
                           },
                           controller: emailEditingController,
-                          style: simpleTextStyle(),
-                          decoration: textFieldInputDecoration("email"),
+                          // style: simpleTextStyle(),
+                          // decoration: textFieldInputDecoration("email"),
                         ),
                         TextFormField(
                           obscureText: true,
                           validator: (val) {
-                            return val.length > 6
+                            return val!.length > 6
                                 ? null
                                 : "Enter Password 6+ characters";
                           },
-                          style: simpleTextStyle(),
+                          // style: simpleTextStyle(),
                           controller: passwordEditingController,
-                          decoration: textFieldInputDecoration("password"),
+                          // decoration: textFieldInputDecoration("password"),
                         ),
                       ],
                     ),
@@ -115,7 +115,7 @@ class _SignInState extends State<SignIn> {
                                 horizontal: 16, vertical: 8),
                             child: Text(
                               "Forgot Password?",
-                              style: simpleTextStyle(),
+                              // style: simpleTextStyle(),
                             )),
                       )
                     ],
