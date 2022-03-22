@@ -82,18 +82,21 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void sendMessage(
     String message,
+    bool read,
     // int sourceId,
     // int targetId,
   ) {
     setMessage(
       "source",
       message,
+      read,
     );
   }
 
   void setMessage(
     String type,
     String message,
+    bool read,
     // int sourceId,
     // int targetId,
   ) {
@@ -104,7 +107,7 @@ class _ChatScreenState extends State<ChatScreen> {
             10,
             16,
           ),
-    read: true,
+    read: read,
     );
     setState(() {
       setState(() {
