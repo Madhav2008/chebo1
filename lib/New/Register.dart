@@ -363,18 +363,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: 30,
                 ),
                 Center(
-                  child: GestureDetector(
-                    onTap: () async {
-                      Provider.of<AuthService>(context)
-                          .signInWithEmailAndPassword(
+                    child: GestureDetector(
+                      onTap: () async {
+                        await Provider.of<AuthService>(context)
+                          .createUserWithEmailAndPassword(
                               emailController.text, passwordController.text)
-                          .then((auth) {
+                          .then((value) {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => PaymentScreen()));
+                        final userId = FirebaseAuth.instance.currentUser!.uid;
+                        saveUser(userId);
                         // Fluttertoast.showToast(
-                        //     msg: "Login Successfully!!",
+                        //     msg: "User Registered Successfully!!",
                         //     toastLength: Toast.LENGTH_SHORT,
                         //     gravity: ToastGravity.BOTTOM);
                       }).catchError((error) {
@@ -387,48 +389,83 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               );
                             });
                       });
-                    },
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.5,
-                      height: 50,
-                      child: RaisedButton(
-                        color: one,
-                        onPressed: () async {
-                          Provider.of<AuthService>(context)
-                              .signInWithEmailAndPassword(
-                                  emailController.text, passwordController.text)
-                              .then((auth) {
-                            Navigator.pushReplacement(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => PaymentScreen()));
-                            // Fluttertoast.showToast(
-                            //     msg: "Login Successfully!!",
-                            //     toastLength: Toast.LENGTH_SHORT,
-                            //     gravity: ToastGravity.BOTTOM);
-                          }).catchError((error) {
-                            showDialog(
-                                context: context,
-                                builder: (con) {
-                                  return AlertDialog(
-                                    title: Text("Error"),
-                                    content: Text(
-                                      error.toString(),
-                                    ),
-                                  );
-                                });
-                          });
-                        },
-                        child: Text(
-                          'Register',
-                          style: TextStyle(
-                            fontSize: 20,
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * 0.5,
+                        height: 50,
+                        child: RaisedButton(
+                          color: one,
+                          onPressed: () async {
+                            await Provider.of<AuthService>(context)
+                          .createUserWithEmailAndPassword(
+                              emailController.text, passwordController.text)
+                          .then((value) {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => PaymentScreen()));
+                        final userId = FirebaseAuth.instance.currentUser!.uid;
+                        saveUser(userId);
+                        // Fluttertoast.showToast(
+                        //     msg: "User Registered Successfully!!",
+                        //     toastLength: Toast.LENGTH_SHORT,
+                        //     gravity: ToastGravity.BOTTOM);
+                      }).catchError((error) {
+                        showDialog(
+                            context: context,
+                            builder: (con) {
+                              return AlertDialog(
+                                title: Text("Error"),
+                                content: Text(error.toString()),
+                              );
+                            });
+                      });
+                          },
+                          child: Text(
+                            'Register',
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
+                // Center(
+                //   child: GestureDetector(
+                //     onTap: () async {
+                //       await Provider.of<AuthService>(context)
+                //           .createUserWithEmailAndPassword(
+                //               emailController.text, passwordController.text)
+                //           .then((value) {
+                //         Navigator.pushReplacement(
+                //             context,
+                //             MaterialPageRoute(
+                //                 builder: (context) => PaymentScreen()));
+                //         final userId = FirebaseAuth.instance.currentUser!.uid;
+                //         saveUser(userId);
+                //         // Fluttertoast.showToast(
+                //         //     msg: "User Registered Successfully!!",
+                //         //     toastLength: Toast.LENGTH_SHORT,
+                //         //     gravity: ToastGravity.BOTTOM);
+                //       }).catchError((error) {
+                //         showDialog(
+                //             context: context,
+                //             builder: (con) {
+                //               return AlertDialog(
+                //                 title: Text("Error"),
+                //                 content: Text(error.toString()),
+                //               );
+                //             });
+                //       });
+                //     },
+                //     child: Container(
+                //       width: MediaQuery.of(context).size.width * 0.58,
+                //       height: 50,
+                //       child: Text('Register'),
+                //     ),
+                //   ),
+                // ),
                 SizedBox(
                   height: 30,
                 ),
