@@ -135,6 +135,9 @@ class _LoginScreenState extends State<ForgetScreen> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 40,
+                ),
               ],
             ),
           ),
