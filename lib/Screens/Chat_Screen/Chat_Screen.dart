@@ -531,11 +531,12 @@ class _ChatScreenState extends State<ChatScreen> {
                                         _scrollController.animateTo(
                                           _scrollController
                                               .position.maxScrollExtent,
-                                          duration: Duration(milliseconds: 300),
+                                          duration: Duration(milliseconds: 300,),
                                           curve: Curves.easeOut,
                                         );
                                         sendMessage(
                                           _controller.text,
+                                          true,
                                           // 2,
                                           // 2,
                                         );
