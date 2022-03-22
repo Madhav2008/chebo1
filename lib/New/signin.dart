@@ -24,11 +24,14 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(milliseconds: 100), () {
-      setState(() {
-        _visible = true;
-      });
-    },);
+    Future.delayed(
+      Duration(milliseconds: 100),
+      () {
+        setState(() {
+          _visible = true;
+        });
+      },
+    );
     return Scaffold(
       body: SingleChildScrollView(
         child: AnimatedOpacity(
