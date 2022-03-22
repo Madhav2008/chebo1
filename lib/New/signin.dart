@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
 import 'package:provider/provider.dart';
+import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -122,9 +124,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 180),
-                    child: TextSimpleButton(
-                      title: 'Forget password?',
-                      colors: Colors.redAccent,
+                    child: Container(
+                      child: Text('Forget password?',style: TextStyle(color: blue,),),
+                      // colors: Colors.redAccent,
                       onPress: () {
                         Navigator.push(
                             context,
