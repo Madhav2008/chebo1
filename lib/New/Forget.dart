@@ -88,7 +88,7 @@ class _LoginScreenState extends State<ForgetScreen> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(color: Colors.redAccent, width: 0.0),
+                            BorderSide(color: one, width: 0.0),
                       ),
                       prefixIcon: Icon(
                         Icons.mail,
