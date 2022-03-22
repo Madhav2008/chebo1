@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/New/signin.dart';
+import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -369,7 +371,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     onTap: () async {
                       await authService.createUserWithEmailAndPassword(
                               emailController.text, passwordController.text).then((value) {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navigation()));
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PaymentScreen()));
                             final userId = FirebaseAuth.instance.currentUser!.uid;
                             saveUser(userId);
                             // Fluttertoast.showToast(
@@ -405,13 +407,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           ),
                         ),
                         SizedBox(width: 5,),
-                        TextSimpleButton(
-                          title: 'Login',
-                          colors: Colors.redAccent,
-                          onPress: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
-                          },
+                       GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginScreen()));
+                      },
+                      child: Text(
+                        'Forget password?',
+                        style: TextStyle(
+                          color: Colors.redAccent,
                         ),
+                      ),
+                    ),
                       ],
                     )
                   ],
