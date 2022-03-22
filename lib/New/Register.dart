@@ -19,7 +19,6 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
@@ -49,21 +48,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
         builder: (context) => BottomSheet(
               builder: (context) {
                 return Column(mainAxisSize: MainAxisSize.min, children: [
-                ListTile(
-                    leading: Icon(Icons.camera),
-                    title: Text("Camera"),
-                    onTap: () {
-                      Navigator.of(context).pop();
-                      imagePickerMethod(ImageSource.camera);
-                    }),
-                ListTile(
-                    leading: Icon(Icons.filter),
-                    title: Text("Gallery"),
-                    onTap: () {
-                      Navigator.of(context).pop();
-                      imagePickerMethod(ImageSource.gallery);
-                    }),
-              ]);
+                  ListTile(
+                      leading: Icon(Icons.camera),
+                      title: Text("Camera"),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                        imagePickerMethod(ImageSource.camera);
+                      }),
+                  ListTile(
+                      leading: Icon(Icons.filter),
+                      title: Text("Gallery"),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                        imagePickerMethod(ImageSource.gallery);
+                      }),
+                ]);
               },
               onClosing: () {},
             ));
