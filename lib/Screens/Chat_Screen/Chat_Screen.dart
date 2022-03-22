@@ -359,11 +359,21 @@ class _ChatScreenState extends State<ChatScreen> {
                           );
                         }
                         if (allMessages[index].type == "source") {
-                          return OwnMessageCard(
-                            color: own,
+                          return Column(
+                            children: [
+                              OwnMessageCard(
+                                color: own,
+                                textColor: text,
+                                message: allMessages[index].message,
+                                messageTime: allMessages[index].time,
+                              ),
+                              ReplyCard(
+                            color: reply,
                             textColor: text,
                             message: allMessages[index].message,
                             messageTime: allMessages[index].time,
+                          )
+                            ],
                           );
                         } else {
                           return ReplyCard(
