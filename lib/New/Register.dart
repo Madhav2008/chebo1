@@ -23,7 +23,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
   final TextEditingController contactController = TextEditingController();
-  final TextEditingController bioController = TextEditingController();
+  final TextEditingController aboutController = TextEditingController();
 
   File? _imageFile;
   String uploadedPath = "";
@@ -35,7 +35,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     // UserDatabase.addUser(
     //     userId: uid,
     //     userName: nameController.text,
-    //     bio: bioController.text,
+    //     about: aboutController.text,
     //     userEmail: emailController.text,
     //     contact: contactController.text,
     //     img: uploadedPath
@@ -252,7 +252,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40.0),
                   child: TextField(
-                    controller: bioController,
+                    controller: aboutController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
@@ -271,7 +271,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Icons.assignment_outlined,
                         color: Colors.white,
                       ),
-                      hintText: 'Bio',
+                      hintText: 'About',
                       hintStyle: TextStyle(
                         color: Colors.white,
                       ),
