@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/New/Forget.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
