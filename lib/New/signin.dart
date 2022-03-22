@@ -184,6 +184,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: MediaQuery.of(context).size.width * 0.5,
                         height: 50,
                         child: RaisedButton(
+                          color: one,
                           onPressed: () async {
                             Provider.of<AuthService>(context)
                                 .signInWithEmailAndPassword(
