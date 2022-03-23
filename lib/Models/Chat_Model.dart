@@ -58,6 +58,7 @@ List<ChatModel> dummyData = [
         "https://ebizfiling.com/wp-content/uploads/2017/12/images_20-3.jpg",
     about: "Hey there! I am using WhatsApp India.",
     phoneno: '0000000000',
+    id: 4,
   ),
   ChatModel(
     name: "David",
