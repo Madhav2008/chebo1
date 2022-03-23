@@ -10,9 +10,11 @@ class ChatsScreen extends StatelessWidget {
   ChatsScreen({
     Key? key,
     required this.sourceChat,
+    required this.chatModels,
   }) : super(key: key);
 
   final ChatModel sourceChat;
+   final List<ChatModel> chatModels;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +36,7 @@ class ChatsScreen extends StatelessWidget {
                     phoneno: dummyData[i].phoneno,
                     about: dummyData[i].about,
                     sourceChat: sourceChat,
+                    chatModels: chatModels,
                   ),
                 ),
               );
