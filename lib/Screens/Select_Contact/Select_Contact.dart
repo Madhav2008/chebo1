@@ -16,7 +16,7 @@ class SelectContact extends StatefulWidget {
   }) : super(key: key);
 
   final ChatModel sourceChat;
-   final List<ChatModel> chatModels;
+  final List<ChatModel> chatModels;
 
   @override
   _SelectContactState createState() => _SelectContactState();
@@ -421,7 +421,7 @@ class _SelectContactState extends State<SelectContact> {
                     phoneno: '9999348666',
                     about: 'I overthink therefore I overam',
                     sourceChat: widget.sourceChat,
-                    chatModels: widget.,
+                    chatModels: widget.chatModels,
                   ),
                 ),
               );
