@@ -205,7 +205,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               context: context,
                               builder: (con) {
                                 return AlertDialog(
-                                  title: Text("Login"),
+                                  title: Text("Cong"),
                                   content: Text(
                                     'Login Successfully'
                                   ),
