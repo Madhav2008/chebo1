@@ -10,12 +10,10 @@ class UserDetailsScreen extends StatelessWidget {
     Key? key,
     required this.no,
     required this.countryCode,
-    required this.sourceChat,
   }) : super(key: key);
 
   final String no;
   final String countryCode;
-  final ChatModel sourceChat;
 
   @override
   Widget build(BuildContext context) {
