@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Contact_Model.dart';
+import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
 import 'package:whatsapp/Screens/Contacts_Help_Screen/Contacts_Help_Screen.dart';
 import 'package:whatsapp/Screens/Create_Group/Create_Group.dart';
@@ -15,6 +15,7 @@ class SelectContact extends StatefulWidget {
   }) : super(key: key);
 
   final ChatModel sourceChat;
+  
   @override
   _SelectContactState createState() => _SelectContactState();
 }
@@ -74,19 +75,19 @@ class _SelectContactState extends State<SelectContact> {
     _IsSearching = false;
   }
 
-  List<ChatModel> contacts = [
-    ChatModel(name: "Bobby Arora", status: "About...."),
-    ChatModel(name: "Sonia Arora", status: "About...."),
-    ChatModel(name: "Tripta Arora", status: "About...."),
-    ChatModel(name: "Bunty Arora", status: "About...."),
-    ChatModel(name: "Vijay Arora", status: "About...."),
-    ChatModel(name: "Pushpa Arora", status: "About...."),
-    ChatModel(name: "JC Arora", status: "About...."),
-    ChatModel(name: "Vidhi Arora", status: "About...."),
-    ChatModel(name: "Siddhu Arora", status: "About...."),
-    ChatModel(name: "Nisha Arora", status: "About...."),
-    ChatModel(name: "Raghu Arora", status: "About...."),
-  ];
+  // List<ChatModel> contacts = [
+  //   ChatModel(name: "Bobby Arora", status: "About...."),
+  //   ChatModel(name: "Sonia Arora", status: "About...."),
+  //   ChatModel(name: "Tripta Arora", status: "About...."),
+  //   ChatModel(name: "Bunty Arora", status: "About...."),
+  //   ChatModel(name: "Vijay Arora", status: "About...."),
+  //   ChatModel(name: "Pushpa Arora", status: "About...."),
+  //   ChatModel(name: "JC Arora", status: "About...."),
+  //   ChatModel(name: "Vidhi Arora", status: "About...."),
+  //   ChatModel(name: "Siddhu Arora", status: "About...."),
+  //   ChatModel(name: "Nisha Arora", status: "About...."),
+  //   ChatModel(name: "Raghu Arora", status: "About...."),
+  // ];
 
   // List<ChatModel> contacts = [
   //   ChatModel(
@@ -352,7 +353,7 @@ class _SelectContactState extends State<SelectContact> {
         ],
       ),
       body: ListView.builder(
-        itemCount: contacts.length + 2,
+        itemCount: dummyData.length + 2,
         itemBuilder: (context, index) {
           if (index == 0) {
             return InkWell(
@@ -423,13 +424,17 @@ class _SelectContactState extends State<SelectContact> {
               );
             },
             child: ContactCard(
-              contact: !_IsSearching
-                  ? contacts[index - 2]
-                  : contacts[index - 2].where(
-                      (p) => p.startsWith(
-                        query.toList(),
-                      ),
-                    ),
+              contact: 
+              // !_IsSearching
+                  // ? 
+                  dummyData[index - 2]
+                  // : 
+                  // dummyData[index - 2]
+                  // .where(
+                  //     (p) => p.startsWith(
+                  //       query.toList(),
+                  //     ),
+                  //   ),
             ),
           );
         },

@@ -319,7 +319,9 @@ class _NavigationScreenState extends State<NavigationScreen>
                   onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (builder) => SelectContact(),
+                      builder: (builder) => SelectContact(
+                        sourceChat : widget.sourceChat,
+                      ),
                     ),
                   ),
                 )
