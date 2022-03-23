@@ -98,6 +98,7 @@ List<ChatModel> dummyData = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cqFuNuQc-evg5bzAK6Ro5ObXPyuPf4EgYQ&usqp=CAU",
     about: "Can't talk, WhatsApp India only",
     phoneno: '0000000000',
+    id: 8,
   ),
   ChatModel(
     name: "Amy",
