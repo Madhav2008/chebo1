@@ -37,7 +37,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                       countryCode: 'countryCode',
                       about: 'about',
                     ),
-                  ));
+                  ),);
             },
             child: ListTile(
               leading: CircleAvatar(
