@@ -7,7 +7,10 @@ import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 
 class ChatsScreen extends StatelessWidget {
-  ChatsScreen({Key? key}) : super(key: key);
+  ChatsScreen({
+    Key? key,
+    required this.sourceChat,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
