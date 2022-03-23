@@ -199,7 +199,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => PaymentScreen(),
-                                ));
+                                ),);
                             // Fluttertoast.showToast(
                             //     msg: "Login Successfully!!",
                             //     toastLength: Toast.LENGTH_SHORT,
