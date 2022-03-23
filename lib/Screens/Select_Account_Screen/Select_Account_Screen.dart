@@ -23,7 +23,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
         ) {
           return ListTile(
             leading: Icon(Icons.person),
-          )
+            title: Text(dummyData[index].name),
+          );
         },
       ),
     );
