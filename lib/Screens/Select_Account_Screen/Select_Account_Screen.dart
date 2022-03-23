@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
+import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class SelectAccountScreen extends StatefulWidget {
   SelectAccountScreen({Key? key}) : super(key: key);
@@ -14,6 +15,7 @@ class SelectAccountScreen extends StatefulWidget {
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
   @override
   Widget build(BuildContext context) {
+    ChatModel sourceChat;
     return Scaffold(
       body: ListView.builder(
         itemCount: dummyData.length,
@@ -22,7 +24,10 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           index,
         ) {
           return InkWell(
-            onTap:(){},
+            onTap: () {
+              sourceChat = dummyData.removeAt(index);
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (builder)=>NavigationScreen(cameras: [], name: name, avatar: avatar, phoneno: phoneno, countryCode: countryCode, about: about),),)
+            },
             child: ListTile(
               leading: CircleAvatar(
                 child: Icon(
