@@ -6,11 +6,14 @@ import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Auth/User_Model.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class Wrapper extends StatelessWidget {
-  const Wrapper({Key? key}) : super(key: key);
+  const Wrapper({Key? key, required this.sourceChat,}) : super(key: key);
+
+  final ChatModel sourceChat;
 
   @override
   Widget build(BuildContext context) {
