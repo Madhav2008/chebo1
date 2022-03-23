@@ -195,7 +195,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               .signInWithEmailAndPassword(
                                   emailController.text, passwordController.text)
                               .then((auth) {
-                            Navigator.pushReplacement(
+                            Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => PaymentScreen()));
