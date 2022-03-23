@@ -108,6 +108,7 @@ List<ChatModel> dummyData = [
         "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/04/GettyImages-688402807_header-1024x575.jpg?w=1155&h=1528",
     about: "Busy",
     phoneno: '0000000000',
+    id: 9,
   ),
   ChatModel(
     name: "Joe",
