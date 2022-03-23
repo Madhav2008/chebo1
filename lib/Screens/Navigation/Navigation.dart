@@ -297,7 +297,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                   cameras: [],
                 ),
                 ChatsScreen(
-                  
+                  sourceChat: widget.sourceChat,
                 ),
                 StatusScreen(),
                 CallsScreen(),
