@@ -149,6 +149,7 @@ List<ChatModel> dummyData = [
         "https://www.masterclass.com/course-images/attachments/gruGUMnA9U4Mxy1yEuBKHeuv?width=400&height=400&fit=cover&dpr=2",
     about: "Busy",
     phoneno: '0000000000',
+    id: 13,
   ),
   ChatModel(
     name: "Jack",
