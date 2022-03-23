@@ -159,5 +159,6 @@ List<ChatModel> dummyData = [
         "https://upload.wikimedia.org/wikipedia/commons/2/23/Photo_portrait_PP.jpg",
     about: "This shall pass too 😚🤗",
     phoneno: '0000000000',
+    id: 14,
   ),
 ];
