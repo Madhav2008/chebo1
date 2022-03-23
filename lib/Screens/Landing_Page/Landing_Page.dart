@@ -92,7 +92,9 @@ class LandingPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => SelectAccountScreen(),
+                    builder: (BuildContext context) => SelectAccountScreen(
+
+                    ),
                   ),
                 );
               },

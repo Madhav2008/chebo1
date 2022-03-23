@@ -8,10 +8,7 @@ import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 class SelectAccountScreen extends StatefulWidget {
   SelectAccountScreen({
     Key? key,
-    required this.chatModels,
   }) : super(key: key);
-
-  final List<ChatModel> chatModels;
 
   @override
   State<SelectAccountScreen> createState() => _SelectAccountScreenState();
