@@ -129,6 +129,7 @@ List<ChatModel> dummyData = [
         "https://4bgowik9viu406fbr2hsu10z-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/Portrait_5-1.jpg",
     about: "Life is like a riding Bicycle. 🤗🚲",
     phoneno: '0000000000',
+    id: 11,
   ),
   ChatModel(
     name: "Austin",
