@@ -7,6 +7,7 @@ class ChatModel {
   final String avatarUrl;
   final String about;
   final String phoneno;
+  final String id;
 
   ChatModel({
     required this.name,
@@ -15,6 +16,7 @@ class ChatModel {
     required this.avatarUrl,
     required this.about,
     required this.phoneno,
+    required this.id,
   });
 }
 
@@ -27,6 +29,7 @@ List<ChatModel> dummyData = [
         "https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4",
     about: "I overthink therefore I overam",
     phoneno: '9999348666',
+    id: 1,
   ),
   ChatModel(
     name: "Raghav Arora",
