@@ -7,7 +7,7 @@ class ChatModel {
   final String avatarUrl;
   final String about;
   final String phoneno;
-  final String id;
+  final int id;
 
   ChatModel({
     required this.name,
@@ -38,6 +38,7 @@ List<ChatModel> dummyData = [
     avatarUrl: "https://avatars.githubusercontent.com/u/66276244?v=4",
     about: "Be Kind 🤗😇",
     phoneno: '7011698878',
+    id: 2,
   ),
   ChatModel(
     name: "Harry",
