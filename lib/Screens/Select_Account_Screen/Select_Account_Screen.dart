@@ -6,7 +6,9 @@ import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class SelectAccountScreen extends StatefulWidget {
-  SelectAccountScreen({Key? key}) : super(key: key);
+  SelectAccountScreen({Key? key, required this.chatModels,}) : super(key: key);
+
+   final List<ChatModel> chatModels;
 
   @override
   State<SelectAccountScreen> createState() => _SelectAccountScreenState();
@@ -37,6 +39,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                     countryCode: '+91',
                     about: dummyData[index].about,
                     sourceChat: sourceChat,
+                    chatModels: ,
                   ),
                 ),
               );
