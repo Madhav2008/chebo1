@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class UserDetailsScreen extends StatelessWidget {
@@ -9,10 +10,12 @@ class UserDetailsScreen extends StatelessWidget {
     Key? key,
     required this.no,
     required this.countryCode,
+    required this.sourceChat,
   }) : super(key: key);
 
   final String no;
   final String countryCode;
+  final ChatModel sourceChat;
 
   @override
   Widget build(BuildContext context) {
@@ -108,6 +111,7 @@ class UserDetailsScreen extends StatelessWidget {
                             phoneno: _phonenoController.text,
                             about: '👋🏻 Hey! there I am using WhatsApp India.',
                             countryCode: countryCode,
+                            sourceChat: sourceChat,
                           ),
                         ),
                       );
