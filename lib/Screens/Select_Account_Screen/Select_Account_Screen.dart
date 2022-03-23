@@ -22,7 +22,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           index,
         ) {
           return InkWell(
-            onTap:()
+            onTap:(){},
             child: ListTile(
               leading: CircleAvatar(
                 child: Icon(
