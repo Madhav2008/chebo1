@@ -326,6 +326,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                     MaterialPageRoute(
                       builder: (builder) => SelectContact(
                         sourceChat: widget.sourceChat,
+                        chatModels: widget.chatModels,
                       ),
                     ),
                   ),
