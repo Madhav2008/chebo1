@@ -193,7 +193,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () async {
                           Provider.of<AuthService>(context)
                               .signInWithEmailAndPassword(
-                                  emailController.text, passwordController.text)
+                                  emailController.text, passwordController.text,)
                               .then((auth) {
                             Navigator.push(
                               context,
