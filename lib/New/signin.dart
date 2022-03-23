@@ -196,10 +196,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                   emailController.text, passwordController.text)
                               .then((auth) {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => PaymentScreen(),
-                                ),);
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PaymentScreen(),
+                              ),
+                            );
                             // Fluttertoast.showToast(
                             //     msg: "Login Successfully!!",
                             //     toastLength: Toast.LENGTH_SHORT,
