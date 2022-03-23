@@ -14,7 +14,7 @@ class ChatsScreen extends StatelessWidget {
   }) : super(key: key);
 
   final ChatModel sourceChat;
-   final List<ChatModel> chatModels;
+  final List<ChatModel> chatModels;
 
   @override
   Widget build(BuildContext context) {
