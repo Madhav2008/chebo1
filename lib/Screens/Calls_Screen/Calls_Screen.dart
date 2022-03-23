@@ -103,6 +103,7 @@ class CallsScreen extends StatelessWidget {
               builder: (BuildContext context) {
                 return SelectContact(
                   sourceChat: sourceChat,
+                  chatModels: chatModels,
                 );
               },
             ),
