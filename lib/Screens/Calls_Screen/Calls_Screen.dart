@@ -10,9 +10,11 @@ class CallsScreen extends StatelessWidget {
   CallsScreen({
     Key? key,
     required this.sourceChat,
+    required this.chatModels,
   }) : super(key: key);
 
   final ChatModel sourceChat;
+   final List<ChatModel> chatModels;
 
   final phoneNo = '7982880636';
 
