@@ -27,6 +27,7 @@ class NavigationScreen extends StatefulWidget {
     required this.phoneno,
     required this.countryCode,
     required this.about,
+    required this.sourceChat,
   }) : super(key: key);
 
   final String name;
@@ -34,6 +35,7 @@ class NavigationScreen extends StatefulWidget {
   final String avatar;
   final String phoneno;
   final String countryCode;
+  final ChatModel sourceChat;
 
   @override
   _NavigationScreenState createState() => _NavigationScreenState();
