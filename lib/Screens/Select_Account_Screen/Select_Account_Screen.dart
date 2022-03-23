@@ -21,7 +21,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           index,
         ) {
           return ListTile(
-            leading: CircleAvatar(child: Icon(Icons.person),),
+            leading: CircleAvatar(
+              child: Icon(Icons.person),
+            ),
             title: Text(dummyData[index].name),
           );
         },
