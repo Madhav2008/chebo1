@@ -14,7 +14,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(itemCount: dummyData.length ,itemBuilder: (context, index,)=>,),
+      body: ListView.builder(itemCount: dummyData.length ,itemBuilder: (context, index,){},),
     );
   }
 }
