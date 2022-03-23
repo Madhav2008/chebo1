@@ -23,7 +23,10 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
         ) {
           return ListTile(
             leading: CircleAvatar(
-              child: Icon(Icons.person, color: white,),
+              child: Icon(
+                Icons.person,
+                color: white,
+              ),
               backgroundColor: one,
             ),
             title: Text(dummyData[index].name),
