@@ -119,6 +119,7 @@ List<ChatModel> dummyData = [
     about:
         "Problem is a part of life and facing with strength is art of life 😎🤩",
     phoneno: '0000000000',
+    id: 10,
   ),
   ChatModel(
     name: "Adam",
