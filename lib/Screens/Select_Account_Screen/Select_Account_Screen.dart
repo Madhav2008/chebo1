@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors_in_immutables
+// ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
@@ -23,7 +23,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
         ) {
           return ListTile(
             leading: CircleAvatar(
-              child: Icon(Icons.person),
+              child: Icon(Icons.person, color: white,),
               backgroundColor: one,
             ),
             title: Text(dummyData[index].name),
