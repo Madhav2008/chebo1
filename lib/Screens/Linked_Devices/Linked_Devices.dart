@@ -15,7 +15,7 @@ class LinkedDevices extends StatefulWidget {
       required this.countryCode,
       required this.about,
       required this.sourceChat,
-      required this.chatModels})
+      required this.chatModels,})
       : super(key: key);
 
   final String name;
