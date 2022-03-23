@@ -139,6 +139,7 @@ List<ChatModel> dummyData = [
         "https://www.jamsadr.com/images/neutrals/person-donald-900x1080.jpg",
     about: "Available",
     phoneno: '0000000000',
+    id: 12,
   ),
   ChatModel(
     name: "James",
