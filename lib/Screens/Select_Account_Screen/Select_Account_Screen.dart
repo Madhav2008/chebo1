@@ -26,6 +26,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
               child: Icon(
                 Icons.person,
                 color: white,
+                size: 30,
               ),
               backgroundColor: one,
             ),
