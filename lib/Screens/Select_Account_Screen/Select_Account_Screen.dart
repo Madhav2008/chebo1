@@ -34,8 +34,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                     name: dummyData[index].name,
                     avatar: dummyData[index].avatarUrl,
                     phoneno: dummyData[index].phoneno,
-                    countryCode: dummyData[index].,
-                    about: 'about',
+                    countryCode: '+91',
+                    about: dummyData[index].about,
                   ),
                 ),
               );
