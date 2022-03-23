@@ -37,7 +37,7 @@ class NavigationScreen extends StatefulWidget {
   final String phoneno;
   final String countryCode;
   final ChatModel sourceChat;
-   final List<ChatModel> chatModels;
+  final List<ChatModel> chatModels;
 
   @override
   _NavigationScreenState createState() => _NavigationScreenState();
@@ -325,7 +325,7 @@ class _NavigationScreenState extends State<NavigationScreen>
                     context,
                     MaterialPageRoute(
                       builder: (builder) => SelectContact(
-                        sourceChat : widget.sourceChat,
+                        sourceChat: widget.sourceChat,
                       ),
                     ),
                   ),
