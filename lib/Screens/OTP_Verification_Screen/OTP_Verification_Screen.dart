@@ -3,7 +3,6 @@
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/User_Details_Screen/User_Details_Screen.dart';
 
