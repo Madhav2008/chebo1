@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Multi_Device_Beta_Screen/Multi_Device_Beta_Screen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
@@ -13,6 +14,7 @@ class LinkedDevices extends StatefulWidget {
     required this.phoneno,
     required this.countryCode,
     required this.about,
+    required this.sourceChat,
   }) : super(key: key);
 
   final String name;
@@ -20,6 +22,7 @@ class LinkedDevices extends StatefulWidget {
   final String phoneno;
   final String countryCode;
   final String about;
+  final ChatModel sourceChat;
 
   @override
   _LinkedDevicesState createState() => _LinkedDevicesState();
@@ -42,6 +45,7 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                   phoneno: widget.phoneno,
                   avatar: widget.avatar,
                   countryCode: widget.countryCode,
+                  sourceChat: widget.sourceChat,
                 ),
               ),
             );
