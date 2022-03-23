@@ -39,7 +39,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                     countryCode: '+91',
                     about: dummyData[index].about,
                     sourceChat: sourceChat,
-                    chatModels: ,
+                    chatModels: dummyData,
                   ),
                 ),
               );
