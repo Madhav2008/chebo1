@@ -197,7 +197,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             passwordController.text,
                           )
                               .then((auth) {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => PaymentScreen(),
