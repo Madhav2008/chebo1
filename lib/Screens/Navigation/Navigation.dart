@@ -300,7 +300,9 @@ class _NavigationScreenState extends State<NavigationScreen>
                   sourceChat: widget.sourceChat,
                 ),
                 StatusScreen(),
-                CallsScreen(),
+                CallsScreen(
+                  sourceChat: widget.sourceChat,
+                ),
               ],
             ),
             // } else {
