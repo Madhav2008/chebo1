@@ -27,17 +27,18 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
             onTap: () {
               sourceChat = dummyData.removeAt(index);
               Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => NavigationScreen(
-                      cameras: [],
-                      name: 'name',
-                      avatar: 'avatar',
-                      phoneno: 'phoneno',
-                      countryCode: 'countryCode',
-                      about: 'about',
-                    ),
-                  ),);
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => NavigationScreen(
+                    cameras: [],
+                    name: 'name',
+                    avatar: 'avatar',
+                    phoneno: 'phoneno',
+                    countryCode: 'countryCode',
+                    about: 'about',
+                  ),
+                ),
+              );
             },
             child: ListTile(
               leading: CircleAvatar(
