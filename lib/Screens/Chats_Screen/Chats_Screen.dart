@@ -12,6 +12,8 @@ class ChatsScreen extends StatelessWidget {
     required this.sourceChat,
   }) : super(key: key);
 
+  final ChatModel sourceChat;
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
