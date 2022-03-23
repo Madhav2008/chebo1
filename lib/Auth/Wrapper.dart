@@ -11,7 +11,10 @@ import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class Wrapper extends StatelessWidget {
-  const Wrapper({Key? key, required this.sourceChat,}) : super(key: key);
+  const Wrapper({
+    Key? key,
+    required this.sourceChat,
+  }) : super(key: key);
 
   final ChatModel sourceChat;
 
