@@ -261,6 +261,7 @@ class _MultiDeviceBetaScreenState extends State<MultiDeviceBetaScreen> {
                     avatar: widget.avatar,
                     countryCode: widget.countryCode,
                     sourceChat: widget.sourceChat,
+                    chatModels: widget.chatModels,
                   ),
                 ),
               );
