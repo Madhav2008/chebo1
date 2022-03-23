@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Linked_Devices/Linked_Devices.dart';
 
 class MultiDeviceBetaScreen extends StatefulWidget {
@@ -14,6 +15,7 @@ class MultiDeviceBetaScreen extends StatefulWidget {
     required this.phoneno,
     required this.countryCode,
     required this.about,
+    required this.sourceChat,
   }) : super(key: key);
 
   final String name;
@@ -21,6 +23,7 @@ class MultiDeviceBetaScreen extends StatefulWidget {
   final String phoneno;
   final String countryCode;
   final String about;
+  final ChatModel sourceChat;
 
   @override
   _MultiDeviceBetaScreenState createState() => _MultiDeviceBetaScreenState();
@@ -255,6 +258,7 @@ class _MultiDeviceBetaScreenState extends State<MultiDeviceBetaScreen> {
                     phoneno: widget.phoneno,
                     avatar: widget.avatar,
                     countryCode: widget.countryCode,
+                    sourceChat: widget.sourceChat,
                   ),
                 ),
               );
