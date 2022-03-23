@@ -197,21 +197,21 @@ class _LoginScreenState extends State<LoginScreen> {
                           //   passwordController.text,
                           // )
                           //     .then((auth) {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => PaymentScreen(),
-                              ),
-                            );
-                            showDialog(
-                              context: context,
-                              builder: (con) {
-                                return AlertDialog(
-                                  title: Text("Congratulations!"),
-                                  content: Text('Login Successfully'),
-                                );
-                              },
-                            );
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => PaymentScreen(),
+                            ),
+                          );
+                          showDialog(
+                            context: context,
+                            builder: (con) {
+                              return AlertDialog(
+                                title: Text("Congratulations!"),
+                                content: Text('Login Successfully'),
+                              );
+                            },
+                          );
                           // }).catchError((error) {
                           //   showDialog(
                           //     context: context,
