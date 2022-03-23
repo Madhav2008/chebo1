@@ -48,6 +48,7 @@ List<ChatModel> dummyData = [
         "https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg",
     about: "Online",
     phoneno: '0000000000',
+    id: 3,
   ),
   ChatModel(
     name: "Edward",
