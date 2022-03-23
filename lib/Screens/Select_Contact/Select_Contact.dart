@@ -424,17 +424,14 @@ class _SelectContactState extends State<SelectContact> {
               );
             },
             child: ContactCard(
-              contact: 
-              // !_IsSearching
-                  // ? 
-                  dummyData[index - 2]
-                  // : 
-                  // dummyData[index - 2]
-                  // .where(
-                  //     (p) => p.startsWith(
-                  //       query.toList(),
-                  //     ),
-                  //   ),
+              contact: !_IsSearching
+                  ? dummyData[index - 2]
+                  : dummyData[index - 2]
+                  .where(
+                      (p) => p.startsWith(
+                        query.toList(),
+                      ),
+                    ),
             ),
           );
         },
