@@ -16,6 +16,7 @@ class MultiDeviceBetaScreen extends StatefulWidget {
     required this.countryCode,
     required this.about,
     required this.sourceChat,
+    required this.chatModels,
   }) : super(key: key);
 
   final String name;
@@ -24,6 +25,7 @@ class MultiDeviceBetaScreen extends StatefulWidget {
   final String countryCode;
   final String about;
   final ChatModel sourceChat;
+  final List<ChatModel> chatModels;
 
   @override
   _MultiDeviceBetaScreenState createState() => _MultiDeviceBetaScreenState();
