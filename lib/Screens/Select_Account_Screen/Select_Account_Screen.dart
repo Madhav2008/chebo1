@@ -21,16 +21,19 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           context,
           index,
         ) {
-          return ListTile(
-            leading: CircleAvatar(
-              child: Icon(
-                Icons.person,
-                color: white,
-                size: 30,
+          return InkWell(
+            onTap:()
+            child: ListTile(
+              leading: CircleAvatar(
+                child: Icon(
+                  Icons.person,
+                  color: white,
+                  size: 30,
+                ),
+                backgroundColor: one,
               ),
-              backgroundColor: one,
+              title: Text(dummyData[index].name),
             ),
-            title: Text(dummyData[index].name),
           );
         },
       ),
