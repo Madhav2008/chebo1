@@ -13,13 +13,11 @@ class OTPVerificationScreen extends StatefulWidget {
     required this.no,
     required this.countryCode,
     required this.country,
-    required this.sourceChat,
   }) : super(key: key);
 
   final String no;
   final String countryCode;
   final String country;
-  final ChatModel sourceChat;
 
   @override
   _OTPVerificationScreenState createState() => _OTPVerificationScreenState();
