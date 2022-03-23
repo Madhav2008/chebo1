@@ -190,7 +190,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 50,
                       child: RaisedButton(
                         color: one,
-                        onPressed: () async {
+                        onPressed: () {
                           Provider.of<AuthService>(context)
                               .signInWithEmailAndPassword(
                             emailController.text,
