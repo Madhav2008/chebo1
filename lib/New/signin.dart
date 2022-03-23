@@ -213,7 +213,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       error.toString(),
                                     ),
                                   );
-                                });
+                                },);
                           });
                         },
                         child: Text(
