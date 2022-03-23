@@ -7,16 +7,16 @@ import 'package:whatsapp/Screens/Multi_Device_Beta_Screen/Multi_Device_Beta_Scre
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class LinkedDevices extends StatefulWidget {
-  LinkedDevices({
-    Key? key,
-    required this.avatar,
-    required this.name,
-    required this.phoneno,
-    required this.countryCode,
-    required this.about,
-    required this.sourceChat,
-    required this.chatModels
-  }) : super(key: key);
+  LinkedDevices(
+      {Key? key,
+      required this.avatar,
+      required this.name,
+      required this.phoneno,
+      required this.countryCode,
+      required this.about,
+      required this.sourceChat,
+      required this.chatModels})
+      : super(key: key);
 
   final String name;
   final String avatar;
@@ -24,7 +24,7 @@ class LinkedDevices extends StatefulWidget {
   final String countryCode;
   final String about;
   final ChatModel sourceChat;
-   final List<ChatModel> chatModels;
+  final List<ChatModel> chatModels;
 
   @override
   _LinkedDevicesState createState() => _LinkedDevicesState();
