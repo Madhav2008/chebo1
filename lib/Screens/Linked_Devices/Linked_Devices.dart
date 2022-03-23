@@ -134,6 +134,7 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                       avatar: widget.avatar,
                       countryCode: widget.countryCode,
                       sourceChat: widget.sourceChat,
+                      chatModels: widget.chatModels,
                     ),
                   ),
                 );
