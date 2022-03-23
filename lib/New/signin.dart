@@ -201,10 +201,17 @@ class _LoginScreenState extends State<LoginScreen> {
                                 builder: (context) => PaymentScreen(),
                               ),
                             );
-                            // Fluttertoast.showToast(
-                            //     msg: "Login Successfully!!",
-                            //     toastLength: Toast.LENGTH_SHORT,
-                            //     gravity: ToastGravity.BOTTOM);
+                            showDialog(
+                              context: context,
+                              builder: (con) {
+                                return AlertDialog(
+                                  title: Text("Login"),
+                                  content: Text(
+                                    'Login Successfully'
+                                  ),
+                                );
+                              },
+                            );
                           }).catchError((error) {
                             showDialog(
                               context: context,
