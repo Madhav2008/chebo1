@@ -78,6 +78,7 @@ List<ChatModel> dummyData = [
         "https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg",
     about: "Available",
     phoneno: '0000000000',
+    id: 6,
   ),
   ChatModel(
     name: "Alexandra",
