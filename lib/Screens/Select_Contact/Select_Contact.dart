@@ -9,8 +9,12 @@ import 'package:whatsapp/Screens/Create_Group/Create_Group.dart';
 import 'package:whatsapp/Widgets/Contact_Card.dart';
 
 class SelectContact extends StatefulWidget {
-  SelectContact({Key? key}) : super(key: key);
+  SelectContact({
+    Key? key,
+    required this.sourceChat,
+  }) : super(key: key);
 
+  final ChatModel sourceChat;
   @override
   _SelectContactState createState() => _SelectContactState();
 }
@@ -413,6 +417,7 @@ class _SelectContactState extends State<SelectContact> {
                     name: 'Madhav Arora',
                     phoneno: '9999348666',
                     about: 'I overthink therefore I overam',
+                    sourceChat: widget.sourceChat,
                   ),
                 ),
               );
