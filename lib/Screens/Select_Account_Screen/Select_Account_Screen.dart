@@ -31,10 +31,10 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                 MaterialPageRoute(
                   builder: (builder) => NavigationScreen(
                     cameras: [],
-                    name: 'name',
-                    avatar: 'avatar',
-                    phoneno: 'phoneno',
-                    countryCode: 'countryCode',
+                    name: dummyData[index].name,
+                    avatar: dummyData[index].avatarUrl,
+                    phoneno: dummyData[index].phoneno,
+                    countryCode: dummyData[index].,
                     about: 'about',
                   ),
                 ),
