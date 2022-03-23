@@ -317,7 +317,6 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   builder: (builder) => UserDetailsScreen(
                     no: widget.no,
                     countryCode: widget.countryCode,
-                    sourceChat: widget.sourceChat,
                   ),
                 ),
               );
