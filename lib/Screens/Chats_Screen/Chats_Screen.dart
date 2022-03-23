@@ -33,6 +33,7 @@ class ChatsScreen extends StatelessWidget {
                     name: dummyData[i].name,
                     phoneno: dummyData[i].phoneno,
                     about: dummyData[i].about,
+                    sourceChat: sourceChat,
                   ),
                 ),
               );
