@@ -191,12 +191,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: RaisedButton(
                         color: one,
                         onPressed: () {
-                          Provider.of<AuthService>(context)
-                              .signInWithEmailAndPassword(
-                            emailController.text,
-                            passwordController.text,
-                          )
-                              .then((auth) {
+                          // Provider.of<AuthService>(context)
+                          //     .signInWithEmailAndPassword(
+                          //   emailController.text,
+                          //   passwordController.text,
+                          // )
+                          //     .then((auth) {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
@@ -212,19 +212,19 @@ class _LoginScreenState extends State<LoginScreen> {
                                 );
                               },
                             );
-                          }).catchError((error) {
-                            showDialog(
-                              context: context,
-                              builder: (con) {
-                                return AlertDialog(
-                                  title: Text("Error"),
-                                  content: Text(
-                                    error.toString(),
-                                  ),
-                                );
-                              },
-                            );
-                          });
+                          // }).catchError((error) {
+                          //   showDialog(
+                          //     context: context,
+                          //     builder: (con) {
+                          //       return AlertDialog(
+                          //         title: Text("Error"),
+                          //         content: Text(
+                          //           error.toString(),
+                          //         ),
+                          //       );
+                          //     },
+                          //   );
+                          // });
                         },
                         child: Text(
                           'Login',
