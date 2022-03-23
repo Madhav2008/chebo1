@@ -15,6 +15,7 @@ class LinkedDevices extends StatefulWidget {
     required this.countryCode,
     required this.about,
     required this.sourceChat,
+    required this.chatModels
   }) : super(key: key);
 
   final String name;
@@ -23,6 +24,7 @@ class LinkedDevices extends StatefulWidget {
   final String countryCode;
   final String about;
   final ChatModel sourceChat;
+   final List<ChatModel> chatModels;
 
   @override
   _LinkedDevicesState createState() => _LinkedDevicesState();
@@ -46,6 +48,7 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                   avatar: widget.avatar,
                   countryCode: widget.countryCode,
                   sourceChat: widget.sourceChat,
+                  chatModels: widget.chatModels,
                 ),
               ),
             );
