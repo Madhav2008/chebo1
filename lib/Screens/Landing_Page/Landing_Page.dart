@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/Select_Account_Screen/Select_Account_Screen.dart';
 
 class LandingPage extends StatelessWidget {
