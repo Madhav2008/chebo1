@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_constructors
 
+import 'package:firebase/firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -108,5 +109,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     GoogleSignInAccount? googleUser = await googleSignIn.signIn();
     GoogleSignInAuthentication googleAuthentication =
         await googleUser!.authentication;
+
+    final AuthCredential credential =
+        GoogleAuthProvider.getCredential(idToken: null, accessToken: null);
   }
 }
