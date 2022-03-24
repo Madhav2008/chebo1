@@ -67,6 +67,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_void_to_null, prefer_const_constructors_in_immutables
 
 import 'package:camera/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -85,7 +86,7 @@ late List<CameraDescription> cameras;
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   cameras = await availableCameras();
-  // await Firebase.initializeApp();
+  await Firebase.initializeApp();
   runApp(
     MyApp(),
   );
