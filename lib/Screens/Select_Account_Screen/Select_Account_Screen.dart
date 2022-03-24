@@ -53,7 +53,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
               padding: EdgeInsets.all(
                 10.0,
               ),
-              child: loadingWhatsAppIndia(),
+              child: isLoading? loadingWhatsAppIndia(): Container(),
             ),
           ],
         ),
