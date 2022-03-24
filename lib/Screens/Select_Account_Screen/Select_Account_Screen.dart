@@ -19,7 +19,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   Widget build(BuildContext context) {
     ChatModel sourceChat;
     return Scaffold(
-      body: Center()
+      body: Center(child: GestureDetector(
+        onTap: (){},
+      )),
       // ListView.builder(
       //   itemCount: dummyData.length,
       //   itemBuilder: (
