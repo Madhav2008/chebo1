@@ -3,7 +3,14 @@
 import 'package:flutter/material.dart';
 
 class CustomCard extends StatefulWidget {
-  CustomCard({ Key? key }) : super(key: key);
+  CustomCard({ Key? key , required this.name,required this.about, required this.avatar, required this.phoneno, required this.sourceChat, required this.chatModels,}) : super(key: key);
+
+  final String name;
+  final String about;
+  final String avatar;
+  final String phoneno;
+  final String sourceChat;
+  final String chatModels;
 
   @override
   State<CustomCard> createState() => _CustomCardState();
