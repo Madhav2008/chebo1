@@ -14,9 +14,11 @@ class Wrapper extends StatelessWidget {
   const Wrapper({
     Key? key,
     required this.sourceChat,
+    required this.chatModels,
   }) : super(key: key);
 
   final ChatModel sourceChat;
+  final List<ChatModel> chatModels;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class Wrapper extends StatelessWidget {
                       'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
                   countryCode: '+91',
                   phoneno: '9999348444',
-                  sourceChat: sourceChat,
+                  sourceChat: sourceChat, chatModels: [],
                 );
         } else {
           return Scaffold(
