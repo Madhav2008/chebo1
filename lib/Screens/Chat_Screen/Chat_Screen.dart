@@ -555,7 +555,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                           _controller.text,
                                           true,
                                           widget.sourceChat.id,
-                                          widget.chatModels[index].id,
+                                          widget.sourceChat.id,
                                           // 2,
                                           // 2,
                                         );
