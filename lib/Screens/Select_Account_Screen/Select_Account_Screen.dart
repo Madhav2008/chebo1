@@ -24,6 +24,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   bool isLoading = false;
   bool isSignedIn = false;
 
+  late User currentUser;
+
   @override
   Widget build(BuildContext context) {
     // ChatModel sourceChat;
@@ -97,5 +99,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     );
   }
 
-  Future<Null> controlSignIn() async {}
+  Future<Null> controlSignIn() async {
+    setState(() {
+      isLoading = true;
+    });
+  }
 }
