@@ -104,5 +104,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     setState(() {
       isLoading = true;
     });
+
+    GoogleSignInAccount? googleUser = await googleSignIn.signIn();
   }
 }
