@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_constructors
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -27,8 +28,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   late User currentUser;
 
   @override
-  void initState() async{
+  void initState() async {
     super.initState();
+    await Firebase.initializeApp();
   }
 
   @override
