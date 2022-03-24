@@ -20,17 +20,21 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
       body: Center(
         child: GestureDetector(
           onTap: () {},
-          child: Container(
-            width: 270,
-            height: 65,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  '../assets/images/google_signin_button.png',
+          child: Column(
+            children: [
+              Container(
+                width: 270,
+                height: 65,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      '../assets/images/google_signin_button.png',
+                    ),
+                    fit: BoxFit.cover,
+                  ),
                 ),
-                fit: BoxFit.cover,
               ),
-            ),
+            ],
           ),
         ),
       ),
