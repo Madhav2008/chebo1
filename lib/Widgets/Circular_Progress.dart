@@ -8,5 +8,9 @@ LoadingWhatsAppIndia() {
     padding: EdgeInsets.only(
       top: 12,
     ),
+    child: SpinKitFadingCube(
+                size: 50,
+                color: one,
+              ),
   );
 }
