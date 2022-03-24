@@ -106,5 +106,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     });
 
     GoogleSignInAccount? googleUser = await googleSignIn.signIn();
+    GoogleSignInAuthentication googleAuthentication =
+        await googleUser!.authentication;
   }
 }
