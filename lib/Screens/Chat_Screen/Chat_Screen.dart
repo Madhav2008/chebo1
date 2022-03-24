@@ -372,6 +372,9 @@ class _ChatScreenState extends State<ChatScreen> {
                       itemCount: allMessages.length + 1,
                       itemBuilder: (context, index) {
                         if (index == allMessages.length) {
+                          print(
+                            widget.chatModels[index].id,
+                          );
                           return Container(
                             height: 70,
                           );
