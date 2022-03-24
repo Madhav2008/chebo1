@@ -27,6 +27,12 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   late User currentUser;
 
   @override
+  void initState() {
+    super.initState();
+    
+  }
+
+  @override
   Widget build(BuildContext context) {
     // ChatModel sourceChat;
     return Scaffold(
