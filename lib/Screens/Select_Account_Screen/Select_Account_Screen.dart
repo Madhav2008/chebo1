@@ -25,7 +25,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           height: 65,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('../assets/images/google_signin_button.png'),
+              image: AssetImage('../assets/images/google_signin_button.png',),
             ),
           ),
         ),
