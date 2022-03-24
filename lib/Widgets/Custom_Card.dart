@@ -1,16 +1,32 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Models/Chat_Model.dart';
+import 'package:whatsapp/Screens/Chat_Screen/Chat_Screen.dart';
+import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 
 class CustomCard extends StatefulWidget {
-  CustomCard({ Key? key , required this.name,required this.about, required this.avatar, required this.phoneno, required this.sourceChat, required this.chatModels,}) : super(key: key);
+  CustomCard({
+    Key? key,
+    required this.name,
+    required this.about,
+    required this.avatar,
+    required this.phoneno,
+    required this.sourceChat,
+    required this.chatModels,
+    required this.time,
+    required this.message,
+  }) : super(key: key);
 
   final String name;
   final String about;
   final String avatar;
   final String phoneno;
-  final String sourceChat;
-  final String chatModels;
+  final String time;
+  final String message;
+  final ChatModel sourceChat;
+  final List<ChatModel> chatModels;
 
   @override
   State<CustomCard> createState() => _CustomCardState();
@@ -20,87 +36,87 @@ class _CustomCardState extends State<CustomCard> {
   @override
   Widget build(BuildContext context) {
     return Column(
-        children: <Widget>[
-          Divider(
-            thickness: 1,
-          ),
-          ListTile(
+      children: <Widget>[
+        Divider(
+          thickness: 1,
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (BuildContext context) => ChatScreen(
+                  avatar: widget.avatar,
+                  name: widget.name,
+                  phoneno: widget.phoneno,
+                  about: widget.about,
+                  sourceChat: widget.sourceChat,
+                  chatModels: widget.chatModels,
+                ),
+              ),
+            );
+          },
+          leading: GestureDetector(
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (BuildContext context) => ChatScreen(
-                    avatar: dummyData[i].avatarUrl,
-                    name: dummyData[i].name,
-                    phoneno: dummyData[i].phoneno,
-                    about: dummyData[i].about,
-                    sourceChat: sourceChat,
-                    chatModels: chatModels,
+                  builder: (builder) => ViewProfilePhoto(
+                    name: widget.name,
+                    avatar: widget.avatar,
                   ),
                 ),
               );
             },
-            leading: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => ViewProfilePhoto(
-                      name: dummyData[i].name,
-                      avatar: dummyData[i].avatarUrl,
-                    ),
-                  ),
-                );
-              },
-              child: CircleAvatar(
-                foregroundColor: Theme.of(context).primaryColor,
-                backgroundColor: grey,
-                backgroundImage: NetworkImage(dummyData[i].avatarUrl),
-              ),
+            child: CircleAvatar(
+              foregroundColor: Theme.of(context).primaryColor,
+              backgroundColor: grey,
+              backgroundImage: NetworkImage(widget.avatar),
             ),
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  dummyData[i].name,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+          ),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Text(
+                widget.name,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                widget.time,
+                style: TextStyle(
+                  color: grey,
+                  fontSize: 14.0,
+                ),
+              ),
+            ],
+          ),
+          subtitle: Container(
+            padding: EdgeInsets.only(top: 5.0),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.done_all,
+                  size: 20,
+                  color: blue,
+                ),
+                SizedBox(
+                  width: 5,
                 ),
                 Text(
-                  dummyData[i].time,
+                  widget.message,
                   style: TextStyle(
                     color: grey,
-                    fontSize: 14.0,
+                    fontSize: 15.0,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ],
             ),
-            subtitle: Container(
-              padding: EdgeInsets.only(top: 5.0),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.done_all,
-                    size: 20,
-                    color: blue,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    dummyData[i].message,
-                    style: TextStyle(
-                      color: grey,
-                      fontSize: 15.0,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                ],
-              ),
-            ),
           ),
-        ],
-      ),
+        ),
+      ],
+    );
   }
 }
