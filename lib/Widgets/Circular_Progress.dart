@@ -3,5 +3,8 @@
 import 'package:flutter/material.dart';
 
 LoadingWhatsAppIndia() {
-  return Container();
+  return Container(
+    alignment: Alignment.center,
+    padding: EdgeInsets.only(top: 12),
+  );
 }
