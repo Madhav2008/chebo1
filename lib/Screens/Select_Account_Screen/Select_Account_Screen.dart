@@ -3,6 +3,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:whatsapp/Widgets/Circular_Progress.dart';
 // import 'package:whatsapp/Models/Chat_Model.dart';
 
@@ -18,6 +19,9 @@ class SelectAccountScreen extends StatefulWidget {
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
   final GoogleSignIn googleSignIn = GoogleSignIn();
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  late SharedPreferences preferences;
+
+  bool isLoading = false;
 
   @override
   Widget build(BuildContext context) {
