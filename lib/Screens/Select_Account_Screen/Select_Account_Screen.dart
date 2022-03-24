@@ -24,6 +24,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           child: Column(
             children: [
               Container(
+                alignment: Alignment.center,
                 width: 270,
                 height: 65,
                 decoration: BoxDecoration(
