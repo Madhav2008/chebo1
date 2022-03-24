@@ -20,30 +20,27 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     return Scaffold(
       body: GestureDetector(
         onTap: () {},
-        child: Align(
-          alignment: Alignment.center,
-          child: Column(
-            children: [
-              Container(
-                width: 270,
-                height: 65,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                      '../assets/images/google_signin_button.png',
-                    ),
-                    fit: BoxFit.cover,
+        child: Column(
+          children: [
+            Container(
+              width: 270,
+              height: 65,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    '../assets/images/google_signin_button.png',
                   ),
+                  fit: BoxFit.cover,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.all(
-                  1.0,
-                ),
-                child: loadingWhatsAppIndia(),
+            ),
+            Padding(
+              padding: EdgeInsets.all(
+                1.0,
               ),
-            ],
-          ),
+              child: loadingWhatsAppIndia(),
+            ),
+          ],
         ),
       ),
       // ListView.builder(
