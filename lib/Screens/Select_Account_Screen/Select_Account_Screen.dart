@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Widgets/Circular_Progress.dart';
 // import 'package:whatsapp/Models/Chat_Model.dart';
 
 class SelectAccountScreen extends StatefulWidget {
@@ -38,6 +39,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                 padding: EdgeInsets.all(
                   1.0,
                 ),
+                child: loadingWhatsAppIndia(),
               ),
             ],
           ),
