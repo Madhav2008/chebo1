@@ -11,8 +11,8 @@ LoadingWhatsAppIndia() {
       top: 12,
     ),
     child: SpinKitFadingCube(
-                size: 50,
-                color: one,
-              ),
+      size: 50,
+      color: one,
+    ),
   );
 }
