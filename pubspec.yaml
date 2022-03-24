@@ -54,6 +54,7 @@ dependencies:
   emoji_picker_flutter: 
   flutter_linkify: 
   google_sign_in: 
+  shared_preferences: 
 
 dev_dependencies:
   flutter_test:
