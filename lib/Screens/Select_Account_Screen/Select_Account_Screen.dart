@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors_in_immutables, prefer_const_constructors
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:whatsapp/Widgets/Circular_Progress.dart';
@@ -16,6 +17,7 @@ class SelectAccountScreen extends StatefulWidget {
 
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
   final GoogleSignIn googleSignIn = GoogleSignIn();
+  final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     // ChatModel sourceChat;
