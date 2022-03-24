@@ -21,7 +21,10 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     return Scaffold(
       body: Center(child: GestureDetector(
         onTap: (){},
-        child: Container(),
+        child: Container(
+          width: 270,
+          height: 65,
+        ),
       )),
       // ListView.builder(
       //   itemCount: dummyData.length,
