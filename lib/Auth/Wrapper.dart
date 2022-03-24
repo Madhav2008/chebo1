@@ -9,6 +9,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
+import 'package:whatsapp/Widgets/Circular_Progress.dart';
 
 class Wrapper extends StatelessWidget {
   const Wrapper({
@@ -43,12 +44,7 @@ class Wrapper extends StatelessWidget {
                 );
         } else {
           return Scaffold(
-            body: Center(
-              child: SpinKitFadingCube(
-                size: 50,
-                color: one,
-              ),
-            ),
+            body: loadingWhatsAppIndia(),
           );
         }
       },
