@@ -1,11 +1,9 @@
 // ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Auth/User_Model.dart';
-import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
