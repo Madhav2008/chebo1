@@ -18,30 +18,32 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   Widget build(BuildContext context) {
     // ChatModel sourceChat;
     return Scaffold(
-      body: GestureDetector(
-        onTap: () {},
-        child: Center(
-          child: Column(
-            children: [
-              Container(
-                width: 270,
-                height: 65,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                      '../assets/images/google_signin_button.png',
+      body: Center(
+        child: GestureDetector(
+          onTap: () {},
+          child: Center(
+            child: Column(
+              children: [
+                Container(
+                  width: 270,
+                  height: 65,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(
+                        '../assets/images/google_signin_button.png',
+                      ),
+                      fit: BoxFit.cover,
                     ),
-                    fit: BoxFit.cover,
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(
-                  1.0,
+                Padding(
+                  padding: EdgeInsets.all(
+                    1.0,
+                  ),
+                  child: loadingWhatsAppIndia(),
                 ),
-                child: loadingWhatsAppIndia(),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
