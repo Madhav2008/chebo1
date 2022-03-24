@@ -19,14 +19,13 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   Widget build(BuildContext context) {
     ChatModel sourceChat;
     return Scaffold(
-      body: Center(child: GestureDetector(
-        onTap: (){},
+      body: Center(
+          child: GestureDetector(
+        onTap: () {},
         child: Container(
           width: 270,
           height: 65,
-          decoration: BoxDecoration(
-            image: DecorationImage()
-          ),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('../assets/images/google_signin_button.png'))),
         ),
       )),
       // ListView.builder(
