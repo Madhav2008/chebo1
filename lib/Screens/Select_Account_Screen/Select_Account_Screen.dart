@@ -24,6 +24,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
         child: Container(
           width: 270,
           height: 65,
+          decoration: BoxDecoration(
+            image: DecorationImage()
+          ),
         ),
       )),
       // ListView.builder(
