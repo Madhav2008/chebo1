@@ -34,6 +34,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                   ),
                 ),
               ),
+              Padding(padding: EdgeInsets.all(1.0))
             ],
           ),
         ),
