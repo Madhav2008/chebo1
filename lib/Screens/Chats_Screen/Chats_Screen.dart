@@ -90,7 +90,7 @@ class ChatsScreen extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    dummyData[i].message,
+                    dummyData[i].message.substring(10).replaceRange(10, 10, '...'),
                     style: TextStyle(
                       color: grey,
                       fontSize: 15.0,
