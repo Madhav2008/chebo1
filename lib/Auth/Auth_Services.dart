@@ -32,7 +32,7 @@ class AuthService {
     String password,
   ) async {
     final credential = await _firebaseAuth.createUserWithEmailAndPassword(
-        email: email, password: password);
+        email: email, password: password,);
     return _userFromFirebase(credential.user);
   }
 
