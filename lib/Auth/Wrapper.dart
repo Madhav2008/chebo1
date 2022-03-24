@@ -39,7 +39,7 @@ class Wrapper extends StatelessWidget {
                   countryCode: '+91',
                   phoneno: '9999348444',
                   sourceChat: sourceChat,
-                  chatModels: [],
+                  chatModels: chatModels,
                 );
         } else {
           return Scaffold(
