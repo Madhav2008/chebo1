@@ -22,6 +22,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   late SharedPreferences preferences;
 
   bool isLoading = false;
+  bool isSignedIn = false;
 
   @override
   Widget build(BuildContext context) {
