@@ -21,6 +21,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
       body: GestureDetector(
         onTap: () {},
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               width: 270,
