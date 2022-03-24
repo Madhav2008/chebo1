@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
-LoadingWhatsAppIndia() {
+loadingWhatsAppIndia() {
   return Container(
     alignment: Alignment.center,
     padding: EdgeInsets.only(
