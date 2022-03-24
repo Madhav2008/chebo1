@@ -28,12 +28,6 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   late User currentUser;
 
   @override
-  void initState() async {
-    super.initState();
-    await Firebase.initializeApp();
-  }
-
-  @override
   Widget build(BuildContext context) {
     // ChatModel sourceChat;
     return Scaffold(
