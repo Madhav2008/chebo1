@@ -81,7 +81,6 @@ class _CustomCardState extends State<CustomCard> {
                 widget.name,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontFamily: "Signatra",
                 ),
               ),
               Text(
