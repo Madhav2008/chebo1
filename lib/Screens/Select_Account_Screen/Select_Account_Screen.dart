@@ -19,7 +19,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     // ChatModel sourceChat;
     return Scaffold(
       body: GestureDetector(
-        onTap: () {},
+        onTap: controlSignIn,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -86,4 +86,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
       // ),
     );
   }
+
+  Future<Null> controlSignIn() async{
+    
+  }
+
 }
