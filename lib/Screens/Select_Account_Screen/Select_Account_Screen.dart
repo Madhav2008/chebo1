@@ -19,46 +19,46 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   Widget build(BuildContext context) {
     ChatModel sourceChat;
     return Scaffold(
-      body: 
-      ListView.builder(
-        itemCount: dummyData.length,
-        itemBuilder: (
-          context,
-          index,
-        ) {
-          return InkWell(
-            onTap: () {
-              sourceChat = dummyData.removeAt(index);
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (builder) => NavigationScreen(
-                    cameras: [],
-                    name: dummyData[index].name,
-                    avatar: dummyData[index].avatarUrl,
-                    phoneno: dummyData[index].phoneno,
-                    countryCode: '+91',
-                    about: dummyData[index].about,
-                    sourceChat: sourceChat,
-                    chatModels: dummyData,
-                  ),
-                ),
-              );
-            },
-            child: ListTile(
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person,
-                  color: white,
-                  size: 30,
-                ),
-                backgroundColor: one,
-              ),
-              title: Text(dummyData[index].name),
-            ),
-          );
-        },
-      ),
+      body: Center()
+      // ListView.builder(
+      //   itemCount: dummyData.length,
+      //   itemBuilder: (
+      //     context,
+      //     index,
+      //   ) {
+      //     return InkWell(
+      //       onTap: () {
+      //         sourceChat = dummyData.removeAt(index);
+      //         Navigator.pushReplacement(
+      //           context,
+      //           MaterialPageRoute(
+      //             builder: (builder) => NavigationScreen(
+      //               cameras: [],
+      //               name: dummyData[index].name,
+      //               avatar: dummyData[index].avatarUrl,
+      //               phoneno: dummyData[index].phoneno,
+      //               countryCode: '+91',
+      //               about: dummyData[index].about,
+      //               sourceChat: sourceChat,
+      //               chatModels: dummyData,
+      //             ),
+      //           ),
+      //         );
+      //       },
+      //       child: ListTile(
+      //         leading: CircleAvatar(
+      //           child: Icon(
+      //             Icons.person,
+      //             color: white,
+      //             size: 30,
+      //           ),
+      //           backgroundColor: one,
+      //         ),
+      //         title: Text(dummyData[index].name),
+      //       ),
+      //     );
+      //   },
+      // ),
     );
   }
 }
