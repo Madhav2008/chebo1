@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class LoadingWhatsApp extends StatefulWidget {
-  const LoadingWhatsApp({ Key? key }) : super(key: key);
+class LoadingWhatsAppIndia extends StatefulWidget {
+  const LoadingWhatsAppIndia({ Key? key }) : super(key: key);
 
   @override
-  State<LoadingWhatsApp> createState() => _LoadingWhatsAppState();
+  State<LoadingWhatsAppIndia> createState() => _LoadingWhatsAppIndiaState();
 }
 
-class _LoadingWhatsAppState extends State<LoadingWhatsApp> {
+class _LoadingWhatsAppIndiaState extends State<LoadingWhatsAppIndia> {
   @override
   Widget build(BuildContext context) {
     return Container(
