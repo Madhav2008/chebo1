@@ -16,7 +16,6 @@ class SelectAccountScreen extends StatefulWidget {
 }
 
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
-  
   final GoogleSignIn googleSignIn = GoogleSignIn();
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 
