@@ -21,9 +21,8 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState() async {
+  void initState() {
     super.initState();
-    // await Firebase.initializeApp();
     Future.delayed(
       Duration(
         seconds: 1,
