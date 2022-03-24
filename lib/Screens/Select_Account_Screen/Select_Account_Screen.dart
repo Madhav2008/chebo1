@@ -28,6 +28,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
               image: AssetImage(
                 '../assets/images/google_signin_button.png',
               ),
+              fit: BoxFit.cover,
             ),
           ),
         ),
