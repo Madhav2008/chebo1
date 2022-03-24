@@ -18,21 +18,22 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     // ChatModel sourceChat;
     return Scaffold(
       body: Center(
-          child: GestureDetector(
-        onTap: () {},
-        child: Container(
-          width: 270,
-          height: 65,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                '../assets/images/google_signin_button.png',
+        child: GestureDetector(
+          onTap: () {},
+          child: Container(
+            width: 270,
+            height: 65,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                  '../assets/images/google_signin_button.png',
+                ),
+                fit: BoxFit.cover,
               ),
-              fit: BoxFit.cover,
             ),
           ),
         ),
-      ),),
+      ),
       // ListView.builder(
       //   itemCount: dummyData.length,
       //   itemBuilder: (
