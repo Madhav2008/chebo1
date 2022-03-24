@@ -110,10 +110,6 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     GoogleSignInAuthentication googleAuthentication =
         await googleUser!.authentication;
 
-    final AuthCredential credential = GoogleAuthProvider.getCredential(
-      idToken: null,
-      accessToken: null,
-    );
     // final AuthCredential credential = GoogleAuthProvider.getCredential(
     //   idToken: null,
     //   accessToken: null,
