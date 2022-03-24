@@ -25,7 +25,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   bool isLoading = false;
   bool isSignedIn = false;
 
-  late User currentUser;
+  // late User currentUser;
 
   @override
   Widget build(BuildContext context) {
