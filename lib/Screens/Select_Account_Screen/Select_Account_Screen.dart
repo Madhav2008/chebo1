@@ -19,7 +19,7 @@ class SelectAccountScreen extends StatefulWidget {
 
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
   final GoogleSignIn googleSignIn = GoogleSignIn();
-  final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  // final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   late SharedPreferences preferences;
 
   bool isLoading = false;
@@ -53,7 +53,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
               padding: EdgeInsets.all(
                 10.0,
               ),
-              child: isLoading? loadingWhatsAppIndia(): Container(),
+              child: isLoading ? loadingWhatsAppIndia() : Container(),
             ),
           ],
         ),
