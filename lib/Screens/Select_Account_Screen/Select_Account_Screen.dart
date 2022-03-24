@@ -27,9 +27,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   late User currentUser;
 
   @override
-  void initState() {
+  void initState() async{
     super.initState();
-    
   }
 
   @override
