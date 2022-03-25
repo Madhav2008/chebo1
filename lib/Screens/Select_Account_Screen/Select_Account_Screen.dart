@@ -114,6 +114,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     //   accessToken: googleAuthentication.accessToken,
     // );
 
-    // FirebaseUser firebaseUser = (await FirebaseAuth.sign)
+    // FirebaseUser firebaseUser =
+    //     (await FirebaseAuth.signInWithCredential(credential)).user;
   }
 }
