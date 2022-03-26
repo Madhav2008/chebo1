@@ -1049,7 +1049,7 @@
 //   }
 // }
 
-import 'dart:io';
+import 'package:firebase/firestore.dart';
 import 'package:flutter/material.dart';
 // import 'package:chatapp/helper/constants.dart';
 // import 'package:chatapp/services/database.dart';
@@ -1067,8 +1067,8 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
 
-  Stream<QuerySnapshot> chats;
-  TextEditingController messageEditingController = new TextEditingController();
+  late Stream<QuerySnapshot> chats;
+  TextEditingController messageEditingController = TextEditingController();
 
   Widget chatMessages(){
     return StreamBuilder(
@@ -1079,7 +1079,7 @@ class _ChatScreenState extends State<ChatScreen> {
             itemBuilder: (context, index){
               return MessageTile(
                 message: snapshot.data.documents[index].data["message"],
-                sendByMe: Constants.myName == snapshot.data.documents[index].data["sendBy"],
+                sendByMe: '' == snapshot.data.documents[index].data["sendBy"],
               );
             }) : Container();
       },
@@ -1089,7 +1089,7 @@ class _ChatScreenState extends State<ChatScreen> {
   addMessage() {
     if (messageEditingController.text.isNotEmpty) {
       Map<String, dynamic> chatMessageMap = {
-        "sendBy": Constants.myName,
+        "sendBy": '',
         "message": messageEditingController.text,
         'time': DateTime
             .now()
