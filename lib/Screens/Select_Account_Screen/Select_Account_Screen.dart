@@ -142,11 +142,9 @@ class SelectAccountScreen extends StatefulWidget {
 }
 
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
-  final GoogleSignIn _googleSignIn = GoogleSignIn(
-    scopes: [
-      'email',
-    ]
-  );
+  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: [
+    'email',
+  ]);
 
   GoogleSignInAccount? _currentUser;
 
@@ -154,7 +152,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   bool isSignedIn = false;
 
   @override
-  void initState(){
+  void initState() {
     _googleSignIn.onCurrentUserChanged.listen((account) {
       _currentUser = account;
     });
@@ -212,15 +210,17 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     );
   }
 
-   _buildWidget(){
+  _buildWidget() {
     GoogleSignInAccount? user = _currentUser;
-    if(user != null){
+    if (user != null) {
       return Padding(
         padding: EdgeInsets.all(12.0),
         child: Column(
           children: [
             ListTile(
-              leading: GoogleUserCircleAvatar(identity: user,),
+              leading: GoogleUserCircleAvatar(
+                identity: user,
+              ),
               title: Text(
                 user.displayName ?? '',
               ),
@@ -258,8 +258,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           ],
         ),
       );
-    }
-    else{
+    } else {
       return Padding(
         padding: EdgeInsets.all(12.0),
         child: Column(
@@ -277,8 +276,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
               height: 10,
             ),
             GestureDetector(
-              onTap:
-                signIn,
+              onTap: signIn,
               child: Container(
                 width: 270,
                 height: 65,
@@ -298,19 +296,20 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
     }
   }
 
-  void signOut(){
+  void signOut() {
     _googleSignIn.disconnect();
   }
 
-  signIn() async{
-    try{
+  signIn() async {
+    try {
       await _googleSignIn.signIn();
-    }
-    catch(e){
-      showDialog(context: context, builder: (builder)=>AlertDialog(
-        title: Text('Error'),
-        content: Text(e.toString()),
-      ));
+    } catch (e) {
+      showDialog(
+          context: context,
+          builder: (builder) => AlertDialog(
+                title: Text('Error'),
+                content: Text(e.toString()),
+              ));
       // print(e);
     }
   }
