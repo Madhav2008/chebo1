@@ -3,7 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
+import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class SelectAccountScreen extends StatefulWidget {
   SelectAccountScreen({
@@ -15,18 +17,13 @@ class SelectAccountScreen extends StatefulWidget {
 }
 
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
-  final GoogleSignIn googleSignIn = GoogleSignIn();
-  // final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-  late SharedPreferences preferences;
-
   bool isLoading = false;
   bool isSignedIn = false;
 
-  // late User currentUser;
 
   @override
   Widget build(BuildContext context) {
-    // ChatModel sourceChat;
+    ChatModel sourceChat;
     return Scaffold(
       body: ListView.builder(
         itemCount: dummyData.length,
