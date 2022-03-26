@@ -17,8 +17,11 @@ class MessageModel {
   });
 }
 
+// YOU - Current User
 final User currentUser = User(
   id: 0,
   name: 'Current User',
   imageUrl: 'https://avatars.githubusercontent.com/u/72864817',
 );
+
+// USERS
