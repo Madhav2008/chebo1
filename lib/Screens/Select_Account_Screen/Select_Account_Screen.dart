@@ -310,7 +310,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
           builder: (builder) => AlertDialog(
                 title: Text('Error'),
                 content: Text(e.toString()),
-              ));
+              ),);
       // print(e);
     }
   }
