@@ -17,10 +17,6 @@ class SelectAccountScreen extends StatefulWidget {
 }
 
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
-  bool isLoading = false;
-  bool isSignedIn = false;
-
-
   @override
   Widget build(BuildContext context) {
     ChatModel sourceChat;
