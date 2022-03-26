@@ -20,5 +20,5 @@ class MessageModel {
 final User currentUser = User(
   id: 0,
   name: 'Current User',
-  imageUrl: '',
+  imageUrl: 'https://avatars.githubusercontent.com/u/72864817',
 );
