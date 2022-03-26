@@ -306,11 +306,12 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
       loadingWhatsAppIndia();
     } catch (e) {
       showDialog(
-          context: context,
-          builder: (builder) => AlertDialog(
-                title: Text('Error'),
-                content: Text(e.toString()),
-              ),);
+        context: context,
+        builder: (builder) => AlertDialog(
+          title: Text('Error'),
+          content: Text(e.toString()),
+        ),
+      );
       // print(e);
     }
   }
