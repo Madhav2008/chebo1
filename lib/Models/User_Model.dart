@@ -1,5 +1,7 @@
 class User {
   final int id;
 
-  User({required this.id});
+  User({
+    required this.id,
+  });
 }
