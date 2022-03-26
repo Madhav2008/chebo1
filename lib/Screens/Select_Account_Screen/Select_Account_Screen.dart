@@ -308,7 +308,9 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
         context: context,
         builder: (builder) => AlertDialog(
           title: Text('Error'),
-          content: Text(e.toString(),),
+          content: Text(
+            e.toString(),
+          ),
         ),
       );
       // print(e);
