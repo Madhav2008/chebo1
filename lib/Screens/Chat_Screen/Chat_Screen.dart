@@ -9,6 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Models/Message_Model.dart';
+import 'package:whatsapp/Models/User_Model.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Chats_Wallpaper_Screen/Chats_Wallpaper_Screen.dart';
 import 'package:whatsapp/Screens/Media_Links_And_Docs/Media_Links_And_Docs.dart';
@@ -29,6 +30,7 @@ class ChatScreen extends StatefulWidget {
     required this.about,
     required this.sourceChat,
     required this.chatModels,
+    required this.user,
   }) : super(key: key);
 
   final String name;
@@ -37,6 +39,7 @@ class ChatScreen extends StatefulWidget {
   final String about;
   final ChatModel sourceChat;
   final List<ChatModel> chatModels;
+  final User user;
 
   @override
   _ChatScreenState createState() {
@@ -122,7 +125,7 @@ class _ChatScreenState extends State<ChatScreen> {
             16,
           ),
       unread: read,
-      sender: ,
+      // sender: ,
     );
     setState(() {
       setState(() {
