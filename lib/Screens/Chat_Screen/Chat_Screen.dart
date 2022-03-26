@@ -125,7 +125,7 @@ class _ChatScreenState extends State<ChatScreen> {
             16,
           ),
       unread: read,
-      // sender: ,
+      sender: widget.user,
     );
     setState(() {
       setState(() {
