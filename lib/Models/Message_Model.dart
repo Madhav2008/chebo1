@@ -17,4 +17,7 @@ class MessageModel {
   });
 }
 
-final User currentUser = User(id: )
+final User currentUser = User(
+  id: 0,
+  name: 'Current User',
+);
