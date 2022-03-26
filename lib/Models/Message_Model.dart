@@ -25,7 +25,7 @@ final User currentUser = User(
   about: 'Current User About',
   message: 'Current User Message',
   phoneno: 'Current User Phone No.',
-  time: '',
+  time: 'Current Time',
 );
 
 // USERS
