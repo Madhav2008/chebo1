@@ -16,3 +16,5 @@ class MessageModel {
     required this.unread,
   });
 }
+
+final User currentUser = User(id: )

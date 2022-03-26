@@ -37,7 +37,7 @@ class ChatsScreen extends StatelessWidget {
                     about: dummyData[i].about,
                     sourceChat: sourceChat,
                     chatModels: chatModels,
-                    user: chat,
+                    user: dummyData[i].m,
                   ),
                 ),
               );
