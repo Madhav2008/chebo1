@@ -46,13 +46,12 @@ class _CustomCardState extends State<CustomCard> {
               context,
               MaterialPageRoute(
                 builder: (BuildContext context) => ChatScreen(
-                  // avatar: widget.avatar,
-                  // name: widget.name,
-                  // phoneno: widget.phoneno,
-                  // about: widget.about,
-                  // sourceChat: widget.sourceChat,
-                  // chatModels: widget.chatModels,
-                  chatRoomId: 'widget.sourceChat.id',
+                  avatar: widget.avatar,
+                  name: widget.name,
+                  phoneno: widget.phoneno,
+                  about: widget.about,
+                  sourceChat: widget.sourceChat,
+                  chatModels: widget.chatModels,
                 ),
               ),
             );
