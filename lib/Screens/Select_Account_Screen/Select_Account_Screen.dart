@@ -303,7 +303,6 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   signIn() async {
     try {
       await _googleSignIn.signIn();
-      loadingWhatsAppIndia();
     } catch (e) {
       showDialog(
         context: context,
