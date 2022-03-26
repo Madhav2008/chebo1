@@ -22,9 +22,9 @@ final User currentUser = User(
   id: 0,
   name: 'Current User',
   imageUrl: 'https://avatars.githubusercontent.com/u/72864817',
-  about: '',
-  message: '',
-  phoneno: '',
+  about: 'Current User About',
+  message: 'Current User Message',
+  phoneno: 'Current User Phone No.',
   time: '',
 );
 
