@@ -301,18 +301,18 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
   }
 
   signIn() async {
-    try {
-      await _googleSignIn.signIn();
-    } catch (e) {
-      showDialog(
-        context: context,
-        builder: (builder) => AlertDialog(
-          title: Text('Error'),
-          content: Text(
-            e.toString(),
-          ),
-        ),
-      );
+    // try {
+       _googleSignIn.signIn();
+    // } catch (e) {
+      // showDialog(
+        // context: context,
+        // builder: (builder) => AlertDialog(
+          // title: Text('Error'),
+          // content: Text(
+            // e.toString(),
+          // ),
+        // ),
+      // );
       // print(e);
     }
   }
