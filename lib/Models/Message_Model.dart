@@ -21,7 +21,7 @@ class MessageModel {
 final User currentUser = User(
   id: 0,
   name: 'Current User',
-  imageUrl: 'https://avatars.githubusercontent.com/u/72864817',
+  imageUrl: 'https://avatars.githubusercontent.com/u/72864817', about: '', message: '', phoneno: '', time: '',
 );
 
 // USERS
@@ -34,8 +34,8 @@ final User madhav = User(
     about: "I overthink therefore I overam",
     phoneno: '9999348666',
     id: 1, 
-  ),
-  final User madhav = User(
+  );
+  final User raghav = User(
     name: "Raghav Arora",
     message: "Hey I have hacked WhatsApp India!",
     time: "5:00",
@@ -43,8 +43,8 @@ final User madhav = User(
     about: "Be Kind 🤗😇",
     phoneno: '7011698878',
     id: 2,
-  ),
-  final User madhav = User(
+  );
+  final User harry = User(
     name: "Harry",
     message: "I'm good!",
     time: "10:30",
@@ -53,8 +53,8 @@ final User madhav = User(
     about: "Online",
     phoneno: '0000000000',
     id: 3,
-  ),
-  final User madhav = User(
+  );
+  final User edward = User(
     name: "Edward",
     message: "I'm the fastest man alive!",
     time: "12:30",
@@ -63,8 +63,8 @@ final User madhav = User(
     about: "Hey there! I am using WhatsApp India.",
     phoneno: '0000000000',
     id: 4,
-  ),
-  final User madhav = User(
+  );
+  final User david = User(
     name: "David",
     message: "Hey Flutter, You are so cool !",
     time: "15:30",
@@ -73,8 +73,8 @@ final User madhav = User(
     about: "Busy",
     phoneno: '0000000000',
     id: 5,
-  ),
-  final User madhav = User(
+  );
+  final User billGates = User(
     name: "Bill Gates",
     message: "On the way !!",
     time: "15:30",
@@ -83,8 +83,8 @@ final User madhav = User(
     about: "Available",
     phoneno: '0000000000',
     id: 6,
-  ),
-  final User madhav = User(
+  );
+  final User alexandra = User(
     name: "Alexandra",
     message: "Way to Delhi 🤘🏻✌🏻",
     time: "17:30",
@@ -93,8 +93,8 @@ final User madhav = User(
     about: "✨😁",
     phoneno: '0000000000',
     id: 7,
-  ),
-  final User madhav = User(
+  );
+  final User john = User(
     name: "John",
     message: "Congo 👍🏻👏🏻",
     time: "5:00",
@@ -103,8 +103,8 @@ final User madhav = User(
     about: "Can't talk, WhatsApp India only",
     phoneno: '0000000000',
     id: 8,
-  ),
-  final User madhav = User(
+  );
+  final User amy = User(
     name: "Amy",
     message: "I'm good!",
     time: "10:30",
@@ -113,8 +113,8 @@ final User madhav = User(
     about: "Busy",
     phoneno: '0000000000',
     id: 9,
-  ),
-  final User madhav = User(
+  );
+  final User joe = User(
     name: "Joe",
     message: "Any query??",
     time: "10:30",
@@ -124,8 +124,8 @@ final User madhav = User(
         "Problem is a part of life and facing with strength is art of life 😎🤩",
     phoneno: '0000000000',
     id: 10,
-  ),
-  final User madhav = User(
+  );
+  final User adam = User(
     name: "Adam",
     message: "Congratulations 👏🏻👏🏻🎉🎊",
     time: "12:30",
@@ -134,8 +134,8 @@ final User madhav = User(
     about: "Life is like a riding Bicycle. 🤗🚲",
     phoneno: '0000000000',
     id: 11,
-  ),
-  final User madhav = User(
+  );
+  final User austin = User(
     name: "Austin",
     message: "What happened??",
     time: "15:30",
@@ -144,8 +144,8 @@ final User madhav = User(
     about: "Available",
     phoneno: '0000000000',
     id: 12,
-  ),
-  final User madhav = User(
+  );
+  final User james = User(
     name: "James",
     message: "Anything else?",
     time: "12:30",
@@ -154,8 +154,8 @@ final User madhav = User(
     about: "Busy",
     phoneno: '0000000000',
     id: 13,
-  ),
-  final User madhav = User(
+  );
+  final User jack = User(
     name: "Jack",
     message: "Happy Journey ✨✨",
     time: "15:30",
@@ -164,4 +164,4 @@ final User madhav = User(
     about: "This shall pass too 😚🤗",
     phoneno: '0000000000',
     id: 14,
-  ),
+  );
