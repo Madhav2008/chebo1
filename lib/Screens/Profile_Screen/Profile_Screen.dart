@@ -80,24 +80,26 @@ class _ProfileScreenState extends State<ProfileScreen> {
       await showModalBottomSheet(
         context: context,
         builder: (context) => BottomSheet(
-          builder: (context) =>
-              Column(mainAxisSize: MainAxisSize.min, children: [
-            ListTile(
-                leading: Icon(Icons.camera),
-                title: Text("Camera"),
+          builder: (context) => Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                  leading: Icon(Icons.camera),
+                  title: Text("Camera"),
+                  onTap: () {
+                    Navigator.of(context).pop();
+                    imagePickerMethod(ImageSource.camera);
+                  }),
+              ListTile(
+                leading: Icon(Icons.filter),
+                title: Text("Gallery"),
                 onTap: () {
                   Navigator.of(context).pop();
-                  imagePickerMethod(ImageSource.camera);
-                }),
-            ListTile(
-              leading: Icon(Icons.filter),
-              title: Text("Gallery"),
-              onTap: () {
-                Navigator.of(context).pop();
-                imagePickerMethod(ImageSource.gallery);
-              },
-            ),
-          ],),
+                  imagePickerMethod(ImageSource.gallery);
+                },
+              ),
+            ],
+          ),
           onClosing: () {},
         ),
       );
