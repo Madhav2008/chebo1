@@ -97,7 +97,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 imagePickerMethod(ImageSource.gallery);
               },
             ),
-          ]),
+          ],),
           onClosing: () {},
         ),
       );
