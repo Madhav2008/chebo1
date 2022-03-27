@@ -388,7 +388,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               chatModels: [],
                               countryCode: '',
                               name: '',
-                              phoneno: '',
+                              phoneno: '', sourceChat: null,
                             ),
                           ),
                         );
