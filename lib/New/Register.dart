@@ -42,7 +42,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       // userName: nameController.text,
       // bio: bioController.text,
       // userEmail: emailController.text,
-      contact: contactController.text,
+      // contact: contactController.text,
       img: uploadedPath,
     );
   }
