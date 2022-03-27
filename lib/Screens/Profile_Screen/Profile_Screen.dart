@@ -76,31 +76,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
       uploadImage();
     }
 
-     selectImage() async {
-    await showModalBottomSheet(
-        context: context,
-        builder: (context) => BottomSheet(
-              builder: (context) =>
-                  Column(mainAxisSize: MainAxisSize.min, children: [
-                ListTile(
-                    leading: Icon(Icons.camera),
-                    title: Text("Camera"),
-                    onTap: () {
-                      Navigator.of(context).pop();
-                      imagePickerMethod(ImageSource.camera);
-                    }),
-                ListTile(
-                    leading: Icon(Icons.filter),
-                    title: Text("Gallery"),
-                    onTap: () {
-                      Navigator.of(context).pop();
-                      imagePickerMethod(ImageSource.gallery);
-                    })
-              ]),
-              onClosing: () {},
-            ));
-  }
-
+    selectImage() async {
+      await showModalBottomSheet(
+          context: context,
+          builder: (context) => BottomSheet(
+                builder: (context) =>
+                    Column(mainAxisSize: MainAxisSize.min, children: [
+                  ListTile(
+                      leading: Icon(Icons.camera),
+                      title: Text("Camera"),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                        imagePickerMethod(ImageSource.camera);
+                      }),
+                  ListTile(
+                      leading: Icon(Icons.filter),
+                      title: Text("Gallery"),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                        imagePickerMethod(ImageSource.gallery);
+                      })
+                ]),
+                onClosing: () {},
+              ));
+    }
 
     return Scaffold(
       appBar: AppBar(
