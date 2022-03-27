@@ -44,7 +44,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       // userEmail: emailController.text,
       // contact: contactController.text,
       // img: uploadedPath,
-    );
+    // );
   }
 
   selectImage() async {
