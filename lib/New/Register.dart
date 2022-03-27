@@ -85,7 +85,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     String imageFileName = DateTime.now().millisecondsSinceEpoch.toString();
     final Reference storageReference =
     FirebaseStorage.instance.ref().child('Images').child(imageFileName);
-    final UploadTask uploadTask = storageReference.putFile(File(_image.path));
+    final uploadTask = storageReference.putFile(File(_image.path));
     uploadTask.snapshotEvents.listen((event) {
       setState(() {
         _isLoading = true;
@@ -379,10 +379,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navigation()));
                             final userId = FirebaseAuth.instance.currentUser!.uid;
                             saveUser(userId);
-                            Fluttertoast.showToast(
-                                msg: "User Registered Successfully!!",
-                                toastLength: Toast.LENGTH_SHORT,
-                                gravity: ToastGravity.BOTTOM);
+                            showDialog(context: context, builder: builder)
+                            // Fluttertoast.showToast(
+                            //     msg: "User Registered Successfully!!",
+                            //     toastLength: Toast.LENGTH_SHORT,
+                            //     gravity: ToastGravity.BOTTOM);
                           }).catchError((error){
                             showDialog(context: context,
                                 builder: (con) {
