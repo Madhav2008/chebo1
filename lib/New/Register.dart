@@ -38,7 +38,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   void saveUser(uid) {
     // UserDatabase.addUser(
-      userId: uid,
+      // userId: uid,
       userName: nameController.text,
       bio: bioController.text,
       userEmail: emailController.text,
