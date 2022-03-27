@@ -384,8 +384,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             builder: (context) => NavigationScreen(
                               about: bioController.text,
                               avatar: uploadedPath
-                                  ? uploadedPath
-                                  : Icon(Icons.person),
                               cameras: cameras,
                               chatModels: [],
                               countryCode: '',
