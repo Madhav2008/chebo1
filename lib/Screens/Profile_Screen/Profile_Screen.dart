@@ -151,7 +151,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         radius: 80,
                         foregroundColor: Theme.of(context).primaryColor,
                         backgroundColor: grey,
-                        backgroundImage: FileImage(
+                        backgroundImage: NetworkImage(
                           widget.avatar.isNotEmpty
                           ? widget.avatar
                           : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
