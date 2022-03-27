@@ -44,6 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     File? _imageFile;
     String uploadedPath = "";
     late XFile _image;
+    bool _isLoading = false;
     var name = widget.name;
     ImagePicker imagePicker = ImagePicker();
     void uploadImage() {
