@@ -11,7 +11,6 @@ import 'package:whatsapp/Screens/About_Screen/About_Screen.dart';
 import 'package:whatsapp/Screens/Change_Number_Screen_One/Change_Number_Screen_One.dart';
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 import 'package:get/get.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
 class ProfileScreen extends StatefulWidget {
