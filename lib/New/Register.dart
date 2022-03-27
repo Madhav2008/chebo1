@@ -382,7 +382,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => NavigationScreen(
-                              about: '',
+                              about: bioController.text,
                               avatar: '',
                               cameras: cameras,
                               chatModels: [],
