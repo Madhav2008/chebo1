@@ -384,7 +384,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             builder: (context) => NavigationScreen(
                               about: '',
                               avatar: '',
-                              cameras: cameras, chatModels: [],
+                              cameras: cameras,
+                              chatModels: [],
                             ),
                           ),
                         );
