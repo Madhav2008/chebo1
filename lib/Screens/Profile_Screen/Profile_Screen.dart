@@ -46,6 +46,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     bool _isLoading = false;
     var name = widget.name;
     ImagePicker imagePicker = ImagePicker();
+    
     void uploadImage() {
       String imageFileName = DateTime.now().millisecondsSinceEpoch.toString();
       final Reference storageReference =
