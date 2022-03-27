@@ -503,7 +503,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       width: 5,
                     ),
                    Text('Login',
-                      colors: Colors.redAccent,
+                      colors: one,
                       onPress: () {
                         Navigator.pushReplacement(
                             context,
