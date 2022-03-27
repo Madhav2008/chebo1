@@ -185,94 +185,93 @@ class _ProfileScreenState extends State<ProfileScreen> {
             //     ),
             //   ),
             // ),
-             Padding(
-                      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-                      child: Column(
-                        children: [
-                          ListView(
-                            shrinkWrap: true,
-                            children: <Widget>[
-                              _imageFile != null
-                                  ? Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius:
-                                    BorderRadius.all(Radius.circular(10)),
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width -
-                                          20,
-                                      child: Image.file(
-                                        _imageFile!,
-                                        fit: BoxFit.fitWidth,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )
-                                  : GestureDetector(
-                                onTap: () {
-                                  selectImage();
-                                },
-                                child: Card(
-                                  elevation: 2,
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: Column(
+                children: [
+                  ListView(
+                    shrinkWrap: true,
+                    children: <Widget>[
+                      _imageFile != null
+                          ? Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                ClipRRect(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
                                   child: Container(
-                                    alignment: Alignment.center,
-                                    width: MediaQuery.of(context).size.width,
-                                    height:
-                                    MediaQuery.of(context).size.height * .3,
-                                    child: _isLoading == false
-                                        ? Expanded(
-                                      child: uploadedPath == ""
-                                          ? Column(
-                                        mainAxisAlignment:
-                                        MainAxisAlignment
-                                            .center,
-                                        children: [
-                                          Icon(
-                                            Icons
-                                                .cloud_upload_outlined,
-                                            color: Colors.redAccent,
-                                            size: 100,
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets
-                                                .symmetric(
-                                                vertical: 5),
-                                            child: Text(
-                                              "Upload Image",
-                                              style: TextStyle(
-                                                  fontSize: 22),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets
-                                                .symmetric(
-                                                vertical: 5),
-                                            child: Text(
-                                                "click here for upload image"),
-                                          )
-                                        ],
-                                      )
-                                          : Image(
-                                          image: NetworkImage(
-                                              uploadedPath)),
-                                    )
-                                        : CircularProgressIndicator(
-                                      color: Colors.red,
+                                    width:
+                                        MediaQuery.of(context).size.width - 20,
+                                    child: Image.file(
+                                      _imageFile!,
+                                      fit: BoxFit.fitWidth,
                                     ),
-                                    // child: Image.asset(
-                                    //   'assets/images/upload.png',
-                                    //   fit: BoxFit.cover,
-                                    // ),
                                   ),
                                 ),
+                              ],
+                            )
+                          : GestureDetector(
+                              onTap: () {
+                                selectImage();
+                              },
+                              child: Card(
+                                elevation: 2,
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  width: MediaQuery.of(context).size.width,
+                                  height:
+                                      MediaQuery.of(context).size.height * .3,
+                                  child: _isLoading == false
+                                      ? Expanded(
+                                          child: uploadedPath == ""
+                                              ? Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Icon(
+                                                      Icons
+                                                          .cloud_upload_outlined,
+                                                      color: Colors.redAccent,
+                                                      size: 100,
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 5),
+                                                      child: Text(
+                                                        "Upload Image",
+                                                        style: TextStyle(
+                                                            fontSize: 22),
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              vertical: 5),
+                                                      child: Text(
+                                                          "click here for upload image"),
+                                                    )
+                                                  ],
+                                                )
+                                              : Image(
+                                                  image: NetworkImage(
+                                                      uploadedPath)),
+                                        )
+                                      : CircularProgressIndicator(
+                                          color: Colors.red,
+                                        ),
+                                  // child: Image.asset(
+                                  //   'assets/images/upload.png',
+                                  //   fit: BoxFit.cover,
+                                  // ),
+                                ),
                               ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
+                            ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             ListTile(
               onTap: () {
                 showModalBottomSheet(
