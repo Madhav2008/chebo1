@@ -376,7 +376,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     onTap: () async {
                       await authService
                           .createUserWithEmailAndPassword(
-                              emailController.text, passwordController.text,)
+                        emailController.text,
+                        passwordController.text,
+                      )
                           .then((value) {
                         Navigator.pushReplacement(
                           context,
