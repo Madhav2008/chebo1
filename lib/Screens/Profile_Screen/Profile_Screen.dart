@@ -76,39 +76,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
       uploadImage();
     }
 
-    selectImage() async {
-      await showModalBottomSheet(
+     selectImage() async {
+    await showModalBottomSheet(
         context: context,
-        builder: (context) {
-          return BottomSheet(
-            builder: (context) {
-              return Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  ListTile(
+        builder: (context) => BottomSheet(
+              builder: (context) =>
+                  Column(mainAxisSize: MainAxisSize.min, children: [
+                ListTile(
                     leading: Icon(Icons.camera),
-                    title: Text("camera".tr),
+                    title: Text("Camera"),
                     onTap: () {
                       Navigator.of(context).pop();
                       imagePickerMethod(ImageSource.camera);
-                    },
-                  ),
-                  ListTile(
+                    }),
+                ListTile(
                     leading: Icon(Icons.filter),
-                    title: Text("gallery".tr),
+                    title: Text("Gallery"),
                     onTap: () {
                       Navigator.of(context).pop();
                       imagePickerMethod(ImageSource.gallery);
-                    },
-                  ),
-                ],
-              );
-            },
-            onClosing: () {},
-          );
-        },
-      );
-    }
+                    })
+              ]),
+              onClosing: () {},
+            ));
+  }
+
 
     return Scaffold(
       appBar: AppBar(
