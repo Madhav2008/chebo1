@@ -386,7 +386,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               avatar: '',
                               cameras: cameras,
                               chatModels: [],
-                              countryCode: '', name: '',
+                              countryCode: '',
+                              name: '',
                             ),
                           ),
                         );
