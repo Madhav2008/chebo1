@@ -74,7 +74,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _image = XFile(pic.path);
         });
       }
-      uploadImage(); // image upload function
+      uploadImage();
     }
 
     selectImage() async {
