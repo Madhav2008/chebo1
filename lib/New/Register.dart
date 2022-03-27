@@ -385,7 +385,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         showDialog(
                           context: context,
                           builder: (builder) {
-                            AlertDialog(
+                            return AlertDialog(
                               title: Text(''),
                             );
                           },
