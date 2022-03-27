@@ -385,7 +385,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         showDialog(
                           context: context,
                           builder: (builder) {
-                            AlertDialog();
+                            AlertDialog(
+                              title: Text(''),
+                            );
                           },
                         );
                         // Fluttertoast.showToast(
