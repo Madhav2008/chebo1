@@ -389,7 +389,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               countryCode: '',
                               name: nameController.text,
                               phoneno: '',
-                              sourceChat: null,
+                              sourceChat:null,
                             ),
                           ),
                         );
