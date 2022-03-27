@@ -502,8 +502,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     SizedBox(
                       width: 5,
                     ),
-                    TextSimpleButton(
-                      title: 'Login',
+                   Text('Login',
                       colors: Colors.redAccent,
                       onPress: () {
                         Navigator.pushReplacement(
