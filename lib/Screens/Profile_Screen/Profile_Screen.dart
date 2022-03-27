@@ -101,7 +101,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ],
           ),
-          onClosing: () {},
+          onClosing: () {
+            uploadImage();
+          },
         ),
       );
     }
