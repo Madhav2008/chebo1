@@ -43,7 +43,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String uploadedPath = "";
   late XFile _image;
   bool _isLoading = false;
-  var name = widget.name;
   ImagePicker imagePicker = ImagePicker();
 
   void uploadImage() {
@@ -119,6 +118,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
   @override
   Widget build(BuildContext context) {
+  var name = widget.name;
     return Scaffold(
       appBar: AppBar(
         title: Text('profile'.tr),
