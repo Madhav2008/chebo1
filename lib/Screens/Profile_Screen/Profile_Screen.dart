@@ -1,5 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, prefer_const_constructors_in_immutables
 
+import 'dart:io';
+
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -37,12 +39,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
   final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    // File? _imageFile;
-    // String uploadedPath = "";
-    // late XFile _image;
-    // bool _isLoading = false;
-    // var name = widget.name;
-    // ImagePicker imagePicker = ImagePicker();
+    File? _imageFile;
+    String uploadedPath = "";
+    late XFile _image;
+    bool _isLoading = false;
+    var name = widget.name;
+    ImagePicker imagePicker = ImagePicker();
 
     // void uploadImage() {
     //   String imageFileName = DateTime.now().millisecondsSinceEpoch.toString();
