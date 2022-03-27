@@ -13,6 +13,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
+import 'package:whatsapp/main.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -383,7 +384,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             builder: (context) => NavigationScreen(
                               about: '',
                               avatar: '',
-                              cameras: [],
+                              cameras: cameras,
                             ),
                           ),
                         );
