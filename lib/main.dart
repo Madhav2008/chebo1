@@ -72,11 +72,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
-import 'package:whatsapp/Screens/Chats_Screen/Chats_Screen.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/OTP_Verification_Screen/OTP_Verification_Screen.dart';
+import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 // import 'package:whatsapp/Auth/Auth_Services.dart';
 // import 'package:whatsapp/New/SignIn.dart';
 // import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
@@ -137,7 +137,7 @@ class MyApp extends StatelessWidget {
               //       countryCode: '+91',
               //       about: '👋🏻 Hey! there I am using WhatsApp India.',
               //     ),
-              ChatsScreen(sourceChat: sourceChat, chatModels: chatModels)
+              PaymentScreen()
             },
             translations: LocalString(),
             locale: Locale('en', 'US'),
