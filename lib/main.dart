@@ -108,45 +108,43 @@ class MyApp extends StatelessWidget {
         create: (context) => ThemeProvider(),
         builder: (context, _) {
           final themeProvider = Provider.of<ThemeProvider>(context);
-          return
-              MultiProvider(
-                providers: [
-                  Provider<AuthService>(
-                    create: (_) => AuthService(),
-                  ),
-                ],
-                child:
-              GetMaterialApp(
-            initialRoute: '/',
-            routes: {
-              '/': (context) => SplashScreen(),
-              '/loginScreen': (context) => LoginScreen(),
-              '/LandingScreen': (context) => LandingPage(),
-              '/otpScreen': (context) => OTPVerificationScreen(
-                    no: '9999348666',
-                    countryCode: '+91',
-                    country: 'India',
-                  ),
-              '/navigationScreen': (context) =>
-              //  NavigationScreen(
-              //       cameras: cameras,
-              //       name: 'Madhav Arora',
-              //       avatar:
-              //           'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-              //       phoneno: '9999348666',
-              //       countryCode: '+91',
-              //       about: '👋🏻 Hey! there I am using WhatsApp India.',
-              //     ),
-              PaymentScreen()
-            },
-            translations: LocalString(),
-            locale: Locale('en', 'US'),
-            title: 'WhatsApp India',
-            debugShowCheckedModeBanner: false,
-            themeMode: themeProvider.themeMode,
-            theme: MyThemes.lightTheme,
-            darkTheme: MyThemes.darkTheme,
-            home: SplashScreen(),
+          return MultiProvider(
+            providers: [
+              Provider<AuthService>(
+                create: (_) => AuthService(),
+              ),
+            ],
+            child: GetMaterialApp(
+              initialRoute: '/',
+              routes: {
+                '/': (context) => SplashScreen(),
+                '/loginScreen': (context) => LoginScreen(),
+                '/LandingScreen': (context) => LandingPage(),
+                '/otpScreen': (context) => OTPVerificationScreen(
+                      no: '9999348666',
+                      countryCode: '+91',
+                      country: 'India',
+                    ),
+                '/navigationScreen': (context) =>
+                    //  NavigationScreen(
+                    //       cameras: cameras,
+                    //       name: 'Madhav Arora',
+                    //       avatar:
+                    //           'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+                    //       phoneno: '9999348666',
+                    //       countryCode: '+91',
+                    //       about: '👋🏻 Hey! there I am using WhatsApp India.',
+                    //     ),
+                    PaymentScreen()
+              },
+              translations: LocalString(),
+              locale: Locale('en', 'US'),
+              title: 'WhatsApp India',
+              debugShowCheckedModeBanner: false,
+              themeMode: themeProvider.themeMode,
+              theme: MyThemes.lightTheme,
+              darkTheme: MyThemes.darkTheme,
+              home: SplashScreen(),
             ),
           );
         },
