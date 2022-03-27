@@ -152,9 +152,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         foregroundColor: Theme.of(context).primaryColor,
                         backgroundColor: grey,
                         backgroundImage: FileImage(
-                          // widget.avatar.isNotEmpty
-                          // ?
-                          // : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+                          widget.avatar.isNotEmpty
+                          ?
+                          : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
                         ),
                       ),
                     ),
