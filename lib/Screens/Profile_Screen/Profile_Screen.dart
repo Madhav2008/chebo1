@@ -203,7 +203,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     width:
                                         MediaQuery.of(context).size.width - 20,
                                     child: Image.file(
-                                      _imageFile!,
+                                      _imageFile,
                                       fit: BoxFit.fitWidth,
                                     ),
                                   ),
