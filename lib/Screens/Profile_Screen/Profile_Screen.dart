@@ -128,74 +128,74 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Padding(
-            //   padding: EdgeInsets.all(20.0),
-            //   child: Center(
-            //     child: Stack(
-            //       children: [
-            //         GestureDetector(
-            //           onTap: () {
-            //             Navigator.push(
-            //               context,
-            //               MaterialPageRoute(
-            //                 builder: (BuildContext context) {
-            //                   return ViewProfilePhoto(
-            //                     name: widget.name,
-            //                     avatar: widget.avatar,
-            //                   );
-            //                 },
-            //               ),
-            //             );
-            //           },
-            //           child: CircleAvatar(
-            //             radius: 80,
-            //             foregroundColor: Theme.of(context).primaryColor,
-            //             backgroundColor: grey,
-            //             backgroundImage: FileImage(
-            //               _imageFile.isBlank?'':_imageFile,
-            //               // widget.avatar.isNotEmpty
-            //               // ?
-            //               // : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-            //             ),
-            //           ),
-            //         ),
-            //         Positioned(
-            //           right: 0,
-            //           bottom: 0,
-            //           child: MouseRegion(
-            //             cursor: SystemMouseCursors.click,
-            //             child: GestureDetector(
-            //               onTap: () {
-            //                 // showModalBottomSheet(
-            //                 //   backgroundColor: transparent,
-            //                 //   context: context,
-            //                 //   builder: (builder) {
-            //                 //     return bottomSheet(context);
-            //                 //   },
-            //                 // );
-            //                 selectImage();
-            //               },
-            //               child: Container(
-            //                 padding: EdgeInsets.all(13.0),
-            //                 decoration: BoxDecoration(
-            //                   color: one,
-            //                   borderRadius: BorderRadius.all(
-            //                     Radius.circular(35),
-            //                   ),
-            //                 ),
-            //                 child: Icon(
-            //                   Icons.camera_alt,
-            //                   size: 30,
-            //                   color: white,
-            //                 ),
-            //               ),
-            //             ),
-            //           ),
-            //         ),
-            //       ],
-            //     ),
-            //   ),
-            // ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Center(
+                child: Stack(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) {
+                              return ViewProfilePhoto(
+                                name: widget.name,
+                                avatar: widget.avatar,
+                              );
+                            },
+                          ),
+                        );
+                      },
+                      child: CircleAvatar(
+                        radius: 80,
+                        foregroundColor: Theme.of(context).primaryColor,
+                        backgroundColor: grey,
+                        backgroundImage: FileImage(
+                          _imageFile.isBlank?'':_imageFile,
+                          // widget.avatar.isNotEmpty
+                          // ?
+                          // : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: 0,
+                      bottom: 0,
+                      child: MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: () {
+                            // showModalBottomSheet(
+                            //   backgroundColor: transparent,
+                            //   context: context,
+                            //   builder: (builder) {
+                            //     return bottomSheet(context);
+                            //   },
+                            // );
+                            selectImage();
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(13.0),
+                            decoration: BoxDecoration(
+                              color: one,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(35),
+                              ),
+                            ),
+                            child: Icon(
+                              Icons.camera_alt,
+                              size: 30,
+                              color: white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
               child: Column(
