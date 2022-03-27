@@ -93,9 +93,7 @@ class LandingPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return SelectAccountScreen(
-
-                    );
+                      return SelectAccountScreen();
                     },
                   ),
                 );
