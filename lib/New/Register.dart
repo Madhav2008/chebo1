@@ -383,7 +383,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           MaterialPageRoute(
                             builder: (context) => NavigationScreen(
                               about: bioController.text,
-                              avatar: '',
+                              avatar: uploadedPath,
                               cameras: cameras,
                               chatModels: [],
                               countryCode: '',
