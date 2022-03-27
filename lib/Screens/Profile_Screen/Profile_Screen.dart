@@ -95,7 +95,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 onTap: () {
                   Navigator.of(context).pop();
                   imagePickerMethod(ImageSource.gallery);
-                }),
+                },),
           ]),
           onClosing: () {},
         ),
