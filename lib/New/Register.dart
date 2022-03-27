@@ -421,7 +421,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 title: Text("Error"),
                                 content: Text(error.toString()),
                               );
-                            });
+                            },);
                       });
                     },
                     child: Container(
