@@ -38,12 +38,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   void saveUser(uid) {
     // UserDatabase.addUser(
-      // userId: uid,
-      // userName: nameController.text,
-      // bio: bioController.text,
-      // userEmail: emailController.text,
-      // contact: contactController.text,
-      // img: uploadedPath,
+    // userId: uid,
+    // userName: nameController.text,
+    // bio: bioController.text,
+    // userEmail: emailController.text,
+    // contact: contactController.text,
+    // img: uploadedPath,
     // );
   }
 
@@ -383,7 +383,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           MaterialPageRoute(
                             builder: (context) => NavigationScreen(
                               about: bioController.text,
-                              avatar: uploadedPath,
+                              avatar: uploadedPath
+                                  ? uploadedPath
+                                  : Icon(Icons.person),
                               cameras: cameras,
                               chatModels: [],
                               countryCode: '',
