@@ -504,6 +504,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       width: 5,
                     ),
                    Text('Login',
+                   style: TextStyle(),
                       color: one,
                       onPress: () {
                         Navigator.pushReplacement(
