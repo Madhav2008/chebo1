@@ -432,57 +432,58 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       height: 50,
                       child: ElevatedButton(
                         child: Text('Register'),
-                        onPressed: () async{
+                        onPressed: () async {
                           await authService
-                          .createUserWithEmailAndPassword(
-                        emailController.text,
-                        passwordController.text,
-                      )
-                          .then((value) {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) =>
-                                //  NavigationScreen(
-                                //   about: bioController.text,
-                                //   avatar: uploadedPath,
-                                //   cameras: cameras,
-                                //   chatModels: [],
-                                //   countryCode: '',
-                                //   name: nameController.text,
-                                //   phoneno: '',
-                                //   sourceChat: null,
-                                // ),
-                                PaymentScreen(),
-                          ),
-                        );
-                        final userId = FirebaseAuth.instance.currentUser!.uid;
-                        saveUser(userId);
-                        showDialog(
-                          context: context,
-                          builder: (builder) {
-                            return AlertDialog(
-                              title: Text('Congratulations!!'),
-                              content: Text('User Registered Successfully!!'),
+                              .createUserWithEmailAndPassword(
+                            emailController.text,
+                            passwordController.text,
+                          )
+                              .then((value) {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    //  NavigationScreen(
+                                    //   about: bioController.text,
+                                    //   avatar: uploadedPath,
+                                    //   cameras: cameras,
+                                    //   chatModels: [],
+                                    //   countryCode: '',
+                                    //   name: nameController.text,
+                                    //   phoneno: '',
+                                    //   sourceChat: null,
+                                    // ),
+                                    PaymentScreen(),
+                              ),
                             );
-                          },
-                        );
-                        // Fluttertoast.showToast(
-                        //     msg: "User Registered Successfully!!",
-                        //     toastLength: Toast.LENGTH_SHORT,
-                        //     gravity: ToastGravity.BOTTOM);
-                      }).catchError((error) {
-                        showDialog(
-                          context: context,
-                          builder: (con) {
-                            return AlertDialog(
-                              title: Text("Error"),
-                              content: Text(error.toString()),
+                            final userId =
+                                FirebaseAuth.instance.currentUser!.uid;
+                            saveUser(userId);
+                            showDialog(
+                              context: context,
+                              builder: (builder) {
+                                return AlertDialog(
+                                  title: Text('Congratulations!!'),
+                                  content:
+                                      Text('User Registered Successfully!!'),
+                                );
+                              },
                             );
-                          },
-                        );
-                      });
-                    },
+                            // Fluttertoast.showToast(
+                            //     msg: "User Registered Successfully!!",
+                            //     toastLength: Toast.LENGTH_SHORT,
+                            //     gravity: ToastGravity.BOTTOM);
+                          }).catchError((error) {
+                            showDialog(
+                              context: context,
+                              builder: (con) {
+                                return AlertDialog(
+                                  title: Text("Error"),
+                                  content: Text(error.toString()),
+                                );
+                              },
+                            );
+                          });
                         },
                       ),
                     ),
@@ -504,20 +505,24 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     SizedBox(
                       width: 5,
                     ),
-                   GestureDetector(
-                     child: Text('Login',
-                     style: TextStyle(
-                        color: one,
-                     ),),
-                        onTap: () {
-                          Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) {
-                                    return LoginScreen();
-                                  },),);
-                        },
-                   ),
+                    GestureDetector(
+                      child: Text(
+                        'Login',
+                        style: TextStyle(
+                          color: one,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return LoginScreen();
+                            },
+                          ),
+                        );
+                      },
+                    ),
                   ],
                 )
               ],
