@@ -72,6 +72,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/Screens/Chats_Screen/Chats_Screen.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
@@ -126,15 +127,17 @@ class MyApp extends StatelessWidget {
                     countryCode: '+91',
                     country: 'India',
                   ),
-              '/navigationScreen': (context) => NavigationScreen(
-                    cameras: cameras,
-                    name: 'Madhav Arora',
-                    avatar:
-                        'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-                    phoneno: '9999348666',
-                    countryCode: '+91',
-                    about: '👋🏻 Hey! there I am using WhatsApp India.',
-                  ),
+              '/navigationScreen': (context) =>
+              //  NavigationScreen(
+              //       cameras: cameras,
+              //       name: 'Madhav Arora',
+              //       avatar:
+              //           'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
+              //       phoneno: '9999348666',
+              //       countryCode: '+91',
+              //       about: '👋🏻 Hey! there I am using WhatsApp India.',
+              //     ),
+              ChatsScreen(sourceChat: sourceChat, chatModels: chatModels)
             },
             translations: LocalString(),
             locale: Locale('en', 'US'),
