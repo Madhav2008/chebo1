@@ -152,7 +152,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         foregroundColor: Theme.of(context).primaryColor,
                         backgroundColor: grey,
                         backgroundImage: FileImage(
-                          _imageFile.isBlank?'':_imageFile,
                           // widget.avatar.isNotEmpty
                           // ?
                           // : 'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
@@ -196,93 +195,93 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-              child: Column(
-                children: [
-                  ListView(
-                    shrinkWrap: true,
-                    children: <Widget>[
-                      _imageFile != null
-                          ? Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                ClipRRect(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(10)),
-                                  child: Container(
-                                    width:
-                                        MediaQuery.of(context).size.width - 20,
-                                    child: Image.file(
-                                      _imageFile,
-                                      fit: BoxFit.fitWidth,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            )
-                          : GestureDetector(
-                              onTap: () {
-                                selectImage();
-                              },
-                              child: Card(
-                                elevation: 2,
-                                child: Container(
-                                  alignment: Alignment.center,
-                                  width: MediaQuery.of(context).size.width,
-                                  height:
-                                      MediaQuery.of(context).size.height * .3,
-                                  child: _isLoading == false
-                                      ? Expanded(
-                                          child: uploadedPath == ""
-                                              ? Column(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    Icon(
-                                                      Icons
-                                                          .cloud_upload_outlined,
-                                                      color: Colors.redAccent,
-                                                      size: 100,
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsets.symmetric(
-                                                              vertical: 5),
-                                                      child: Text(
-                                                        "Upload Image",
-                                                        style: TextStyle(
-                                                            fontSize: 22),
-                                                      ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsets.symmetric(
-                                                              vertical: 5),
-                                                      child: Text(
-                                                          "click here for upload image"),
-                                                    )
-                                                  ],
-                                                )
-                                              : Image(
-                                                  image: NetworkImage(
-                                                      uploadedPath)),
-                                        )
-                                      : CircularProgressIndicator(
-                                          color: Colors.red,
-                                        ),
-                                  // child: Image.asset(
-                                  //   'assets/images/upload.png',
-                                  //   fit: BoxFit.cover,
-                                  // ),
-                                ),
-                              ),
-                            ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
+            // Padding(
+            //   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            //   child: Column(
+            //     children: [
+            //       ListView(
+            //         shrinkWrap: true,
+            //         children: <Widget>[
+            //           _imageFile != null
+            //               ? Column(
+            //                   mainAxisAlignment: MainAxisAlignment.center,
+            //                   children: <Widget>[
+            //                     ClipRRect(
+            //                       borderRadius:
+            //                           BorderRadius.all(Radius.circular(10)),
+            //                       child: Container(
+            //                         width:
+            //                             MediaQuery.of(context).size.width - 20,
+            //                         child: Image.file(
+            //                           _imageFile,
+            //                           fit: BoxFit.fitWidth,
+            //                         ),
+            //                       ),
+            //                     ),
+            //                   ],
+            //                 )
+            //               : GestureDetector(
+            //                   onTap: () {
+            //                     selectImage();
+            //                   },
+            //                   child: Card(
+            //                     elevation: 2,
+            //                     child: Container(
+            //                       alignment: Alignment.center,
+            //                       width: MediaQuery.of(context).size.width,
+            //                       height:
+            //                           MediaQuery.of(context).size.height * .3,
+            //                       child: _isLoading == false
+            //                           ? Expanded(
+            //                               child: uploadedPath == ""
+            //                                   ? Column(
+            //                                       mainAxisAlignment:
+            //                                           MainAxisAlignment.center,
+            //                                       children: [
+            //                                         Icon(
+            //                                           Icons
+            //                                               .cloud_upload_outlined,
+            //                                           color: Colors.redAccent,
+            //                                           size: 100,
+            //                                         ),
+            //                                         Padding(
+            //                                           padding:
+            //                                               EdgeInsets.symmetric(
+            //                                                   vertical: 5),
+            //                                           child: Text(
+            //                                             "Upload Image",
+            //                                             style: TextStyle(
+            //                                                 fontSize: 22),
+            //                                           ),
+            //                                         ),
+            //                                         Padding(
+            //                                           padding:
+            //                                               EdgeInsets.symmetric(
+            //                                                   vertical: 5),
+            //                                           child: Text(
+            //                                               "click here for upload image"),
+            //                                         )
+            //                                       ],
+            //                                     )
+            //                                   : Image(
+            //                                       image: NetworkImage(
+            //                                           uploadedPath)),
+            //                             )
+            //                           : CircularProgressIndicator(
+            //                               color: Colors.red,
+            //                             ),
+            //                       // child: Image.asset(
+            //                       //   'assets/images/upload.png',
+            //                       //   fit: BoxFit.cover,
+            //                       // ),
+            //                     ),
+            //                   ),
+            //                 ),
+            //         ],
+            //       ),
+            //     ],
+            //   ),
+            // ),
             ListTile(
               onTap: () {
                 showModalBottomSheet(
