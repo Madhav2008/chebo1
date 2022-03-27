@@ -383,16 +383,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => NavigationScreen(
-                              about: bioController.text,
-                              avatar: uploadedPath,
-                              cameras: cameras,
-                              chatModels: [],
-                              countryCode: '',
-                              name: nameController.text,
-                              phoneno: '',
-                              sourceChat: null,
-                            ),
+                            builder: (context) =>
+                            //  NavigationScreen(
+                            //   about: bioController.text,
+                            //   avatar: uploadedPath,
+                            //   cameras: cameras,
+                            //   chatModels: [],
+                            //   countryCode: '',
+                            //   name: nameController.text,
+                            //   phoneno: '',
+                            //   sourceChat: null,
+                            // ),
                           ),
                         );
                         final userId = FirebaseAuth.instance.currentUser!.uid;
