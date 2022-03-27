@@ -428,10 +428,63 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.58,
                       height: 50,
-                      child: ElevatedButton(child: Text('Register'), onPressed: () {  },
-                     ),
+                      child: ElevatedButton(
+                        child: Text('Register'),
+                        onPressed: () async{
+                          await authService
+                          .createUserWithEmailAndPassword(
+                        emailController.text,
+                        passwordController.text,
+                      )
+                          .then((value) {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                //  NavigationScreen(
+                                //   about: bioController.text,
+                                //   avatar: uploadedPath,
+                                //   cameras: cameras,
+                                //   chatModels: [],
+                                //   countryCode: '',
+                                //   name: nameController.text,
+                                //   phoneno: '',
+                                //   sourceChat: null,
+                                // ),
+                                PaymentScreen(),
+                          ),
+                        );
+                        final userId = FirebaseAuth.instance.currentUser!.uid;
+                        saveUser(userId);
+                        showDialog(
+                          context: context,
+                          builder: (builder) {
+                            return AlertDialog(
+                              title: Text('Congratulations!!'),
+                              content: Text('User Registered Successfully!!'),
+                            );
+                          },
+                        );
+                        // Fluttertoast.showToast(
+                        //     msg: "User Registered Successfully!!",
+                        //     toastLength: Toast.LENGTH_SHORT,
+                        //     gravity: ToastGravity.BOTTOM);
+                      }).catchError((error) {
+                        showDialog(
+                          context: context,
+                          builder: (con) {
+                            return AlertDialog(
+                              title: Text("Error"),
+                              content: Text(error.toString()),
+                            );
+                          },
+                        );
+                      });
+                    },
+                        },
                       ),
                     ),
+                  ),
                 ),
                 SizedBox(
                   height: 30,
