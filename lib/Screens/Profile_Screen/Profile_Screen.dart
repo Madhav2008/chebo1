@@ -118,7 +118,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
   @override
   Widget build(BuildContext context) {
-  var name = widget.name;
+    var name = widget.name;
     return Scaffold(
       appBar: AppBar(
         title: Text('profile'.tr),
