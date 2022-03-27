@@ -115,7 +115,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ingredient: ingredientController.text,
           time_to_cook: timeToCookController.text,
           category: _currentItemSelected,
-          image: uploadedPath);
+          image: uploadedPath,);
     }
 
     return Scaffold(
