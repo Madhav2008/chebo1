@@ -382,7 +382,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           MaterialPageRoute(
                             builder: (context) => NavigationScreen(
                               about: '',
-                              avatar: '',
+                              avatar: '', cameras: [],
                             ),
                           ),
                         );
