@@ -12,6 +12,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
+import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 import 'package:whatsapp/main.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -394,6 +395,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             //   phoneno: '',
                             //   sourceChat: null,
                             // ),
+                            PaymentScreen(),
                           ),
                         );
                         final userId = FirebaseAuth.instance.currentUser!.uid;
