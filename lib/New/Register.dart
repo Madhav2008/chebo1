@@ -13,7 +13,6 @@ import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
-import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
