@@ -5,6 +5,7 @@ import 'dart:io';
 // import 'package:Foodybite/screens/navigation_screen/navigation_screen.dart';
 // import 'package:Foodybite/screens/post_recipe_screen/models/users.dart';
 // import 'package:Foodybite/widgets/text_button.dart';
+import 'package:firebase/firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
