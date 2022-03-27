@@ -386,7 +386,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           context: context,
                           builder: (builder) {
                             return AlertDialog(
-                              title: Text(''),
+                              title: Text('Congratulations!!'),
+                              content: Text('User Registered Successfully!!'),
                             );
                           },
                         );
