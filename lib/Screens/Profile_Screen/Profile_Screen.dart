@@ -64,15 +64,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
     //   }).catchError((error) {});
     // }
 
-    // imagePickerMethod(ImageSource source) async {
-    //   var pic = await imagePicker.pickImage(source: source);
-    //   if (pic != null) {
-    //     setState(() {
-    //       _image = XFile(pic.path);
-    //     });
-    //   }
-    //   uploadImage(); // image upload function
-    // }
+    imagePickerMethod(ImageSource source) async {
+      var pic = await imagePicker.pickImage(source: source);
+      if (pic != null) {
+        setState(() {
+          _image = XFile(pic.path);
+        });
+      }
+      uploadImage(); // image upload function
+    }
 
     selectImage() async {
       await showModalBottomSheet(
