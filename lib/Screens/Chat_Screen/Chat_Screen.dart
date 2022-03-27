@@ -29,7 +29,6 @@ class ChatScreen extends StatefulWidget {
     required this.about,
     required this.sourceChat,
     required this.chatModels,
-    required this.user,
   }) : super(key: key);
 
   final String name;
