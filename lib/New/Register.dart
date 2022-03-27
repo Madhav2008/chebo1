@@ -429,7 +429,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       width: MediaQuery.of(context).size.width * 0.58,
                       height: 50,
                       child: ElevatedButton(child: 'Register', onPressed: () {  },
-                      child: null,),
+                     ),
                       ),
                     ),
                   ),
