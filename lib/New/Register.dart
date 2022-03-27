@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
+import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -379,7 +380,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Navigation()));
+                                builder: (context) => NavigationScreen()));
                         final userId = FirebaseAuth.instance.currentUser!.uid;
                         saveUser(userId);
                         showDialog(
