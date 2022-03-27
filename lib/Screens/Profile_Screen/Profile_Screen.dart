@@ -4,7 +4,6 @@ import 'dart:io';
 
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/About_Model.dart';
 import 'package:whatsapp/Screens/About_Screen/About_Screen.dart';
