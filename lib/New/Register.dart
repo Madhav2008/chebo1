@@ -378,10 +378,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               emailController.text, passwordController.text)
                           .then((value) {
                         Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => NavigationScreen(),
-                            ),);
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NavigationScreen(),
+                          ),
+                        );
                         final userId = FirebaseAuth.instance.currentUser!.uid;
                         saveUser(userId);
                         showDialog(
