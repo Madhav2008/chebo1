@@ -37,8 +37,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
   final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    // File? _imageFile;
-    // String uploadedPath = "";
+    File? _imageFile;
+    String uploadedPath = "";
     late XFile _image;
     var name = widget.name;
     ImagePicker imagePicker = ImagePicker();
