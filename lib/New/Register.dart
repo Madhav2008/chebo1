@@ -503,17 +503,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     SizedBox(
                       width: 5,
                     ),
-                   Text('Login',
-                   style: TextStyle(
-                      color: one,
+                   GestureDetector(
+                     child: Text('Login',
+                     style: TextStyle(
+                        color: one,
+                     ),),
+                        onTap: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => LoginScreen()));
+                        },
                    ),
-                      onPress: () {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => LoginScreen()));
-                      },
-                    ),
                   ],
                 )
               ],
