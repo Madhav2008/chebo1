@@ -385,17 +385,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           context,
                           MaterialPageRoute(
                             builder: (context) =>
-                            //  NavigationScreen(
-                            //   about: bioController.text,
-                            //   avatar: uploadedPath,
-                            //   cameras: cameras,
-                            //   chatModels: [],
-                            //   countryCode: '',
-                            //   name: nameController.text,
-                            //   phoneno: '',
-                            //   sourceChat: null,
-                            // ),
-                            PaymentScreen(),
+                                //  NavigationScreen(
+                                //   about: bioController.text,
+                                //   avatar: uploadedPath,
+                                //   cameras: cameras,
+                                //   chatModels: [],
+                                //   countryCode: '',
+                                //   name: nameController.text,
+                                //   phoneno: '',
+                                //   sourceChat: null,
+                                // ),
+                                PaymentScreen(),
                           ),
                         );
                         final userId = FirebaseAuth.instance.currentUser!.uid;
@@ -415,13 +415,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         //     gravity: ToastGravity.BOTTOM);
                       }).catchError((error) {
                         showDialog(
-                            context: context,
-                            builder: (con) {
-                              return AlertDialog(
-                                title: Text("Error"),
-                                content: Text(error.toString()),
-                              );
-                            },);
+                          context: context,
+                          builder: (con) {
+                            return AlertDialog(
+                              title: Text("Error"),
+                              content: Text(error.toString()),
+                            );
+                          },
+                        );
                       });
                     },
                     child: Container(
