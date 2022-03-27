@@ -40,86 +40,86 @@ class _ProfileScreenState extends State<ProfileScreen> {
   final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    File? _imageFile;
-    String uploadedPath = "";
-    late XFile _image;
-    bool _isLoading = false;
-    var name = widget.name;
-    ImagePicker imagePicker = ImagePicker();
+    // File? _imageFile;
+    // String uploadedPath = "";
+    // late XFile _image;
+    // bool _isLoading = false;
+    // var name = widget.name;
+    // ImagePicker imagePicker = ImagePicker();
 
-    void uploadImage() {
-      String imageFileName = DateTime.now().millisecondsSinceEpoch.toString();
-      final Reference storageReference =
-          FirebaseStorage.instance.ref().child('Images').child(imageFileName);
-      final UploadTask uploadTask = storageReference.putFile(File(_image.path));
-      uploadTask.snapshotEvents.listen((event) {
-        setState(() {
-          _isLoading = true;
-        });
-      });
-      uploadTask.then((TaskSnapshot taskSnapshot) async {
-        uploadedPath = await uploadTask.snapshot.ref.getDownloadURL();
-        print(uploadedPath);
+    // void uploadImage() {
+    //   String imageFileName = DateTime.now().millisecondsSinceEpoch.toString();
+    //   final Reference storageReference =
+    //       FirebaseStorage.instance.ref().child('Images').child(imageFileName);
+    //   final UploadTask uploadTask = storageReference.putFile(File(_image.path));
+    //   uploadTask.snapshotEvents.listen((event) {
+    //     setState(() {
+    //       _isLoading = true;
+    //     });
+    //   });
+    //   uploadTask.then((TaskSnapshot taskSnapshot) async {
+    //     uploadedPath = await uploadTask.snapshot.ref.getDownloadURL();
+    //     print(uploadedPath);
 
-        setState(() {
-          _isLoading = false;
-        });
-      }).catchError((error) {});
-    }
+    //     setState(() {
+    //       _isLoading = false;
+    //     });
+    //   }).catchError((error) {});
+    // }
 
-    imagePickerMethod(ImageSource source) async {
-      var pic = await imagePicker.pickImage(source: source);
-      if (pic != null) {
-        setState(() {
-          _image = XFile(pic.path);
-        });
-      }
-      uploadImage(); // image upload function
-    }
+    // imagePickerMethod(ImageSource source) async {
+    //   var pic = await imagePicker.pickImage(source: source);
+    //   if (pic != null) {
+    //     setState(() {
+    //       _image = XFile(pic.path);
+    //     });
+    //   }
+    //   uploadImage(); // image upload function
+    // }
 
-    selectImage() async {
-      await showModalBottomSheet(
-        context: context,
-        builder: (context) => BottomSheet(
-          builder: (context) => Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              ListTile(
-                  leading: Icon(Icons.camera),
-                  title: Text("Camera"),
-                  onTap: () {
-                    Navigator.of(context).pop();
-                    imagePickerMethod(ImageSource.camera);
-                  }),
-              ListTile(
-                leading: Icon(Icons.filter),
-                title: Text("Gallery"),
-                onTap: () {
-                  Navigator.of(context).pop();
-                  imagePickerMethod(ImageSource.gallery);
-                },
-              ),
-            ],
-          ),
-          onClosing: () {
-            uploadImage();
-          },
-        ),
-      );
-    }
+    // selectImage() async {
+    //   await showModalBottomSheet(
+    //     context: context,
+    //     builder: (context) => BottomSheet(
+    //       builder: (context) => Column(
+    //         mainAxisSize: MainAxisSize.min,
+    //         children: [
+    //           ListTile(
+    //               leading: Icon(Icons.camera),
+    //               title: Text("Camera"),
+    //               onTap: () {
+    //                 Navigator.of(context).pop();
+    //                 imagePickerMethod(ImageSource.camera);
+    //               }),
+    //           ListTile(
+    //             leading: Icon(Icons.filter),
+    //             title: Text("Gallery"),
+    //             onTap: () {
+    //               Navigator.of(context).pop();
+    //               imagePickerMethod(ImageSource.gallery);
+    //             },
+    //           ),
+    //         ],
+    //       ),
+    //       onClosing: () {
+    //         uploadImage();
+    //       },
+    //     ),
+    //   );
+    // }
 
-    void saveData() {
-      // RecipeDatabase.addRecipe(
-      //   userId: userId,
-      //   title: titleController.text,
-      //   about_recipe: aboutController.text,
-      //   cooking_method: cookingMethodController.text,
-      //   ingredient: ingredientController.text,
-      //   time_to_cook: timeToCookController.text,
-      //   category: _currentItemSelected,
-      //   image: uploadedPath,
-      // );
-    }
+    // void saveData() {
+    //   // RecipeDatabase.addRecipe(
+    //   //   userId: userId,
+    //   //   title: titleController.text,
+    //   //   about_recipe: aboutController.text,
+    //   //   cooking_method: cookingMethodController.text,
+    //   //   ingredient: ingredientController.text,
+    //   //   time_to_cook: timeToCookController.text,
+    //   //   category: _currentItemSelected,
+    //   //   image: uploadedPath,
+    //   // );
+    // }
 
     return Scaffold(
       appBar: AppBar(
