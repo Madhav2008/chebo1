@@ -9,7 +9,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Models/Message_Model.dart';
-import 'package:whatsapp/Models/User_Model.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Chats_Wallpaper_Screen/Chats_Wallpaper_Screen.dart';
 import 'package:whatsapp/Screens/Media_Links_And_Docs/Media_Links_And_Docs.dart';
