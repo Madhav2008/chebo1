@@ -105,6 +105,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
       );
     }
+    
+     void saveData() {
+    RecipeDatabase.addRecipe(
+        userId: userId,
+        title: titleController.text,
+        about_recipe: aboutController.text,
+        cooking_method: cookingMethodController.text,
+        ingredient: ingredientController.text,
+        time_to_cook: timeToCookController.text,
+        category: _currentItemSelected,
+        image: uploadedPath);
+  }
 
     return Scaffold(
       appBar: AppBar(
