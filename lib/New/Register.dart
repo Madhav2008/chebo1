@@ -387,7 +387,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               cameras: cameras,
                               chatModels: [],
                               countryCode: '',
-                              name: '',
+                              name: nameController.text,
                               phoneno: '',
                               sourceChat: null,
                             ),
