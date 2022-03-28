@@ -41,7 +41,7 @@ class _VideoViewPageState extends State<VideoViewPage> {
                 Icons.crop_rotate,
                 size: 27,
               ),
-              onPressed: () {}),
+              onPressed: () {},),
           IconButton(
               icon: Icon(
                 Icons.emoji_emotions_outlined,
