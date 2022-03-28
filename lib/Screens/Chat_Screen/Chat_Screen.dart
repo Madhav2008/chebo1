@@ -55,7 +55,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  // Recording _recording = Recording();
+  Recording _recording = Recording();
   bool _isRecording = false;
   Random random = Random();
   TextEditingController _controllered = TextEditingController();
@@ -441,11 +441,11 @@ class _ChatScreenState extends State<ChatScreen> {
                             hintText: 'Enter a custom path',
                           ),
                         ),
-                        // Text("File path of the record: ${_recording.path}"),
-                        // Text("Format: ${_recording.audioOutputFormat}"),
-                        // Text("Extension : ${_recording.extension}"),
-                        // Text(
-                        // "Audio recording duration : ${_recording.duration.toString()}")
+                        Text("File path of the record: ${_recording.path}"),
+                        Text("Format: ${_recording.audioOutputFormat}"),
+                        Text("Extension : ${_recording.extension}"),
+                        Text(
+                        "Audio recording duration : ${_recording.duration.toString()}")
                       ]),
                   Align(
                     alignment: Alignment.bottomCenter,
