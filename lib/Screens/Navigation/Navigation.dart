@@ -296,8 +296,8 @@ class _NavigationScreenState extends State<NavigationScreen>
               controller: _tabController,
               children: <Widget>[
                 CameraScreen(
-                    cameras: [],
-                    ),
+                  cameras: [],
+                ),
                 ChatsScreen(
                   sourceChat: widget.sourceChat,
                   chatModels: widget.chatModels,
