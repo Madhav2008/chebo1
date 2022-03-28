@@ -23,9 +23,9 @@ import 'package:file/file.dart';
 import 'dart:io' as io;
 import 'dart:math';
 
-import 'package:audio_recorder/audio_recorder.dart';
+// import 'package:audio_recorder/audio_recorder.dart';
 import 'package:file/local.dart';
-import 'package:path_provider/path_provider.dart';
+// import 'package:path_provider/path_provider.dart';
 
 class ChatScreen extends StatefulWidget {
   final LocalFileSystem localFileSystem;
@@ -445,7 +445,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         Text("Format: ${_recording.audioOutputFormat}"),
                         Text("Extension : ${_recording.extension}"),
                         Text(
-                        "Audio recording duration : ${_recording.duration.toString()}")
+                            "Audio recording duration : ${_recording.duration.toString()}")
                       ]),
                   Align(
                     alignment: Alignment.bottomCenter,
