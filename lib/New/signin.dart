@@ -43,14 +43,13 @@ class _LoginScreenState extends State<LoginScreen> {
           builder: (con) {
             return AlertDialog(
               title: Text("Error"),
-              content: Text(
-                "No User Found!!"
-              ),
+              content: Text("No User Found!!"),
             );
           },
         );
       }
     }
+    return user;
   }
 
   @override
