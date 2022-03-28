@@ -60,14 +60,16 @@ class _CameraScreenState extends State<CameraScreen> {
                   context,
                   MaterialPageRoute(
                     builder: (builder) => CameraViewPage(
-                      path: 'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                      path:
+                          'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
                     ),
                   ),
                 );
               },
               child: Image(
                 image: NetworkImage(
-                    'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',),
+                  'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                ),
                 fit: BoxFit.cover,
               ),
             ),
