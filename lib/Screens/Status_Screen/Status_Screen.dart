@@ -55,8 +55,8 @@ class StatusScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (builder) => CameraScreen(
-                        cameras: [],
-                        ),
+                      cameras: [],
+                    ),
                   ),
                 );
               },
@@ -402,8 +402,8 @@ class StatusScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (BuildContext context) => CameraScreen(
-                    // cameras: [],
-                  ),
+                      // cameras: [],
+                      ),
                 ),
               );
             },
