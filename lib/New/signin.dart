@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
     try{
-      UserCredential userCredential = await auth.signInWithEmailAndPassword(email: email, password: password,)
+      UserCredential userCredential = await auth.signInWithEmailAndPassword(email: email, password: password,);
     }
   }
 
