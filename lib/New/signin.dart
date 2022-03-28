@@ -227,8 +227,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             password: passwordController.text,
                             context: context,
                           );
-                          
-                          if(user != null){
+
+                          if (user != null) {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
@@ -242,12 +242,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           //   passwordController.text,
                           // )
                           //     .then((auth) {
-                            // Navigator.pushReplacement(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //     builder: (context) => PaymentScreen(),
-                            //   ),
-                            // );
+                          // Navigator.pushReplacement(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => PaymentScreen(),
+                          //   ),
+                          // );
                           //   // showDialog(
                           //   //   context: context,
                           //   //   builder: (con) {
