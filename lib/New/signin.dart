@@ -8,6 +8,7 @@ import 'package:whatsapp/New/Forget.dart';
 import 'package:whatsapp/New/Register.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
