@@ -227,6 +227,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             password: passwordController.text,
                             context: context,
                           );
+                          
+                          if(user != null){
+                            
+                          }
                           // Provider.of<AuthService>(context)
                           //     .signInWithEmailAndPassword(
                           //   emailController.text,
