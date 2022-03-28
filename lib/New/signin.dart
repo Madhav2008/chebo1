@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
         password: password,
       );
       user = userCredential.user;
-    } catch (e) {}
+    } on FirebaseAuthException catch (e) {}
   }
 
   @override
