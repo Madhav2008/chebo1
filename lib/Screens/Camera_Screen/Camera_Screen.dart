@@ -167,7 +167,7 @@ class _CameraScreenState extends State<CameraScreen> {
                             angle: transform,
                             child: Icon(
                               Icons.flip_camera_ios,
-                              // color: white,
+                              color: white,
                               size: 28,
                             ),
                           ),
