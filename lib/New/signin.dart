@@ -233,12 +233,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           //   passwordController.text,
                           // )
                           //     .then((auth) {
-                          //   Navigator.pushReplacement(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //       builder: (context) => PaymentScreen(),
-                          //     ),
-                          //   );
+                            // Navigator.pushReplacement(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //     builder: (context) => PaymentScreen(),
+                            //   ),
+                            // );
                           //   // showDialog(
                           //   //   context: context,
                           //   //   builder: (con) {
