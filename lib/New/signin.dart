@@ -229,7 +229,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           );
                           
                           if(user != null){
-                            
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PaymentScreen(),
+                              ),
+                            );
                           }
                           // Provider.of<AuthService>(context)
                           //     .signInWithEmailAndPassword(
