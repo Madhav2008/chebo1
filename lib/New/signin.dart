@@ -29,6 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
     required BuildContext context,
   }) async {
     FirebaseAuth auth = FirebaseAuth.instance;
+    User? user;
   }
 
   @override
