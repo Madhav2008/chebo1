@@ -42,13 +42,13 @@ class OwnMessageCard extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(
-                10,
+                15,
               ),
-              topRight: Radius.circular(
-                10,
+              bottomRight: Radius.circular(
+                15,
               ),
               bottomLeft: Radius.circular(
-                10,
+                15,
               ),
             ),
           ),
