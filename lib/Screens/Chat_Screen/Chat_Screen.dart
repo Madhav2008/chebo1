@@ -636,6 +636,7 @@ class _ChatScreenState extends State<ChatScreen> {
       ],
     );
   }
+
   _start() async {
     try {
       if (await AudioRecorder.hasPermissions) {
