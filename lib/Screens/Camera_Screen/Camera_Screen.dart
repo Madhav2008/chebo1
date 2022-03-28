@@ -99,6 +99,7 @@ class _CameraScreenState extends State<CameraScreen> {
               width: MediaQuery.of(context).size.width,
               child: Column(
                 children: [
+                  _buildGalleryBar(),
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
