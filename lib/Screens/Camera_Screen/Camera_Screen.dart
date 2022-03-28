@@ -241,7 +241,9 @@ class _CameraScreenState extends State<CameraScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   void _showInSnackBar(String message) {
-    _scaffoldKey.currentState!.showSnackBar(SnackBar(content: Text(message),));
+    _scaffoldKey.currentState!.showSnackBar(SnackBar(
+      content: Text(message),
+    ));
   }
 
   void _initCamera(int index) async {
