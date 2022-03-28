@@ -44,11 +44,12 @@ class _VideoViewPageState extends State<VideoViewPage> {
             onPressed: () {},
           ),
           IconButton(
-              icon: Icon(
-                Icons.emoji_emotions_outlined,
-                size: 27,
-              ),
-              onPressed: () {},),
+            icon: Icon(
+              Icons.emoji_emotions_outlined,
+              size: 27,
+            ),
+            onPressed: () {},
+          ),
           IconButton(
               icon: Icon(
                 Icons.title,
