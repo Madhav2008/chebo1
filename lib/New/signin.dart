@@ -233,58 +233,58 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Container(
                         width: MediaQuery.of(context).size.width * 0.5,
                         height: 50,
-                        child: RaisedButton(
-                          color: one,
-                          onPressed: () async {
-                            User? user = await loginUsingEmailAndPassword(
-                              email: emailController.text,
-                              password: passwordController.text,
-                              context: context,
-                            );
+                        // child: RaisedButton(
+                        //   color: one,
+                        //   onPressed: () async {
+                        //     User? user = await loginUsingEmailAndPassword(
+                        //       email: emailController.text,
+                        //       password: passwordController.text,
+                        //       context: context,
+                        //     );
 
-                            if (user != null) {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => PaymentScreen(),
-                                ),
-                              );
-                            }
-                            // Provider.of<AuthService>(context)
-                            //     .signInWithEmailAndPassword(
-                            //   emailController.text,
-                            //   passwordController.text,
-                            // )
-                            //     .then((auth) {
-                            // Navigator.pushReplacement(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //     builder: (context) => PaymentScreen(),
-                            //   ),
-                            // );
-                            //   // showDialog(
-                            //   //   context: context,
-                            //   //   builder: (con) {
-                            //   //     return AlertDialog(
-                            //   //       title: Text("Congratulations!"),
-                            //   //       content: Text('Login Successfully'),
-                            //   //     );
-                            //   //   },
-                            //   // );
-                            // }).catchError((error) {
-                            //   showDialog(
-                            //     context: context,
-                            //     builder: (con) {
-                            //       return AlertDialog(
-                            //         title: Text("Error"),
-                            //         content: Text(
-                            //           error.toString(),
-                            //         ),
-                            //       );
-                            //     },
-                            //   );
-                            // });
-                          },
+                        //     if (user != null) {
+                        //       Navigator.push(
+                        //         context,
+                        //         MaterialPageRoute(
+                        //           builder: (context) => PaymentScreen(),
+                        //         ),
+                        //       );
+                        //     }
+                        //     // Provider.of<AuthService>(context)
+                        //     //     .signInWithEmailAndPassword(
+                        //     //   emailController.text,
+                        //     //   passwordController.text,
+                        //     // )
+                        //     //     .then((auth) {
+                        //     // Navigator.pushReplacement(
+                        //     //   context,
+                        //     //   MaterialPageRoute(
+                        //     //     builder: (context) => PaymentScreen(),
+                        //     //   ),
+                        //     // );
+                        //     //   // showDialog(
+                        //     //   //   context: context,
+                        //     //   //   builder: (con) {
+                        //     //   //     return AlertDialog(
+                        //     //   //       title: Text("Congratulations!"),
+                        //     //   //       content: Text('Login Successfully'),
+                        //     //   //     );
+                        //     //   //   },
+                        //     //   // );
+                        //     // }).catchError((error) {
+                        //     //   showDialog(
+                        //     //     context: context,
+                        //     //     builder: (con) {
+                        //     //       return AlertDialog(
+                        //     //         title: Text("Error"),
+                        //     //         content: Text(
+                        //     //           error.toString(),
+                        //     //         ),
+                        //     //       );
+                        //     //     },
+                        //     //   );
+                        //     // });
+                        //   },
                           child: Text(
                             'Login',
                             style: TextStyle(
@@ -293,7 +293,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                       ),
-                    ),
+                    // ),
                   ),
                   SizedBox(
                     height: 30,
