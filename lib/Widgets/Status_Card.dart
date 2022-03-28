@@ -51,7 +51,6 @@ class _StatusCardState extends State<StatusCard> {
       subtitle: Text(
         widget.time,
         style: TextStyle(
-          color: white,
         ),
       ),
       // onTap: () {},
