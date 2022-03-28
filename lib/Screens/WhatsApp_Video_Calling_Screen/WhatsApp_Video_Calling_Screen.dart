@@ -48,7 +48,7 @@ class _WhatsAppVideoCallingScreenState
       ),
       autoStart: true,
       showNotification: true,
-      loopMode: LoopMode.single,
+      // loopMode: LoopMode.single,
     );
   }
 
