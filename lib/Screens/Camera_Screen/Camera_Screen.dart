@@ -62,7 +62,7 @@ class _CameraScreenState extends State<CameraScreen> {
                       builder: (builder) => CameraViewPage(
                         path: path,
                       ),
-                    ));
+                    ),);
               },
               child: Image(
                 image: NetworkImage(
