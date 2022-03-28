@@ -55,7 +55,8 @@ class _CameraScreenState extends State<CameraScreen> {
             width: 70.0,
             height: barHeight - vertPadding * 2,
             child: Image(
-              image: NetworkImage(''),
+              image: NetworkImage(
+                  'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png'),
               fit: BoxFit.cover,
             ),
           );
