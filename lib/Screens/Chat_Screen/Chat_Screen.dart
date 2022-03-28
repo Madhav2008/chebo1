@@ -19,10 +19,15 @@ import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Ca
 import 'package:whatsapp/Theme/Provider/Theme_Provider.dart';
 import 'package:whatsapp/Widgets/OwnMessageCard.dart';
 import 'package:whatsapp/Widgets/Reply_Card.dart';
+import 'package:file/file.dart';
+import 'package:file/local.dart';
 
 class ChatScreen extends StatefulWidget {
+  final LocalFileSystem localFileSystem;
+  
   ChatScreen({
     Key? key,
+    localFileSystem,
     required this.avatar,
     required this.name,
     required this.phoneno,
