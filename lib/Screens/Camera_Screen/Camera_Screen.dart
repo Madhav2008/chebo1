@@ -39,7 +39,7 @@ class _CameraScreenState extends State<CameraScreen> {
     super.dispose();
     _cameraController.dispose();
   }
-  
+
   Widget _buildGalleryBar() {
     final barHeight = 90.0;
     final vertPadding = 10.0;
@@ -55,7 +55,7 @@ class _CameraScreenState extends State<CameraScreen> {
             width: 70.0,
             height: barHeight - vertPadding * 2,
             child: Image(
-              image: randomImageUrl(),
+              image: NetworkImage(''),
               fit: BoxFit.cover,
             ),
           );
