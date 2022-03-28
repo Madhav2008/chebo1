@@ -55,8 +55,13 @@ class _CameraScreenState extends State<CameraScreen> {
             width: 70.0,
             height: barHeight - vertPadding * 2,
             child: GestureDetector(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (builder)=>CameraViewPage(path: path,)))
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (builder) => CameraViewPage(
+                              path: path,
+                            )));
               },
               child: Image(
                 image: NetworkImage(
