@@ -330,7 +330,7 @@ class _CameraScreenState extends State<CameraScreen> {
 
   String _timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
 
-  Future<String> _takePicture() async {
+  Future<String?> _takePicture() async {
     if (!controller.value.isInitialized || controller.value.isTakingPicture) {
       return null;
     }
