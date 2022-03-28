@@ -229,7 +229,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           );
 
                           if (user != null) {
-                            Navigator.pushReplacement(
+                            Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => PaymentScreen(),
