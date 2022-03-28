@@ -54,10 +54,12 @@ class _CameraScreenState extends State<CameraScreen> {
             padding: EdgeInsets.only(right: 5.0),
             width: 70.0,
             height: barHeight - vertPadding * 2,
-            child: Image(
-              image: NetworkImage(
-                  'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png'),
-              fit: BoxFit.cover,
+            child: GestureDetector(
+              child: Image(
+                image: NetworkImage(
+                    'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png'),
+                fit: BoxFit.cover,
+              ),
             ),
           );
         },
