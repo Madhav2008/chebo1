@@ -61,7 +61,7 @@ class _CameraScreenState extends State<CameraScreen> {
                     MaterialPageRoute(
                         builder: (builder) => CameraViewPage(
                               path: path,
-                            )));
+                            ),));
               },
               child: Image(
                 image: NetworkImage(
