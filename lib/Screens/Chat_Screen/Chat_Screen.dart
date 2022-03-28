@@ -445,7 +445,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         // Text("Format: ${_recording.audioOutputFormat}"),
                         // Text("Extension : ${_recording.extension}"),
                         // Text(
-                            // "Audio recording duration : ${_recording.duration.toString()}")
+                        // "Audio recording duration : ${_recording.duration.toString()}")
                       ]),
                   Align(
                     alignment: Alignment.bottomCenter,
