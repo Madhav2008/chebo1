@@ -36,7 +36,11 @@ class _LoginScreenState extends State<LoginScreen> {
         password: password,
       );
       user = userCredential.user;
-    } on FirebaseAuthException catch (e) {}
+    } on FirebaseAuthException catch (e) {
+      if(e.code == "user-not-found"){
+        
+      }
+    }
   }
 
   @override
