@@ -57,7 +57,6 @@ dependencies:
   shared_preferences: 
   firebase_messaging: 
   flutter_local_notifications: 
-  audio_recorder: 
 
 dev_dependencies:
   flutter_test:
