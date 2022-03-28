@@ -39,6 +39,30 @@ class _CameraScreenState extends State<CameraScreen> {
     super.dispose();
     _cameraController.dispose();
   }
+  
+  Widget _buildGalleryBar() {
+    final barHeight = 90.0;
+    final vertPadding = 10.0;
+
+    return Container(
+      height: barHeight,
+      child: ListView.builder(
+        padding: EdgeInsets.symmetric(vertical: vertPadding),
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (BuildContext context, int _) {
+          return Container(
+            padding: EdgeInsets.only(right: 5.0),
+            width: 70.0,
+            height: barHeight - vertPadding * 2,
+            child: Image(
+              image: randomImageUrl(),
+              fit: BoxFit.cover,
+            ),
+          );
+        },
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
