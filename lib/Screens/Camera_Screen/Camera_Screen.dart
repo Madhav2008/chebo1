@@ -243,7 +243,7 @@ class _CameraScreenState extends State<CameraScreen> {
   void _showInSnackBar(String message) {
     _scaffoldKey.currentState!.showSnackBar(SnackBar(
       content: Text(message),
-    ));
+    ),);
   }
 
   void _initCamera(int index) async {
