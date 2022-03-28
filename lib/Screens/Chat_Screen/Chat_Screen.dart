@@ -58,7 +58,7 @@ class _ChatScreenState extends State<ChatScreen> {
 Recording _recording = Recording();
   bool _isRecording = false;
   Random random = Random();
-  TextEditingController _controller = TextEditingController();
+  TextEditingController _controllered = TextEditingController();
 
   final phoneNo = '7982880636';
 
@@ -1090,12 +1090,12 @@ class _MuteNotificationsState extends State<MuteNotifications> {
   _start() async {
     try {
       if (await AudioRecorder.hasPermissions) {
-        if (_controller.text != null && _controller.text != "") {
-          String path = _controller.text;
-          if (!_controller.text.contains('/')) {
+        if (_controllered.text != null && _controllered.text != "") {
+          String path = _controllered.text;
+          if (!_controllered.text.contains('/')) {
             io.Directory appDocDirectory =
                 await getApplicationDocumentsDirectory();
-            path = appDocDirectory.path + '/' + _controller.text;
+            path = appDocDirectory.path + '/' + _controllered.text;
           }
           print("Start recording: $path");
           await AudioRecorder.start(
@@ -1110,7 +1110,7 @@ class _MuteNotificationsState extends State<MuteNotifications> {
         });
       } else {
         Scaffold.of(context).showSnackBar(
-            new SnackBar(content: new Text("You must accept permissions")));
+            SnackBar(content: Text("You must accept permissions")));
       }
     } catch (e) {
       print(e);
