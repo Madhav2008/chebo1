@@ -23,10 +23,11 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
-  static Future<User?> loginUsingEmailAndPassword(
-      {required String email,
-      required String password,
-      required BuildContext context,}) async {
+  static Future<User?> loginUsingEmailAndPassword({
+    required String email,
+    required String password,
+    required BuildContext context,
+  }) async {
     FirebaseAuth auth = FirebaseAuth.instance;
   }
 
