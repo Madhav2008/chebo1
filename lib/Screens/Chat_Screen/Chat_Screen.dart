@@ -508,7 +508,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                                 MaterialPageRoute(
                                                   builder: (builder) {
                                                     return CameraScreen(
-                                                      cameras: [],
+                                                      // cameras: [],
                                                     );
                                                   },
                                                 ),
