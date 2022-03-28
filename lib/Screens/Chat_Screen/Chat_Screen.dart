@@ -446,7 +446,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         Text("Extension : ${_recording.extension}"),
                         Text(
                             "Audio recording duration : ${_recording.duration.toString()}")
-                      ]),
+                      ],),
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
