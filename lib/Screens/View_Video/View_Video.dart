@@ -62,7 +62,7 @@ class _VideoViewPageState extends State<VideoViewPage> {
                 Icons.edit,
                 size: 27,
               ),
-              onPressed: () {}),
+              onPressed: () {},),
         ],
       ),
       body: Container(
