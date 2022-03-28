@@ -460,10 +460,7 @@ class _CameraScreenState extends State<CameraScreen> {
               padding: EdgeInsets.symmetric(vertical: 10.0),
               child: Text(
                 'Tap for photo',
-                style: Theme.of(context)
-                    .textTheme
-                    .subhead
-                    .copyWith(color: Colors.white),
+                style:TextStyle(color: Colors.white),
               ),
             )
           ],
