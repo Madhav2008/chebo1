@@ -1088,49 +1088,6 @@ class _MuteNotificationsState extends State<MuteNotifications> {
     );
   }
 }
-_start() async {
-    try {
-      if (await AudioRecorder.hasPermissions) {
-        if (_controllered.text != null && _controllered.text != "") {
-          String path = _controllered.text;
-          if (!_controllered.text.contains('/')) {
-            io.Directory appDocDirectory =
-                await getApplicationDocumentsDirectory();
-            path = appDocDirectory.path + '/' + _controllered.text;
-          }
-          print("Start recording: $path");
-          await AudioRecorder.start(
-              path: path, audioOutputFormat: AudioOutputFormat.AAC);
-        } else {
-          await AudioRecorder.start();
-        }
-        bool isRecording = await AudioRecorder.isRecording;
-        setState(() {
-          _recording = new Recording(duration: new Duration(), path: "");
-          _isRecording = isRecording;
-        });
-      } else {
-        Scaffold.of(context).showSnackBar(
-            SnackBar(content: Text("You must accept permissions")));
-      }
-    } catch (e) {
-      print(e);
-    }
-  }
-
-  _stop() async {
-    var recording = await AudioRecorder.stop();
-    print("Stop recording: ${recording.path}");
-    bool isRecording = await AudioRecorder.isRecording;
-    File file = widget.localFileSystem.file(recording.path);
-    print("  File length: ${await file.length()}");
-    setState(() {
-      _recording = recording;
-      _isRecording = isRecording;
-    });
-    _controller.text = recording.path;
-  }
-}
 // import 'package:firebase/firestore.dart';
 // import 'package:flutter/material.dart';
 // // import 'package:chatapp/helper/constants.dart';
