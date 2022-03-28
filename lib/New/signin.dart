@@ -222,7 +222,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: RaisedButton(
                         color: one,
                         onPressed: () {
-                          User? user = 
+                          User? user = await loginUsingEmailAndPassword(email: emailController.text, password: password, context: context)
                           // Provider.of<AuthService>(context)
                           //     .signInWithEmailAndPassword(
                           //   emailController.text,
