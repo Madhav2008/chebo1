@@ -340,7 +340,7 @@ class _CameraScreenState extends State<CameraScreen> {
     final String filePath = '$dirPath/${_timestamp()}.jpg';
 
     try {
-      await controller.takePicture(filePath);
+      await controller.takePicture();
     } on CameraException catch (e) {
       _showCameraException(e);
       return null;
@@ -349,7 +349,7 @@ class _CameraScreenState extends State<CameraScreen> {
   }
 
   void _showCameraException(CameraException e) {
-    logError(e.code, e.description);
+    // logError(e.code, e.description);
     _showInSnackBar('Error: ${e.code}\n${e.description}');
   }
 
@@ -368,7 +368,8 @@ class _CameraScreenState extends State<CameraScreen> {
             width: 70.0,
             height: barHeight - vertPadding * 2,
             child: Image(
-              image: randomImageUrl(),
+              image: NetworkImage(
+                  'https://miro.medium.com/focal/58/58/50/50/1*_tuAr7bNtyAr-rYJTJx2-A.png'),
               fit: BoxFit.cover,
             ),
           );
