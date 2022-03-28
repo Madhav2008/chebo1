@@ -222,40 +222,41 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: RaisedButton(
                         color: one,
                         onPressed: () {
-                          Provider.of<AuthService>(context)
-                              .signInWithEmailAndPassword(
-                            emailController.text,
-                            passwordController.text,
-                          )
-                              .then((auth) {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => PaymentScreen(),
-                              ),
-                            );
-                            // showDialog(
-                            //   context: context,
-                            //   builder: (con) {
-                            //     return AlertDialog(
-                            //       title: Text("Congratulations!"),
-                            //       content: Text('Login Successfully'),
-                            //     );
-                            //   },
-                            // );
-                          }).catchError((error) {
-                            showDialog(
-                              context: context,
-                              builder: (con) {
-                                return AlertDialog(
-                                  title: Text("Error"),
-                                  content: Text(
-                                    error.toString(),
-                                  ),
-                                );
-                              },
-                            );
-                          });
+                          User? user = 
+                          // Provider.of<AuthService>(context)
+                          //     .signInWithEmailAndPassword(
+                          //   emailController.text,
+                          //   passwordController.text,
+                          // )
+                          //     .then((auth) {
+                          //   Navigator.pushReplacement(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //       builder: (context) => PaymentScreen(),
+                          //     ),
+                          //   );
+                          //   // showDialog(
+                          //   //   context: context,
+                          //   //   builder: (con) {
+                          //   //     return AlertDialog(
+                          //   //       title: Text("Congratulations!"),
+                          //   //       content: Text('Login Successfully'),
+                          //   //     );
+                          //   //   },
+                          //   // );
+                          // }).catchError((error) {
+                          //   showDialog(
+                          //     context: context,
+                          //     builder: (con) {
+                          //       return AlertDialog(
+                          //         title: Text("Error"),
+                          //         content: Text(
+                          //           error.toString(),
+                          //         ),
+                          //       );
+                          //     },
+                          //   );
+                          // });
                         },
                         child: Text(
                           'Login',
