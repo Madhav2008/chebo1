@@ -188,9 +188,6 @@ class _CameraScreenState extends State<CameraScreen> {
                   ),
                   Text(
                     "Hold for Video, tap for photo",
-                    style: TextStyle(
-                      color: white,
-                    ),
                     textAlign: TextAlign.center,
                   )
                 ],
