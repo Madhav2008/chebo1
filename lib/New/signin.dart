@@ -37,18 +37,18 @@ class _LoginScreenState extends State<LoginScreen> {
       );
       user = userCredential.user;
     } on FirebaseAuthException catch (e) {
-      if(e.code == "user-not-found"){
+      if (e.code == "user-not-found") {
         showDialog(
-                              context: context,
-                              builder: (con) {
-                                return AlertDialog(
-                                  title: Text("Error"),
-                                  content: Text(
-                                    error.toString(),
-                                  ),
-                                );
-                              },
-                            );
+          context: context,
+          builder: (con) {
+            return AlertDialog(
+              title: Text("Error"),
+              content: Text(
+                error.toString(),
+              ),
+            );
+          },
+        );
       }
     }
   }
