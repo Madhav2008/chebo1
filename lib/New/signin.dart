@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
     try{
       UserCredential userCredential = await auth.signInWithEmailAndPassword(email: email, password: password,);
       user = userCredential.user;
-    }
+    }catch{}
   }
 
   @override
