@@ -58,11 +58,12 @@ class _VideoViewPageState extends State<VideoViewPage> {
             onPressed: () {},
           ),
           IconButton(
-              icon: Icon(
-                Icons.edit,
-                size: 27,
-              ),
-              onPressed: () {},),
+            icon: Icon(
+              Icons.edit,
+              size: 27,
+            ),
+            onPressed: () {},
+          ),
         ],
       ),
       body: Container(
