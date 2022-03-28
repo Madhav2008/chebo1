@@ -667,16 +667,16 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   _stop() async {
-    // var recording = await AudioRecorder.stop();
-    // print("Stop recording: ${recording.path}");
-    // bool isRecording = await AudioRecorder.isRecording;
-    // File file = widget.localFileSystem.file(recording.path);
-    // print("  File length: ${await file.length()}");
-    // setState(() {
-    //   _recording = recording;
-    //   _isRecording = isRecording;
-    // });
-    // _controllered.text = recording.path;
+    var recording = await AudioRecorder.stop();
+    print("Stop recording: ${recording.path}");
+    bool isRecording = await AudioRecorder.isRecording;
+    File file = widget.localFileSystem.file(recording.path);
+    print("  File length: ${await file.length()}");
+    setState(() {
+      _recording = recording;
+      _isRecording = isRecording;
+    });
+    _controllered.text = recording.path;
   }
 
   Widget bottomSheet() {
