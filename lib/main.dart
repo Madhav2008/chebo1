@@ -105,9 +105,9 @@ class MyApp extends StatelessWidget {
           return
               // MultiProvider(
               //   providers: [
-                  // Provider<AuthService>(
-                  //   create: (_) => AuthService(),
-                  // ),
+              // Provider<AuthService>(
+              //   create: (_) => AuthService(),
+              // ),
               //   ],
               //   child:
               GetMaterialApp(
