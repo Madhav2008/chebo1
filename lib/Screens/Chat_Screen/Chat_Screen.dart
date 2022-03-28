@@ -29,7 +29,7 @@ import 'package:path_provider/path_provider.dart';
 
 class ChatScreen extends StatefulWidget {
   final LocalFileSystem localFileSystem;
-  
+
   ChatScreen({
     Key? key,
     localFileSystem,
@@ -55,7 +55,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-Recording _recording = Recording();
+  Recording _recording = Recording();
   bool _isRecording = false;
   Random random = Random();
   TextEditingController _controllered = TextEditingController();
@@ -423,30 +423,30 @@ Recording _recording = Recording();
                     ),
                   ),
                   Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              FlatButton(
-                onPressed: _isRecording ? null : _start,
-                child: Text("Start"),
-                color: Colors.green,
-              ),
-              FlatButton(
-                onPressed: _isRecording ? _stop : null,
-                child: Text("Stop"),
-                color: Colors.red,
-              ),
-              TextField(
-                controller: _controller,
-                decoration: InputDecoration(
-                  hintText: 'Enter a custom path',
-                ),
-              ),
-              Text("File path of the record: ${_recording.path}"),
-              Text("Format: ${_recording.audioOutputFormat}"),
-              Text("Extension : ${_recording.extension}"),
-              Text(
-                  "Audio recording duration : ${_recording.duration.toString()}")
-            ]),
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        FlatButton(
+                          onPressed: _isRecording ? null : _start,
+                          child: Text("Start"),
+                          color: Colors.green,
+                        ),
+                        FlatButton(
+                          onPressed: _isRecording ? _stop : null,
+                          child: Text("Stop"),
+                          color: Colors.red,
+                        ),
+                        TextField(
+                          controller: _controller,
+                          decoration: InputDecoration(
+                            hintText: 'Enter a custom path',
+                          ),
+                        ),
+                        Text("File path of the record: ${_recording.path}"),
+                        Text("Format: ${_recording.audioOutputFormat}"),
+                        Text("Extension : ${_recording.extension}"),
+                        Text(
+                            "Audio recording duration : ${_recording.duration.toString()}")
+                      ]),
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
@@ -1087,50 +1087,7 @@ class _MuteNotificationsState extends State<MuteNotifications> {
       ),
     );
   }
-  _start() async {
-    try {
-      if (await AudioRecorder.hasPermissions) {
-        if (_controllered.text != null && _controllered.text != "") {
-          String path = _controllered.text;
-          if (!_controllered.text.contains('/')) {
-            io.Directory appDocDirectory =
-                await getApplicationDocumentsDirectory();
-            path = appDocDirectory.path + '/' + _controllered.text;
-          }
-          print("Start recording: $path");
-          await AudioRecorder.start(
-              path: path, audioOutputFormat: AudioOutputFormat.AAC);
-        } else {
-          await AudioRecorder.start();
-        }
-        bool isRecording = await AudioRecorder.isRecording;
-        setState(() {
-          _recording = new Recording(duration: new Duration(), path: "");
-          _isRecording = isRecording;
-        });
-      } else {
-        Scaffold.of(context).showSnackBar(
-            SnackBar(content: Text("You must accept permissions")));
-      }
-    } catch (e) {
-      print(e);
-    }
-  }
-
-  _stop() async {
-    var recording = await AudioRecorder.stop();
-    print("Stop recording: ${recording.path}");
-    bool isRecording = await AudioRecorder.isRecording;
-    File file = widget.localFileSystem.file(recording.path);
-    print("  File length: ${await file.length()}");
-    setState(() {
-      _recording = recording;
-      _isRecording = isRecording;
-    });
-    _controller.text = recording.path;
-  }
 }
-
 // import 'package:firebase/firestore.dart';
 // import 'package:flutter/material.dart';
 // // import 'package:chatapp/helper/constants.dart';
