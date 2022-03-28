@@ -99,7 +99,10 @@ class _CameraScreenState extends State<CameraScreen> {
               width: MediaQuery.of(context).size.width,
               child: Column(
                 children: [
-                  Icon(Icons.keyboard_arrow_up, color: white,),
+                  Icon(
+                    Icons.keyboard_arrow_up,
+                    color: white,
+                  ),
                   _buildGalleryBar(),
                   Row(
                     mainAxisSize: MainAxisSize.max,
