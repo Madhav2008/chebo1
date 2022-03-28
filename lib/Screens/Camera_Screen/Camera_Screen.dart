@@ -253,7 +253,7 @@ class _CameraScreenState extends State<CameraScreen> {
     if (controller != null) {
       await controller.dispose();
     }
-    controller = CameraController(cameras[index], ResolutionPreset.high);
+    controller = CameraController(cameras[index], ResolutionPreset.high,);
 
     // If the controller is updated then update the UI.
     controller.addListener(() {
