@@ -50,6 +50,10 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
+Recording _recording = new Recording();
+  bool _isRecording = false;
+  Random random = new Random();
+
   final phoneNo = '7982880636';
 
   List<MessageModel> allMessages = [];
