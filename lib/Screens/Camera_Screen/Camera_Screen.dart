@@ -223,20 +223,18 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:video_player/video_player.dart';
-import '../main.dart';
-import '../random_image_url.dart';
 
-class TabCamera extends StatefulWidget {
+class CameraScreen extends StatefulWidget {
   final bool needScaffold;
 
-  TabCamera({this.needScaffold = false});
+  CameraScreen({this.needScaffold = false});
 
   @override
-  _TabCameraState createState() => _TabCameraState();
+  _CameraScreenState createState() => _CameraScreenState();
 }
 
-class _TabCameraState extends State<TabCamera> {
-  CameraController controller;
+class _CameraScreenState extends State<CameraScreen> {
+  late CameraController controller;
   int _cameraIndex = 0;
   bool _cameraNotAvailable = false;
 
