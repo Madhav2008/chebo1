@@ -8,7 +8,6 @@ import 'package:whatsapp/New/Forget.dart';
 import 'package:whatsapp/New/Register.dart';
 import 'package:whatsapp/Screens/Payment_Screen/Payment_Screen.dart';
 
-
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key? key}) : super(key: key);
 
@@ -22,6 +21,9 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  static Future<User?> loginUsingEmailAndPassword({required String email, required String password, required BuildContext context}) async{
+    
+  }
   @override
   Widget build(BuildContext context) {
     Future.delayed(
