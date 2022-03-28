@@ -46,7 +46,6 @@ class _StatusCardState extends State<StatusCard> {
         widget.name,
         style: TextStyle(
           fontWeight: FontWeight.bold,
-          color: white,
         ),
       ),
       subtitle: Text(
