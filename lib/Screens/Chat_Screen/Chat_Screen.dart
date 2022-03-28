@@ -55,10 +55,10 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  Recording _recording = Recording();
-  bool _isRecording = false;
-  Random random = Random();
-  TextEditingController _controllered = TextEditingController();
+  // Recording _recording = Recording();
+  // bool _isRecording = false;
+  // Random random = Random();
+  // TextEditingController _controllered = TextEditingController();
 
   final phoneNo = '7982880636';
 
