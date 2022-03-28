@@ -654,7 +654,7 @@ class _ChatScreenState extends State<ChatScreen> {
         }
         bool isRecording = await AudioRecorder.isRecording;
         setState(() {
-          _recording = new Recording(duration: new Duration(), path: "");
+          _recording = Recording(duration: Duration(), path: "");
           _isRecording = isRecording;
         });
       } else {
