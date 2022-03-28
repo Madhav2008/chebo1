@@ -42,14 +42,14 @@ class _WhatsAppVideoCallingScreenState
   }
 
   void main() {
-    AssetsAudioPlayer.newPlayer().open(
-      Audio(
-        "../assets/sounds/calling.mp3",
-      ),
-      autoStart: true,
-      showNotification: true,
-      // loopMode: LoopMode.single,
-    );
+    // AssetsAudioPlayer.newPlayer().open(
+    //   Audio(
+    //     "../assets/sounds/calling.mp3",
+    //   ),
+    //   autoStart: true,
+    //   showNotification: true,
+    //   // loopMode: LoopMode.single,
+    // );
   }
 
   @override
