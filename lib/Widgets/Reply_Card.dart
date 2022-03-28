@@ -41,7 +41,7 @@ class ReplyCard extends StatelessWidget {
           elevation: 1,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(
+              bottomLeft: Radius.circular(
                 10,
               ),
               topRight: Radius.circular(
