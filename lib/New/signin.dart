@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
   static Future<User?> loginUsingEmailAndPassword(
       {required String email,
       required String password,
-      required BuildContext context}) async {
+      required BuildContext context,}) async {
     FirebaseAuth auth = FirebaseAuth.instance;
   }
 
