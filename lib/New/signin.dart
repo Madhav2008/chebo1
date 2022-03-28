@@ -30,10 +30,13 @@ class _LoginScreenState extends State<LoginScreen> {
   }) async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
-    try{
-      UserCredential userCredential = await auth.signInWithEmailAndPassword(email: email, password: password,);
+    try {
+      UserCredential userCredential = await auth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
       user = userCredential.user;
-    }catch(e){}
+    } catch (e) {}
   }
 
   @override
