@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
             return AlertDialog(
               title: Text("Error"),
               content: Text(
-                error.toString(),
+                "No User Found!!"
               ),
             );
           },
