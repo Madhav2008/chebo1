@@ -579,13 +579,13 @@ class _ChatScreenState extends State<ChatScreen> {
                                     onPressed: () {
                                       if (sendButton) {
                                         send = true;
-                                        AssetsAudioPlayer.newPlayer().open(
-                                          Audio(
-                                            "../assets/sounds/message_received.mp3",
-                                          ),
-                                          autoStart: true,
-                                          showNotification: true,
-                                        );
+                                        // AssetsAudioPlayer.newPlayer().open(
+                                        //   Audio(
+                                        //     "../assets/sounds/message_received.mp3",
+                                        //   ),
+                                        //   autoStart: true,
+                                        //   showNotification: true,
+                                        // );
                                         _scrollController.animateTo(
                                           _scrollController
                                               .position.maxScrollExtent,
