@@ -191,8 +191,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 40,
                   ),
                   Center(
-                    // child: GestureDetector(
-                    //   onTap: () async {
+                    child: GestureDetector(
+                      onTap: () async {
+                        User? user = await loginUsingEmailAndPassword(
+                            email: emailController.text,
+                            password: passwordController.text,
+                            context: context,
+                          );
+
+                          if (user != null) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PaymentScreen(),
+                              ),
+                            );
+                          }
                     //     Provider.of<AuthService>(context)
                     //         .signInWithEmailAndPassword(
                     //             emailController.text, passwordController.text)
@@ -215,7 +229,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     //             );
                     //           });
                     //     });
-                    //   },
+                      },
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       height: 50,
@@ -280,7 +294,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                   ),
-                  // ),
+                  ),
                   SizedBox(
                     height: 30,
                   ),
