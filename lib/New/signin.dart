@@ -285,14 +285,14 @@ class _LoginScreenState extends State<LoginScreen> {
                         //     //   );
                         //     // });
                         //   },
-                          child: Text(
-                            'Login',
-                            style: TextStyle(
-                              fontSize: 20,
-                            ),
+                        child: Text(
+                          'Login',
+                          style: TextStyle(
+                            fontSize: 20,
                           ),
                         ),
                       ),
+                    ),
                     // ),
                   ),
                   SizedBox(
