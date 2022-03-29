@@ -42,6 +42,4 @@ class AuthService {
   Future<void> signOut() async {
     return await _firebaseAuth.signOut();
   }
-
-  void signInwithPhoneNumber(String verificationIdFinal, String smsCode, BuildContext context) {}
 }
