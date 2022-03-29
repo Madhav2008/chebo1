@@ -364,7 +364,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool wait = false;
   String buttonName = "Send";
   TextEditingController phoneController = TextEditingController();
-  AuthService authClass = AuthService();
+  // Auth auth = ;
   String verificationIdFinal = "";
   String smsCode = "";
   @override
