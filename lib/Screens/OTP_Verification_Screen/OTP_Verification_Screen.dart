@@ -199,7 +199,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('Resend Code',),
+                  child: Text(
+                    'Resend Code',
+                  ),
                 ),
               ],
             ),
