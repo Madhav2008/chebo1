@@ -250,8 +250,8 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     ElevatedButton(
                       onPressed: () async {
                         setState(() {
-                      _status = Status.Waiting;
-                    });
+                          _status = Status.Waiting;
+                        });
                         _verifyPhoneNumber();
                       },
                       child: Text('Resend OTP'),
