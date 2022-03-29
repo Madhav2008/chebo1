@@ -557,7 +557,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
             color: Colors.white54,
             fontSize: 17,
           ),
-          contentPadding: EdgeInsets.symmetric(vertical: 19, horizontal: 8,),
+          contentPadding: EdgeInsets.symmetric(
+            vertical: 19,
+            horizontal: 8,
+          ),
           prefixIcon: Padding(
             padding: EdgeInsets.symmetric(vertical: 14, horizontal: 15),
             child: Text(
