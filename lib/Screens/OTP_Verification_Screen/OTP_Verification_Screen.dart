@@ -28,7 +28,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   // String? verificationCode = '123456';
 
   final phoneNumber;
-  var _status = Status.Waiting;
+  var _status = Status.Error;
   var _verificationId;
   TextEditingController _textEditingController = TextEditingController();
 
