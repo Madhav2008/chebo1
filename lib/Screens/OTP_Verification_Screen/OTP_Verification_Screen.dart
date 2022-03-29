@@ -29,6 +29,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
 
   final phoneNumber;
   var _status = Status.Waiting;
+  var _verificationId;
 
   _OTPVerificationScreenState(this.phoneNumber);
 
