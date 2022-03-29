@@ -25,6 +25,8 @@ class OTPVerificationScreen extends StatefulWidget {
 class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   // String? verificationCode = '123456';
 
+  final phoneNumber;
+
   @override
   void initState() {
     super.initState();
