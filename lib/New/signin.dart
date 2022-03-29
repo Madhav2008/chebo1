@@ -433,7 +433,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                   ),
                   TextSpan(
                     text: "00:$start",
-                    style: TextStyle(fontSize: 16, color: Colors.pinkAccent,),
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.pinkAccent,
+                    ),
                   ),
                   TextSpan(
                     text: " sec ",
