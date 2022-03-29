@@ -27,6 +27,8 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
 
   final phoneNumber;
 
+  _OTPVerificationScreenState(this.phoneNumber)
+
   @override
   void initState() {
     super.initState();
