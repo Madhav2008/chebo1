@@ -515,24 +515,24 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
   }
 
   Widget otpField() {
-    return OTPTextField(
-      length: 6,
-      width: MediaQuery.of(context).size.width - 34,
-      fieldWidth: 58,
-      otpFieldStyle: OtpFieldStyle(
-        backgroundColor: Color(0xff1d1d1d),
-        borderColor: Colors.white,
-      ),
-      style: TextStyle(fontSize: 17, color: Colors.white),
-      textFieldAlignment: MainAxisAlignment.spaceAround,
-      fieldStyle: FieldStyle.underline,
-      onCompleted: (pin) {
-        print("Completed: " + pin);
-        setState(() {
-          smsCode = pin;
-        });
-      },
-    );
+    // return OTPTextField(
+    //   length: 6,
+    //   width: MediaQuery.of(context).size.width - 34,
+    //   fieldWidth: 58,
+    //   otpFieldStyle: OtpFieldStyle(
+    //     backgroundColor: Color(0xff1d1d1d),
+    //     borderColor: Colors.white,
+    //   ),
+    //   style: TextStyle(fontSize: 17, color: Colors.white),
+    //   textFieldAlignment: MainAxisAlignment.spaceAround,
+    //   fieldStyle: FieldStyle.underline,
+    //   onCompleted: (pin) {
+    //     print("Completed: " + pin);
+    //     setState(() {
+    //       smsCode = pin;
+    //     });
+    //   },
+    // );
   }
 
   Widget textField() {
