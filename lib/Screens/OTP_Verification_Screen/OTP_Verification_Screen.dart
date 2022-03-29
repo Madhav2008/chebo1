@@ -71,6 +71,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
           .onError(
         (error, stackTrace) {
           setState(() {
+            _textEditingController.text = "";
             _status = Status.Error;
           });
         },
