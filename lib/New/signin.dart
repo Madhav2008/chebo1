@@ -584,7 +584,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                       buttonName = "Resend";
                     });
                     await authClass.verifyPhoneNumber(
-                        "+91 ${phoneController.text}", context, setData,);
+                      "+91 ${phoneController.text}",
+                      context,
+                      setData,
+                    );
                   },
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
