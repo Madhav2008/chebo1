@@ -562,7 +562,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
             horizontal: 8,
           ),
           prefixIcon: Padding(
-            padding: EdgeInsets.symmetric(vertical: 14, horizontal: 15,),
+            padding: EdgeInsets.symmetric(
+              vertical: 14,
+              horizontal: 15,
+            ),
             child: Text(
               " (+91) ",
               style: TextStyle(color: Colors.white, fontSize: 17),
