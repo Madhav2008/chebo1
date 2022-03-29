@@ -52,7 +52,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     );
   }
 
-  Future _sendCodeToFirebase({String? code}) async{}
+  Future _sendCodeToFirebase({String? code}) async {}
 
   // verifyPhoneNumber() async {
   //   try {
