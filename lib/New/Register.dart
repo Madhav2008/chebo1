@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'dart:io';
 // import 'package:Foodybite/auth/auth_services.dart';
 // import 'package:Foodybite/screens/login_screen/button.dart';
