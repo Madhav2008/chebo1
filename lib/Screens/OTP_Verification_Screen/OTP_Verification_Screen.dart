@@ -65,21 +65,22 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       await _auth
           .signInWithCredential(credential)
           .then((value) {
-            Navigator.push(context, MaterialPageRoute(builder: (builder){
-              return UserDetailsScreen(no: widget.no, countryCode: widget.countryCode);
-            }))
+            Navigator.push(context, MaterialPageRoute(builder: (builder) {
+              return UserDetailsScreen(
+                  no: widget.no, countryCode: widget.countryCode);
+            }));
           })
           .whenComplete(
             () => null,
           )
           .onError(
-        (error, stackTrace) {
-          setState(() {
-            _textEditingController.text = "";
-            _status = Status.Error;
-          });
-        },
-      );
+            (error, stackTrace) {
+              setState(() {
+                _textEditingController.text = "";
+                _status = Status.Error;
+              });
+            },
+          );
     }
   }
 
