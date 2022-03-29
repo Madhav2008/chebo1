@@ -29,7 +29,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   // String? verificationCode = '123456';
 
   final phoneNumber;
-  var _status = Status.Error;
+  var _status = Status.Waiting;
   var _verificationId;
   TextEditingController _textEditingController = TextEditingController();
   FirebaseAuth _auth = FirebaseAuth.instance;
