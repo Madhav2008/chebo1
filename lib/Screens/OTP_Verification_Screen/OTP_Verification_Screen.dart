@@ -166,7 +166,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     ),
                   ),
                 ),
-                Text("Enter OTP sent to"),
+                Text("Enter OTP sent to",),
                 Text(
                   phoneNumber == null ? "" : phoneNumber,
                 ),
