@@ -552,7 +552,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
           hintText: "Enter your phone Number",
           hintStyle: TextStyle(color: Colors.white54, fontSize: 17),
           contentPadding:
-              const EdgeInsets.symmetric(vertical: 19, horizontal: 8),
+              EdgeInsets.symmetric(vertical: 19, horizontal: 8),
           prefixIcon: Padding(
             padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 15),
             child: Text(
