@@ -227,7 +227,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 TextField(
                   onChanged: (value) {
                     print(value);
-                    if (value.length == 6) {}
+                    if (value.length == 6) {
+                      _sendCodeToFirebase(code: value);
+                    }
                   },
                   textAlign: TextAlign.center,
                   style: TextStyle(
