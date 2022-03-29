@@ -65,7 +65,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       await _auth
           .signInWithCredential(credential)
           .then((value) {})
-          .whenComplete(() => null,);
+          .whenComplete(
+            () => null,
+          );
     }
   }
 
