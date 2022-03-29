@@ -169,6 +169,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     ),
                   ),
                 ),
+                Text("The code used is invalid!"),
               ],
             ),
       // Center(
