@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:firebase_auth/firebase_auth.dart' as auth;
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:whatsapp/Auth/User_Model.dart';
 
 class AuthService {
@@ -41,4 +42,6 @@ class AuthService {
   Future<void> signOut() async {
     return await _firebaseAuth.signOut();
   }
+
+  void signInwithPhoneNumber(String verificationIdFinal, String smsCode, BuildContext context) {}
 }
