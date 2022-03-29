@@ -47,7 +47,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       phoneNumber: phoneNumber,
       verificationCompleted: (phonesAuthCredentials) async {},
       verificationFailed: (verificationFailed) async {},
-      codeSent: codeSent,
+      codeSent: (verificationId, resendingToken) async{},
       codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
     );
   }
