@@ -158,7 +158,14 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                
+                Center(
+                  child: Text(
+                    'OTP Verification',
+                    style: TextStyle(
+                      fontSize: 30,
+                    ),
+                  ),
+                ),
               ],
             )
           : Column(
