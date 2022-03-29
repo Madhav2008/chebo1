@@ -545,7 +545,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
       ),
       child: TextFormField(
         controller: phoneController,
-        style: TextStyle(color: Colors.white, fontSize: 17),
+        style: TextStyle(color: Colors.white, fontSize: 17,),
         keyboardType: TextInputType.number,
         decoration: InputDecoration(
           border: InputBorder.none,
