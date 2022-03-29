@@ -157,6 +157,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       _status != Status.Error?
       Column(
         children: [],
+      ):
+      Column(
+        children: [],
       )
       // Center(
       //   child: Column(
