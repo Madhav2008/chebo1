@@ -189,7 +189,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   autofillHints: <String>[
                     AutofillHints.telephoneNumber,
                   ],
-                )
+                ),
               ],
             )
           : Column(
