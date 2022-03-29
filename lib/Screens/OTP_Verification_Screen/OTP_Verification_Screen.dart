@@ -68,7 +68,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
             Navigator.push(context, MaterialPageRoute(builder: (builder) {
               return UserDetailsScreen(
                   no: widget.no, countryCode: widget.countryCode);
-            }));
+            },));
           })
           .whenComplete(
             () => null,
