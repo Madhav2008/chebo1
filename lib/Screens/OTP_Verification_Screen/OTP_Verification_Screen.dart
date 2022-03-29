@@ -249,6 +249,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     Text("Didn't receive a OTP?"),
                     ElevatedButton(
                       onPressed: () async {
+                        setState(() {
+                      _status = Status.Waiting;
+                    });
                         _verifyPhoneNumber();
                       },
                       child: Text('Resend OTP'),
