@@ -435,31 +435,32 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                 height: 40,
               ),
               RichText(
-                  text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Send OTP again in ",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.yellowAccent,
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Send OTP again in ",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.yellowAccent,
+                      ),
                     ),
-                  ),
-                  TextSpan(
-                    text: "00:$start",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.pinkAccent,
+                    TextSpan(
+                      text: "00:$start",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.pinkAccent,
+                      ),
                     ),
-                  ),
-                  TextSpan(
-                    text: " sec ",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.yellowAccent,
+                    TextSpan(
+                      text: " sec ",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.yellowAccent,
+                      ),
                     ),
-                  ),
-                ],
-              ),),
+                  ],
+                ),
+              ),
               SizedBox(
                 height: 150,
               ),
