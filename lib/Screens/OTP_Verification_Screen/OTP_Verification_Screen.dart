@@ -193,9 +193,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
-                    'Edit Number',
-                  ),
+                  child: Text('Edit Number',),
                 ),
                 ElevatedButton(
                   onPressed: () {},
