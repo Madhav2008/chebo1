@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, must_be_immutable, prefer_const_constructors_in_immutables
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
@@ -97,10 +98,8 @@ class UserDetailsScreen extends StatelessWidget {
                           content: Text("Name is required"),
                         ),
                       )
-                    : ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text("Name is required"),
-                        ),
+                    : FirebaseAuth.instance.currentUser.updateProfile(
+                        displayName: _nameController.text,
                       );
                 //  Navigator.push(
                 //     context,
