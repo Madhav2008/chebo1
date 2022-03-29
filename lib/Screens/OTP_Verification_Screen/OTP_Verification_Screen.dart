@@ -155,7 +155,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       ),
       body: _status != Status.Error
           ? Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [],
             )
           : Column(
