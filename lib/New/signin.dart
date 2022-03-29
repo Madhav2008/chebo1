@@ -375,7 +375,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
         backgroundColor: Colors.black87,
         title: Text(
           "SignUp",
-          style: TextStyle(color: Colors.white, fontSize: 24),
+          style: TextStyle(color: Colors.white, fontSize: 24,),
         ),
         centerTitle: true,
       ),
