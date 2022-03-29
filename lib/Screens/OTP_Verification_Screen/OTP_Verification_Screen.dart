@@ -19,7 +19,7 @@ class OTPVerificationScreen extends StatefulWidget {
   final String country;
 
   @override
-  _OTPVerificationScreenState createState() => _OTPVerificationScreenState();
+  _OTPVerificationScreenState createState() => _OTPVerificationScreenState(no);
 }
 
 class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
