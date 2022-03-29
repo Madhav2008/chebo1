@@ -64,7 +64,11 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       );
       await _auth
           .signInWithCredential(credential)
-          .then((value) {})
+          .then((value) {
+            Navigator.push(context, MaterialPageRoute(builder: (builder){
+              return UserDetailsScreen(no: widget.no, countryCode: widget.countryCode);
+            }))
+          })
           .whenComplete(
             () => null,
           )
