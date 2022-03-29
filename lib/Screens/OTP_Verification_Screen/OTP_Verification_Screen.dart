@@ -182,6 +182,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     letterSpacing: 30,
                     fontSize: 30,
                   ),
+                  maxLength: 6,
                 )
               ],
             )
