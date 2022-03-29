@@ -461,7 +461,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                       style: TextStyle(
                           fontSize: 17,
                           color: Color(0xfffbe2ae),
-                          fontWeight: FontWeight.w700),
+                          fontWeight: FontWeight.w700,),
                     ),
                   ),
                 ),
