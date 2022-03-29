@@ -568,7 +568,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
             ),
             child: Text(
               " (+91) ",
-              style: TextStyle(color: Colors.white, fontSize: 17,),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 17,
+              ),
             ),
           ),
           suffixIcon: InkWell(
