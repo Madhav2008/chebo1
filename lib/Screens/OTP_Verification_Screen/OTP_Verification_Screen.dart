@@ -67,7 +67,10 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
           .then((value) {})
           .whenComplete(
             () => null,
-          ).onError((error, stackTrace){},);
+          )
+          .onError(
+            (error, stackTrace) {},
+          );
     }
   }
 
