@@ -190,16 +190,16 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     AutofillHints.telephoneNumber,
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Didn't receive a OTP?"),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text('Resend OTP'),
-                    ),
-                  ],
-                ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Text("Didn't receive a OTP?"),
+                //     ElevatedButton(
+                //       onPressed: () {},
+                //       child: Text('Resend OTP'),
+                //     ),
+                //   ],
+                // ),
               ],
             )
           : Column(
