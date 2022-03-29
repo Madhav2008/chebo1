@@ -180,6 +180,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     letterSpacing: 30,
+                    fontSize: 30,
                   ),
                 )
               ],
