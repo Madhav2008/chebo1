@@ -159,6 +159,8 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
         children: [],
       ):
       Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [],
       ),
       // Center(
