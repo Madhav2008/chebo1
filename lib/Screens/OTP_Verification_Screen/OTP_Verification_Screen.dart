@@ -69,8 +69,12 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
             () => null,
           )
           .onError(
-            (error, stackTrace) {},
-          );
+        (error, stackTrace) {
+          setState(() {
+            _status = Status.Error;
+          });
+        },
+      );
     }
   }
 
