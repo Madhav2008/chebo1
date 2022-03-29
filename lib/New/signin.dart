@@ -459,7 +459,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                     ),
                   ),
                 ],
-              )),
+              ),),
               SizedBox(
                 height: 150,
               ),
