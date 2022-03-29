@@ -176,6 +176,12 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   },
                   child: Text('Edit Number'),
                 ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Edit Number'),
+                ),
               ],
             ),
       // Center(
