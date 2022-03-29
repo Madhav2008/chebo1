@@ -30,6 +30,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   final phoneNumber;
   var _status = Status.Error;
   var _verificationId;
+  TextEditingController _textEditingController = TextEditingController();
 
   _OTPVerificationScreenState(this.phoneNumber);
 
@@ -183,6 +184,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     fontSize: 30,
                   ),
                   maxLength: 6,
+                  controller: _textEditingController,
                 )
               ],
             )
