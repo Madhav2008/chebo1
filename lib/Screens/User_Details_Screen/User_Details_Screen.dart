@@ -97,20 +97,24 @@ class UserDetailsScreen extends StatelessWidget {
                           content: Text("Name is required"),
                         ),
                       )
-                    : 
-                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (builder) => NavigationScreen(
-                        cameras: [],
-                        name: _nameController.text,
-                        avatar: avatar,
-                        phoneno: _phonenoController.text,
-                        about: '👋🏻 Hey! there I am using WhatsApp India.',
-                        countryCode: countryCode,
-                      ),
-                    ),
-                  );
+                    : ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text("Name is required"),
+                        ),
+                      );
+                //  Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (builder) => NavigationScreen(
+                //         cameras: [],
+                //         name: _nameController.text,
+                //         avatar: avatar,
+                //         phoneno: _phonenoController.text,
+                //         about: '👋🏻 Hey! there I am using WhatsApp India.',
+                //         countryCode: countryCode,
+                //       ),
+                //     ),
+                //   );
               },
               child: Container(
                 color: one,
