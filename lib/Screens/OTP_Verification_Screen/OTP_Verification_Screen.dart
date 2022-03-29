@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
 import 'package:whatsapp/Screens/User_Details_Screen/User_Details_Screen.dart';
-enum Status { Waiting, Error}
+
+enum Status { Waiting, Error }
 
 class OTPVerificationScreen extends StatefulWidget {
   OTPVerificationScreen({
@@ -27,6 +28,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
   // String? verificationCode = '123456';
 
   final phoneNumber;
+  var _status = Status.Waiting;
 
   _OTPVerificationScreenState(this.phoneNumber);
 
