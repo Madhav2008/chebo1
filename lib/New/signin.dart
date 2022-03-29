@@ -411,7 +411,9 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                       child: Container(
                         height: 1,
                         color: Colors.grey,
-                        margin: EdgeInsets.symmetric(horizontal: 12,),
+                        margin: EdgeInsets.symmetric(
+                          horizontal: 12,
+                        ),
                       ),
                     ),
                   ],
