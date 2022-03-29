@@ -62,7 +62,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
         verificationId: _verificationId,
         smsCode: code!,
       );
-      await _auth.signInWithCredential(credential);
+      await _auth.signInWithCredential(credential).then((value){})
     }
   }
 
