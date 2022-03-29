@@ -178,6 +178,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     if (value.length == 6) {}
                   },
                   textAlign: TextAlign.center,
+                  style: TextStyle(),
                 )
               ],
             )
