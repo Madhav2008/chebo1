@@ -193,7 +193,10 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ElevatedButton(onPressed: () {}, child: Text('Resend OTP'),),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Resend OTP'),
+                    ),
                   ],
                 ),
               ],
