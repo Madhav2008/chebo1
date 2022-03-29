@@ -191,6 +191,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   ],
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [],
                 ),
               ],
