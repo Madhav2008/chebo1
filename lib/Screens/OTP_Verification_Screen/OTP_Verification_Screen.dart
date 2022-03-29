@@ -154,144 +154,145 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
         ],
       ),
       body: 
-      Center(
-        child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.only(
-                left: 10.0,
-                right: 10.0,
-              ),
-              child: Text(
-                'We have sent a SMS with a code to ' +
-                    widget.countryCode +
-                    ' ' +
-                    widget.no,
-              ),
-            ),
-            SizedBox(height: 10),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => LoginScreen(),
-                  ),
-                );
-              },
-              child: Text(
-                "Wrong number?",
-                style: TextStyle(
-                  color: one,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      _textFieldOTPVerificationScreen(
-                        first: true,
-                        last: false,
-                      ),
-                      _textFieldOTPVerificationScreen(
-                        first: false,
-                        last: false,
-                      ),
-                      _textFieldOTPVerificationScreen(
-                        first: false,
-                        last: false,
-                      ),
-                      _textFieldOTPVerificationScreen(
-                        first: false,
-                        last: false,
-                      ),
-                      _textFieldOTPVerificationScreen(
-                        first: false,
-                        last: false,
-                      ),
-                      _textFieldOTPVerificationScreen(
-                        first: false,
-                        last: true,
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Text(
-                    'Enter 6-digit code',
-                    style: TextStyle(
-                      color: grey,
-                      fontSize: 20,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  ListTile(
-                    onTap: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text("OTP resent"),
-                        ),
-                      );
-                    },
-                    leading: Icon(
-                      Icons.chat,
-                      color: one,
-                      size: 25,
-                    ),
-                    title: Text(
-                      'Resend SMS',
-                      style: TextStyle(
-                        color: one,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                  Divider(
-                    thickness: 2,
-                  ),
-                  ListTile(
-                    onTap: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text("Call request sent"),
-                        ),
-                      );
-                    },
-                    leading: Icon(
-                      Icons.call,
-                      color: one,
-                      size: 25,
-                    ),
-                    title: Text(
-                      'Call me',
-                      style: TextStyle(
-                        color: one,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 100,
-            ),
-          ],
-        ),
-      ),
+      _status != Status.Error?
+      // Center(
+      //   child: Column(
+      //     children: [
+      //       Padding(
+      //         padding: EdgeInsets.only(
+      //           left: 10.0,
+      //           right: 10.0,
+      //         ),
+      //         child: Text(
+      //           'We have sent a SMS with a code to ' +
+      //               widget.countryCode +
+      //               ' ' +
+      //               widget.no,
+      //         ),
+      //       ),
+      //       SizedBox(height: 10),
+      //       GestureDetector(
+      //         onTap: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (builder) => LoginScreen(),
+      //             ),
+      //           );
+      //         },
+      //         child: Text(
+      //           "Wrong number?",
+      //           style: TextStyle(
+      //             color: one,
+      //           ),
+      //         ),
+      //       ),
+      //       SizedBox(
+      //         height: 50,
+      //       ),
+      //       Container(
+      //         padding: EdgeInsets.all(10),
+      //         decoration: BoxDecoration(
+      //           borderRadius: BorderRadius.circular(12),
+      //         ),
+      //         child: Column(
+      //           children: [
+      //             Row(
+      //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //               children: [
+      //                 _textFieldOTPVerificationScreen(
+      //                   first: true,
+      //                   last: false,
+      //                 ),
+      //                 _textFieldOTPVerificationScreen(
+      //                   first: false,
+      //                   last: false,
+      //                 ),
+      //                 _textFieldOTPVerificationScreen(
+      //                   first: false,
+      //                   last: false,
+      //                 ),
+      //                 _textFieldOTPVerificationScreen(
+      //                   first: false,
+      //                   last: false,
+      //                 ),
+      //                 _textFieldOTPVerificationScreen(
+      //                   first: false,
+      //                   last: false,
+      //                 ),
+      //                 _textFieldOTPVerificationScreen(
+      //                   first: false,
+      //                   last: true,
+      //                 ),
+      //               ],
+      //             ),
+      //             SizedBox(
+      //               height: 15,
+      //             ),
+      //             Text(
+      //               'Enter 6-digit code',
+      //               style: TextStyle(
+      //                 color: grey,
+      //                 fontSize: 20,
+      //               ),
+      //             ),
+      //             SizedBox(
+      //               height: 30,
+      //             ),
+      //             ListTile(
+      //               onTap: () {
+      //                 ScaffoldMessenger.of(context).showSnackBar(
+      //                   SnackBar(
+      //                     content: Text("OTP resent"),
+      //                   ),
+      //                 );
+      //               },
+      //               leading: Icon(
+      //                 Icons.chat,
+      //                 color: one,
+      //                 size: 25,
+      //               ),
+      //               title: Text(
+      //                 'Resend SMS',
+      //                 style: TextStyle(
+      //                   color: one,
+      //                   fontSize: 20,
+      //                 ),
+      //               ),
+      //             ),
+      //             Divider(
+      //               thickness: 2,
+      //             ),
+      //             ListTile(
+      //               onTap: () {
+      //                 ScaffoldMessenger.of(context).showSnackBar(
+      //                   SnackBar(
+      //                     content: Text("Call request sent"),
+      //                   ),
+      //                 );
+      //               },
+      //               leading: Icon(
+      //                 Icons.call,
+      //                 color: one,
+      //                 size: 25,
+      //               ),
+      //               title: Text(
+      //                 'Call me',
+      //                 style: TextStyle(
+      //                   color: one,
+      //                   fontSize: 20,
+      //                 ),
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //       SizedBox(
+      //         height: 100,
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 
