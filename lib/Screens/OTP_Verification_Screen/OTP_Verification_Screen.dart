@@ -52,6 +52,8 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     );
   }
 
+  Future _sendCodeToFirebase({String? code}){}
+
   // verifyPhoneNumber() async {
   //   try {
   //     await FirebaseAuth.instance.verifyPhoneNumber(
