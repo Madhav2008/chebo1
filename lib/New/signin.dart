@@ -342,11 +342,15 @@
 
 import 'dart:async';
 
-import 'package:firebase_app_web/Service/Auth_Service.dart';
+// import 'package:firebase_app_web/Service/Auth_Service.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase/firebase.dart';
 import 'package:flutter/material.dart';
-import 'package:otp_text_field/otp_field.dart';
-import 'package:otp_text_field/otp_field_style.dart';
-import 'package:otp_text_field/style.dart';
+import 'package:whatsapp/Auth/Auth_Services.dart';
+// import 'package:otp_text_field/otp_field.dart';
+// import 'package:otp_text_field/otp_field_style.dart';
+// import 'package:otp_text_field/style.dart';
 
 class PhoneAuthPage extends StatefulWidget {
   PhoneAuthPage({Key? key}) : super(key: key);
@@ -360,7 +364,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
   bool wait = false;
   String buttonName = "Send";
   TextEditingController phoneController = TextEditingController();
-  AuthClass authClass = AuthClass();
+  // Auth auth = ;
   String verificationIdFinal = "";
   String smsCode = "";
   @override
