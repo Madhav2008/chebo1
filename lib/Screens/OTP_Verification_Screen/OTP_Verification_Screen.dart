@@ -168,7 +168,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                       fontSize: 30,
                     ),
                   ),
-                )
+                ),
               ],
             ),
       // Center(
