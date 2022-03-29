@@ -160,7 +160,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
       ):
       Column(
         children: [],
-      )
+      ),
       // Center(
       //   child: Column(
       //     children: [
