@@ -430,7 +430,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
               SizedBox(
                 height: 30,
               ),
-              otpField(),
+              // otpField(),
               SizedBox(
                 height: 40,
               ),
@@ -466,11 +466,11 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
               ),
               InkWell(
                 onTap: () {
-                  authClass.signInwithPhoneNumber(
-                    verificationIdFinal,
-                    smsCode,
-                    context,
-                  );
+                  // authClass.signInwithPhoneNumber(
+                  //   verificationIdFinal,
+                  //   smsCode,
+                  //   context,
+                  // );
                 },
                 child: Container(
                   height: 60,
@@ -514,7 +514,8 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
     });
   }
 
-  Widget otpField() {
+  Widget? otpField() {
+    return null;
     // return OTPTextField(
     //   length: 6,
     //   width: MediaQuery.of(context).size.width - 34,
@@ -583,11 +584,11 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                       wait = true;
                       buttonName = "Resend";
                     });
-                    await authClass.verifyPhoneNumber(
-                      "+91 ${phoneController.text}",
-                      context,
-                      setData,
-                    );
+                    // await authClass.verifyPhoneNumber(
+                    //   "+91 ${phoneController.text}",
+                    //   context,
+                    //   setData,
+                    // );
                   },
             child: Padding(
               padding: EdgeInsets.symmetric(
