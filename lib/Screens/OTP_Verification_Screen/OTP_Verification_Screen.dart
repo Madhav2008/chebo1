@@ -70,7 +70,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               MaterialPageRoute(
                 builder: (builder) {
                   return UserDetailsScreen(
-                      no: widget.no, countryCode: widget.countryCode);
+                      no: widget.no, countryCode: widget.countryCode,);
                 },
               ),
             );
