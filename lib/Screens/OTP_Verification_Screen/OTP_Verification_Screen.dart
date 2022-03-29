@@ -42,7 +42,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     // verifyPhoneNumber();
   }
 
-  Future _verifyPhoneNumber() async {}
+  Future _verifyPhoneNumber() async {
+    _auth.verifyPhoneNumber(phoneNumber: phoneNumber, verificationCompleted: verificationCompleted, verificationFailed: verificationFailed, codeSent: codeSent, codeAutoRetrievalTimeout: codeAutoRetrievalTimeout)
+  }
 
   // verifyPhoneNumber() async {
   //   try {
