@@ -248,7 +248,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   children: [
                     Text("Didn't receive a OTP?"),
                     ElevatedButton(
-                      onPressed: () async{
+                      onPressed: () async {
                         _verifyPhoneNumber();
                       },
                       child: Text('Resend OTP'),
