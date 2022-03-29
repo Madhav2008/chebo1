@@ -456,8 +456,9 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                   height: 60,
                   width: MediaQuery.of(context).size.width - 60,
                   decoration: BoxDecoration(
-                      color: Color(0xffff9601),
-                      borderRadius: BorderRadius.circular(15),),
+                    color: Color(0xffff9601),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                   child: Center(
                     child: Text(
                       "Lets Go",
