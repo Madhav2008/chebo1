@@ -429,7 +429,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                 children: [
                   TextSpan(
                     text: "Send OTP again in ",
-                    style: TextStyle(fontSize: 16, color: Colors.yellowAccent,),
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.yellowAccent,
+                    ),
                   ),
                   TextSpan(
                     text: "00:$start",
