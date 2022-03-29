@@ -98,19 +98,19 @@ class UserDetailsScreen extends StatelessWidget {
                         ),
                       )
                     : 
-                //  Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (builder) => NavigationScreen(
-                //         cameras: [],
-                //         name: _nameController.text,
-                //         avatar: avatar,
-                //         phoneno: _phonenoController.text,
-                //         about: '👋🏻 Hey! there I am using WhatsApp India.',
-                //         countryCode: countryCode,
-                //       ),
-                //     ),
-                //   );
+                 Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (builder) => NavigationScreen(
+                        cameras: [],
+                        name: _nameController.text,
+                        avatar: avatar,
+                        phoneno: _phonenoController.text,
+                        about: '👋🏻 Hey! there I am using WhatsApp India.',
+                        countryCode: countryCode,
+                      ),
+                    ),
+                  );
               },
               child: Container(
                 color: one,
