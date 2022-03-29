@@ -590,7 +590,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                     );
                   },
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15,),
+              padding: EdgeInsets.symmetric(
+                vertical: 20,
+                horizontal: 15,
+              ),
               child: Text(
                 buttonName,
                 style: TextStyle(
