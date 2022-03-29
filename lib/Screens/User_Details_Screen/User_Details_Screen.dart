@@ -97,11 +97,7 @@ class UserDetailsScreen extends StatelessWidget {
                           content: Text("Name is required"),
                         ),
                       )
-                    : ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text("Name is required"),
-                        ),
-                      );
+                    : 
                 //  Navigator.push(
                 //     context,
                 //     MaterialPageRoute(
