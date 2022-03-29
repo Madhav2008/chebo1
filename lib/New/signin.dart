@@ -459,9 +459,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                     child: Text(
                       "Lets Go",
                       style: TextStyle(
-                          fontSize: 17,
-                          color: Color(0xfffbe2ae),
-                          fontWeight: FontWeight.w700,),
+                        fontSize: 17,
+                        color: Color(0xfffbe2ae),
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
                 ),
