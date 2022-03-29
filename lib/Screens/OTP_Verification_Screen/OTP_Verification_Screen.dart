@@ -153,7 +153,8 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
           ),
         ],
       ),
-      body: Center(
+      body: 
+      Center(
         child: Column(
           children: [
             Padding(
