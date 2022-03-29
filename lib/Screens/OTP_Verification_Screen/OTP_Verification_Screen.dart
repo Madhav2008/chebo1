@@ -172,6 +172,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 Text(
                   phoneNumber == null ? "" : phoneNumber,
                 ),
+                TextField(
+                  onChanged: (){},
+                )
               ],
             )
           : Column(
