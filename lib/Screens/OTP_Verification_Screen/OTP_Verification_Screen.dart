@@ -281,7 +281,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () async{
+                  onPressed: () async {
                     _verifyPhoneNumber();
                   },
                   child: Text(
