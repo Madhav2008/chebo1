@@ -192,7 +192,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 ),
                 Row(
                   children: [],
-                )
+                ),
               ],
             )
           : Column(
