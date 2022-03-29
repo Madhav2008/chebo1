@@ -447,7 +447,10 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
               InkWell(
                 onTap: () {
                   authClass.signInwithPhoneNumber(
-                      verificationIdFinal, smsCode, context,);
+                    verificationIdFinal,
+                    smsCode,
+                    context,
+                  );
                 },
                 child: Container(
                   height: 60,
