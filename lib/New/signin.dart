@@ -545,14 +545,16 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
       ),
       child: TextFormField(
         controller: phoneController,
-        style: TextStyle(color: Colors.white, fontSize: 17,),
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 17,
+        ),
         keyboardType: TextInputType.number,
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: "Enter your phone Number",
           hintStyle: TextStyle(color: Colors.white54, fontSize: 17),
-          contentPadding:
-              EdgeInsets.symmetric(vertical: 19, horizontal: 8),
+          contentPadding: EdgeInsets.symmetric(vertical: 19, horizontal: 8),
           prefixIcon: Padding(
             padding: EdgeInsets.symmetric(vertical: 14, horizontal: 15),
             child: Text(
