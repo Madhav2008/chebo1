@@ -171,7 +171,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 ),
                 Text("The code used is invalid!"),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
                   child: Text('Edit Number'),
                 ),
               ],
