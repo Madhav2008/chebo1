@@ -85,7 +85,7 @@ late List<CameraDescription> cameras;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   cameras = await availableCameras();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   runApp(
     MyApp(),
   );
