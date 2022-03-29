@@ -40,6 +40,8 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     // verifyPhoneNumber();
   }
 
+  Future _verifyPhoneNumber() async{}
+
   // verifyPhoneNumber() async {
   //   try {
   //     await FirebaseAuth.instance.verifyPhoneNumber(
