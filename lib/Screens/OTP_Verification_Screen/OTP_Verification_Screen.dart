@@ -186,7 +186,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   maxLength: 6,
                   controller: _textEditingController,
                   keyboardType: TextInputType.number,
-                  autofillHints: <String>,
+                  autofillHints: <String>[AutofillHints.telephoneNumber],
                 )
               ],
             )
