@@ -153,21 +153,24 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
           ),
         ],
       ),
-      body: 
-      _status != Status.Error?
-      Column(
-        children: [],
-      ):
-      Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Center(
-            child: Text('OTP Verification',
-            style: TextStyle(fontSize: 30,),),
-          )
-        ],
-      ),
+      body: _status != Status.Error
+          ? Column(
+              children: [],
+            )
+          : Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Center(
+                  child: Text(
+                    'OTP Verification',
+                    style: TextStyle(
+                      fontSize: 30,
+                    ),
+                  ),
+                )
+              ],
+            ),
       // Center(
       //   child: Column(
       //     children: [
