@@ -70,7 +70,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 return UserDetailsScreen(
                     no: widget.no, countryCode: widget.countryCode);
               },
-            ));
+            ),);
           })
           .whenComplete(
             () => null,
