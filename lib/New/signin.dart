@@ -352,14 +352,14 @@ import 'package:whatsapp/Auth/Auth_Services.dart';
 // import 'package:otp_text_field/otp_field_style.dart';
 // import 'package:otp_text_field/style.dart';
 
-class PhoneAuthPage extends StatefulWidget {
-  PhoneAuthPage({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  LoginScreen({Key? key}) : super(key: key);
 
   @override
-  _PhoneAuthPageState createState() => _PhoneAuthPageState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _PhoneAuthPageState extends State<PhoneAuthPage> {
+class _LoginScreenState extends State<LoginScreen> {
   int start = 30;
   bool wait = false;
   String buttonName = "Send";
