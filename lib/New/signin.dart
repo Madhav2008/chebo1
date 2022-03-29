@@ -405,7 +405,7 @@ class _PhoneAuthPageState extends State<PhoneAuthPage> {
                     ),
                     Text(
                       "Enter 6 digit OTP",
-                      style: TextStyle(fontSize: 16, color: Colors.white),
+                      style: TextStyle(fontSize: 16, color: Colors.white,),
                     ),
                     Expanded(
                       child: Container(
