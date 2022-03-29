@@ -173,7 +173,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                 ElevatedButton(
                   onPressed: () {},
                   child: Text('Edit Number'),
-                )
+                ),
               ],
             ),
       // Center(
