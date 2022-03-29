@@ -56,7 +56,11 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     );
   }
 
-  Future _sendCodeToFirebase({String? code}) async {}
+  Future _sendCodeToFirebase({String? code}) async {
+    if(this._verificationId != null){
+      var credential = PhoneAuthProvider.credential(verificationId: verificationId, smsCode: smsCode)
+    }
+  }
 
   // verifyPhoneNumber() async {
   //   try {
