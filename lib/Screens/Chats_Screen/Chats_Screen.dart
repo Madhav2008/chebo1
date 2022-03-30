@@ -9,12 +9,12 @@ import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 class ChatsScreen extends StatelessWidget {
   ChatsScreen({
     Key? key,
-    required this.sourceChat,
-    required this.chatModels,
+    // required this.sourceChat,
+    // required this.chatModels,
   }) : super(key: key);
 
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +35,8 @@ class ChatsScreen extends StatelessWidget {
                     name: dummyData[i].name,
                     phoneno: dummyData[i].phoneno,
                     about: dummyData[i].about,
-                    sourceChat: sourceChat,
-                    chatModels: chatModels,
+                    // sourceChat: sourceChat,
+                    // chatModels: chatModels,
                   ),
                 ),
               );
