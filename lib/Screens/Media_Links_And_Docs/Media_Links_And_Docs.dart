@@ -53,22 +53,39 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
             children: <Widget>[
               Center(
                 child: ListView.builder(
-                  itemBuilder: (BuildContext context, int index) {
-                ClipRRect(
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(15.0),
-                            topRight: Radius.circular(15.0),
-                            bottomRight: Radius.circular(15.0),
-                            bottomLeft: Radius.circular(15.0)),
-                        child: GridTile(
-                          child: Image.asset(
-                            url,
-                            fit: BoxFit.cover,
+        padding: EdgeInsets.symmetric(vertical: vertPadding),
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (BuildContext context, int _) {
+          return Container(
+            padding: EdgeInsets.only(right: 5.0),
+            width: 70.0,
+            height: barHeight - vertPadding * 2,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => ViewChatPhoto(
+                      path: 'https://source.unsplash.com/720x600/',
+                      senderName: name,
+                      time: DateTime.now().toString().substring(
+                            0,
+                            16,
                           ),
-                        ),
-                      
-                    }).toList()),}
+                    ),
+                  ),
+                );
+              },
+              child: Image(
+                image: NetworkImage(
+                  'https://source.unsplash.com/720x600/',
+                ),
+                fit: BoxFit.cover,
               ),
+            ),
+          );
+        },
+      ),
               Center(
                 child: Text('Docs'),
               ),
