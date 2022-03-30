@@ -57,40 +57,8 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                   SliverGrid.count(
                     crossAxisCount: 3,
                     children: [
-                      ListView.builder(
-                        padding: EdgeInsets.symmetric(vertical: 10.0),
-                        // scrollDirection: Axis.horizontal,
-                        itemBuilder: (BuildContext context, int _) {
-                          return Container(
-                            padding: EdgeInsets.only(right: 5.0),
-                            width: 70.0,
-                            height: 20.0 - 10.0 * 2,
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (builder) => ViewChatPhoto(
-                                      path:
-                                          'https://source.unsplash.com/720x600/',
-                                      senderName: widget.name,
-                                      time: DateTime.now().toString().substring(
-                                            0,
-                                            16,
-                                          ),
-                                    ),
-                                  ),
-                                );
-                              },
-                              child: Image(
-                                image: NetworkImage(
-                                  'https://source.unsplash.com/720x600/',
-                                ),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          );
-                        },
+                      Image.network(
+                        'https://source.unsplash.com/720x600/',
                       ),
                     ],
                   ),
