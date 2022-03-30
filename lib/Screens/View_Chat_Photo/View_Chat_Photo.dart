@@ -31,6 +31,7 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
       appBar: AppBar(
         backgroundColor: black,
         title: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text(
               widget.senderName,
