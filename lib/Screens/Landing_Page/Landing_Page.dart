@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
+import 'package:whatsapp/Screens/User_Details_Screen/User_Details_Screen.dart';
 
 class LandingPage extends StatelessWidget {
   LandingPage({Key? key}) : super(key: key);
@@ -93,7 +94,7 @@ class LandingPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return LoginScreen();
+                      return UserDetailsScreen();
                     },
                   ),
                 );
