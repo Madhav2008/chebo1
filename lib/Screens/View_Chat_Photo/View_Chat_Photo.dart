@@ -57,9 +57,9 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
             onPressed: () {
               if (star ==
                   Icon(
-    Icons.star_border,
-    color: white,
-  )) {
+                    Icons.star_border,
+                    color: white,
+                  )) {
                 setState(() {
                   star = Icon(
                     Icons.star,
