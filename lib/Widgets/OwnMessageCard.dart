@@ -119,8 +119,8 @@ class OwnMessageCard extends StatelessWidget {
                 ],
               ),
             ),
-          ],
-        ),
+        //   ],
+        // ),
       ),
     );
   }
