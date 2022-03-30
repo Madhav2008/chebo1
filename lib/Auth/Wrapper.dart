@@ -12,12 +12,12 @@ import 'package:whatsapp/Widgets/Circular_Progress.dart';
 class Wrapper extends StatelessWidget {
   const Wrapper({
     Key? key,
-    required this.sourceChat,
-    required this.chatModels,
+    // required this.sourceChat,
+    // required this.chatModels,
   }) : super(key: key);
 
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   Widget build(BuildContext context) {
