@@ -62,6 +62,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                     ),
                   ),
                 ],
+                crossAxisCount: 3,
               ),
               // Center(
               //   child: ListView.builder(
