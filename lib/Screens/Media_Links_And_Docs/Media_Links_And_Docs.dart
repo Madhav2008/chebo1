@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Screens/View_Chat_Photo/View_Chat_Photo.dart';
 
 class MediaLinksAndDocs extends StatefulWidget {
   MediaLinksAndDocs({
