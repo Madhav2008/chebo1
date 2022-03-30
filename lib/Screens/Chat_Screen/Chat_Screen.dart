@@ -401,7 +401,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 onTap: () {
                                   messageColor == blue
                                       ? messageColor = transparent
-                                      : blue;
+                                      : messageColor = blue;
                                 },
                                 onLongPress: () {
                                   setState(() {
