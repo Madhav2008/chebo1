@@ -398,11 +398,13 @@ class _ChatScreenState extends State<ChatScreen> {
                             children: [
                               GestureDetector(
                                 onLongPress: () {},
-                                child: OwnMessageCard(
-                                  color: own,
-                                  textColor: text,
-                                  message: allMessages[index].message,
-                                  messageTime: allMessages[index].time,
+                                child: Container(
+                                  child: OwnMessageCard(
+                                    color: own,
+                                    textColor: text,
+                                    message: allMessages[index].message,
+                                    messageTime: allMessages[index].time,
+                                  ),
                                 ),
                               ),
                               ReplyCard(
