@@ -78,7 +78,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                       bottomLeft: Radius.circular(15.0)
                     ),
                 child: GridTile(
-                  child: Image.asset(url, fit: BoxFit.cover),
+                  child: Image.asset(url, fit: BoxFit.cover,),
                 ),
                 
               );
