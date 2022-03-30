@@ -26,7 +26,9 @@ class ViewChatPhoto extends StatelessWidget {
         title: Column(
           children: [
             Text(senderName),
-            SizedBox(height: 5,),
+            SizedBox(
+              height: 5,
+            ),
           ],
         ),
         actions: [
