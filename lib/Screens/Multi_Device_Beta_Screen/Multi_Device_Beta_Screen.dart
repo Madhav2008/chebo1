@@ -259,8 +259,8 @@ class _MultiDeviceBetaScreenState extends State<MultiDeviceBetaScreen> {
                     phoneno: widget.phoneno,
                     avatar: widget.avatar,
                     countryCode: widget.countryCode,
-                    sourceChat: widget.sourceChat,
-                    chatModels: widget.chatModels,
+                    // sourceChat: widget.sourceChat,
+                    // chatModels: widget.chatModels,
                   ),
                 ),
               );
