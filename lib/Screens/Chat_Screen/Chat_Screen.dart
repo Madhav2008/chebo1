@@ -397,6 +397,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           return Column(
                             children: [
                               GestureDetector(
+                                onLongPress: (){},
                                 child: OwnMessageCard(
                                   color: own,
                                   textColor: text,
