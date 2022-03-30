@@ -40,6 +40,9 @@ class OwnMessageCard extends StatelessWidget {
         child: Row(
           children: [
             Container(
+              decoration: BoxDecoration(
+                color: 
+              ),
               child: Icon(
                 Icons.forward,
                 color: white,
