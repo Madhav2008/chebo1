@@ -53,39 +53,40 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
             children: <Widget>[
               Center(
                 child: ListView.builder(
-        padding: EdgeInsets.symmetric(vertical: vertPadding),
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (BuildContext context, int _) {
-          return Container(
-            padding: EdgeInsets.only(right: 5.0),
-            width: 70.0,
-            height: barHeight - vertPadding * 2,
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => ViewChatPhoto(
-                      path: 'https://source.unsplash.com/720x600/',
-                      senderName: name,
-                      time: DateTime.now().toString().substring(
-                            0,
-                            16,
+                  padding: EdgeInsets.symmetric(vertical: vertPadding),
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (BuildContext context, int _) {
+                    return Container(
+                      padding: EdgeInsets.only(right: 5.0),
+                      width: 70.0,
+                      height: barHeight - vertPadding * 2,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (builder) => ViewChatPhoto(
+                                path: 'https://source.unsplash.com/720x600/',
+                                senderName: name,
+                                time: DateTime.now().toString().substring(
+                                      0,
+                                      16,
+                                    ),
+                              ),
+                            ),
+                          );
+                        },
+                        child: Image(
+                          image: NetworkImage(
+                            'https://source.unsplash.com/720x600/',
                           ),
-                    ),
-                  ),
-                );
-              },
-              child: Image(
-                image: NetworkImage(
-                  'https://source.unsplash.com/720x600/',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    );
+                  },
                 ),
-                fit: BoxFit.cover,
               ),
-            ),
-          );
-        },
-      ),),
               Center(
                 child: Text('Docs'),
               ),
