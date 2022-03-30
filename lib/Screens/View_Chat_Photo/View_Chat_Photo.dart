@@ -103,44 +103,6 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
                 fit: BoxFit.cover,
               ),
             ),
-            Positioned(
-              bottom: 0,
-              child: Container(
-                color: black,
-                width: MediaQuery.of(context).size.width,
-                padding: EdgeInsets.symmetric(vertical: 5, horizontal: 8),
-                child: TextFormField(
-                  style: TextStyle(
-                    color: white,
-                    fontSize: 17,
-                  ),
-                  maxLines: 6,
-                  minLines: 1,
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: "Add Caption....",
-                    prefixIcon: Icon(
-                      Icons.add_photo_alternate,
-                      color: white,
-                      size: 27,
-                    ),
-                    hintStyle: TextStyle(
-                      color: white,
-                      fontSize: 17,
-                    ),
-                    suffixIcon: CircleAvatar(
-                      radius: 27,
-                      backgroundColor: one,
-                      child: Icon(
-                        Icons.check,
-                        color: white,
-                        size: 27,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),
