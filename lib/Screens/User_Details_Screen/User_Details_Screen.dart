@@ -3,6 +3,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class UserDetailsScreen extends StatelessWidget {
   UserDetailsScreen({
@@ -98,23 +99,22 @@ class UserDetailsScreen extends StatelessWidget {
                           content: Text("Name is required"),
                         ),
                       )
-                    : 
-                    FirebaseAuth.instance.currentUser!.updateProfile(
+                    : FirebaseAuth.instance.currentUser!.updateProfile(
                         displayName: _nameController.text,
                       );
-                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (builder) => NavigationScreen(
-                        cameras: [],
-                        name: _nameController.text,
-                        avatar: avatar,
-                        phoneno: _phonenoController.text,
-                        about: '👋🏻 Hey! there I am using WhatsApp India.',
-                        countryCode: countryCode,
-                      ),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => NavigationScreen(
+                      cameras: [],
+                      name: _nameController.text,
+                      avatar: avatar,
+                      phoneno: _phonenoController.text,
+                      about: '👋🏻 Hey! there I am using WhatsApp India.',
+                      countryCode: countryCode,
                     ),
-                  );
+                  ),
+                );
               },
               child: Container(
                 color: one,
