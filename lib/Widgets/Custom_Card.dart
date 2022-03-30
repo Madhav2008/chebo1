@@ -50,8 +50,8 @@ class _CustomCardState extends State<CustomCard> {
                   name: widget.name,
                   phoneno: widget.phoneno,
                   about: widget.about,
-                  sourceChat: widget.sourceChat,
-                  chatModels: widget.chatModels,
+                  // sourceChat: widget.sourceChat,
+                  // chatModels: widget.chatModels,
                 ),
               ),
             );
