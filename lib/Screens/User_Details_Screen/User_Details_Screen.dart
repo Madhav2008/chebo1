@@ -98,7 +98,8 @@ class UserDetailsScreen extends StatelessWidget {
                           content: Text("Name is required"),
                         ),
                       )
-                    : FirebaseAuth.instance.currentUser!.updateProfile(
+                    : 
+                    FirebaseAuth.instance.currentUser!.updateProfile(
                         displayName: _nameController.text,
                       );
                 //  Navigator.push(
