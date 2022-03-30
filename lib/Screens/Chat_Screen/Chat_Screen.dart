@@ -60,6 +60,7 @@ class _ChatScreenState extends State<ChatScreen> {
   // TextEditingController _controllered = TextEditingController();
 
   final phoneNo = '7982880636';
+  final Color messageColor = Colors.transparent;
 
   List<MessageModel> allMessages = [];
 
