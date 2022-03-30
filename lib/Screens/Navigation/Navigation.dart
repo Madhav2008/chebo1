@@ -300,8 +300,8 @@ class _NavigationScreenState extends State<NavigationScreen>
                 ),
                 ChatsScreen(
                   // sourceChat: widget.sourceChat,
-                  chatModels: widget.chatModels,
-                // ),
+                  // chatModels: widget.chatModels,
+                ),
                 StatusScreen(),
                 CallsScreen(
                   // sourceChat: widget.sourceChat,
