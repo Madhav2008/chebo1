@@ -56,7 +56,7 @@ class ViewProfile extends StatelessWidget {
                     builder: (builder) => ViewChatPhoto(
                       path:
                           'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
-                      senderName: '',
+                      senderName: name,
                       time: '',
                     ),
                   ),
