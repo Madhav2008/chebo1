@@ -66,7 +66,7 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
                     color: white,
                   );
                 });
-              }
+              }else{}
             },
           ),
           IconButton(
