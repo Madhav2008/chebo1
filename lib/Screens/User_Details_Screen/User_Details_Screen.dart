@@ -100,21 +100,21 @@ class UserDetailsScreen extends StatelessWidget {
                         ),
                       )
                     : Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => NavigationScreen(
-                      cameras: [],
-                      name: _nameController.text,
-                      avatar: avatar,
-                      phoneno: _phonenoController.text,
-                      about: '👋🏻 Hey! there I am using WhatsApp India.',
-                      countryCode: countryCode,
-                    ),
-                  ),
-                );
-                    FirebaseAuth.instance.currentUser!.updateProfile(
-                        displayName: _nameController.text,
+                        context,
+                        MaterialPageRoute(
+                          builder: (builder) => NavigationScreen(
+                            cameras: [],
+                            name: _nameController.text,
+                            avatar: avatar,
+                            phoneno: _phonenoController.text,
+                            about: '👋🏻 Hey! there I am using WhatsApp India.',
+                            countryCode: countryCode,
+                          ),
+                        ),
                       );
+                FirebaseAuth.instance.currentUser!.updateProfile(
+                  displayName: _nameController.text,
+                );
               },
               child: Container(
                 color: one,
