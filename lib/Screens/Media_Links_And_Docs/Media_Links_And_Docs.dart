@@ -65,7 +65,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                             fit: BoxFit.cover,
                           ),
                         ),
-                      );
+                      ), itemBuilder: (BuildContext context, int index) {  },;
                     }).toList()),
               ),
               Center(
