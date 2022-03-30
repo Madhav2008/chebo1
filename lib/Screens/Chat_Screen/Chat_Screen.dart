@@ -421,9 +421,9 @@ class _ChatScreenState extends State<ChatScreen> {
                                   ),
                                 ),
                               ),
-                             Container(
-                                  color: messageColor,
-                                  width: MediaQuery.of(context).size.width,
+                              Container(
+                                color: messageColor,
+                                width: MediaQuery.of(context).size.width,
                                 child: ReplyCard(
                                   color: reply,
                                   textColor: text,
