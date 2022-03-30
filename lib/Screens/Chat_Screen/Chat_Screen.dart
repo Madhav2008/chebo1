@@ -399,7 +399,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                  if (messageColor == blue) {
+                                  if (messageColor == blue.withOpacity(0.5)) {
                                     setState(() {
                                       messageColor = transparent;
                                     });
