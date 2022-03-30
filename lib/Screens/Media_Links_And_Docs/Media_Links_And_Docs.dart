@@ -90,44 +90,45 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
               //   ],
               // ),
               GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10,
-                  ),
-                  itemBuilder: (context, index) {
-                    return RawMaterialButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => ViewChatPhoto(
-                                path: 'https://source.unsplash.com/720x600/',
-                                senderName: widget.name,
-                                time: DateTime.now().toString().substring(
-                                      0,
-                                      16,
-                                    ),
-                              ),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                ),
+                itemBuilder: (context, index) {
+                  return RawMaterialButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ViewChatPhoto(
+                            path: 'https://source.unsplash.com/720x600/',
+                            senderName: widget.name,
+                            time: DateTime.now().toString().substring(
+                                  0,
+                                  16,
+                                ),
                           ),
-                        );
-                      },
-                      child: Hero(
-                        tag: 'logo$index',
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              image: NetworkImage('https://source.unsplash.com/720x600/'),
-                              fit: BoxFit.cover,
-                            ),
+                        ),
+                      );
+                    },
+                    child: Hero(
+                      tag: 'logo$index',
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                'https://source.unsplash.com/720x600/'),
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
-                    );
-                  },
-                  itemCount: 100,
-                ),
+                    ),
+                  );
+                },
+                itemCount: 100,
+              ),
               // Center(
               //   child: ListView.builder(
               //     padding: EdgeInsets.symmetric(
