@@ -50,6 +50,7 @@ class OwnMessageCard extends StatelessWidget {
                 child: Icon(
                   Icons.forward,
                   color: white,
+                  size: 20,
                 ),
               ),
             ),
