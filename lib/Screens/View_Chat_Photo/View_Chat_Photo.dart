@@ -50,10 +50,7 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
         ),
         actions: [
           IconButton(
-            icon: Icon(
-              Icons.star_border,
-              size: 27,
-            ),
+            icon: star
             onPressed: () {},
           ),
           IconButton(
