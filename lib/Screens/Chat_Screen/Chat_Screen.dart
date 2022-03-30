@@ -60,7 +60,7 @@ class _ChatScreenState extends State<ChatScreen> {
   // TextEditingController _controllered = TextEditingController();
 
   final phoneNo = '7982880636';
-  Color messageColor = Colors.transparent;
+  Color messageColor = transparent;
 
   List<MessageModel> allMessages = [];
 
@@ -399,9 +399,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                  messageColor == blue
-                                      ? messageColor = transparent
-                                      : messageColor = blue;
+                                  if(messageColor == blue){}
                                 },
                                 onLongPress: () {
                                   setState(() {
