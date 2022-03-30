@@ -24,8 +24,8 @@ class MultiDeviceBetaScreen extends StatefulWidget {
   final String phoneno;
   final String countryCode;
   final String about;
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   _MultiDeviceBetaScreenState createState() => _MultiDeviceBetaScreenState();
