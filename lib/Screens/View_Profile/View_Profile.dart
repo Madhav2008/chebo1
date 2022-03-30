@@ -59,7 +59,7 @@ class ViewProfile extends StatelessWidget {
                       senderName: name,
                       time: DateTime.now().toString().substring(
                             0,
-                            17,
+                            16,
                           ),
                     ),
                   ),
