@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Select_Contact/Select_Contact.dart';
 
 class CallsScreen extends StatelessWidget {
