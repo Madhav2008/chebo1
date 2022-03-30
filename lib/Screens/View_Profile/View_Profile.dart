@@ -317,6 +317,7 @@ class ViewProfile extends StatelessWidget {
                   SizedBox(
                     height: 5,
                   ),
+                  _buildMediaBar(),
                 ],
               ),
             )
