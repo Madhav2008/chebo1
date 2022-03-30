@@ -9,6 +9,7 @@ class ViewChatPhoto extends StatelessWidget {
   ViewChatPhoto({
     Key? key,
     required this.path,
+    required this.senderName,
   }) : super(key: key);
   final String path;
 
