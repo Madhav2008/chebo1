@@ -133,8 +133,8 @@ class _LinkedDevicesState extends State<LinkedDevices> {
                       phoneno: widget.phoneno,
                       avatar: widget.avatar,
                       countryCode: widget.countryCode,
-                      sourceChat: widget.sourceChat,
-                      chatModels: widget.chatModels,
+                      // sourceChat: widget.sourceChat,
+                      // chatModels: widget.chatModels,
                     ),
                   ),
                 );
