@@ -41,7 +41,7 @@ class OwnMessageCard extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: 
+                color: white.withOpacity(0.3),
               ),
               child: Icon(
                 Icons.forward,
