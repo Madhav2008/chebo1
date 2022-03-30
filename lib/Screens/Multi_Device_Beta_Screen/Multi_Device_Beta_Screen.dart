@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Linked_Devices/Linked_Devices.dart';
 
 class MultiDeviceBetaScreen extends StatefulWidget {
