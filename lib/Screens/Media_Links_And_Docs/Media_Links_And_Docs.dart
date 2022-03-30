@@ -118,7 +118,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                              image: AssetImage(_images[index].imagePath),
+                              image: NetworkImage('https://source.unsplash.com/720x600/'),
                               fit: BoxFit.cover,
                             ),
                           ),
