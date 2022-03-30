@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Multi_Device_Beta_Screen/Multi_Device_Beta_Screen.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
