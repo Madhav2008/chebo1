@@ -60,6 +60,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                       ListView.builder(
                         itemBuilder: (BuildContext context, int _) {
                           return ListView.builder(
+                            scrollDirection: Axis.horizontal,
                             itemBuilder: (BuildContext context, int _) {
                               return Container(
                                 width: 50,
