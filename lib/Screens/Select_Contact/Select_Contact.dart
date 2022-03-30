@@ -11,12 +11,12 @@ import 'package:whatsapp/Widgets/Contact_Card.dart';
 class SelectContact extends StatefulWidget {
   SelectContact({
     Key? key,
-    required this.sourceChat,
-    required this.chatModels,
+    // required this.sourceChat,
+    // required this.chatModels,
   }) : super(key: key);
 
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   _SelectContactState createState() => _SelectContactState();
