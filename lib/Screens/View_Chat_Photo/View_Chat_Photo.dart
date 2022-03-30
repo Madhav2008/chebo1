@@ -36,7 +36,8 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
             Text(
               widget.senderName,
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(
