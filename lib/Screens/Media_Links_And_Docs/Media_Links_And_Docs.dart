@@ -52,25 +52,8 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           body: TabBarView(
             children: <Widget>[
               Center(
-                child: GridView.count(
-                    crossAxisCount: 2,
-                    childAspectRatio: 1.0,
-                    padding: EdgeInsets.all(4.0),
-                    mainAxisSpacing: 4.0,
-                    crossAxisSpacing: 4.0,
-                    children: <String>[
-                      'assets/1.jpg',
-                      'assets/2.jpg',
-                      'assets/3.JPG',
-                      'assets/4.JPG',
-                      'assets/5.jpg',
-                      'assets/6.jpg',
-                      'assets/7.jpg',
-                      'assets/8.jpg',
-                      'assets/9.jpg',
-                      'assets/10.jpg'
-                    ].map((String url) {
-                      return ClipRRect(
+                child: ListView.builder(
+                ClipRRect(
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(15.0),
                             topRight: Radius.circular(15.0),
