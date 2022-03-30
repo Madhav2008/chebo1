@@ -5,6 +5,7 @@ import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Media_Links_And_Docs/Media_Links_And_Docs.dart';
+import 'package:whatsapp/Screens/View_Chat_Photo/View_Chat_Photo.dart';
 import 'package:whatsapp/Screens/View_Profile_Photo/View_Profile_Photo.dart';
 import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Calling_Screen.dart';
 
@@ -52,9 +53,9 @@ class ViewProfile extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => CameraViewPage(
+                    builder: (builder) => ViewChatPhoto(
                       path:
-                          'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                          'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png', senderName: '',
                     ),
                   ),
                 );
