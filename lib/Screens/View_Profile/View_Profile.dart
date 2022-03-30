@@ -33,6 +33,45 @@ class ViewProfile extends StatelessWidget {
     }
   }
 
+  Widget _buildGalleryBar() {
+    final barHeight = 90.0;
+    final vertPadding = 10.0;
+
+    return Container(
+      height: barHeight,
+      child: ListView.builder(
+        padding: EdgeInsets.symmetric(vertical: vertPadding),
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (BuildContext context, int _) {
+          return Container(
+            padding: EdgeInsets.only(right: 5.0),
+            width: 70.0,
+            height: barHeight - vertPadding * 2,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (builder) => CameraViewPage(
+                      path:
+                          'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                    ),
+                  ),
+                );
+              },
+              child: Image(
+                image: NetworkImage(
+                  'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                ),
+                fit: BoxFit.cover,
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
