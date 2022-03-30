@@ -84,7 +84,7 @@ import 'Theme/Provider/Theme_Provider.dart';
 late List<CameraDescription> cameras;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
+  await Firebase.initializeApp();
   cameras = await availableCameras();
   runApp(
     MyApp(),
