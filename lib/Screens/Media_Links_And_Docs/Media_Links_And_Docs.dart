@@ -68,7 +68,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                             MaterialPageRoute(
                               builder: (builder) => ViewChatPhoto(
                                 path: 'https://source.unsplash.com/720x600/',
-                                senderName: name,
+                                senderName: widget.name,
                                 time: DateTime.now().toString().substring(
                                       0,
                                       16,
