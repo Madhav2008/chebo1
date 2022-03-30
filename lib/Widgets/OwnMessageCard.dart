@@ -37,88 +37,88 @@ class OwnMessageCard extends StatelessWidget {
         constraints: BoxConstraints(
           maxWidth: MediaQuery.of(context).size.width - 45,
         ),
-        child: 
-        // Row(
-        //   mainAxisAlignment: MainAxisAlignment.end,
-        //   children: [
-        //     Container(
-        //       decoration: BoxDecoration(
-        //         color: black.withOpacity(0.3),
-        //         borderRadius: BorderRadius.circular(30),
-        //       ),
-        //       child: Padding(
-        //         padding: EdgeInsets.all(10.0),
-        //         child: Icon(
-        //           Icons.forward,
-        //           color: white,
-        //           size: 20,
-        //         ),
-        //       ),
-        //     ),
+        child:
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.end,
+            //   children: [
+            //     Container(
+            //       decoration: BoxDecoration(
+            //         color: black.withOpacity(0.3),
+            //         borderRadius: BorderRadius.circular(30),
+            //       ),
+            //       child: Padding(
+            //         padding: EdgeInsets.all(10.0),
+            //         child: Icon(
+            //           Icons.forward,
+            //           color: white,
+            //           size: 20,
+            //         ),
+            //       ),
+            //     ),
             Card(
-              elevation: 1,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(
-                    15,
-                  ),
-                  bottomRight: Radius.circular(
-                    15,
-                  ),
-                  bottomLeft: Radius.circular(
-                    15,
+          elevation: 1,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(
+                15,
+              ),
+              bottomRight: Radius.circular(
+                15,
+              ),
+              bottomLeft: Radius.circular(
+                15,
+              ),
+            ),
+          ),
+          color: color,
+          margin: EdgeInsets.symmetric(
+            horizontal: 15,
+            vertical: 5,
+          ),
+          child: Stack(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 10,
+                  right: 70,
+                  top: 5,
+                  bottom: 20,
+                ),
+                child: Linkify(
+                  onOpen: (link) => _launch(link.url),
+                  text: message,
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: textColor,
                   ),
                 ),
               ),
-              color: color,
-              margin: EdgeInsets.symmetric(
-                horizontal: 15,
-                vertical: 5,
-              ),
-              child: Stack(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(
-                      left: 10,
-                      right: 70,
-                      top: 5,
-                      bottom: 20,
-                    ),
-                    child: Linkify(
-                      onOpen: (link) => _launch(link.url),
-                      text: message,
+              Positioned(
+                bottom: 4,
+                right: 10,
+                child: Row(
+                  children: [
+                    Text(
+                      messageTime,
                       style: TextStyle(
-                        fontSize: 16,
-                        color: textColor,
+                        fontSize: 14,
+                        color: grey[600],
                       ),
                     ),
-                  ),
-                  Positioned(
-                    bottom: 4,
-                    right: 10,
-                    child: Row(
-                      children: [
-                        Text(
-                          messageTime,
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: grey[600],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Icon(
-                          Icons.done_all,
-                          size: 20,
-                          color: blue,
-                        ),
-                      ],
+                    SizedBox(
+                      width: 5,
                     ),
-                  ),
-                ],
+                    Icon(
+                      Icons.done_all,
+                      size: 20,
+                      color: blue,
+                    ),
+                  ],
+                ),
               ),
-            ),
+            ],
+          ),
+        ),
         //   ],
         // ),
       ),
