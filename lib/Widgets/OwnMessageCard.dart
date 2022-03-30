@@ -38,23 +38,23 @@ class OwnMessageCard extends StatelessWidget {
           maxWidth: MediaQuery.of(context).size.width - 45,
         ),
         child: 
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: black.withOpacity(0.3),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Icon(
-                  Icons.forward,
-                  color: white,
-                  size: 20,
-                ),
-              ),
-            ),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.end,
+        //   children: [
+        //     Container(
+        //       decoration: BoxDecoration(
+        //         color: black.withOpacity(0.3),
+        //         borderRadius: BorderRadius.circular(30),
+        //       ),
+        //       child: Padding(
+        //         padding: EdgeInsets.all(10.0),
+        //         child: Icon(
+        //           Icons.forward,
+        //           color: white,
+        //           size: 20,
+        //         ),
+        //       ),
+        //     ),
             Card(
               elevation: 1,
               shape: RoundedRectangleBorder(
