@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:whatsapp/Auth/Auth_Services.dart';
 import 'package:whatsapp/Auth/User_Model.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
 import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 import 'package:whatsapp/Widgets/Circular_Progress.dart';
