@@ -19,7 +19,7 @@ class ViewChatPhoto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Icon star = Icon(Icons.star);
+    Icon star = Icon(Icons.star_border);
     return Scaffold(
       backgroundColor: black,
       appBar: AppBar(
