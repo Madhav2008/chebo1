@@ -56,9 +56,10 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                        border: Border.all(
-                      color: black,
-                    ),),
+                      border: Border.all(
+                        color: black,
+                      ),
+                    ),
                   ),
                 ],
                 crossAxisCount: 3,
