@@ -109,8 +109,8 @@ class _ChatScreenState extends State<ChatScreen> {
   void sendMessage(
     String message,
     bool read,
-    int sourceId,
-    int targetId,
+    // int sourceId,
+    // int targetId,
   ) {
     setMessage(
       "source",
