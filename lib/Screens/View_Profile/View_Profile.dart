@@ -55,7 +55,7 @@ class ViewProfile extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (builder) => ViewChatPhoto(
                       path:
-                          'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                          'https://imgs.search.brave.com/qo_zLQU3lABld29qEcn9nDGhUdtXs7oxFzHRun-mk0s/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9jZG4u/Z2FtZWRldm1hcmtl/dC5uZXQvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkxMjAzMTcw/NzI3L2YzMjdhNTYw/OWY2NjdmYTBiNWZh/OTQ2MTBhMWMwZjUz/LnBuZw',
                       senderName: name,
                       time: DateTime.now().toString().substring(
                             0,
@@ -67,7 +67,7 @@ class ViewProfile extends StatelessWidget {
               },
               child: Image(
                 image: NetworkImage(
-                  'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
+                  'https://imgs.search.brave.com/qo_zLQU3lABld29qEcn9nDGhUdtXs7oxFzHRun-mk0s/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9jZG4u/Z2FtZWRldm1hcmtl/dC5uZXQvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkxMjAzMTcw/NzI3L2YzMjdhNTYw/OWY2NjdmYTBiNWZh/OTQ2MTBhMWMwZjUz/LnBuZw',
                 ),
                 fit: BoxFit.cover,
               ),
