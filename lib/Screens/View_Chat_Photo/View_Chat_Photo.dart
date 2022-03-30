@@ -11,8 +11,9 @@ class ViewChatPhoto extends StatelessWidget {
     required this.path,
     required this.senderName,
   }) : super(key: key);
-  
+
   final String path;
+  final String senderName;
 
   @override
   Widget build(BuildContext context) {
