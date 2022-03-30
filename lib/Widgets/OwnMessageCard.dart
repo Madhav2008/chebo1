@@ -37,7 +37,8 @@ class OwnMessageCard extends StatelessWidget {
         constraints: BoxConstraints(
           maxWidth: MediaQuery.of(context).size.width - 45,
         ),
-        child: Row(
+        child: 
+        Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Container(
