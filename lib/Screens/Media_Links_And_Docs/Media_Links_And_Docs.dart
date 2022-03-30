@@ -59,10 +59,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                     children: [
                       ListView.builder(
                         itemBuilder: (BuildContext context, int _) {
-                          return ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (BuildContext context, int _) {
-                              return Container(
+                          return Container(
                                 width: 50,
                                 height: 50,
                                 decoration: BoxDecoration(
@@ -70,8 +67,6 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                                     color: black,
                                   ),
                                 ),
-                              );
-                            },
                           );
                           // Container(
                           //   width: 50,
