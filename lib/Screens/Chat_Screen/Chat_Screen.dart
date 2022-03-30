@@ -398,9 +398,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           return Column(
                             children: [
                               GestureDetector(
-                                onTap: (){
-                                  
-                                },
+                                onTap: () {},
                                 onLongPress: () {
                                   setState(() {
                                     messageColor = blue;
