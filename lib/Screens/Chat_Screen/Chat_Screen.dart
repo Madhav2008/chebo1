@@ -125,8 +125,8 @@ class _ChatScreenState extends State<ChatScreen> {
     String type,
     String message,
     bool read,
-    int sourceId,
-    int targetId,
+    // int sourceId,
+    // int targetId,
   ) {
     MessageModel messageModel = MessageModel(
       message: message,
