@@ -58,7 +58,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                     crossAxisCount: 3,
                     children: [
                       ListView.builder(
-                          itemBuilder: (BuildContext context, int _) {}),
+                          itemBuilder: (BuildContext context, int _) {},),
                       Image.network(
                         'https://source.unsplash.com/720x600/',
                       ),
