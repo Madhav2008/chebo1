@@ -52,7 +52,9 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           },
           body: TabBarView(
             children: <Widget>[
-              SliverList(delegate: SliverChildListDelegate(),),
+              SliverList(
+                delegate: SliverChildListDelegate(),
+              ),
               // Center(
               //   child: ListView.builder(
               //     padding: EdgeInsets.symmetric(
