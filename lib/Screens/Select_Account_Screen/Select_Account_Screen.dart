@@ -27,7 +27,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
         ) {
           return InkWell(
             onTap: () {
-              sourceChat = dummyData.removeAt(index);
+              // sourceChat = dummyData.removeAt(index);
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
