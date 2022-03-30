@@ -5,7 +5,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
-class ViewChatPhoto extends StatelessWidget {
+class ViewChatPhoto extends StatefulWidget {
   ViewChatPhoto({
     Key? key,
     required this.path,
@@ -18,8 +18,13 @@ class ViewChatPhoto extends StatelessWidget {
   final String time;
 
   @override
+  State<ViewChatPhoto> createState() => _ViewChatPhotoState();
+}
+
+class _ViewChatPhotoState extends State<ViewChatPhoto> {
+  Icon star = Icon(Icons.star_border);
+  @override
   Widget build(BuildContext context) {
-    Icon star = Icon(Icons.star_border);
     return Scaffold(
       backgroundColor: black,
       appBar: AppBar(
@@ -27,7 +32,7 @@ class ViewChatPhoto extends StatelessWidget {
         title: Column(
           children: [
             Text(
-              senderName,
+              widget.senderName,
               style: TextStyle(
                 fontSize: 25,
               ),
@@ -36,7 +41,7 @@ class ViewChatPhoto extends StatelessWidget {
               height: 5,
             ),
             Text(
-              time,
+              widget.time,
               style: TextStyle(
                 fontSize: 20,
               ),
@@ -76,7 +81,7 @@ class ViewChatPhoto extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height - 150,
               child: Image.file(
-                File(path),
+                File(widget.path),
                 fit: BoxFit.cover,
               ),
             ),
