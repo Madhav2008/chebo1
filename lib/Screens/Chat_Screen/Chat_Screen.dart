@@ -421,11 +421,15 @@ class _ChatScreenState extends State<ChatScreen> {
                                   ),
                                 ),
                               ),
-                              ReplyCard(
-                                color: reply,
-                                textColor: text,
-                                message: allMessages[index].message,
-                                messageTime: allMessages[index].time,
+                             Container(
+                                  color: messageColor,
+                                  width: MediaQuery.of(context).size.width,
+                                child: ReplyCard(
+                                  color: reply,
+                                  textColor: text,
+                                  message: allMessages[index].message,
+                                  messageTime: allMessages[index].time,
+                                ),
                               )
                             ],
                           );
