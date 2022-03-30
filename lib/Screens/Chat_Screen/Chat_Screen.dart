@@ -398,7 +398,11 @@ class _ChatScreenState extends State<ChatScreen> {
                           return Column(
                             children: [
                               GestureDetector(
-                                onLongPress: () {},
+                                onLongPress: () {
+                                  setState(() {
+                                    messageColor = blue;
+                                  });
+                                },
                                 child: Container(
                                   color: messageColor,
                                   width: MediaQuery.of(context).size.width,
