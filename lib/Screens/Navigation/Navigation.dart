@@ -4,7 +4,6 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Calls_Screen/Calls_Screen.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Chats_Screen/Chats_Screen.dart';
