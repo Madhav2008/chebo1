@@ -55,7 +55,7 @@ class ViewProfile extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (builder) => ViewChatPhoto(
                       path:
-                          'https://www.techadvisor.com/cmsdata/features/3800091/google-pixel-foldable-release-date-and-feature-rumours-main_thumb1200_4-3.png',
+                          'https://source.unsplash.com/720x600/',
                       senderName: name,
                       time: DateTime.now().toString().substring(
                             0,
