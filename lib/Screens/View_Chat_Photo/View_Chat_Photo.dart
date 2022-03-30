@@ -22,7 +22,7 @@ class ViewChatPhoto extends StatefulWidget {
 }
 
 class _ViewChatPhotoState extends State<ViewChatPhoto> {
-  Icon star = Icon(Icons.star_border);
+  Icon star = Icon(Icons.star_border, color: white,);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
