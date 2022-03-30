@@ -396,11 +396,13 @@ class _ChatScreenState extends State<ChatScreen> {
                         if (allMessages[index].type == "source") {
                           return Column(
                             children: [
-                              OwnMessageCard(
-                                color: own,
-                                textColor: text,
-                                message: allMessages[index].message,
-                                messageTime: allMessages[index].time,
+                              GestureDetector(
+                                child: OwnMessageCard(
+                                  color: own,
+                                  textColor: text,
+                                  message: allMessages[index].message,
+                                  messageTime: allMessages[index].time,
+                                ),
                               ),
                               ReplyCard(
                                 color: reply,
