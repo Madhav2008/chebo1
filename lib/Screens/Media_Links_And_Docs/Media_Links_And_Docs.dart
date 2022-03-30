@@ -52,43 +52,82 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           },
           body: TabBarView(
             children: <Widget>[
-              CustomScrollView(
-                slivers: [
-                  SliverGrid.count(
+              // CustomScrollView(
+              //   slivers: [
+              //     SliverGrid.count(
+              //       crossAxisCount: 3,
+              //       children: [
+              //         ListView.builder(
+              //           itemBuilder: (BuildContext context, int _) {
+              //             return Container(
+              //               width: 50,
+              //               height: 50,
+              //               decoration: BoxDecoration(
+              //                 border: Border.all(
+              //                   color: black,
+              //                 ),
+              //               ),
+              //             );
+              //           },
+              //         ),
+              //         Image.network(
+              //           'https://source.unsplash.com/720x600/',
+              //         ),
+              //       ],
+              //     ),
+              //     SliverList(
+              //       delegate: SliverChildBuilderDelegate(
+              //         (context, index) => Container(
+              //           color: Colors.lightBlueAccent,
+              //           child: ListTile(
+              //             leading: Text('Tile Number:'),
+              //             trailing: Text('$index'),
+              //           ),
+              //         ),
+              //         childCount: 15,
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
-                    children: [
-                      ListView.builder(
-                        itemBuilder: (BuildContext context, int _) {
-                          return Container(
-                            width: 50,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: black,
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                      Image.network(
-                        'https://source.unsplash.com/720x600/',
-                      ),
-                    ],
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10,
                   ),
-                  SliverList(
-                    delegate: SliverChildBuilderDelegate(
-                      (context, index) => Container(
-                        color: Colors.lightBlueAccent,
-                        child: ListTile(
-                          leading: Text('Tile Number:'),
-                          trailing: Text('$index'),
+                  itemBuilder: (context, index) {
+                    return RawMaterialButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DetailsPage(
+                              imagePath: _images[index].imagePath,
+                              title: _images[index].title,
+                              photographer: _images[index].photographer,
+                              price: _images[index].price,
+                              details: _images[index].details,
+                              index: index,
+                            ),
+                          ),
+                        );
+                      },
+                      child: Hero(
+                        tag: 'logo$index',
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            image: DecorationImage(
+                              image: AssetImage(_images[index].imagePath),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
                       ),
-                      childCount: 15,
-                    ),
-                  ),
-                ],
-              ),
+                    );
+                  },
+                  itemCount: _images.length,
+                ),
               // Center(
               //   child: ListView.builder(
               //     padding: EdgeInsets.symmetric(
