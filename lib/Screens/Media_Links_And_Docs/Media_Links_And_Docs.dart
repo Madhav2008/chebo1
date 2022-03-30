@@ -68,15 +68,6 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                               ),
                             ),
                           );
-                          // Container(
-                          //   width: 50,
-                          //   height: 50,
-                          //   decoration: BoxDecoration(
-                          //     border: Border.all(
-                          //       color: black,
-                          //     ),
-                          //   ),
-                          // );
                         },
                       ),
                       Image.network(
