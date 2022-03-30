@@ -597,8 +597,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                         sendMessage(
                                           _controller.text,
                                           true,
-                                          widget.sourceChat.id,
-                                          widget.sourceChat.id,
+                                          // widget.sourceChat.id,
+                                          // widget.sourceChat.id,
                                           // 2,
                                           // 2,
                                         );
