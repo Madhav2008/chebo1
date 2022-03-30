@@ -95,7 +95,8 @@ class LandingPage extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (BuildContext context) {
                       return UserDetailsScreen(
-                        countryCode: '', no: '',
+                        countryCode: '',
+                        no: '',
                       );
                     },
                   ),
