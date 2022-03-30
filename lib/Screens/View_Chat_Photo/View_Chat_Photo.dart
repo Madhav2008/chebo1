@@ -5,8 +5,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
-class CameraViewPage extends StatelessWidget {
-  CameraViewPage({Key? key, required this.path}) : super(key: key);
+class ViewChatPhoto extends StatelessWidget {
+  ViewChatPhoto({Key? key, required this.path}) : super(key: key);
   final String path;
 
   @override
