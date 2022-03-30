@@ -420,8 +420,8 @@ class _SelectContactState extends State<SelectContact> {
                     name: 'Madhav Arora',
                     phoneno: '9999348666',
                     about: 'I overthink therefore I overam',
-                    sourceChat: widget.sourceChat,
-                    chatModels: widget.chatModels,
+                    // sourceChat: widget.sourceChat,
+                    // chatModels: widget.chatModels,
                   ),
                 ),
               );
