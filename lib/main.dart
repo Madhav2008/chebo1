@@ -82,7 +82,7 @@ import 'Language/Language.dart';
 import 'Theme/Provider/Theme_Provider.dart';
 
 late List<CameraDescription> cameras;
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp();
   cameras = await availableCameras();
