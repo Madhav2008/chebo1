@@ -55,7 +55,6 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
               Center(
                 child: ListView.builder(
                   padding: EdgeInsets.symmetric(vertical: 10.0),
-                  scrollDirection: Axis.horizontal,
                   itemBuilder: (BuildContext context, int _) {
                     return Container(
                       padding: EdgeInsets.only(right: 5.0),
