@@ -27,8 +27,8 @@ class NavigationScreen extends StatefulWidget {
     required this.phoneno,
     required this.countryCode,
     required this.about,
-    required this.sourceChat,
-    required this.chatModels,
+    // required this.sourceChat,
+    // required this.chatModels,
   }) : super(key: key);
 
   final String name;
@@ -36,8 +36,8 @@ class NavigationScreen extends StatefulWidget {
   final String avatar;
   final String phoneno;
   final String countryCode;
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   _NavigationScreenState createState() => _NavigationScreenState();
@@ -299,13 +299,13 @@ class _NavigationScreenState extends State<NavigationScreen>
                   cameras: [],
                 ),
                 ChatsScreen(
-                  sourceChat: widget.sourceChat,
+                  // sourceChat: widget.sourceChat,
                   chatModels: widget.chatModels,
-                ),
+                // ),
                 StatusScreen(),
                 CallsScreen(
-                  sourceChat: widget.sourceChat,
-                  chatModels: widget.chatModels,
+                  // sourceChat: widget.sourceChat,
+                  // chatModels: widget.chatModels,
                 ),
               ],
             ),
