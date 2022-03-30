@@ -63,7 +63,9 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                             width: 50,
                             height: 50,
                             decoration: BoxDecoration(
-                              border: 
+                              border: Border.all(
+                                color: black,
+                              ),
                             ),
                           );
                         },
