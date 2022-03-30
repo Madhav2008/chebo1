@@ -96,7 +96,7 @@ class LandingPage extends StatelessWidget {
                     builder: (BuildContext context) {
                       return UserDetailsScreen(
                         countryCode: '+91',
-                        no: '',
+                        no: '9999348444',
                       );
                     },
                   ),
