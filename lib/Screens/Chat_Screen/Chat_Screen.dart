@@ -399,6 +399,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               GestureDetector(
                                 onLongPress: () {},
                                 child: Container(
+                                  width: MediaQuery.of(context).size.width,
                                   child: OwnMessageCard(
                                     color: own,
                                     textColor: text,
