@@ -60,7 +60,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                         color: black,
                       )
                     ),
-                  )
+                  ),
                 ],
               )
               // Center(
