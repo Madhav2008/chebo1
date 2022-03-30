@@ -37,13 +37,6 @@ class ViewChatPhoto extends StatelessWidget {
             ),
             onPressed: () {},
           ),
-          IconButton(
-            icon: Icon(
-              Icons.edit,
-              size: 27,
-            ),
-            onPressed: () {},
-          ),
         ],
       ),
       body: Container(
