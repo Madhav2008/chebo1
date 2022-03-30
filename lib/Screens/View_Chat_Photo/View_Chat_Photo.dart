@@ -25,7 +25,12 @@ class ViewChatPhoto extends StatelessWidget {
         backgroundColor: black,
         title: Column(
           children: [
-            Text(senderName, style: TextStyle(fontSize: 25,),),
+            Text(
+              senderName,
+              style: TextStyle(
+                fontSize: 25,
+              ),
+            ),
             SizedBox(
               height: 5,
             ),
