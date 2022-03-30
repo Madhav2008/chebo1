@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Login_Screen/Login_Screen.dart';
-import 'package:whatsapp/Screens/Navigation/Navigation.dart';
 
 class LandingPage extends StatelessWidget {
   LandingPage({Key? key}) : super(key: key);
@@ -94,17 +93,7 @@ class LandingPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return NavigationScreen(
-                        cameras: [],
-                        name: 'Madhav Arora',
-                        avatar:
-                            'https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4',
-                        phoneno: '9999348666',
-                        countryCode: '+91',
-                        about: '👋🏻 Hey! there I am using WhatsApp India.',
-                        chatModels: [],
-                        sourceChat: ,
-                      );
+                      return LoginScreen();
                     },
                   ),
                 );
