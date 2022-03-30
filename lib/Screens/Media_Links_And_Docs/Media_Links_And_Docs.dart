@@ -82,7 +82,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                 ),
                 
               );
-            }).toList()),,
+            }).toList()),
               ),
               Center(
                 child: Text('Docs'),
