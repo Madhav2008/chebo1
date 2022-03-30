@@ -102,7 +102,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void connect() {
     // print(
-      // widget.sourceChat.id,
+    // widget.sourceChat.id,
     // );
   }
 
@@ -387,7 +387,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       itemBuilder: (context, index) {
                         if (index == allMessages.length) {
                           // print(
-                            // widget.chatModels[index].id,
+                          // widget.chatModels[index].id,
                           // );
                           return Container(
                             height: 70,
