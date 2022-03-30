@@ -6,7 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class ViewChatPhoto extends StatelessWidget {
-  ViewChatPhoto({Key? key, required this.path,}) : super(key: key);
+  ViewChatPhoto({
+    Key? key,
+    required this.path,
+  }) : super(key: key);
   final String path;
 
   @override
