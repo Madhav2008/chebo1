@@ -400,7 +400,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               GestureDetector(
                                 onLongPress: () {
                                   setState(() {
-                                    messageColor = blue;
+                                    messageColor. = blue;
                                   });
                                 },
                                 child: Container(
