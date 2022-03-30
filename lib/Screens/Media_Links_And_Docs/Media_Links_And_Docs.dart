@@ -101,14 +101,14 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => DetailsPage(
-                              imagePath: _images[index].imagePath,
-                              title: _images[index].title,
-                              photographer: _images[index].photographer,
-                              price: _images[index].price,
-                              details: _images[index].details,
-                              index: index,
-                            ),
+                            builder: (context) => ViewChatPhoto(
+              //                   path: 'https://source.unsplash.com/720x600/',
+              //                   senderName: widget.name,
+              //                   time: DateTime.now().toString().substring(
+              //                         0,
+              //                         16,
+              //                       ),
+              //                 ),
                           ),
                         );
                       },
