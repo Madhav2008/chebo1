@@ -59,7 +59,9 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                     children: [
                       ListView.builder(
                         itemBuilder: (BuildContext context, int _) {
-                          return ListView.builder(itemBuilder: (BuildContext context, int _) {})
+                          return ListView.builder(
+                            itemBuilder: (BuildContext context, int _) {},
+                          );
                           // Container(
                           //   width: 50,
                           //   height: 50,
