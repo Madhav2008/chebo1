@@ -45,8 +45,8 @@ class ChatScreen extends StatefulWidget {
   final String avatar;
   final String phoneno;
   final String about;
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   _ChatScreenState createState() {
