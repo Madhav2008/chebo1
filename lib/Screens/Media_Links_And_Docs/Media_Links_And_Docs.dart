@@ -53,17 +53,17 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           body: TabBarView(
             children: <Widget>[
               SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (context, index) => Container(
-                color: Colors.lightBlueAccent,
-                child: ListTile(
-                  leading: Text('Tile Number:'),
-                  trailing: Text('$index'),
+                delegate: SliverChildBuilderDelegate(
+                  (context, index) => Container(
+                    color: Colors.lightBlueAccent,
+                    child: ListTile(
+                      leading: Text('Tile Number:'),
+                      trailing: Text('$index'),
+                    ),
+                  ),
+                  childCount: 15,
                 ),
               ),
-              childCount: 15,
-            ),
-          ),
               // Center(
               //   child: ListView.builder(
               //     padding: EdgeInsets.symmetric(
