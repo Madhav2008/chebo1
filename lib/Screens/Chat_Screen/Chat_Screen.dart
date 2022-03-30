@@ -37,8 +37,8 @@ class ChatScreen extends StatefulWidget {
     required this.name,
     required this.phoneno,
     required this.about,
-    required this.sourceChat,
-    required this.chatModels,
+    // required this.sourceChat,
+    // required this.chatModels,
   }) : this.localFileSystem = localFileSystem ?? LocalFileSystem();
 
   final String name;
