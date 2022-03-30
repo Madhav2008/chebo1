@@ -101,9 +101,9 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void connect() {
-    print(
-      widget.sourceChat.id,
-    );
+    // print(
+      // widget.sourceChat.id,
+    // );
   }
 
   void sendMessage(
