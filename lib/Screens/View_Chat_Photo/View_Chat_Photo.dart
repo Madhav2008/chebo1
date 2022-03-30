@@ -25,7 +25,7 @@ class ViewChatPhoto extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(
-              Icons.emoji_emotions_outlined,
+              Icons.mobile_screen_share_rounded,
               size: 27,
             ),
             onPressed: () {},
