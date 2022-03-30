@@ -17,7 +17,7 @@ class SelectAccountScreen extends StatefulWidget {
 class _SelectAccountScreenState extends State<SelectAccountScreen> {
   @override
   Widget build(BuildContext context) {
-    ChatModel sourceChat;
+    // ChatModel sourceChat;
     return Scaffold(
       body: ListView.builder(
         itemCount: dummyData.length,
