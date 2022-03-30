@@ -58,9 +58,9 @@ class ViewProfile extends StatelessWidget {
                           'https://raw.githubusercontent.com/ng-kode/whatsapp_clone/master/assets/150x150.png',
                       senderName: name,
                       time: DateTime.now().toString().substring(
-            10,
-            16,
-          ),
+                            10,
+                            16,
+                          ),
                     ),
                   ),
                 );
