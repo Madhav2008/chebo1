@@ -53,6 +53,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
             children: <Widget>[
               Center(
                 child: ListView.builder(
+                  itemBuilder: (BuildContext context, int index) {
                 ClipRRect(
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(15.0),
