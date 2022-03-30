@@ -12,7 +12,7 @@ class ViewChatPhoto extends StatefulWidget {
 class _ViewChatPhotoState extends State<ViewChatPhoto> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
       
     );
   }
