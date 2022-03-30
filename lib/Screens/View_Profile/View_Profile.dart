@@ -67,7 +67,7 @@ class ViewProfile extends StatelessWidget {
               },
               child: Image(
                 image: NetworkImage(
-                  'https://imgs.search.brave.com/qo_zLQU3lABld29qEcn9nDGhUdtXs7oxFzHRun-mk0s/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9jZG4u/Z2FtZWRldm1hcmtl/dC5uZXQvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkxMjAzMTcw/NzI3L2YzMjdhNTYw/OWY2NjdmYTBiNWZh/OTQ2MTBhMWMwZjUz/LnBuZw',
+                  'https://www.researchgate.net/profile/Pablo-Caballero-2/publication/328101815/figure/fig3/AS:678371700772865@1538747825499/Original-image-of-Lena-200X200-pixels.ppm',
                 ),
                 fit: BoxFit.cover,
               ),
