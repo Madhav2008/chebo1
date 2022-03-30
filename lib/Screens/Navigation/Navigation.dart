@@ -360,8 +360,8 @@ class _NavigationScreenState extends State<NavigationScreen>
               phoneno: widget.phoneno,
               avatar: widget.avatar,
               countryCode: widget.countryCode,
-              sourceChat: widget.sourceChat,
-              chatModels: widget.chatModels,
+              // sourceChat: widget.sourceChat,
+              // chatModels: widget.chatModels,
             ),
           ),
         );
