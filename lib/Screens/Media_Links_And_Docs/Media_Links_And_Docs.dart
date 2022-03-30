@@ -55,7 +55,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                 child: GridView.count(
             crossAxisCount: 2,
             childAspectRatio: 1.0,
-            padding: const EdgeInsets.all(4.0),
+            padding: EdgeInsets.all(4.0),
             mainAxisSpacing: 4.0,
             crossAxisSpacing: 4.0,
             children: <String>[
