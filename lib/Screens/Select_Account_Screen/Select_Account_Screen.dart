@@ -38,7 +38,7 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                     phoneno: dummyData[index].phoneno,
                     countryCode: '+91',
                     about: dummyData[index].about,
-                    // sourceChat: sourceChat,
+                    sourceChat: sourceChat,
                     // chatModels: dummyData,
                   ),
                 ),
