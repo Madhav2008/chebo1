@@ -25,8 +25,8 @@ class CustomCard extends StatefulWidget {
   final String phoneno;
   final String time;
   final String message;
-  final ChatModel sourceChat;
-  final List<ChatModel> chatModels;
+  // final ChatModel sourceChat;
+  // final List<ChatModel> chatModels;
 
   @override
   State<CustomCard> createState() => _CustomCardState();
