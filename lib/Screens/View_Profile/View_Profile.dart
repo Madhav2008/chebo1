@@ -33,7 +33,7 @@ class ViewProfile extends StatelessWidget {
     }
   }
 
-  Widget _buildGalleryBar() {
+  Widget _buildMediaBar() {
     final barHeight = 90.0;
     final vertPadding = 10.0;
 
