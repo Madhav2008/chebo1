@@ -421,14 +421,28 @@ class _ChatScreenState extends State<ChatScreen> {
                                   ),
                                 ),
                               ),
-                              Container(
-                                color: messageColor,
-                                width: MediaQuery.of(context).size.width,
-                                child: ReplyCard(
-                                  color: reply,
-                                  textColor: text,
-                                  message: allMessages[index].message,
-                                  messageTime: allMessages[index].time,
+                              GestureDetector(
+                                onTap: () {
+                                  if (messageColor == blue.withOpacity(0.5)) {
+                                    setState(() {
+                                      messageColor = transparent;
+                                    });
+                                  }
+                                },
+                                onLongPress: () {
+                                  setState(() {
+                                    messageColor = blue.withOpacity(0.5);
+                                  });
+                                },
+                                child: Container(
+                                  color: messageColor,
+                                  width: MediaQuery.of(context).size.width,
+                                  child: ReplyCard(
+                                    color: reply,
+                                    textColor: text,
+                                    message: allMessages[index].message,
+                                    messageTime: allMessages[index].time,
+                                  ),
                                 ),
                               )
                             ],
