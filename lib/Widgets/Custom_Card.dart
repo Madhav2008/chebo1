@@ -13,8 +13,8 @@ class CustomCard extends StatefulWidget {
     required this.about,
     required this.avatar,
     required this.phoneno,
-    required this.sourceChat,
-    required this.chatModels,
+    // required this.sourceChat,
+    // required this.chatModels,
     required this.time,
     required this.message,
   }) : super(key: key);
