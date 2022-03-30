@@ -54,7 +54,13 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
             children: <Widget>[
               SliverGrid.count(
                 children: [
-                  
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: black,
+                      )
+                    ),
+                  )
                 ],
               )
               // Center(
