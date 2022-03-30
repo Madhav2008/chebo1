@@ -15,6 +15,7 @@ class ViewChatPhoto extends StatelessWidget {
       backgroundColor: black,
       appBar: AppBar(
         backgroundColor: black,
+        title: Text(''),
         actions: [
           IconButton(
             icon: Icon(
