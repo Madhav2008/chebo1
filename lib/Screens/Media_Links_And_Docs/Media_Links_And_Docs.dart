@@ -57,9 +57,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
                   SliverGrid.count(
                     crossAxisCount: 3,
                     children: [
-                      ListView.builder(
-                        itemBuilder: itemBuilder
-                        ),
+                      ListView.builder(itemBuilder: itemBuilder),
                       Image.network(
                         'https://source.unsplash.com/720x600/',
                       ),
