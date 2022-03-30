@@ -35,7 +35,7 @@ class ViewChatPhoto extends StatelessWidget {
               height: 5,
             ),
             Text(
-              senderName,
+              time,
               style: TextStyle(
                 fontSize: 25,
               ),
