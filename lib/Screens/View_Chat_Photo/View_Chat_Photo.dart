@@ -46,7 +46,7 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
             Text(
               widget.time,
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 15,
               ),
             ),
           ],
