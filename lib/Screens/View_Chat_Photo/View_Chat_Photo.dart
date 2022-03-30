@@ -18,7 +18,7 @@ class ViewChatPhoto extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(
-              Icons.crop_rotate,
+              Icons.star_border,
               size: 27,
             ),
             onPressed: () {},
