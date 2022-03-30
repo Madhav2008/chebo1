@@ -100,7 +100,7 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
               height: MediaQuery.of(context).size.height - 150,
               child: Image.network(
                 widget.path,
-                fit: BoxFit.cover,
+                // fit: BoxFit.cover,
               ),
             ),
           ],
