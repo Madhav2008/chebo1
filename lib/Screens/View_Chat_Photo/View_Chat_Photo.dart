@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:firebase/firebase.dart';
 import 'package:flutter/material.dart';
 
 class ViewChatPhoto extends StatefulWidget {
@@ -13,7 +14,9 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: AppBar(
+        
+      ),
     );
   }
 }
