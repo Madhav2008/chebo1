@@ -103,7 +103,7 @@ class LandingPage extends StatelessWidget {
                         countryCode: '+91',
                         about: '👋🏻 Hey! there I am using WhatsApp India.',
                         chatModels: [],
-                        sourceChat: null,
+                        sourceChat: ,
                       );
                     },
                   ),
