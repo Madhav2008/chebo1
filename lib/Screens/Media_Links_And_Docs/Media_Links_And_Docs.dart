@@ -64,7 +64,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
           return Container(
             padding: EdgeInsets.only(right: 5.0),
             width: 70.0,
-            height: 20.0 - vertPadding * 2,
+            height: 20.0 - 10.0 * 2,
             child: GestureDetector(
               onTap: () {
                 Navigator.push(
