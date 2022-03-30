@@ -55,16 +55,18 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
           IconButton(
             icon: star,
             onPressed: () {
-              if(star == Icon(
-                  Icons.star,
-                  color: white,
-                ))
-              setState(() {
-                star = Icon(
-                  Icons.star,
-                  color: white,
-                );
-              });
+              if (star ==
+                  Icon(
+                    Icons.star,
+                    color: white,
+                  )) {
+                setState(() {
+                  star = Icon(
+                    Icons.star,
+                    color: white,
+                  );
+                });
+              }
             },
           ),
           IconButton(
