@@ -51,7 +51,11 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
         actions: [
           IconButton(
             icon: star,
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                star = Icon(Icons.star);
+              });
+            },
           ),
           IconButton(
             icon: Icon(
