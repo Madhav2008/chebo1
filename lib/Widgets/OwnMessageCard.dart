@@ -39,7 +39,12 @@ class OwnMessageCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Icon(Icons.forward, color: white,),
+            Container(
+              child: Icon(
+                Icons.forward,
+                color: white,
+              ),
+            ),
             Card(
               elevation: 1,
               shape: RoundedRectangleBorder(
