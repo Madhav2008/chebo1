@@ -85,7 +85,7 @@ class _MediaLinksAndDocsState extends State<MediaLinksAndDocs>
             ),
           );
         },
-      ),
+      ),),
               Center(
                 child: Text('Docs'),
               ),
