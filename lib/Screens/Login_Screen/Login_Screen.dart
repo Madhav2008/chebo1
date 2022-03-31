@@ -309,7 +309,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   showPhoneCode: true,
                   showWorldWide: false,
                   onSelect: (Country country) {
-                    print('Select country: ${country.displayName}');
+                    print('Select country: ${country.displayName}',);
                   },
                   // Optional. Sets the theme for the country list picker.
                   countryListTheme: CountryListThemeData(
