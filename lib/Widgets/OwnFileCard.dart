@@ -14,6 +14,9 @@ class OwnFileCard extends StatelessWidget {
           horizontal: 15,
           vertical: 5,
         ),
+        child: Container(
+          height: MediaQuery.of(context).size.height/2.3,
+        ),
       ),
     );
   }
