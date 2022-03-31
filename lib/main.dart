@@ -131,6 +131,18 @@ class MyApp extends StatelessWidget {
           //         about: '👋🏻 Hey! there I am using WhatsApp India.',
           //       ),
           // },
+          supportedLocales: [
+        const Locale('en'),
+        const Locale('el'),
+        const Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'), // Generic Simplified Chinese 'zh_Hans'
+        const Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
+      ],
+      localizationsDelegates: [
+        CountryLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
           translations: LocalString(),
           locale: Locale('en', 'US'),
           title: 'WhatsApp India',
