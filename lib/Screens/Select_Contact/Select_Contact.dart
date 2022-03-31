@@ -95,7 +95,7 @@ class _SelectContactState extends State<SelectContact> {
   // ];
 
   final List<Map<String, dynamic>> _allUsers = [
-    ChatModel(
+    {
       name: "Madhav Arora",
       message: "Hey Flutter, You are so amazing !",
       time: "15:30",
@@ -104,7 +104,7 @@ class _SelectContactState extends State<SelectContact> {
       about: "I overthink therefore I overam",
       phoneno: '9999348666',
       id: 1,
-    ),
+    }
     ChatModel(
       name: "Raghav Arora",
       message: "Hey I have hacked WhatsApp India!",
