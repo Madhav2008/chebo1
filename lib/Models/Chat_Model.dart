@@ -8,7 +8,7 @@ class ChatModel {
   final String about;
   final String phoneno;
   final String country;
-  final String country;
+  final String countryCode;
   final int id;
 
   ChatModel({
