@@ -405,7 +405,7 @@ class _SelectContactState extends State<SelectContact> {
         ],
       ),
       body: ListView.builder(
-        itemCount: dummyData.length + 2,
+        itemCount: _allUsers.length + 2,
         itemBuilder: (context, index) {
           if (index == 0) {
             return InkWell(
