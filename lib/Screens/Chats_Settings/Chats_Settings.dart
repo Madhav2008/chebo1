@@ -22,8 +22,6 @@ class _ChatsSettingsState extends State<ChatsSettings> {
   bool enterIsSend = true;
   bool mediaV = false;
 
-  Locale language = Localizations.localeOf(context);
-
   final List locale = [
     {'name': 'English', 'locale': Locale('en', 'US')},
     {'name': 'हिन्दी', 'locale': Locale('hi', 'IN')},
