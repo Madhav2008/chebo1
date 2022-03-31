@@ -14,6 +14,4 @@ class ChatModel {
     required this.avatarUrl,
     required this.about,
   });
-
-  startsWith(list) {}
 }
