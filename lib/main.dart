@@ -108,7 +108,9 @@ class MyApp extends StatelessWidget {
             // MultiProvider(
             //   providers: [
             // Provider<AuthService>(
-            //   create: (_) => AuthService(),
+              create: (_) {
+                return AuthService();
+              },
             // ),
             //   ],
             //   child:
