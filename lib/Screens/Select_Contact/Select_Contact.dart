@@ -74,7 +74,7 @@ class _SelectContactState extends State<SelectContact> {
   @override
   void initState() {
     super.initState();
-    _foundUsers = dummyData.cast<Map<String, dynamic>>();
+    _foundUsers = _allUsers.cast<Map<String, dynamic>>();
     _IsSearching = false;
   }
 
@@ -478,8 +478,8 @@ class _SelectContactState extends State<SelectContact> {
             },
             child: ContactCard(
               contact: !_IsSearching
-                  ? dummyData[index - 2]
-                  : dummyData[index - 2].where(
+                  ? _allUsers[index - 2]
+                  : _allUsers[index - 2].where(
                       (p) => p.startsWith(
                         query.toList(),
                       ),
