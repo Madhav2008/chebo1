@@ -81,17 +81,17 @@ class _SelectContactState extends State<SelectContact> {
   List<Map<String, dynamic>> _foundUsers = [];
 
   // List<ChatModel> contacts = [
-  //   ChatModel("name": "Bobby Arora", status: "About...."),
-  //   ChatModel("name": "Sonia Arora", status: "About...."),
-  //   ChatModel("name": "Tripta Arora", status: "About...."),
-  //   ChatModel("name": "Bunty Arora", status: "About...."),
-  //   ChatModel("name": "Vijay Arora", status: "About...."),
-  //   ChatModel("name": "Pushpa Arora", status: "About...."),
-  //   ChatModel("name": "JC Arora", status: "About...."),
-  //   ChatModel("name": "Vidhi Arora", status: "About...."),
-  //   ChatModel("name": "Siddhu Arora", status: "About...."),
-  //   ChatModel("name": "Nisha Arora", status: "About...."),
-  //   ChatModel("name": "Raghu Arora", status: "About...."),
+  //   {"name": "Bobby Arora", status: "About...."),
+  //   {"name": "Sonia Arora", status: "About...."),
+  //   {"name": "Tripta Arora", status: "About...."),
+  //   {"name": "Bunty Arora", status: "About...."),
+  //   {"name": "Vijay Arora", status: "About...."),
+  //   {"name": "Pushpa Arora", status: "About...."),
+  //   {"name": "JC Arora", status: "About...."),
+  //   {"name": "Vidhi Arora", status: "About...."),
+  //   {"name": "Siddhu Arora", status: "About...."),
+  //   {"name": "Nisha Arora", status: "About...."),
+  //   {"name": "Raghu Arora", status: "About...."),
   // ];
 
   final List<Map<String, dynamic>> _allUsers = [
@@ -113,7 +113,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '7011698878',
       "id": 2,
 }
-    ChatModel(
+    {
       "name": "Harry",
       "message": "I'm good!",
       "time": "10:30",
@@ -123,7 +123,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 3,
     ),
-    ChatModel(
+    {
       "name": "Edward",
       "message": "I'm the fastest man alive!",
       "time": "12:30",
@@ -133,7 +133,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 4,
     ),
-    ChatModel(
+    {
       "name": "David",
       "message": "Hey Flutter, You are so cool !",
       "time": "15:30",
@@ -143,7 +143,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 5,
     ),
-    ChatModel(
+    {
       "name": "Bill Gates",
       "message": "On the way !!",
       "time": "15:30",
@@ -153,7 +153,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 6,
     ),
-    ChatModel(
+    {
       "name": "Alexandra",
       "message": "Way to Delhi 🤘🏻✌🏻",
       "time": "17:30",
@@ -163,7 +163,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 7,
     ),
-    ChatModel(
+    {
       "name": "John",
       "message": "Congo 👍🏻👏🏻",
       "time": "5:00",
@@ -173,7 +173,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 8,
     ),
-    ChatModel(
+    {
       "name": "Amy",
       "message": "I'm good!",
       "time": "10:30",
@@ -183,7 +183,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 9,
     ),
-    ChatModel(
+    {
       "name": "Joe",
       "message": "Any query??",
       "time": "10:30",
@@ -194,7 +194,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 10,
     ),
-    ChatModel(
+    {
       "name": "Adam",
       "message": "Congratulations 👏🏻👏🏻🎉🎊",
       "time": "12:30",
@@ -204,7 +204,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 11,
     ),
-    ChatModel(
+    {
       "name": "Austin",
       "message": "What happened??",
       "time": "15:30",
@@ -214,7 +214,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 12,
     ),
-    ChatModel(
+    {
       "name": "James",
       "message": "Anything else?",
       "time": "12:30",
@@ -224,7 +224,7 @@ class _SelectContactState extends State<SelectContact> {
       "phoneno": '0000000000',
       "id": 13,
     ),
-    ChatModel(
+    {
       "name": "Jack",
       "message": "Happy Journey ✨✨",
       "time": "15:30",
