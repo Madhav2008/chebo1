@@ -141,7 +141,7 @@ class MyApp extends StatelessWidget {
             // Locale.fromSubtags(
             //     languageCode: 'zh',
             //     scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
-          ],
+          // ],
           // localizationsDelegates: [
             // CountryLocalizations.delegate,
             //   GlobalMaterialLocalizations.delegate,
