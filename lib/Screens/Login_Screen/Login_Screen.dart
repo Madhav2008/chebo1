@@ -308,6 +308,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   //Optional. Shows phone code before the country name.
                   showPhoneCode: true,
                   onSelect: (Country country) {
+                    setState(() {
+                      countryName:
+                      country.displayName;
+                    });
                     print(
                       'Select country: ${country.displayName}',
                     );
