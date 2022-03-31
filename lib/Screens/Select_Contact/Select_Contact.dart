@@ -516,7 +516,7 @@ class _SelectContactState extends State<SelectContact> {
                       itemCount: _foundUsers.length,
                       itemBuilder: (context, index) => Card(
                         key: ValueKey(_foundUsers[index]["id"]),
-                        // color: Colors.amberAccent,
+                        color: transparent,
                         elevation: 4,
                         margin: EdgeInsets.symmetric(vertical: 10),
                         child: ListTile(
