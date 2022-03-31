@@ -521,7 +521,7 @@ class _SelectContactState extends State<SelectContact> {
                         margin: EdgeInsets.symmetric(vertical: 10),
                         child: ListTile(
                           leading: Text(
-                            _foundUsers[index]["id"].toString(),
+                            _foundUsers[index]["avatarUrl"].toString(),
                             style: TextStyle(fontSize: 24),
                           ),
                           title: Text(_foundUsers[index]['name']),
