@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Models/Country_Model.dart';
-import 'package:country_picker/country_picker.dart';
 
 class CountryScreen extends StatefulWidget {
   CountryScreen({
