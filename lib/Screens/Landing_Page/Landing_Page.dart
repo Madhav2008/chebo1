@@ -98,8 +98,8 @@ class LandingPage extends StatelessWidget {
                         Localizations.localeOf(context),
                       );
                       return
-                      //  LoginScreen();
-                      UserDetailsScreen(
+                          //  LoginScreen();
+                          UserDetailsScreen(
                         countryCode: '+91',
                         no: '9999348444',
                       );
