@@ -307,7 +307,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   // exclude: <String>['KN', 'MF'],
                   //Optional. Shows phone code before the country name.
                   showPhoneCode: true,
-                  showWorldWide: false,
                   onSelect: (Country country) {
                     print(
                       'Select country: ${country.displayName}',
