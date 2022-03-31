@@ -9,8 +9,10 @@ class ReplyFileCard extends StatelessWidget {
   ReplyFileCard({
     Key? key,
     required this.path,
+    required this.path,
   }) : super(key: key);
 
+  final String path;
   final String path;
 
   @override
