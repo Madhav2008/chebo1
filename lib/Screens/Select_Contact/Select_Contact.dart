@@ -518,7 +518,7 @@ class _SelectContactState extends State<SelectContact> {
                         key: ValueKey(_foundUsers[index]["id"]),
                         color: Colors.amberAccent,
                         elevation: 4,
-                        margin: const EdgeInsets.symmetric(vertical: 10),
+                        margin: EdgeInsets.symmetric(vertical: 10),
                         child: ListTile(
                           leading: Text(
                             _foundUsers[index]["id"].toString(),
