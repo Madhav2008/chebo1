@@ -16,7 +16,9 @@ class ViewChatPhoto extends StatefulWidget {
   final String time;
 
   @override
-  State<ViewChatPhoto> createState() => _ViewChatPhotoState();
+  State<ViewChatPhoto> createState() {
+    return _ViewChatPhotoState();
+  }
 }
 
 class _ViewChatPhotoState extends State<ViewChatPhoto> {
