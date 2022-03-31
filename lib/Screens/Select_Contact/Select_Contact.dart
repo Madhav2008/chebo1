@@ -466,9 +466,9 @@ class _SelectContactState extends State<SelectContact> {
                   builder: (builder) => ChatScreen(
                     avatar:
                         "https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4",
-                    "name": 'Madhav Arora',
-                    "phoneno": '9999348666',
-                    "about": 'I overthink therefore I overam',
+                    name: 'Madhav Arora',
+                    phoneno: '9999348666',
+                    about: 'I overthink therefore I overam',
                     // sourceChat: widget.sourceChat,
                     // chatModels: widget.chatModels,
                   ),
