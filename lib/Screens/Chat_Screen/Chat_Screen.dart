@@ -8,7 +8,6 @@ import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:whatsapp/Auth/User_Model.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Models/Message_Model.dart';
 import 'package:whatsapp/Screens/Camera_Screen/Camera_Screen.dart';
 import 'package:whatsapp/Screens/Chats_Wallpaper_Screen/Chats_Wallpaper_Screen.dart';
@@ -657,7 +656,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                         sendMessage(
                                           _controller.text,
                                           true,
-                                          dummyData[index],
+                                          ,
                                           // widget.sourceChat.id,
                                           // 2,
                                           // 2,
