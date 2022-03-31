@@ -636,7 +636,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       sendButton ? Icons.send : Icons.mic,
                                       color: white,
                                     ),
-                                    onPressed: () {
+                                    onPressed: (index) {
                                       if (sendButton) {
                                         send = true;
                                         // AssetsAudioPlayer.newPlayer().open(
@@ -657,7 +657,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                         sendMessage(
                                           _controller.text,
                                           true,
-                                          ,
+                                          dummyData[index],
                                           // widget.sourceChat.id,
                                           // 2,
                                           // 2,
