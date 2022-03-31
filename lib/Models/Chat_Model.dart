@@ -35,6 +35,7 @@ List<ChatModel> dummyData = [
     phoneno: '9999348666',
     id: 1,
     country: 'India',
+    countryCode: '+91',
   ),
   ChatModel(
     name: "Raghav Arora",
