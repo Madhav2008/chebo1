@@ -17,5 +17,5 @@ class ChatModel {
 
   startsWith(list) {}
 
-  where(Function(dynamic p) param0) {}
+  // where(Function(dynamic p) param0) {}
 }
