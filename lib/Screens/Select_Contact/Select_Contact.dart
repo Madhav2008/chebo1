@@ -132,7 +132,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "Hey there! I am using WhatsApp India.",
       "phoneno": '0000000000',
       "id": 4,
-    ),
+    },
     {
       "name": "David",
       "message": "Hey Flutter, You are so cool !",
