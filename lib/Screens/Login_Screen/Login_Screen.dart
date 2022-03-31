@@ -310,7 +310,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onSelect: (Country country) {
                     setState(() {
                       countryName = country.displayName;
-                      countryCode = '+'+ country.phoneCode;
+                      countryCode = '+' + country.phoneCode;
                     });
                     print(
                       'Select country: ${country.displayName}',
