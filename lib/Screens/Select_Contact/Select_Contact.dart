@@ -504,7 +504,7 @@ class _SelectContactState extends State<SelectContact> {
             ),
             TextField(
               onChanged: (value) => _runFilter(value),
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                   labelText: 'Search', suffixIcon: Icon(Icons.search)),
             ),
             const SizedBox(
