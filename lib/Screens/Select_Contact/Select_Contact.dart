@@ -520,7 +520,7 @@ class _SelectContactState extends State<SelectContact> {
                         elevation: 4,
                         margin: EdgeInsets.symmetric(vertical: 10),
                         child: ListTile(
-                          leading: Text(
+                          leading: Image.network(
                             _foundUsers[index]["avatarUrl"].toString(),
                             style: TextStyle(fontSize: 24),
                           ),
