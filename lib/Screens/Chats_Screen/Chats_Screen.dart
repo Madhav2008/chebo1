@@ -20,7 +20,8 @@ class ChatsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: dummyData.length,
-      itemBuilder: (context, i) => Column(
+      itemBuilder: (context, i) {
+        return Column(
         children: <Widget>[
           Divider(
             thickness: 1,
@@ -103,7 +104,8 @@ class ChatsScreen extends StatelessWidget {
             ),
           ),
         ],
-      ),
+      );
+      },
     );
   }
 }
