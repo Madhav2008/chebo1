@@ -233,7 +233,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "This shall pass too 😚🤗",
       "phoneno": '0000000000',
       "id": 14,
-    ),
+    },
   ];
 
   void _runFilter(String enteredKeyword) {
