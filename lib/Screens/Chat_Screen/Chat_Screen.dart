@@ -405,6 +405,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           );
                         }
                         if (allMessages[index].type == "source") {
+                          if(allMessages[index].path != null){}
                           return Column(
                             children: [
                               GestureDetector(
