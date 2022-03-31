@@ -507,7 +507,7 @@ class _SelectContactState extends State<SelectContact> {
               decoration: InputDecoration(
                   labelText: 'Search', suffixIcon: Icon(Icons.search)),
             ),
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             Expanded(
