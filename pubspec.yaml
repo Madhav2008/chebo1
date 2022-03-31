@@ -58,6 +58,7 @@ dependencies:
   firebase_messaging: 
   flutter_local_notifications: 
   # audio_recorder: 
+  country_picker: 
 
 dev_dependencies:
   flutter_test:
