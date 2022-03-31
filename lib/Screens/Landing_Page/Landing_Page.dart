@@ -99,10 +99,10 @@ class LandingPage extends StatelessWidget {
                       );
                       return
                       //  LoginScreen();
-                      // UserDetailsScreen(
-                      //   countryCode: '+91',
-                      //   no: '9999348444',
-                      // );
+                      UserDetailsScreen(
+                        countryCode: '+91',
+                        no: '9999348444',
+                      );
                     },
                   ),
                 );
