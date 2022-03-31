@@ -34,6 +34,7 @@ List<ChatModel> dummyData = [
     about: "I overthink therefore I overam",
     phoneno: '9999348666',
     id: 1,
+    country: 'India',
   ),
   ChatModel(
     name: "Raghav Arora",
