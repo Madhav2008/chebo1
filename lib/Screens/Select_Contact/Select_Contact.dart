@@ -172,7 +172,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "Can't talk, WhatsApp India only",
       "phoneno": '0000000000',
       "id": 8,
-    ),
+    },
     {
       "name": "Amy",
       "message": "I'm good!",
