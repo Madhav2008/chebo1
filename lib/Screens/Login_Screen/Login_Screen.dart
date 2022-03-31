@@ -442,7 +442,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             GestureDetector(
               onTap: () {
-                _phoneController.text.length < 10
+                _phoneController.text.isEmpty
                     ? ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text("Phone no. is required"),
