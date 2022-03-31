@@ -94,7 +94,7 @@ class _SelectContactState extends State<SelectContact> {
   //   ChatModel(name: "Raghu Arora", status: "About...."),
   // ];
 
-  List<ChatModel> _allUsers = [
+  final List<Map<String, dynamic>> _allUsers = [
     ChatModel(
       name: "Madhav Arora",
       message: "Hey Flutter, You are so amazing !",
