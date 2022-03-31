@@ -120,9 +120,9 @@ class MyApp extends StatelessWidget {
             // '/': (context) {
             //   return SplashScreen();
             // },
-            '/loginScreen': (context) {
-              return LoginScreen();
-            },
+            // '/loginScreen': (context) {
+            //   return LoginScreen();
+            // },
           //   '/LandingScreen': (context) => LandingPage(),
           //   '/otpScreen': (context) => OTPVerificationScreen(
           //         no: '9999348666',
