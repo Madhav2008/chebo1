@@ -521,7 +521,7 @@ class _SelectContactState extends State<SelectContact> {
                         margin: EdgeInsets.symmetric(vertical: 10),
                         child: ListTile(
                           leading: CircleAvatar(
-                            radius: 30,
+                            radius: 25,
                             backgroundImage: NetworkImage(
                               _foundUsers[index]["avatarUrl"].toString(),
                             ),
