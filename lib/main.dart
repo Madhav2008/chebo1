@@ -98,7 +98,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(Localizations.localeOf(context),);
+    print(
+      Localizations.localeOf(context),
+    );
     return ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
       builder: (context, _) {
