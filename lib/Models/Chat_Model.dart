@@ -70,7 +70,7 @@ List<ChatModel> dummyData = [
     phoneno: '0000000000',
     id: 4,
     country: 'South Africa',
-    countryCode: '',
+    countryCode: '+27',
   ),
   ChatModel(
     name: "David",
