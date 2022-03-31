@@ -190,5 +190,7 @@ List<ChatModel> dummyData = [
     about: "This shall pass too 😚🤗",
     phoneno: '0000000000',
     id: 14,
+    country: 'Afghanistan',
+    countryCode: '+93',
   ),
 ];
