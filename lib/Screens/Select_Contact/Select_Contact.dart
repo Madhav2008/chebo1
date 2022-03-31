@@ -278,7 +278,8 @@ class _SelectContactState extends State<SelectContact> {
     //   listToShow = data;
     // }
 
-    return Scaffold(
+    return 
+    Scaffold(
       appBar: AppBar(
         title: appBarTitle,
         actions: [
