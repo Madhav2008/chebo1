@@ -636,7 +636,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       sendButton ? Icons.send : Icons.mic,
                                       color: white,
                                     ),
-                                    onPressed: (index) {
+                                    onPressed: () {
                                       if (sendButton) {
                                         send = true;
                                         // AssetsAudioPlayer.newPlayer().open(
