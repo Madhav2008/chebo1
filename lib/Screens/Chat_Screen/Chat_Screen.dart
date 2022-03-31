@@ -431,27 +431,6 @@ class _ChatScreenState extends State<ChatScreen> {
                                     ),
                                   ),
                                 ),
-                                GestureDetector(
-                                  onTap: () {
-                                    if (messageColor == blue.withOpacity(0.5)) {
-                                      setState(() {
-                                        messageColor = transparent;
-                                      });
-                                    }
-                                  },
-                                  onLongPress: () {
-                                    setState(() {
-                                      messageColor = blue.withOpacity(0.5);
-                                    });
-                                  },
-                                  child: Container(
-                                    color: messageColor,
-                                    width: MediaQuery.of(context).size.width,
-                                    child: ReplyFileCard(
-                                      path: allMessages[index].path,
-                                    ),
-                                  ),
-                                ),
                               ],
                             );
                           } else {
