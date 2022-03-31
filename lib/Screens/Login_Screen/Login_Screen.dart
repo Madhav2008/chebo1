@@ -336,7 +336,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   context: context,
                   countryListTheme: CountryListThemeData(
                     flagSize: 25,
-                    backgroundColor: Colors.white,
+                    // backgroundColor: Colors.white,
                     textStyle: TextStyle(fontSize: 16, color: Colors.blueGrey),
                     //Optional. Sets the border radius for the bottomsheet.
                     borderRadius: BorderRadius.only(
