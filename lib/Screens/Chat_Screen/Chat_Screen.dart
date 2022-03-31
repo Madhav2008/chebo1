@@ -446,7 +446,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               child: Container(
                                 color: messageColor,
                                 width: MediaQuery.of(context).size.width,
-                                child: ReplyCard(
+                                child: OwnMessageCard(
                                   color: own,
                                   textColor: text,
                                   message: allMessages[index].message,
@@ -473,7 +473,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               child: Container(
                                 color: messageColor,
                                 width: MediaQuery.of(context).size.width,
-                                child: ReplyFileCard(
+                                child: OwnFileCard(
                                   path: allMessages[index].path,
                                 ),
                               ),
