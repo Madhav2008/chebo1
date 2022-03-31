@@ -17,6 +17,7 @@ import 'package:whatsapp/Screens/View_Photo/View_Photo.dart';
 import 'package:whatsapp/Screens/View_Profile/View_Profile.dart';
 import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Calling_Screen.dart';
 import 'package:whatsapp/Theme/Provider/Theme_Provider.dart';
+import 'package:whatsapp/Widgets/OwnFileCard.dart';
 import 'package:whatsapp/Widgets/OwnMessageCard.dart';
 import 'package:whatsapp/Widgets/Reply_Card.dart';
 import 'package:file/file.dart';
@@ -424,7 +425,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 child: Container(
                                   color: messageColor,
                                   width: MediaQuery.of(context).size.width,
-                                  child: OwnMessageCard(
+                                  child: OwnFileCard(
                                     color: own,
                                     textColor: text,
                                     message: allMessages[index].message,
