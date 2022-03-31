@@ -504,7 +504,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       messageTime: allMessages[index].time,
                                     ),
                                   ),
-                                )
+                                ),
                               ],
                             );
                           }
