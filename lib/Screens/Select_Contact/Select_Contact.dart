@@ -493,7 +493,7 @@ class _SelectContactState extends State<SelectContact> {
     // );
     Scaffold(
       appBar: AppBar(
-        title: const Text('Kindacode.com'),
+        title: Text('Kindacode.com'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
