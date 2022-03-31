@@ -84,11 +84,11 @@ class _SelectContactState extends State<SelectContact> {
     List<Map<String, dynamic>> results = [];
     if (enteredKeyword.isEmpty) {
       // if the search field is empty or only contains white-space, we'll display all users
-      results = dummyData.cast<Map<String, dynamic>>();
+      results = dummyData;
     } else {
-      results = dummyData
+      results = _allUsers
           .where((user) =>
-              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase())).cast<Map<String, dynamic>>()
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
           .toList();
       // we use the toLowerCase() method to make it case-insensitive
     }
