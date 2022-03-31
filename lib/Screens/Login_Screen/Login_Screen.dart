@@ -313,7 +313,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       countryCode = '+' + country.phoneCode;
                     });
                     print(
-                      'Display Name: ${country.displayName} Country Code: ${},
+                      'Display Name: ${country.displayName} Country Code: ${country.countryCode},
                     );
                   },
                   // Optional. Sets the the me for the country list picker.
