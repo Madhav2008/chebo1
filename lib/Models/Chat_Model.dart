@@ -20,7 +20,7 @@ class ChatModel {
     required this.phoneno,
     required this.id,
     required this.country,
-    required this.country,
+    required this.countryCode,
   });
 }
 
