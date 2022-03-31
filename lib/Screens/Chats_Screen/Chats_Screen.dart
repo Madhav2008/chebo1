@@ -31,7 +31,8 @@ class ChatsScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (BuildContext context) => ChatScreen(
+                  builder: (BuildContext context) {
+                    return ChatScreen(
                     avatar: dummyData[i].avatarUrl,
                     name: dummyData[i].name,
                     phoneno: dummyData[i].phoneno,
@@ -39,7 +40,8 @@ class ChatsScreen extends StatelessWidget {
                     // user: dummyData[i].name,
                     // sourceChat: sourceChat,
                     // chatModels: chatModels,
-                  ),
+                  );
+                  },
                 ),
               );
             },
