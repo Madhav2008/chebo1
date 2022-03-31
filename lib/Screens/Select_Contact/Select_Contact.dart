@@ -203,7 +203,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "Life is like a riding Bicycle. 🤗🚲",
       "phoneno": '0000000000',
       "id": 11,
-    ),
+    },
     {
       "name": "Austin",
       "message": "What happened??",
