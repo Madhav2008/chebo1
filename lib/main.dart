@@ -142,6 +142,7 @@ class MyApp extends StatelessWidget {
           //         countryCode: '+91',
           //         about: '👋🏻 Hey! there I am using WhatsApp India.',
           //       ),
+      // }
           // },
           translations: LocalString(),
           locale: Locale('en', 'US'),
@@ -153,8 +154,6 @@ class MyApp extends StatelessWidget {
           home: SplashScreen(),
           // ),
         );
-            };
-            };
       },
     );
   }
