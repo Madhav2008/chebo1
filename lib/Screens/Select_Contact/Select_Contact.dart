@@ -530,7 +530,7 @@ class _SelectContactState extends State<SelectContact> {
                         ),
                       ),
                     )
-                  : const Text(
+                  : Text(
                       'No results found',
                       style: TextStyle(fontSize: 24),
                     ),
