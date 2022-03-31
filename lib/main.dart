@@ -126,8 +126,8 @@ class MyApp extends StatelessWidget {
             // '/LandingScreen': (context) {
             //   return LandingPage();
             // },
-            '/otpScreen': (context) {
-              return OTPVerificationScreen(
+            // '/otpScreen': (context) {
+              // return OTPVerificationScreen(
           //         no: '9999348666',
           //         countryCode: '+91',
           //         country: 'India',
