@@ -94,9 +94,9 @@ class LandingPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                       print(
-      Localizations.localeOf(context),
-    );
+                      print(
+                        Localizations.localeOf(context),
+                      );
                       return LoginScreen();
                       // UserDetailsScreen(
                       //   countryCode: '+91',
