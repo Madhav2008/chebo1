@@ -22,6 +22,9 @@ class OwnFileCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             color: one,
           ),
+          child: Card(
+            margin: EdgeInsets.all(3),
+          ),
         ),
       ),
     );
