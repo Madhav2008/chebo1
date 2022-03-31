@@ -74,10 +74,30 @@ class _SelectContactState extends State<SelectContact> {
   @override
   void initState() {
     super.initState();
+    _foundUsers = dummyData.cast<Map<String, dynamic>>();
     _IsSearching = false;
   }
 
   List<Map<String, dynamic>> _foundUsers = [];
+
+  void _runFilter(String enteredKeyword) {
+    List<Map<String, dynamic>> results = [];
+    if (enteredKeyword.isEmpty) {
+      // if the search field is empty or only contains white-space, we'll display all users
+      results = dummyData;
+    } else {
+      results = dummyData
+          .where((user) =>
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
+          .toList();
+      // we use the toLowerCase() method to make it case-insensitive
+    }
+
+    // Refresh the UI
+    setState(() {
+      _foundUsers = results;
+    });
+  }
 
   // List<ChatModel> contacts = [
   //   ChatModel(name: "Bobby Arora", status: "About...."),
