@@ -9,6 +9,8 @@ class OwnFileCard extends StatelessWidget {
     required this.file,
   }) : super(key: key);
 
+  final String path;
+
   @override
   Widget build(BuildContext context) {
     return Align(
