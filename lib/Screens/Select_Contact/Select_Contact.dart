@@ -279,218 +279,218 @@ class _SelectContactState extends State<SelectContact> {
     // }
 
     return 
-    Scaffold(
-      appBar: AppBar(
-        title: appBarTitle,
-        actions: [
-          IconButton(
-            icon: actionIcon,
-            onPressed: () {
-              setState(() {
-                if (actionIcon.icon == Icons.search) {
-                  _handleSearchStart();
-                  actionIcon = Icon(Icons.close);
-                  appBarTitle = TextField(
-                    style: TextStyle(
-                      color: white,
-                    ),
-                    autofocus: true,
-                    controller: _hi,
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        Icons.search,
-                        size: 26,
-                        color: white,
-                      ),
-                      hintText: "Search...",
-                      hintStyle: TextStyle(
-                        color: white,
-                      ),
-                    ),
-                  );
-                } else {
-                  _handleSearchEnd();
-                  actionIcon = Icon(
-                    Icons.search,
-                    size: 26,
-                  );
-                  appBarTitle = Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Select Contact",
-                        style: TextStyle(
-                          fontSize: 19,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
-                        ),
-                      ),
-                      Text(
-                        "256 contacts",
-                        style: TextStyle(
-                          fontSize: 13,
-                        ),
-                      ),
-                    ],
-                  );
-                }
-              });
-            },
-          ),
-          Theme(
-            data: Theme.of(context).copyWith(
-              dividerColor: black,
-              iconTheme: IconThemeData(
-                color: white,
-              ),
-              textTheme: TextTheme().apply(),
-            ),
-            child: PopupMenuButton<int>(
-              onSelected: (item) => onSelected(context, item),
-              itemBuilder: (context) => [
-                PopupMenuItem<int>(
-                  value: 0,
-                  child: Row(
-                    children: [
-                      Text(
-                        'Invite a friend',
-                        style: TextStyle(
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                PopupMenuItem<int>(
-                  value: 1,
-                  child: Row(
-                    children: [
-                      Text(
-                        'Contacts',
-                        style: TextStyle(
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                PopupMenuItem<int>(
-                  value: 2,
-                  child: Row(
-                    children: [
-                      Text(
-                        'Refresh',
-                        style: TextStyle(
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                PopupMenuItem<int>(
-                  value: 3,
-                  child: Row(
-                    children: [
-                      Text(
-                        'Help',
-                        style: TextStyle(
-                          fontSize: 14,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-      body: ListView.builder(
-        itemCount: _allUsers.length + 2,
-        itemBuilder: (context, index) {
-          if (index == 0) {
-            return InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => CreateGroup(),
-                  ),
-                );
-              },
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 10,
-                  ),
-                  ListTile(
-                    leading: CircleAvatar(
-                      radius: 23,
-                      backgroundColor: one,
-                      child: Icon(
-                        Icons.person_add,
-                        color: white,
-                      ),
-                    ),
-                    title: Text('New group'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                ],
-              ),
-            );
-          } else if (index == 1) {
-            return ListTile(
-              leading: CircleAvatar(
-                radius: 23,
-                backgroundColor: one,
-                child: Icon(
-                  Icons.person_add,
-                  color: white,
-                ),
-              ),
-              title: Text('New contact'),
-              trailing: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.qr_code,
-                  color: grey,
-                ),
-              ),
-            );
-          }
-          return GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (builder) => ChatScreen(
-                    avatar:
-                        "https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4",
-                    name: 'Madhav Arora',
-                    phoneno: '9999348666',
-                    about: 'I overthink therefore I overam',
-                    // sourceChat: widget.sourceChat,
-                    // chatModels: widget.chatModels,
-                  ),
-                ),
-              );
-            },
-            child: ContactCard(
-              contact: !_IsSearching
-                  ? _allUsers[index - 2]
-                  : _allUsers[index - 2].where(
-                      (p) => p.startsWith(
-                        query.toList(),
-                      ),
-                    ),
-            ),
-          );
-        },
-      ),
-    );
+    // Scaffold(
+    //   appBar: AppBar(
+    //     title: appBarTitle,
+    //     actions: [
+    //       IconButton(
+    //         icon: actionIcon,
+    //         onPressed: () {
+    //           setState(() {
+    //             if (actionIcon.icon == Icons.search) {
+    //               _handleSearchStart();
+    //               actionIcon = Icon(Icons.close);
+    //               appBarTitle = TextField(
+    //                 style: TextStyle(
+    //                   color: white,
+    //                 ),
+    //                 autofocus: true,
+    //                 controller: _hi,
+    //                 decoration: InputDecoration(
+    //                   prefixIcon: Icon(
+    //                     Icons.search,
+    //                     size: 26,
+    //                     color: white,
+    //                   ),
+    //                   hintText: "Search...",
+    //                   hintStyle: TextStyle(
+    //                     color: white,
+    //                   ),
+    //                 ),
+    //               );
+    //             } else {
+    //               _handleSearchEnd();
+    //               actionIcon = Icon(
+    //                 Icons.search,
+    //                 size: 26,
+    //               );
+    //               appBarTitle = Column(
+    //                 mainAxisAlignment: MainAxisAlignment.start,
+    //                 crossAxisAlignment: CrossAxisAlignment.start,
+    //                 children: [
+    //                   Text(
+    //                     "Select Contact",
+    //                     style: TextStyle(
+    //                       fontSize: 19,
+    //                       fontWeight: FontWeight.bold,
+    //                       letterSpacing: 1,
+    //                     ),
+    //                   ),
+    //                   Text(
+    //                     "256 contacts",
+    //                     style: TextStyle(
+    //                       fontSize: 13,
+    //                     ),
+    //                   ),
+    //                 ],
+    //               );
+    //             }
+    //           });
+    //         },
+    //       ),
+    //       Theme(
+    //         data: Theme.of(context).copyWith(
+    //           dividerColor: black,
+    //           iconTheme: IconThemeData(
+    //             color: white,
+    //           ),
+    //           textTheme: TextTheme().apply(),
+    //         ),
+    //         child: PopupMenuButton<int>(
+    //           onSelected: (item) => onSelected(context, item),
+    //           itemBuilder: (context) => [
+    //             PopupMenuItem<int>(
+    //               value: 0,
+    //               child: Row(
+    //                 children: [
+    //                   Text(
+    //                     'Invite a friend',
+    //                     style: TextStyle(
+    //                       fontSize: 14,
+    //                     ),
+    //                   ),
+    //                 ],
+    //               ),
+    //             ),
+    //             PopupMenuItem<int>(
+    //               value: 1,
+    //               child: Row(
+    //                 children: [
+    //                   Text(
+    //                     'Contacts',
+    //                     style: TextStyle(
+    //                       fontSize: 14,
+    //                     ),
+    //                   ),
+    //                 ],
+    //               ),
+    //             ),
+    //             PopupMenuItem<int>(
+    //               value: 2,
+    //               child: Row(
+    //                 children: [
+    //                   Text(
+    //                     'Refresh',
+    //                     style: TextStyle(
+    //                       fontSize: 14,
+    //                     ),
+    //                   ),
+    //                 ],
+    //               ),
+    //             ),
+    //             PopupMenuItem<int>(
+    //               value: 3,
+    //               child: Row(
+    //                 children: [
+    //                   Text(
+    //                     'Help',
+    //                     style: TextStyle(
+    //                       fontSize: 14,
+    //                     ),
+    //                   ),
+    //                 ],
+    //               ),
+    //             ),
+    //           ],
+    //         ),
+    //       ),
+    //     ],
+    //   ),
+    //   body: ListView.builder(
+    //     itemCount: _allUsers.length + 2,
+    //     itemBuilder: (context, index) {
+    //       if (index == 0) {
+    //         return InkWell(
+    //           onTap: () {
+    //             Navigator.push(
+    //               context,
+    //               MaterialPageRoute(
+    //                 builder: (builder) => CreateGroup(),
+    //               ),
+    //             );
+    //           },
+    //           child: Column(
+    //             children: [
+    //               SizedBox(
+    //                 height: 10,
+    //               ),
+    //               ListTile(
+    //                 leading: CircleAvatar(
+    //                   radius: 23,
+    //                   backgroundColor: one,
+    //                   child: Icon(
+    //                     Icons.person_add,
+    //                     color: white,
+    //                   ),
+    //                 ),
+    //                 title: Text('New group'),
+    //               ),
+    //               SizedBox(
+    //                 height: 10,
+    //               ),
+    //             ],
+    //           ),
+    //         );
+    //       } else if (index == 1) {
+    //         return ListTile(
+    //           leading: CircleAvatar(
+    //             radius: 23,
+    //             backgroundColor: one,
+    //             child: Icon(
+    //               Icons.person_add,
+    //               color: white,
+    //             ),
+    //           ),
+    //           title: Text('New contact'),
+    //           trailing: IconButton(
+    //             onPressed: () {},
+    //             icon: Icon(
+    //               Icons.qr_code,
+    //               color: grey,
+    //             ),
+    //           ),
+    //         );
+    //       }
+    //       return GestureDetector(
+    //         onTap: () {
+    //           Navigator.push(
+    //             context,
+    //             MaterialPageRoute(
+    //               builder: (builder) => ChatScreen(
+    //                 avatar:
+    //                     "https://avatars.githubusercontent.com/u/72864817?s=400&u=2f8a4bd2f1f03f4f6ad73c61abfc5770afd1e135&v=4",
+    //                 name: 'Madhav Arora',
+    //                 phoneno: '9999348666',
+    //                 about: 'I overthink therefore I overam',
+    //                 // sourceChat: widget.sourceChat,
+    //                 // chatModels: widget.chatModels,
+    //               ),
+    //             ),
+    //           );
+    //         },
+    //         child: ContactCard(
+    //           contact: !_IsSearching
+    //               ? _allUsers[index - 2]
+    //               : _allUsers[index - 2].where(
+    //                   (p) => p.startsWith(
+    //                     query.toList(),
+    //                   ),
+    //                 ),
+    //         ),
+    //       );
+    //     },
+    //   ),
+    // );
   }
 
   void onSelected(BuildContext context, int item) {
