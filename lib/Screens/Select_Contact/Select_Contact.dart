@@ -15,7 +15,9 @@ class SelectContact extends StatefulWidget {
   // final List<ChatModel> chatModels;
 
   @override
-  _SelectContactState createState() => _SelectContactState();
+  _SelectContactState createState() {
+    return _SelectContactState();
+  }
 }
 
 class _SelectContactState extends State<SelectContact> {
