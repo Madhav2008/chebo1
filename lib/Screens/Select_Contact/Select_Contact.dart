@@ -193,7 +193,7 @@ class _SelectContactState extends State<SelectContact> {
           "Problem is a part of life and facing with strength is art of life 😎🤩",
       "phoneno": '0000000000',
       "id": 10,
-    ),
+    },
     {
       "name": "Adam",
       "message": "Congratulations 👏🏻👏🏻🎉🎊",
