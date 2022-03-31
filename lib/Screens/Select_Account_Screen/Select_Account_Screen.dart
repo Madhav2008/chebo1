@@ -33,7 +33,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (builder) => NavigationScreen(
+                  builder: (builder) {
+                    return NavigationScreen(
                     cameras: [],
                     name: dummyData[index].name,
                     avatar: dummyData[index].avatarUrl,
@@ -42,7 +43,8 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                     about: dummyData[index].about,
                     // sourceChat: sourceChat,
                     // chatModels: dummyData,
-                  ),
+                  );
+                  },
                 ),
               );
             },
