@@ -35,15 +35,15 @@ class _SelectAccountScreenState extends State<SelectAccountScreen> {
                 MaterialPageRoute(
                   builder: (builder) {
                     return NavigationScreen(
-                    cameras: [],
-                    name: dummyData[index].name,
-                    avatar: dummyData[index].avatarUrl,
-                    phoneno: dummyData[index].phoneno,
-                    countryCode: '+91',
-                    about: dummyData[index].about,
-                    // sourceChat: sourceChat,
-                    // chatModels: dummyData,
-                  );
+                      cameras: [],
+                      name: dummyData[index].name,
+                      avatar: dummyData[index].avatarUrl,
+                      phoneno: dummyData[index].phoneno,
+                      countryCode: '+91',
+                      about: dummyData[index].about,
+                      // sourceChat: sourceChat,
+                      // chatModels: dummyData,
+                    );
                   },
                 ),
               );
