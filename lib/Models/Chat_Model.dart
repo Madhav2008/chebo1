@@ -16,7 +16,7 @@ class ChatModel {
     required this.avatarUrl,
     required this.about,
     // required this.phoneno,
-    // required this.id,
+    required this.id,
   });
 }
 
