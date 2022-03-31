@@ -146,6 +146,7 @@ class _ChatScreenState extends State<ChatScreen> {
             16,
           ),
       unread: read,
+      path: path,
     );
     setState(() {
       setState(() {
