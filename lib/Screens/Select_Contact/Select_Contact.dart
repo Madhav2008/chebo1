@@ -104,8 +104,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "I overthink therefore I overam",
       "phoneno": '9999348666',
       "id": 1,
-    },
-    {
+    },{
       "name": "Raghav Arora",
       "message": "Hey I have hacked WhatsApp India!",
       "time": "5:00",
