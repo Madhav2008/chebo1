@@ -142,6 +142,8 @@ List<ChatModel> dummyData = [
         "Problem is a part of life and facing with strength is art of life 😎🤩",
     phoneno: '0000000000',
     id: 10,
+    country: 'Afghanistan',
+    countryCode: '+93',
   ),
   ChatModel(
     name: "Adam",
