@@ -19,6 +19,7 @@ import 'package:whatsapp/Screens/WhatsApp_Video_Calling_Screen/WhatsApp_Video_Ca
 import 'package:whatsapp/Theme/Provider/Theme_Provider.dart';
 import 'package:whatsapp/Widgets/OwnFileCard.dart';
 import 'package:whatsapp/Widgets/OwnMessageCard.dart';
+import 'package:whatsapp/Widgets/ReplyFileCard.dart';
 import 'package:whatsapp/Widgets/Reply_Card.dart';
 import 'package:file/file.dart';
 import 'dart:io' as io;
@@ -446,11 +447,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                   child: Container(
                                     color: messageColor,
                                     width: MediaQuery.of(context).size.width,
-                                    child: ReplyCard(
-                                      color: reply,
-                                      textColor: text,
-                                      message: allMessages[index].message,
-                                      messageTime: allMessages[index].time,
+                                    child: ReplyFileCard(
+                                      path: allMessages[index].path,
                                     ),
                                   ),
                                 )
