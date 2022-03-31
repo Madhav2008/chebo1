@@ -154,6 +154,8 @@ List<ChatModel> dummyData = [
     about: "Life is like a riding Bicycle. 🤗🚲",
     phoneno: '0000000000',
     id: 11,
+    country: 'Afghanistan',
+    countryCode: '+93',
   ),
   ChatModel(
     name: "Austin",
