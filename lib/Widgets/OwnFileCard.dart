@@ -10,10 +10,11 @@ class OwnFileCard extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: Padding(
-          padding: EdgeInsets.symmetric(
-        horizontal: 15,
-        vertical: 5,
-      ),),
+        padding: EdgeInsets.symmetric(
+          horizontal: 15,
+          vertical: 5,
+        ),
+      ),
     );
   }
 }
