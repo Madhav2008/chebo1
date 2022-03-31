@@ -131,7 +131,7 @@ class MyApp extends StatelessWidget {
                   no: '9999348666',
                   countryCode: '+91',
                   country: 'India',
-                ),
+                );
       }
             '/navigationScreen': (context) {
               return NavigationScreen(
