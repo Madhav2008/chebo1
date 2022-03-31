@@ -85,6 +85,7 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp();
   cameras = await availableCameras();
+  print(Locale.getDefault().getLanguage());
   runApp(
     MyApp(),
   );
