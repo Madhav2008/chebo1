@@ -479,8 +479,7 @@ class _SelectContactState extends State<SelectContact> {
             child: ContactCard(
               contact: !_IsSearching
                   ? _allUsers[index - 2]
-                  : _allUsers[index - 2]
-                  .where(
+                  : _allUsers[index - 2].where(
                       (p) => p.startsWith(
                         query.toList(),
                       ),
