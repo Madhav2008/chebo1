@@ -451,7 +451,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       path: allMessages[index].path,
                                     ),
                                   ),
-                                )
+                                ),
                               ],
                             );
                           } else {
