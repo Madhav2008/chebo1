@@ -131,7 +131,7 @@ class _ChatScreenState extends State<ChatScreen> {
     String type,
     String message,
     bool read,
-    User sendBy,
+    // User sendBy,
     // int sourceId,
     // int targetId,
   ) {
@@ -658,7 +658,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                         sendMessage(
                                           _controller.text,
                                           true,
-                                          widget.user,
+                                          // widget.user,
                                           // widget.sourceChat.id,
                                           // 2,
                                           // 2,
