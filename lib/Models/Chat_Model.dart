@@ -18,8 +18,6 @@ class ChatModel {
     required this.phoneno,
     required this.id,
   });
-
-  where(Function(dynamic p) param0) {}
 }
 
 List<ChatModel> dummyData = [
