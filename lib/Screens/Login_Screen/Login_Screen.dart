@@ -315,6 +315,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   // Optional. Sets the theme for the country list picker.
                   countryListTheme: CountryListThemeData(
+                    flagSize: 40,
                     // Optional. Sets the border radius for the bottomsheet.
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(40.0),
