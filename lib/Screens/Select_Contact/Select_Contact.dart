@@ -491,6 +491,54 @@ class _SelectContactState extends State<SelectContact> {
     //     },
     //   ),
     // );
+    Scaffold(
+      appBar: AppBar(
+        title: const Text('Kindacode.com'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            TextField(
+              onChanged: (value) => _runFilter(value),
+              decoration: const InputDecoration(
+                  labelText: 'Search', suffixIcon: Icon(Icons.search)),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Expanded(
+              child: _foundUsers.isNotEmpty
+                  ? ListView.builder(
+                      itemCount: _foundUsers.length,
+                      itemBuilder: (context, index) => Card(
+                        key: ValueKey(_foundUsers[index]["id"]),
+                        color: Colors.amberAccent,
+                        elevation: 4,
+                        margin: const EdgeInsets.symmetric(vertical: 10),
+                        child: ListTile(
+                          leading: Text(
+                            _foundUsers[index]["id"].toString(),
+                            style: const TextStyle(fontSize: 24),
+                          ),
+                          title: Text(_foundUsers[index]['name']),
+                          subtitle: Text(
+                              '${_foundUsers[index]["age"].toString()} years old'),
+                        ),
+                      ),
+                    )
+                  : const Text(
+                      'No results found',
+                      style: TextStyle(fontSize: 24),
+                    ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   void onSelected(BuildContext context, int item) {
