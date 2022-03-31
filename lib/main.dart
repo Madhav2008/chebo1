@@ -144,9 +144,9 @@ class MyApp extends StatelessWidget {
           ],
           localizationsDelegates: [
             CountryLocalizations.delegate,
-          //   GlobalMaterialLocalizations.delegate,
-          //   GlobalWidgetsLocalizations.delegate,
-          //   GlobalCupertinoLocalizations.delegate,
+            //   GlobalMaterialLocalizations.delegate,
+            //   GlobalWidgetsLocalizations.delegate,
+            //   GlobalCupertinoLocalizations.delegate,
           ],
           translations: LocalString(),
           locale: Locale('en', 'US'),
