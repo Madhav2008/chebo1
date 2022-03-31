@@ -77,6 +77,8 @@ class _SelectContactState extends State<SelectContact> {
     _IsSearching = false;
   }
 
+  List<Map<String, dynamic>> _foundUsers = [];
+
   // List<ChatModel> contacts = [
   //   ChatModel(name: "Bobby Arora", status: "About...."),
   //   ChatModel(name: "Sonia Arora", status: "About...."),
