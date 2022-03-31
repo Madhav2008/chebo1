@@ -16,7 +16,7 @@ class ReplyFileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: Alignment.centerRight,
+      alignment: Alignment.centerLeft,
       child: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 15,
