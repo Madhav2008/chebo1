@@ -132,7 +132,7 @@ class MyApp extends StatelessWidget {
           //         about: '👋🏻 Hey! there I am using WhatsApp India.',
           //       ),
           // },
-          supportedLocales: [
+          // supportedLocales: [
             // Locale('en'),
             // Locale('el'),
             // Locale.fromSubtags(
