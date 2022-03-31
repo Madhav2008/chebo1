@@ -522,7 +522,7 @@ class _SelectContactState extends State<SelectContact> {
                         child: ListTile(
                           leading: Text(
                             _foundUsers[index]["id"].toString(),
-                            style: const TextStyle(fontSize: 24),
+                            style: TextStyle(fontSize: 24),
                           ),
                           title: Text(_foundUsers[index]['name']),
                           subtitle: Text(
