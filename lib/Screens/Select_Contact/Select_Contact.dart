@@ -245,8 +245,9 @@ class _SelectContactState extends State<SelectContact> {
       results = _allUsers;
     } else {
       results = _allUsers
-          .where((user) =>
-              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase(),))
+          .where((user) => user["name"].toLowerCase().contains(
+                enteredKeyword.toLowerCase(),
+              ))
           .toList();
       // we use the toLowerCase() method to make it case-insensitive
     }
