@@ -522,7 +522,6 @@ class _SelectContactState extends State<SelectContact> {
                         child: ListTile(
                           leading: Image.network(
                             _foundUsers[index]["avatarUrl"].toString(),
-                            style: TextStyle(fontSize: 24),
                           ),
                           title: Text(_foundUsers[index]['name']),
                           subtitle: Text(
