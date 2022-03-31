@@ -6,7 +6,7 @@ import 'package:whatsapp/Constants/Constants.dart';
 class OwnFileCard extends StatelessWidget {
   OwnFileCard({
     Key? key,
-    required this.file,
+    required this.path,
   }) : super(key: key);
 
   final String path;
