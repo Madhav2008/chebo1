@@ -375,7 +375,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
                 ),
               ),
               subtitle: Text(
-                "appLanguageDown".tr + ' (' + 'English' + ')',
+                "appLanguageDown".tr + ' (' +  + ')',
                 style: TextStyle(
                   fontSize: 16,
                   color: grey,
