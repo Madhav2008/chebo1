@@ -88,7 +88,7 @@ class _SelectContactState extends State<SelectContact> {
     } else {
       results = dummyData
           .where((user) =>
-              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase())).cast<Map<String, dynamic>>()
           .toList();
       // we use the toLowerCase() method to make it case-insensitive
     }
