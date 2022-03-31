@@ -292,14 +292,14 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 30),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (builder) => CountryScreen(
-                      setCountryData: setCountryData,
-                    ),
-                  ),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (builder) => CountryScreen(
+                //       setCountryData: setCountryData,
+                //     ),
+                //   ),
+                // );
               },
               child: Container(
                 width: MediaQuery.of(context).size.width - 100,
