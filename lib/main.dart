@@ -142,12 +142,12 @@ class MyApp extends StatelessWidget {
                 languageCode: 'zh',
                 scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
           ],
-          // localizationsDelegates: [
+          localizationsDelegates: [
           //   CountryLocalizations.delegate,
           //   GlobalMaterialLocalizations.delegate,
           //   GlobalWidgetsLocalizations.delegate,
           //   GlobalCupertinoLocalizations.delegate,
-          // ],
+          ],
           translations: LocalString(),
           locale: Locale('en', 'US'),
           title: 'WhatsApp India',
