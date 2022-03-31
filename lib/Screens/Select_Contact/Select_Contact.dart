@@ -237,6 +237,25 @@ class _SelectContactState extends State<SelectContact> {
     ),
   ];
 
+  void _runFilter(String enteredKeyword) {
+    List<Map<String, dynamic>> results = [];
+    if (enteredKeyword.isEmpty) {
+      // if the search field is empty or only contains white-space, we'll display all users
+      results = _allUsers;
+    } else {
+      results = _allUsers
+          .where((user) =>
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
+          .toList();
+      // we use the toLowerCase() method to make it case-insensitive
+    }
+
+    // Refresh the UI
+    setState(() {
+      _foundUsers = results;
+    });
+  }
+
   // final suggestion = _hi.text.isEmpty
   //     ? ContactCard(
   //         contact: contacts[index - 2],
