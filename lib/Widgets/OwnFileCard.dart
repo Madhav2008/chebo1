@@ -13,7 +13,7 @@ class OwnFileCard extends StatelessWidget {
           padding: EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 5,
-      )),
+      ),),
     );
   }
 }
