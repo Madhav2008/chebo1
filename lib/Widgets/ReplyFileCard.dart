@@ -27,7 +27,7 @@ class ReplyFileCard extends StatelessWidget {
           width: MediaQuery.of(context).size.width / 1.8,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
-            color: one,
+            color: grey[400],
           ),
           child: Card(
             margin: EdgeInsets.all(
