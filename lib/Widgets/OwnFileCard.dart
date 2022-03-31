@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class OwnFileCard extends StatelessWidget {
-  const OwnFileCard({
+  OwnFileCard({
     Key? key,
     required this.file,
   }) : super(key: key);
