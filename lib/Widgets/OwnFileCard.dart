@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
@@ -32,7 +34,7 @@ class OwnFileCard extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
-            child: Image.file(path),
+            child: Image.file(File(path)),
           ),
         ),
       ),
