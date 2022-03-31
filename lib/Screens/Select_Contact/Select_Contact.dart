@@ -527,7 +527,7 @@ class _SelectContactState extends State<SelectContact> {
                           ),
                           title: Text(_foundUsers[index]['name']),
                           subtitle: Text(
-                              '${_foundUsers[index]["age"].toString()} years old'),
+                              '${_foundUsers[index]["about"].toString()} years old'),
                         ),
                       ),
                     )
