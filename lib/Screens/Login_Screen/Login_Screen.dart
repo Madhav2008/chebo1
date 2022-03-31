@@ -309,14 +309,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   showPhoneCode: true,
                   onSelect: (Country country) {
                     setState(() {
-                      countryName = country.displayName;
+                      countryName = country.name;
                       countryCode = '+' + country.phoneCode;
                     });
                     print(
                       'Select country: ${country.displayName}',
                     );
                   },
-                  // Optional. Sets the theme for the country list picker.
+                  // Optional. Sets the the me for the country list picker.
                   countryListTheme: CountryListThemeData(
                     // Optional. Sets the border radius for the bottomsheet.
                     borderRadius: BorderRadius.only(
