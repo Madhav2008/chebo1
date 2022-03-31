@@ -9,6 +9,7 @@ class OwnFileCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.centerRight,
+      child: Padding(padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5,)),
     );
   }
 }
