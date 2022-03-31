@@ -9,7 +9,7 @@ class ReplyFileCard extends StatelessWidget {
   ReplyFileCard({
     Key? key,
     required this.path,
-    required this.path,
+    required this.color,
   }) : super(key: key);
 
   final String path;
