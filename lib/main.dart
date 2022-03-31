@@ -143,7 +143,7 @@ class MyApp extends StatelessWidget {
                 scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
           ],
           localizationsDelegates: [
-          //   CountryLocalizations.delegate,
+            CountryLocalizations.delegate,
           //   GlobalMaterialLocalizations.delegate,
           //   GlobalWidgetsLocalizations.delegate,
           //   GlobalCupertinoLocalizations.delegate,
