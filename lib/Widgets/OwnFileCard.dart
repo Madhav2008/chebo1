@@ -29,7 +29,7 @@ class OwnFileCard extends StatelessWidget {
           width: MediaQuery.of(context).size.width / 1.8,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
-            color: one,
+            color: fileColor,
           ),
           child: Card(
             margin: EdgeInsets.all(
