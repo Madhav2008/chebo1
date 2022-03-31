@@ -133,17 +133,21 @@ class MyApp extends StatelessWidget {
           //       ),
           // },
           supportedLocales: [
-        Locale('en'),
-         Locale('el'),
-         Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'), // Generic Simplified Chinese 'zh_Hans'
-       Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
-      ],
-      localizationsDelegates: [
-        CountryLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
+            Locale('en'),
+            Locale('el'),
+            Locale.fromSubtags(
+                languageCode: 'zh',
+                scriptCode: 'Hans'), // Generic Simplified Chinese 'zh_Hans'
+            Locale.fromSubtags(
+                languageCode: 'zh',
+                scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
+          ],
+          localizationsDelegates: [
+            CountryLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
           translations: LocalString(),
           locale: Locale('en', 'US'),
           title: 'WhatsApp India',
