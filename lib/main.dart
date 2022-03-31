@@ -132,7 +132,8 @@ class MyApp extends StatelessWidget {
           //         countryCode: '+91',
           //         country: 'India',
           //       ),
-          //   '/navigationScreen': (context) => NavigationScreen(
+            '/navigationScreen': (context) {
+              return NavigationScreen(
           //         cameras: cameras,
           //         name: 'Madhav Arora',
           //         avatar:
@@ -152,6 +153,7 @@ class MyApp extends StatelessWidget {
           home: SplashScreen(),
           // ),
         );
+            };
             };
       },
     );
