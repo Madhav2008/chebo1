@@ -496,7 +496,7 @@ class _SelectContactState extends State<SelectContact> {
         title: Text('Kindacode.com'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),
         child: Column(
           children: [
             const SizedBox(
