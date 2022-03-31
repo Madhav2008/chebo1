@@ -67,7 +67,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_void_to_null, prefer_const_constructors_in_immutables
 
 import 'package:camera/camera.dart';
-import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
