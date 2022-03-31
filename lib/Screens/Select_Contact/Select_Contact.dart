@@ -142,7 +142,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "Busy",
       "phoneno": '0000000000',
       "id": 5,
-    ),
+    },
     {
       "name": "Bill Gates",
       "message": "On the way !!",
