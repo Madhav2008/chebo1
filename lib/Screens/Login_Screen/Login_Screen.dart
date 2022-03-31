@@ -309,7 +309,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   showPhoneCode: true,
                   onSelect: (Country country) {
                     setState(() {
-                      countryName:
+                      countryName=
                       country.displayName;
                     });
                     print(
