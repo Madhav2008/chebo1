@@ -74,7 +74,7 @@ class _SelectContactState extends State<SelectContact> {
   @override
   void initState() {
     super.initState();
-    _foundUsers = _allUsers.cast<Map<String, dynamic>>();
+    _foundUsers = _allUsers;
     _IsSearching = false;
   }
 
