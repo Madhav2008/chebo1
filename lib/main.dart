@@ -101,6 +101,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
       builder: (context, _) {
+        print(Localizations.localeOf(context));
         final themeProvider = Provider.of<ThemeProvider>(context);
         return
             // MultiProvider(
