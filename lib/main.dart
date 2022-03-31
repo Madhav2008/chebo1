@@ -85,7 +85,6 @@ Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp();
   cameras = await availableCameras();
-  print(DateTime.now().timeZoneName);
   runApp(
     MyApp(),
   );
