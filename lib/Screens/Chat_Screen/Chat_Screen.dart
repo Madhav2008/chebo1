@@ -430,33 +430,29 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             );
                           } else {
-                            return Column(
-                              children: [
-                                GestureDetector(
-                                  onTap: () {
-                                    if (messageColor == blue.withOpacity(0.5)) {
-                                      setState(() {
-                                        messageColor = transparent;
-                                      });
-                                    }
-                                  },
-                                  onLongPress: () {
-                                    setState(() {
-                                      messageColor = blue.withOpacity(0.5);
-                                    });
-                                  },
-                                  child: Container(
-                                    color: messageColor,
-                                    width: MediaQuery.of(context).size.width,
-                                    child: OwnMessageCard(
-                                      color: own,
-                                      textColor: text,
-                                      message: allMessages[index].message,
-                                      messageTime: allMessages[index].time,
-                                    ),
-                                  ),
+                            return GestureDetector(
+                              onTap: () {
+                                if (messageColor == blue.withOpacity(0.5)) {
+                                  setState(() {
+                                    messageColor = transparent;
+                                  });
+                                }
+                              },
+                              onLongPress: () {
+                                setState(() {
+                                  messageColor = blue.withOpacity(0.5);
+                                });
+                              },
+                              child: Container(
+                                color: messageColor,
+                                width: MediaQuery.of(context).size.width,
+                                child: OwnMessageCard(
+                                  color: own,
+                                  textColor: text,
+                                  message: allMessages[index].message,
+                                  messageTime: allMessages[index].time,
                                 ),
-                              ],
+                              ),
                             );
                           }
                         } else {
