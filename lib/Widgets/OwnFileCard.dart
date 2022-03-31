@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp/Constants/Constants.dart';
 
 class OwnFileCard extends StatelessWidget {
   const OwnFileCard({Key? key}) : super(key: key);
@@ -19,6 +20,7 @@ class OwnFileCard extends StatelessWidget {
           width: MediaQuery.of(context).size.width / 1.8,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
+            color: one,
           ),
         ),
       ),
