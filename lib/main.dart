@@ -117,7 +117,9 @@ class MyApp extends StatelessWidget {
             GetMaterialApp(
           // initialRoute: '/',
           // routes: {
-          //   '/': (context) => SplashScreen(),
+            '/': (context) {
+              return SplashScreen();
+            },
           //   '/loginScreen': (context) => LoginScreen(),
           //   '/LandingScreen': (context) => LandingPage(),
           //   '/otpScreen': (context) => OTPVerificationScreen(
