@@ -69,7 +69,7 @@ List<ChatModel> dummyData = [
     about: "Hey there! I am using WhatsApp India.",
     phoneno: '0000000000',
     id: 4,
-    country: ''
+    country: 'South Africa'
   ),
   ChatModel(
     name: "David",
