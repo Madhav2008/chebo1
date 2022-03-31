@@ -71,6 +71,7 @@ class _SelectContactState extends State<SelectContact> {
   }
 
   static get index => null;
+  
   @override
   void initState() {
     super.initState();
