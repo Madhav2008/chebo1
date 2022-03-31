@@ -166,6 +166,8 @@ List<ChatModel> dummyData = [
     about: "Available",
     phoneno: '0000000000',
     id: 12,
+    country: 'Afghanistan',
+    countryCode: '+93',
   ),
   ChatModel(
     name: "James",
