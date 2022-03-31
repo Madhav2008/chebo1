@@ -425,7 +425,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 child: Container(
                                   color: messageColor,
                                   width: MediaQuery.of(context).size.width,
-                                  child: OwnFileCard(path: '',),
+                                  child: OwnFileCard(path: allMessages[index].path,),
                                 ),
                               ),
                               GestureDetector(
