@@ -322,7 +322,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     inputDecoration: InputDecoration(
                       labelText: 'Search',
                       hintText: 'Start typing to search',
-                      prefixIcon: const Icon(Icons.search),
+                      prefixIcon: Icon(Icons.search),
                       border: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: const Color(0xFF8C98A8).withOpacity(0.2),
