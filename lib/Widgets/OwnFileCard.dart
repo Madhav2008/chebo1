@@ -9,11 +9,11 @@ class OwnFileCard extends StatelessWidget {
   OwnFileCard({
     Key? key,
     required this.path,
-    required this.color,
+    required this.fileColor,
   }) : super(key: key);
 
   final String path;
-  final Color color;
+  final Color fileColor;
 
   @override
   Widget build(BuildContext context) {
