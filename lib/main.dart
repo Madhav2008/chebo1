@@ -136,7 +136,7 @@ class MyApp extends StatelessWidget {
         Locale('en'),
         const Locale('el'),
          Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'), // Generic Simplified Chinese 'zh_Hans'
-        const Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
+       Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
       ],
       localizationsDelegates: [
         CountryLocalizations.delegate,
