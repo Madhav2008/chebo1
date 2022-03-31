@@ -104,7 +104,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "I overthink therefore I overam",
       "phoneno": '9999348666',
       "id": 1,
-    }{
+    },{
       "name": "Raghav Arora",
       "message": "Hey I have hacked WhatsApp India!",
       "time": "5:00",
@@ -112,7 +112,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "Be Kind 🤗😇",
       "phoneno": '7011698878',
       "id": 2,
-}
+},
     {
       "name": "Harry",
       "message": "I'm good!",
@@ -122,7 +122,7 @@ class _SelectContactState extends State<SelectContact> {
       "about": "Online",
       "phoneno": '0000000000',
       "id": 3,
-    ),
+    }
     {
       "name": "Edward",
       "message": "I'm the fastest man alive!",
