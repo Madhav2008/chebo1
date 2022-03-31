@@ -132,7 +132,7 @@ class MyApp extends StatelessWidget {
           //       ),
           // },
           translations: LocalString(),
-          locale: Locale('en', 'US'),
+          locale: Localizations.localeOf(context),
           title: 'WhatsApp India',
           debugShowCheckedModeBanner: false,
           themeMode: themeProvider.themeMode,
