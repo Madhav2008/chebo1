@@ -499,7 +499,7 @@ class _SelectContactState extends State<SelectContact> {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
-            const SizedBox(
+            SizedBox(
               height: 20,
             ),
             TextField(
