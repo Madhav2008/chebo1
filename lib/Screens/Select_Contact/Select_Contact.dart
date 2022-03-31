@@ -113,7 +113,7 @@ class _SelectContactState extends State<SelectContact> {
   //   ChatModel(name: "Raghu Arora", status: "About...."),
   // ];
 
-  List<ChatModel> contacts = [
+  List<ChatModel> _allUsers = [
     ChatModel(
     name: "Madhav Arora",
     message: "Hey Flutter, You are so amazing !",
