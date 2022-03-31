@@ -59,6 +59,7 @@ class _ChatBackupScreenState extends State<ChatBackupScreen> {
                   backgroundColor: transparent,
                 ),
                 title: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
