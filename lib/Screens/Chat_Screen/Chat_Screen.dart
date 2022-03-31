@@ -20,7 +20,6 @@ import 'package:whatsapp/Widgets/OwnFileCard.dart';
 import 'package:whatsapp/Widgets/OwnMessageCard.dart';
 import 'package:whatsapp/Widgets/ReplyFileCard.dart';
 import 'package:whatsapp/Widgets/Reply_Card.dart';
-// import 'package:audio_recorder/audio_recorder.dart';
 import 'package:file/local.dart';
 
 class ChatScreen extends StatefulWidget {
