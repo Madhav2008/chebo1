@@ -13,7 +13,7 @@ class ReplyFileCard extends StatelessWidget {
   }) : super(key: key);
 
   final String path;
-  final String path;
+  final String color;
 
   @override
   Widget build(BuildContext context) {
