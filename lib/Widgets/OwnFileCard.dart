@@ -24,7 +24,9 @@ class OwnFileCard extends StatelessWidget {
           ),
           child: Card(
             margin: EdgeInsets.all(3),
-            shape: RoundedRectangleBorder(),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
           ),
         ),
       ),
