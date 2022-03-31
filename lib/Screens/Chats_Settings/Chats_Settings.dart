@@ -126,6 +126,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
 
   @override
   Widget build(BuildContext context) {
+    Locale language = Localizations.localeOf(context);
     var mode = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
         ? Provider.of<ThemeProvider>(context).themeMode == ThemeMode.system
             ? "systemDefault".tr
