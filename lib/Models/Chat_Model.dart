@@ -117,7 +117,7 @@ List<ChatModel> dummyData = [
     about: "Can't talk, WhatsApp India only",
     phoneno: '0000000000',
     id: 8,
-    country: 'Afghanistan',
+    country: 'United Kingdom',
     countryCode: '+93',
   ),
   ChatModel(
