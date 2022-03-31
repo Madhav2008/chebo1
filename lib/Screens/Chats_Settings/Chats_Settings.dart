@@ -126,7 +126,6 @@ class _ChatsSettingsState extends State<ChatsSettings> {
 
   @override
   Widget build(BuildContext context) {
-    Locale language = Localizations.localeOf(context);
     var mode = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
         ? Provider.of<ThemeProvider>(context).themeMode == ThemeMode.system
             ? "systemDefault".tr
@@ -376,7 +375,7 @@ class _ChatsSettingsState extends State<ChatsSettings> {
                 ),
               ),
               subtitle: Text(
-                "appLanguageDown".tr + ' (' + language + ')',
+                "appLanguageDown".tr + ' (' + 'English' + ')',
                 style: TextStyle(
                   fontSize: 16,
                   color: grey,
