@@ -505,7 +505,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      // ),
                       // Text("File path of the record: ${_recording.path}"),
                       // Text("Extension : ${_recording.extension}"),
                     ],
