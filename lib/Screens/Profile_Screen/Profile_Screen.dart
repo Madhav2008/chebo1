@@ -313,7 +313,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                               ListTile(
                                 title: TextField(
-                                  controller: _name1Controller,
+                                  controller: _nameController,
                                   autofocus: true,
                                   decoration: InputDecoration(
                                     hintText: widget.name,
