@@ -505,7 +505,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      //   child: Text("Start"),
                       //   color: Colors.green,
                       // ),
                       // FlatButton(
