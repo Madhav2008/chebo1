@@ -38,7 +38,7 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   String aboutss = '👋🏻 Hey! there I am using WhatsApp India.';
   final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _name1Controller = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     File? _imageFile;
