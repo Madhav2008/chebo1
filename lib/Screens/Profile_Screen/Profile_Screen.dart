@@ -354,8 +354,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      _nameController.text =
-                                          _name1Controller.text;
+                                      _nameController.value = _name1Controller.value;
                                       Navigator.pop(context);
                                     },
                                     child: Text(
@@ -396,7 +395,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    _nameController.text,
+                    widget.name,
                     style: TextStyle(
                       fontSize: 18,
                     ),
