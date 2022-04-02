@@ -518,7 +518,6 @@ class _ChatScreenState extends State<ChatScreen> {
                       // Text("File path of the record: ${_recording.path}"),
                       // Text("Format: ${_recording.audioOutputFormat}"),
                       // Text("Extension : ${_recording.extension}"),
-                      // Text(
                     ],
                   ),
                   Align(
