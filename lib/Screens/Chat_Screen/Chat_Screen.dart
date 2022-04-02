@@ -502,7 +502,6 @@ class _ChatScreenState extends State<ChatScreen> {
                       },
                     ),
                   ),
-                  ),
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Container(
