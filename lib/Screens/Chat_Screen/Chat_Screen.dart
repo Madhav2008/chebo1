@@ -502,7 +502,6 @@ class _ChatScreenState extends State<ChatScreen> {
                       },
                     ),
                   ),
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
                     ],
                   ),
