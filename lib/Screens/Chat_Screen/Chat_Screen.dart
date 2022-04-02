@@ -505,7 +505,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      //   onPressed: _isRecording ? null : _start,
                       //   child: Text("Start"),
                       //   color: Colors.green,
                       // ),
