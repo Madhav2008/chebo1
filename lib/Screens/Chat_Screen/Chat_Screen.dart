@@ -505,7 +505,6 @@ class _ChatScreenState extends State<ChatScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      // Text("Extension : ${_recording.extension}"),
                     ],
                   ),
                   Align(
