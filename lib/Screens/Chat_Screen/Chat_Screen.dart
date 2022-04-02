@@ -515,12 +515,6 @@ class _ChatScreenState extends State<ChatScreen> {
                       //   child: Text("Stop"),
                       //   color: Colors.red,
                       // ),
-                      TextField(
-                        controller: _controller,
-                        decoration: InputDecoration(
-                          hintText: 'Enter a custom path',
-                        ),
-                      ),
                       // Text("File path of the record: ${_recording.path}"),
                       // Text("Format: ${_recording.audioOutputFormat}"),
                       // Text("Extension : ${_recording.extension}"),
