@@ -396,7 +396,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    widget.name,
+                    _nameController.text,
                     style: TextStyle(
                       fontSize: 18,
                     ),
