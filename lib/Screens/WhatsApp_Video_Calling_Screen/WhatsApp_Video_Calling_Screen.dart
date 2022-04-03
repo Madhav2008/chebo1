@@ -92,9 +92,7 @@ class _WhatsAppVideoCallingScreenState
                 );
               }
             },
-          ),
-          calling
-              ? Positioned(
+          ),Positioned(
                   top: 30.0,
                   child: Container(
                     decoration: BoxDecoration(
