@@ -211,6 +211,7 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                           showPhoneCode: true,
                           onSelect: (Country country) {
                             setState(() {
+                              countryName = country.name;
                               countryCode = '+' + country.phoneCode;
                             });
                             print(
