@@ -39,7 +39,7 @@ class StoryPageView extends StatelessWidget {
       //   imageFit: BoxFit.contain,
       // ),
       StoryItem.text(
-        title: "I guess you'd love to see more of our food. That's great.",
+        title: '''Hey ! ''' + name + ''' This Side.''',
         backgroundColor: one,
       ),
       StoryItem.text(
