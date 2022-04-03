@@ -93,7 +93,7 @@ class _WhatsAppVideoCallingScreenState
               }
             },
           ),
-          Positioned(
+          calling?Positioned(
             top: 30.0,
             child: Container(
               decoration: BoxDecoration(
@@ -132,7 +132,7 @@ class _WhatsAppVideoCallingScreenState
                 ],
               ),
             ),
-          ),
+          ):Container(),
           Positioned(
             bottom: 0.0,
             child: Container(
