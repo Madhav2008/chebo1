@@ -300,7 +300,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   context: context,
                   //Optional.  Can be used to exclude(remove) one ore more country from the countries list (optional).
                   // exclude: <String>['KN', 'MF'],
-                  //Optional. Shows phone code before the country name.
                   showPhoneCode: true,
                   onSelect: (Country country) {
                     setState(() {
