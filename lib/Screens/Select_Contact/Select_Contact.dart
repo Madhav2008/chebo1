@@ -560,7 +560,7 @@ class _SelectContactState extends State<SelectContact> {
                       ),
                     ),
                   ],
-                ),
+                ),),
         ],
       ),
       body: Padding(
