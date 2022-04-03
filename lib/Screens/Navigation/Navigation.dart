@@ -88,7 +88,11 @@ class _NavigationScreenState extends State<NavigationScreen>
   void initState() {
     super.initState();
     _IsSearching = false;
-    _tabController = TabController(vsync: this, initialIndex: 1, length: 4,);
+    _tabController = TabController(
+      vsync: this,
+      initialIndex: 1,
+      length: 4,
+    );
     _tabController.addListener(() {
       if (_tabController.index == 1) {
         showFab = true;
@@ -298,14 +302,14 @@ class _NavigationScreenState extends State<NavigationScreen>
                   cameras: [],
                 ),
                 ChatsScreen(
-                  // sourceChat: widget.sourceChat,
-                  // chatModels: widget.chatModels,
-                ),
+                    // sourceChat: widget.sourceChat,
+                    // chatModels: widget.chatModels,
+                    ),
                 StatusScreen(),
                 CallsScreen(
-                  // sourceChat: widget.sourceChat,
-                  // chatModels: widget.chatModels,
-                ),
+                    // sourceChat: widget.sourceChat,
+                    // chatModels: widget.chatModels,
+                    ),
               ],
             ),
             // } else {
@@ -325,9 +329,9 @@ class _NavigationScreenState extends State<NavigationScreen>
                     context,
                     MaterialPageRoute(
                       builder: (builder) => SelectContact(
-                        // sourceChat: widget.sourceChat,
-                        // chatModels: widget.chatModels,
-                      ),
+                          // sourceChat: widget.sourceChat,
+                          // chatModels: widget.chatModels,
+                          ),
                     ),
                   ),
                 )
