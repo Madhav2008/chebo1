@@ -372,5 +372,4 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
     );
   }
 
-
 }
