@@ -12,9 +12,10 @@ class StoryPageView extends StatelessWidget {
     required this.name,
     required this.avatar,
   }) : super(key: key);
-  
+
   final String name;
   final String avatar;
+  
   @override
   Widget build(BuildContext context) {
     final controller = StoryController();
