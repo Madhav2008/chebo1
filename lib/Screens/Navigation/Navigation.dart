@@ -88,7 +88,7 @@ class _NavigationScreenState extends State<NavigationScreen>
   void initState() {
     super.initState();
     _IsSearching = false;
-    _tabController = TabController(vsync: this, initialIndex: 1, length: 4);
+    _tabController = TabController(vsync: this, initialIndex: 1, length: 4,);
     _tabController.addListener(() {
       if (_tabController.index == 1) {
         showFab = true;
