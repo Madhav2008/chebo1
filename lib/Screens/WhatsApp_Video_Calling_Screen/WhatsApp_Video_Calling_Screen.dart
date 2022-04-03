@@ -74,7 +74,7 @@ class _WhatsAppVideoCallingScreenState
                       ? Container(
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height,
-                        ),CameraPreview(_cameraController)
+                        )
                       : Container(
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height,
