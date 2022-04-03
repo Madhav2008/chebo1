@@ -20,24 +20,56 @@ class StoryPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = StoryController();
     final List<StoryItem> storyItems = [
-      StoryItem.text(
-        title: '''Hey ! ''' + name + ''' This Side.''',
-        backgroundColor: red,
-      ),
-      StoryItem.pageImage(
-        url: avatar,
-        controller: _storyController,
-      ),
+      // StoryItem.text(
+      //   title: '''Hey ! ''' + name + ''' This Side.''',
+      //   backgroundColor: red,
+      // ),
       // StoryItem.pageImage(
-      //   url:
-      //       "https://media-exp1.licdn.com/dms/image/C4E16AQFHB9TkUDyiWg/profile-displaybackgroundimage-shrink_200_800/0/1634717346543?e=1650499200&v=beta&t=cjVjvtVo8QmqMzWEbRH02f9q5AWNbPqnmUPeIZnLj7I",
+      //   url: avatar,
       //   controller: _storyController,
       // ),
-      StoryItem.pageImage(
-        url: "https://media2.giphy.com/media/j4fbBhYgu8mNEHkQ4w/giphy.gif",
-        controller: _storyController,
-        imageFit: BoxFit.contain,
-      ),
+      // // StoryItem.pageImage(
+      // //   url:
+      // //       "https://media-exp1.licdn.com/dms/image/C4E16AQFHB9TkUDyiWg/profile-displaybackgroundimage-shrink_200_800/0/1634717346543?e=1650499200&v=beta&t=cjVjvtVo8QmqMzWEbRH02f9q5AWNbPqnmUPeIZnLj7I",
+      // //   controller: _storyController,
+      // // ),
+      // StoryItem.pageImage(
+      //   url: "https://media2.giphy.com/media/j4fbBhYgu8mNEHkQ4w/giphy.gif",
+      //   controller: _storyController,
+      //   imageFit: BoxFit.contain,
+      // ),
+      StoryItem.text(
+            title: "I guess you'd love to see more of our food. That's great.",
+            backgroundColor: Colors.blue,
+          ),
+          StoryItem.text(
+            title: "Nice!\n\nTap to continue.",
+            backgroundColor: Colors.red,
+            textStyle: TextStyle(
+              fontFamily: 'Dancing',
+              fontSize: 40,
+            ),
+          ),
+          StoryItem.pageImage(
+            url:
+                "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
+            caption: "Still sampling",
+            controller: storyController,
+          ),
+          StoryItem.pageImage(
+              url: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
+              caption: "Working with gifs",
+              controller: storyController),
+          StoryItem.pageImage(
+            url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
+            caption: "Hello, from the other side",
+            controller: storyController,
+          ),
+          StoryItem.pageImage(
+            url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
+            caption: "Hello, from the other side2",
+            controller: storyController,
+          ),
     ];
     return Scaffold(
       appBar: AppBar(
