@@ -561,7 +561,7 @@ class _SelectContactState extends State<SelectContact> {
                     ),
                   ],
                 ),
-        ],
+          )
       ),
       body: Padding(
         padding: EdgeInsets.all(10),
