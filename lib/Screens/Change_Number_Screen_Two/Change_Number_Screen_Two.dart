@@ -5,12 +5,20 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 import 'package:whatsapp/Screens/Change_Number_Screen_Three/Change_Number_Screen_Three.dart';
 
-class ChangeNumberScreenTwo extends StatelessWidget {
+class ChangeNumberScreenTwo extends StatefulWidget {
   ChangeNumberScreenTwo({Key? key}) : super(key: key);
 
+  @override
+  State<ChangeNumberScreenTwo> createState() => _ChangeNumberScreenTwoState();
+}
+
+class _ChangeNumberScreenTwoState extends State<ChangeNumberScreenTwo> {
   final TextEditingController _oldPhoneController = TextEditingController();
+
   final TextEditingController _newPhoneController = TextEditingController();
+
   final oldPhoneCountryCode = '+91';
+
   final newPhoneCountryCode = '+91';
 
   @override
