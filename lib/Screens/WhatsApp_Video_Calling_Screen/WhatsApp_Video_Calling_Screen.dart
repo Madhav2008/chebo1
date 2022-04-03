@@ -52,11 +52,11 @@ class _WhatsAppVideoCallingScreenState
     // );
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-    _cameraController.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   _cameraController.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
