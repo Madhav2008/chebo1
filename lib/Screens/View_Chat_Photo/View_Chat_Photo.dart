@@ -102,16 +102,9 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height - 150,
-              child: InteractiveViewer(
-                panEnabled: false,
-                boundaryMargin: EdgeInsets.all(100),
-                minScale: 1,
-                maxScale: 2,
-                child: Image.network(
-                  widget.path,
-                  width: MediaQuery.of(context).size.width,
-                  fit: BoxFit.cover,
-                ),
+              child: Image.network(
+                widget.path,
+                // fit: BoxFit.cover,
               ),
             ),
           ],
