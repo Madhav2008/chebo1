@@ -190,7 +190,7 @@ class _WhatsAppVideoCallingScreenState
                             });
                           } else {
                             setState(() {
-                              camera = false;
+                              camera = true;
                             });
                           }
                           // camera
