@@ -18,7 +18,7 @@ class StoryPageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = controller();
+    final controller = StoryController();
     final List<StoryItem> storyItems = [
       // StoryItem.text(
       //   title: '''Hey ! ''' + name + ''' This Side.''',
