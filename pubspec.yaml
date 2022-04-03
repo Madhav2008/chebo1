@@ -44,7 +44,7 @@ dependencies:
   get: 
   connectivity: 
   video_player: 
-  # assets_audio_player: 
+  assets_audio_player: 
   firebase_core:
   firebase_auth: 
   firebase_storage: 
