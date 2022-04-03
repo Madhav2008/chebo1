@@ -91,9 +91,7 @@ class StoryPageView extends StatelessWidget {
           storyItems: storyItems,
           controller: controller,
           inline: true,
-          onVerticalSwipeComplete: (context) {
-            return Navigator.pop(context, true);
-          },
+          onVerticalSwipeComplete: (context) => _go,
           onComplete: () {
             Navigator.pop(context, true);
           },
