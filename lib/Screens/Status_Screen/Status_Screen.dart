@@ -326,7 +326,7 @@ class StatusScreen extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) => StoryPageView(
-                              // name: name7,
+                              name: name7,
                               // avatar: avatar7,
                               ),
                         ),
