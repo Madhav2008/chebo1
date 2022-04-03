@@ -5,7 +5,7 @@ import 'package:story_view/story_view.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class StoryPageView extends StatelessWidget {
-  final _storyController = StoryController();
+  final _controller = controller();
 
   StoryPageView({
     Key? key,
@@ -18,7 +18,7 @@ class StoryPageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = StoryController();
+    final controller = controller();
     final List<StoryItem> storyItems = [
       // StoryItem.text(
       //   title: '''Hey ! ''' + name + ''' This Side.''',
@@ -26,16 +26,16 @@ class StoryPageView extends StatelessWidget {
       // ),
       // StoryItem.pageImage(
       //   url: avatar,
-      //   controller: _storyController,
+      //   controller: _controller,
       // ),
       // // StoryItem.pageImage(
       // //   url:
       // //       "https://media-exp1.licdn.com/dms/image/C4E16AQFHB9TkUDyiWg/profile-displaybackgroundimage-shrink_200_800/0/1634717346543?e=1650499200&v=beta&t=cjVjvtVo8QmqMzWEbRH02f9q5AWNbPqnmUPeIZnLj7I",
-      // //   controller: _storyController,
+      // //   controller: _controller,
       // // ),
       // StoryItem.pageImage(
       //   url: "https://media2.giphy.com/media/j4fbBhYgu8mNEHkQ4w/giphy.gif",
-      //   controller: _storyController,
+      //   controller: _controller,
       //   imageFit: BoxFit.contain,
       // ),
       StoryItem.text(
@@ -58,22 +58,22 @@ class StoryPageView extends StatelessWidget {
         url:
             "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
         caption: "Still sampling",
-        controller: storyController,
+        controller: controller,
       ),
       StoryItem.pageImage(
         url: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
         caption: "Working with gifs",
-        controller: storyController,
+        controller: controller,
       ),
       StoryItem.pageImage(
         url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
         caption: "Hello, from the other side",
-        controller: storyController,
+        controller: controller,
       ),
       StoryItem.pageImage(
         url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
         caption: "Hello, from the other side2",
-        controller: storyController,
+        controller: controller,
       ),
     ];
     return Scaffold(
@@ -101,7 +101,7 @@ class StoryPageView extends StatelessWidget {
   }
 }
 
-// final StoryController controller = StoryController();
+// final controller controller = controller();
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -220,11 +220,11 @@ class StoryPageView extends StatelessWidget {
 // }
 
 // class _MoreStoriesState extends State<MoreStories> {
-//   final storyController = StoryController();
+//   final controller = controller();
 
 //   @override
 //   void dispose() {
-//     storyController.dispose();
+//     controller.dispose();
 //     super.dispose();
 //   }
 
@@ -252,21 +252,21 @@ class StoryPageView extends StatelessWidget {
 //             url:
 //                 "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
 //             caption: "Still sampling",
-//             controller: storyController,
+//             controller: controller,
 //           ),
 //           StoryItem.pageImage(
 //               url: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
 //               caption: "Working with gifs",
-//               controller: storyController),
+//               controller: controller),
 //           StoryItem.pageImage(
 //             url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
 //             caption: "Hello, from the other side",
-//             controller: storyController,
+//             controller: controller,
 //           ),
 //           StoryItem.pageImage(
 //             url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
 //             caption: "Hello, from the other side2",
-//             controller: storyController,
+//             controller: controller,
 //           ),
 //         ],
 //         onStoryShow: (s) {
@@ -277,7 +277,7 @@ class StoryPageView extends StatelessWidget {
 //         },
 //         progressPosition: ProgressPosition.top,
 //         repeat: false,
-//         controller: storyController,
+//         controller: controller,
 //       ),
 //     );
 //   }
