@@ -644,13 +644,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  void setCountryData(CountryModel countryModel) {
-    setState(() {
-      countryName = countryModel.name;
-      countryCode = countryModel.code;
-    });
-    Navigator.pop(context);
-  }
+  
 }
 
 // import 'package:flutter/material.dart';
