@@ -40,6 +40,9 @@ class StoryPageView extends StatelessWidget {
       ),
     ];
     return Scaffold(
+      appBar: AppBar(
+        
+      ),
       body: Material(
         child: StoryView(
           storyItems: storyItems,
