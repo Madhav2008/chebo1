@@ -83,7 +83,7 @@ class StoryPageView extends StatelessWidget {
             Text(name),
           ],
         ),
-        backgroundColor: transparent,
+        backgroundColor: black,
         elevation: 0,
       ),
       body: Material(
