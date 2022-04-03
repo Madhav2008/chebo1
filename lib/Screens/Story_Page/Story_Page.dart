@@ -5,7 +5,7 @@ import 'package:story_view/story_view.dart';
 import 'package:whatsapp/Constants/Constants.dart';
 
 class StoryPageView extends StatelessWidget {
-  final _controller = controller();
+  final _controller = StoryController();
 
   StoryPageView({
     Key? key,
