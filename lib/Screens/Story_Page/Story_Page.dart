@@ -33,10 +33,10 @@ class StoryPageView extends StatelessWidget {
       //       "https://media-exp1.licdn.com/dms/image/C4E16AQFHB9TkUDyiWg/profile-displaybackgroundimage-shrink_200_800/0/1634717346543?e=1650499200&v=beta&t=cjVjvtVo8QmqMzWEbRH02f9q5AWNbPqnmUPeIZnLj7I",
       //   controller: _storyController,
       // ),
-      StoryItem.pageVideo(
-        // url: "https://media2.giphy.com/media/j4fbBhYgu8mNEHkQ4w/giphy.gif",
-        // controller: _storyController,
-        // imageFit: BoxFit.contain,
+      StoryItem.pageImage(
+        url: "https://media2.giphy.com/media/j4fbBhYgu8mNEHkQ4w/giphy.gif",
+        controller: _storyController,
+        imageFit: BoxFit.contain,
       ),
     ];
     return Scaffold(
