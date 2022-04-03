@@ -35,13 +35,6 @@ class ViewProfilePhoto extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          //   } else {
-          //     return NoConnection(
-          //       image: '../assets/images/2.png',
-          //     );
-          //   }
-          // },
-          // ),
         ),
       ),
     );
