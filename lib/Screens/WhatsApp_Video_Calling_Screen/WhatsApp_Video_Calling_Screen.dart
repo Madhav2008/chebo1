@@ -94,7 +94,8 @@ class _WhatsAppVideoCallingScreenState
             },
           ),Positioned(
                   top: 30.0,
-                  child: Container(
+                  child:  calling
+              ? Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                     ),
