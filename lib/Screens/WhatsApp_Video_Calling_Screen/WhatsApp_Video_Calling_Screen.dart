@@ -188,6 +188,10 @@ class _WhatsAppVideoCallingScreenState
                             setState(() {
                               camera = true;
                             });
+                          }else{
+                            setState(() {
+                              camera = true;
+                            });
                           }
                           // camera
                           //     ? _cameraController.dispose()
