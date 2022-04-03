@@ -93,46 +93,48 @@ class _WhatsAppVideoCallingScreenState
               }
             },
           ),
-          calling?Positioned(
-            top: 30.0,
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              padding: EdgeInsets.only(
-                top: 5,
-                bottom: 5,
-              ),
-              width: MediaQuery.of(context).size.width,
-              child: Column(
-                children: [
-                  CircleAvatar(
-                    radius: 60,
-                    backgroundImage: NetworkImage(widget.avatar),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text(
-                    widget.name,
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
+          calling
+              ? Positioned(
+                  top: 30.0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    padding: EdgeInsets.only(
+                      top: 5,
+                      bottom: 5,
+                    ),
+                    width: MediaQuery.of(context).size.width,
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 60,
+                          backgroundImage: NetworkImage(widget.avatar),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          widget.name,
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Ringing',
+                          style: TextStyle(
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text(
-                    'Ringing',
-                    style: TextStyle(
-                      fontSize: 25,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ):Container(),
+                )
+              : Container(),
           Positioned(
             bottom: 0.0,
             child: Container(
