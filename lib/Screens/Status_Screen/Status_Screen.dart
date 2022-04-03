@@ -171,15 +171,15 @@ class StatusScreen extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => StoryPageView(
-                //       name: name2,
-                //       avatar: avatar2,
-                //     ),
-                //   ),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => StoryPageView(
+                      name: name2,
+                      avatar: avatar2,
+                    ),
+                  ),
+                );
               },
               child: StatusCard(
                 name: name2,
