@@ -250,7 +250,6 @@ class _SelectContactState extends State<SelectContact> {
           .toList();
     }
 
-    // Refresh the UI
     setState(() {
       _foundUsers = results;
     });
