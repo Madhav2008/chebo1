@@ -82,6 +82,7 @@ class StoryPageView extends StatelessWidget {
               radius: 20,
               backgroundImage: NetworkImage(avatar),
             ),
+            SizedBox(width: 15,),
             Text(name),
           ],
         ),
