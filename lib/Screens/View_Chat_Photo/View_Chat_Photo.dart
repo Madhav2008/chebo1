@@ -113,7 +113,6 @@ class _ViewChatPhotoState extends State<ViewChatPhoto> {
               fit: BoxFit.cover,
             ),
           ),
-              ),
             ),
           ],
         ),
