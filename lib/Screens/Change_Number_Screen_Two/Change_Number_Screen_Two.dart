@@ -35,6 +35,7 @@ class ChangeNumberScreenTwo extends StatelessWidget {
               height: 30,
             ),
             GestureDetector(
+              onTap: (){},
               child: Container(
                 width: MediaQuery.of(context).size.width - 100,
                 child: Row(
