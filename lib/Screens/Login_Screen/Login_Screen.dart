@@ -313,7 +313,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       topLeft: Radius.circular(40.0),
                       topRight: Radius.circular(40.0),
                     ),
-                    // Optional. Styles the search field.
                     inputDecoration: InputDecoration(
                       labelText: 'Search',
                       hintText: 'Start typing to search',
