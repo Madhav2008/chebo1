@@ -68,14 +68,15 @@ class _WhatsAppVideoCallingScreenState
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
                 return Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height,
-                    child: camera
-                        ? Container(
-                            width: MediaQuery.of(context).size.width,
-                            height: MediaQuery.of(context).size.height,
-                          )
-                        : CameraPreview(_cameraController),);
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height,
+                  child: camera
+                      ? Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.height,
+                        )
+                      : CameraPreview(_cameraController),
+                );
               } else {
                 return Center(
                   child: CircularProgressIndicator(
