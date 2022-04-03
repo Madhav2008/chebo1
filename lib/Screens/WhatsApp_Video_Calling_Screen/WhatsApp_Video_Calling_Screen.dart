@@ -186,7 +186,7 @@ class _WhatsAppVideoCallingScreenState
                           color: white,
                           size: 28,
                         ),
-                        onPressed: () {
+                        onPressed: () async{
                           if (camera == true) {
                             setState(() {
                               camera = false;
