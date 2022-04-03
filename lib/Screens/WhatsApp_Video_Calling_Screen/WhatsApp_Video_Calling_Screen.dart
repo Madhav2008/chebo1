@@ -184,7 +184,7 @@ class _WhatsAppVideoCallingScreenState
                           size: 28,
                         ),
                         onPressed: () {
-                          if (camera = true) {
+                          if (camera == true) {
                             setState(() {
                               camera = false;
                             });
