@@ -39,15 +39,17 @@ class StoryPageView extends StatelessWidget {
         imageFit: BoxFit.contain,
       ),
     ];
-    return Material(
-      child: StoryView(
-        storyItems: storyItems,
-        controller: controller,
-        inline: true,
-        onVerticalSwipeComplete: (context) => _go,
-        onComplete: () {
-          Navigator.pop(context, true);
-        },
+    return Scaffold(
+      body: Material(
+        child: StoryView(
+          storyItems: storyItems,
+          controller: controller,
+          inline: true,
+          onVerticalSwipeComplete: (context) => _go,
+          onComplete: () {
+            Navigator.pop(context, true);
+          },
+        ),
       ),
     );
   }
