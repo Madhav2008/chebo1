@@ -131,7 +131,7 @@ class _WhatsAppVideoCallingScreenState
                         ),
                       ],
                     ),
-                  ),
+                  ): Container(),
                 ),
           Positioned(
             bottom: 0.0,
