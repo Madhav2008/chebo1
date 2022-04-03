@@ -70,7 +70,7 @@ class _WhatsAppVideoCallingScreenState
                 return Container(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
-                  child: CameraPreview(_cameraController),
+                  child: camera?CameraPreview(_cameraController):Container(),
                 );
               } else {
                 return Center(
