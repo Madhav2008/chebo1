@@ -71,9 +71,6 @@ class _WhatsAppVideoCallingScreenState
             future: cameraValue,
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
-                setState(() {
-                  calling = false;
-                });
                 return Container(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
