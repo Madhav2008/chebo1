@@ -79,6 +79,7 @@ class StoryPageView extends StatelessWidget {
         title: Row(
           children: [
             CircleAvatar(
+              radius: 20,
               backgroundImage: NetworkImage(avatar),
             ),
             Text(name),
