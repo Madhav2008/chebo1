@@ -24,8 +24,7 @@ class ViewProfilePhoto extends StatelessWidget {
       body: Center(
         child: Container(
           color: grey,
-          child:
-              InteractiveViewer(
+          child: InteractiveViewer(
             panEnabled: false,
             boundaryMargin: EdgeInsets.all(100),
             minScale: 1,
