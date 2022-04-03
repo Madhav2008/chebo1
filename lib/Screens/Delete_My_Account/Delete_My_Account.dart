@@ -206,14 +206,34 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (builder) => CountryScreen(
-                              setCountryData: setCountryData,
-                            ),
-                          ),
-                        );
+                        showCountryPicker(
+                  context: context,
+                  showPhoneCode: true,
+                  onSelect: (Country country) {
+                    setState(() {
+                      oldPhoneCountryCode = '+' + country.phoneCode;
+                    });
+                    print(
+                      'Display Name: ${country.displayName}, Country Code: ${country.countryCode}, Display Name No Country Code: ${country.displayNameNoCountryCode}, E163 Key: ${country.e164Key}, E164 SC: ${country.e164Sc}, Example: ${country.example}, Full example with plus sign: ${country.fullExampleWithPlusSign}, Level: ${country.level}, Name: ${country.name}, Name Localized: ${country.nameLocalized}, Phone Code: ${country.phoneCode}, Geographic: ${country.geographic}',
+                    );
+                  },
+                  countryListTheme: CountryListThemeData(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40.0),
+                      topRight: Radius.circular(40.0),
+                    ),
+                    inputDecoration: InputDecoration(
+                      labelText: 'Search',
+                      hintText: 'Start typing to search',
+                      prefixIcon: Icon(Icons.search),
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0xFF8C98A8).withOpacity(0.2),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
                       },
                       child: Container(
                         width: MediaQuery.of(context).size.width - 80,
