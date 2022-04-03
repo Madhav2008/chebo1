@@ -249,7 +249,6 @@ class _SelectContactState extends State<SelectContact> {
                 ),
           )
           .toList();
-      // we use the toLowerCase() method to make it case-insensitive
     }
 
     // Refresh the UI
