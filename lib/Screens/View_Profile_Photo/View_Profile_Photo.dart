@@ -25,14 +25,6 @@ class ViewProfilePhoto extends StatelessWidget {
         child: Container(
           color: grey,
           child:
-              // StreamBuilder(
-              //   stream: Connectivity().onConnectivityChanged,
-              //   builder: (BuildContext context,
-              //       AsyncSnapshot<ConnectivityResult> snapshot) {
-              //     if (snapshot != null &&
-              //         snapshot.hasData &&
-              //         snapshot.data != ConnectivityResult.none) {
-              //       return
               InteractiveViewer(
             panEnabled: false,
             boundaryMargin: EdgeInsets.all(100),
