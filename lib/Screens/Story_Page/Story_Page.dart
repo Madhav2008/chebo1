@@ -68,11 +68,6 @@ class StoryPageView extends StatelessWidget {
         caption: "Hello, from the other side",
         controller: controller,
       ),
-      StoryItem.pageImage(
-        url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
-        caption: "Hello, from the other side2",
-        controller: controller,
-      ),
     ];
     return Scaffold(
       appBar: AppBar(
