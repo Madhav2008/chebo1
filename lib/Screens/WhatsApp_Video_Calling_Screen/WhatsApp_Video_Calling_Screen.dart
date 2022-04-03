@@ -92,10 +92,11 @@ class _WhatsAppVideoCallingScreenState
                 );
               }
             },
-          ),Positioned(
-                  top: 30.0,
-                  child:  calling
-              ? Container(
+          ),
+          Positioned(
+            top: 30.0,
+            child: calling
+                ? Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -131,8 +132,9 @@ class _WhatsAppVideoCallingScreenState
                         ),
                       ],
                     ),
-                  ): Container(),
-                ),
+                  )
+                : Container(),
+          ),
           Positioned(
             bottom: 0.0,
             child: Container(
