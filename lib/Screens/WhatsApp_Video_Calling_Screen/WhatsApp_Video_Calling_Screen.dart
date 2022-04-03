@@ -187,9 +187,9 @@ class _WhatsAppVideoCallingScreenState
                           setState(() {
                             camera = !camera;
                           });
-                          camera
-                              ? _cameraController.dispose()
-                              : _cameraController.dispose();
+                          // camera
+                          //     ? _cameraController.dispose()
+                          //     : _cameraController.dispose();
                         },
                       ),
                       IconButton(
