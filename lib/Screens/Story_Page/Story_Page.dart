@@ -15,7 +15,7 @@ class StoryPageView extends StatelessWidget {
 
   final String name;
   final String avatar;
-  
+
   @override
   Widget build(BuildContext context) {
     final controller = StoryController();
