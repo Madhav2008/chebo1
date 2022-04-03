@@ -37,7 +37,10 @@ class _WhatsAppVideoCallingScreenState
   @override
   void initState() {
     super.initState();
-    _cameraController = CameraController(cameras[0], ResolutionPreset.high,);
+    _cameraController = CameraController(
+      cameras[0],
+      ResolutionPreset.high,
+    );
     cameraValue = _cameraController.initialize();
   }
 
