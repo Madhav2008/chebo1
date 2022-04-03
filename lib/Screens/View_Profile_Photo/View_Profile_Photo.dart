@@ -24,7 +24,7 @@ class ViewProfilePhoto extends StatelessWidget {
       body: Center(
         child: Container(
           width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height - 150,
+          height: MediaQuery.of(context).size.height - 150,
           color: grey,
           child: InteractiveViewer(
             panEnabled: false,
