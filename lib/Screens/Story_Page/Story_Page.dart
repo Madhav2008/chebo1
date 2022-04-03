@@ -42,6 +42,7 @@ class StoryPageView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(name),
+        backgroundColor: transparent,
       ),
       body: Material(
         child: StoryView(
