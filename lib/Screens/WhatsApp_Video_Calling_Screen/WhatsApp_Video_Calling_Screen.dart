@@ -93,7 +93,6 @@ class _WhatsAppVideoCallingScreenState
             top: 30.0,
             child: Container(
               decoration: BoxDecoration(
-                // color: grey.shade900,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: EdgeInsets.only(
