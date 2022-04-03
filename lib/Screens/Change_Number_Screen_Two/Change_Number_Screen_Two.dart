@@ -17,7 +17,7 @@ class _ChangeNumberScreenTwoState extends State<ChangeNumberScreenTwo> {
 
   final TextEditingController _newPhoneController = TextEditingController();
 
-  final oldPhoneCountryCode = '+91';
+  String oldPhoneCountryCode = '+91';
 
   final newPhoneCountryCode = '+91';
 
