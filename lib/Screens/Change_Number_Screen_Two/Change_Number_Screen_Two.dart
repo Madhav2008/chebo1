@@ -48,6 +48,7 @@ class _ChangeNumberScreenTwoState extends State<ChangeNumberScreenTwo> {
               child: Row(
                 children: [
                   GestureDetector(
+                    onTap: (){},
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border(
