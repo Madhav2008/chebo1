@@ -47,21 +47,23 @@ class _ChangeNumberScreenTwoState extends State<ChangeNumberScreenTwo> {
               width: MediaQuery.of(context).size.width - 100,
               child: Row(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(
-                          width: 1.5,
-                          color: one,
+                  GestureDetector(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            width: 1.5,
+                            color: one,
+                          ),
                         ),
                       ),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.all(10.0),
-                      child: Text(
-                        oldPhoneCountryCode,
-                        style: TextStyle(
-                          fontSize: 17,
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Text(
+                          oldPhoneCountryCode,
+                          style: TextStyle(
+                            fontSize: 17,
+                          ),
                         ),
                       ),
                     ),
