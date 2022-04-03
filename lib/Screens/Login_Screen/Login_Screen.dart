@@ -309,7 +309,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     );
                   },
                   countryListTheme: CountryListThemeData(
-                    // Optional. Sets the border radius for the bottomsheet.
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(40.0),
                       topRight: Radius.circular(40.0),
