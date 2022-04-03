@@ -40,6 +40,10 @@ class StoryPageView extends StatelessWidget {
       // ),
       StoryItem.text(
         title: "I guess you'd love to see more of our food. That's great.",
+        backgroundColor: one,
+      ),
+      StoryItem.text(
+        title: "I guess you'd love to see more of our food. That's great.",
         backgroundColor: Colors.blue,
       ),
       StoryItem.text(
