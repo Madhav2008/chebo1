@@ -495,6 +495,7 @@ class _SelectContactState extends State<SelectContact> {
         Scaffold(
       appBar: AppBar(
         title: Text('Select Contact'),
+        
       ),
       body: Padding(
         padding: EdgeInsets.all(10),
