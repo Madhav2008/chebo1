@@ -33,6 +33,7 @@ class _WhatsAppVideoCallingScreenState
   bool camera = false;
   bool iscamerafront = true;
   double transform = 0;
+  bool calling = true;
 
   @override
   void initState() {
