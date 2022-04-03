@@ -19,7 +19,7 @@ class _ChangeNumberScreenTwoState extends State<ChangeNumberScreenTwo> {
 
   String oldPhoneCountryCode = '+91';
 
-  final newPhoneCountryCode = '+91';
+  String newPhoneCountryCode = '+91';
 
   @override
   Widget build(BuildContext context) {
