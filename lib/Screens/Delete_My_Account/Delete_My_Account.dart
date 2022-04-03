@@ -371,12 +371,4 @@ class _DeleteMyAccountState extends State<DeleteMyAccount> {
       ),
     );
   }
-
-  void setCountryData(CountryModel countryModel) {
-    setState(() {
-      countryName = countryModel.name;
-      countryCode = countryModel.code;
-    });
-    Navigator.pop(context);
-  }
 }
