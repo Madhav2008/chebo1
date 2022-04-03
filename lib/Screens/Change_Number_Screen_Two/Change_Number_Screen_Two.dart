@@ -34,46 +34,48 @@ class ChangeNumberScreenTwo extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            Container(
-              width: MediaQuery.of(context).size.width - 100,
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(
-                          width: 1.5,
-                          color: one,
+            GestureDetector(
+              child: Container(
+                width: MediaQuery.of(context).size.width - 100,
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            width: 1.5,
+                            color: one,
+                          ),
+                        ),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Text(
+                          oldPhoneCountryCode,
+                          style: TextStyle(
+                            fontSize: 17,
+                          ),
                         ),
                       ),
                     ),
-                    child: Padding(
-                      padding: EdgeInsets.all(10.0),
-                      child: Text(
-                        oldPhoneCountryCode,
-                        style: TextStyle(
-                          fontSize: 17,
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width - 180,
+                      child: TextField(
+                        controller: _oldPhoneController,
+                        maxLength: 10,
+                        autofocus: true,
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          hintText: 'phone number',
+                          counter: Offstage(),
                         ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width - 180,
-                    child: TextField(
-                      controller: _oldPhoneController,
-                      maxLength: 10,
-                      autofocus: true,
-                      keyboardType: TextInputType.number,
-                      decoration: InputDecoration(
-                        hintText: 'phone number',
-                        counter: Offstage(),
-                      ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             SizedBox(
