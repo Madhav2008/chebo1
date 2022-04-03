@@ -59,7 +59,7 @@ class StoryPageView extends StatelessWidget {
           StoryItem.pageImage(
               url: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
               caption: "Working with gifs",
-              controller: storyController),
+              controller: storyController,),
           StoryItem.pageImage(
             url: "https://media.giphy.com/media/XcA8krYsrEAYXKf4UQ/giphy.gif",
             caption: "Hello, from the other side",
