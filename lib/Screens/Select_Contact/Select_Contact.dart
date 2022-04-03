@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp/Constants/Constants.dart';
-import 'package:whatsapp/Models/Chat_Model.dart';
 import 'package:whatsapp/Screens/Contacts_Help_Screen/Contacts_Help_Screen.dart';
 
 class SelectContact extends StatefulWidget {
@@ -241,7 +240,7 @@ class _SelectContactState extends State<SelectContact> {
     List<Map<String, dynamic>> results = [];
     if (enteredKeyword.isEmpty) {
       // if the search field is empty or only contains white-space, we'll display all users
-      results = dummyData;
+      results = _allUsers;
     } else {
       results = _allUsers
           .where(
