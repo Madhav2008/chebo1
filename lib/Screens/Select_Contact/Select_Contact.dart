@@ -495,7 +495,73 @@ class _SelectContactState extends State<SelectContact> {
         Scaffold(
       appBar: AppBar(
         title: Text('Select Contact'),
-        
+        actions: [
+          Theme(
+        //         data: Theme.of(context).copyWith(
+        //           dividerColor: black,
+        //           iconTheme: IconThemeData(
+        //             color: white,
+        //           ),
+        //           textTheme: TextTheme().apply(),
+        //         ),
+        //         child: PopupMenuButton<int>(
+        //           onSelected: (item) => onSelected(context, item),
+        //           itemBuilder: (context) => [
+        //             PopupMenuItem<int>(
+        //               value: 0,
+        //               child: Row(
+        //                 children: [
+        //                   Text(
+        //                     'Invite a friend',
+        //                     style: TextStyle(
+        //                       fontSize: 14,
+        //                     ),
+        //                   ),
+        //                 ],
+        //               ),
+        //             ),
+        //             PopupMenuItem<int>(
+        //               value: 1,
+        //               child: Row(
+        //                 children: [
+        //                   Text(
+        //                     'Contacts',
+        //                     style: TextStyle(
+        //                       fontSize: 14,
+        //                     ),
+        //                   ),
+        //                 ],
+        //               ),
+        //             ),
+        //             PopupMenuItem<int>(
+        //               value: 2,
+        //               child: Row(
+        //                 children: [
+        //                   Text(
+        //                     'Refresh',
+        //                     style: TextStyle(
+        //                       fontSize: 14,
+        //                     ),
+        //                   ),
+        //                 ],
+        //               ),
+        //             ),
+        //             PopupMenuItem<int>(
+        //               value: 3,
+        //               child: Row(
+        //                 children: [
+        //                   Text(
+        //                     'Help',
+        //                     style: TextStyle(
+        //                       fontSize: 14,
+        //                     ),
+        //                   ),
+        //                 ],
+        //               ),
+        //             ),
+        //           ],
+        //         ),
+        ],
       ),
       body: Padding(
         padding: EdgeInsets.all(10),
