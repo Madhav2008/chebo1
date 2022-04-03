@@ -53,5 +53,3 @@ class StoryPageView extends StatelessWidget {
     Navigator.pop(context, true);
   }
 }
-
-}
