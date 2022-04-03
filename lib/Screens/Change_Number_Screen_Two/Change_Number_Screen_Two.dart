@@ -43,78 +43,46 @@ class _ChangeNumberScreenTwoState extends State<ChangeNumberScreenTwo> {
             SizedBox(
               height: 30,
             ),
-            GestureDetector(
-              onTap: () {
-                showCountryPicker(
-                  context: context,
-                  showPhoneCode: true,
-                  onSelect: (Country country) {
-                    setState(() {
-                      oldPhoneCountryCode = '+' + country.phoneCode;
-                    });
-                    print(
-                      'Display Name: ${country.displayName}, Country Code: ${country.countryCode}, Display Name No Country Code: ${country.displayNameNoCountryCode}, E163 Key: ${country.e164Key}, E164 SC: ${country.e164Sc}, Example: ${country.example}, Full example with plus sign: ${country.fullExampleWithPlusSign}, Level: ${country.level}, Name: ${country.name}, Name Localized: ${country.nameLocalized}, Phone Code: ${country.phoneCode}, Geographic: ${country.geographic}',
-                    );
-                  },
-                  countryListTheme: CountryListThemeData(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(40.0),
-                      topRight: Radius.circular(40.0),
+            Container(
+              width: MediaQuery.of(context).size.width - 100,
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(
+                          width: 1.5,
+                          color: one,
+                        ),
+                      ),
                     ),
-                    inputDecoration: InputDecoration(
-                      labelText: 'Search',
-                      hintText: 'Start typing to search',
-                      prefixIcon: Icon(Icons.search),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0xFF8C98A8).withOpacity(0.2),
+                    child: Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Text(
+                        oldPhoneCountryCode,
+                        style: TextStyle(
+                          fontSize: 17,
                         ),
                       ),
                     ),
                   ),
-                );
-              },
-              child: Container(
-                width: MediaQuery.of(context).size.width - 100,
-                child: Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border(
-                          bottom: BorderSide(
-                            width: 1.5,
-                            color: one,
-                          ),
-                        ),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.all(10.0),
-                        child: Text(
-                          oldPhoneCountryCode,
-                          style: TextStyle(
-                            fontSize: 17,
-                          ),
-                        ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width - 180,
+                    child: TextField(
+                      controller: _oldPhoneController,
+                      maxLength: 10,
+                      autofocus: true,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: 'phone number',
+                        counter: Offstage(),
                       ),
                     ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width - 180,
-                      child: TextField(
-                        controller: _oldPhoneController,
-                        maxLength: 10,
-                        autofocus: true,
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          hintText: 'phone number',
-                          counter: Offstage(),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
             SizedBox(
