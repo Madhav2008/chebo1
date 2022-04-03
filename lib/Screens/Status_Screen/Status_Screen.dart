@@ -345,15 +345,15 @@ class StatusScreen extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => StoryPageView(
-                      //       name: name8,
-                      //       avatar: avatar8,
-                      //     ),
-                      //   ),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => StoryPageView(
+                            name: name8,
+                            avatar: avatar8,
+                          ),
+                        ),
+                      );
                     },
                     child: StatusCard(
                       name: name8,
