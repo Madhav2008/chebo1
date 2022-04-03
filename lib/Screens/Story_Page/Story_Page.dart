@@ -78,6 +78,7 @@ class StoryPageView extends StatelessWidget {
       appBar: AppBar(
         title: Row(
           children: [
+            CircleAvatar(),
             Text(name),
           ],
         ),
