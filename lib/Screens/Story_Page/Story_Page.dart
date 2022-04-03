@@ -55,7 +55,7 @@ class StoryPageView extends StatelessWidget {
 //   }
 // }
 
-  final _storyController controller = StoryController();
+  final StoryController controller = StoryController();
 
   @override
   Widget build(BuildContext context) {
