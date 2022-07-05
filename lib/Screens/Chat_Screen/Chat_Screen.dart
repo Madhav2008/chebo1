@@ -388,7 +388,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     child: ListView.builder(
                       shrinkWrap: true,
                       controller: _scrollController,
-                      itemCount: allMessages.length + 1,
+                      itemCount: allMessages.length,
                       itemBuilder: (context, index) {
                         if (index == allMessages.length) {
                           // print(
