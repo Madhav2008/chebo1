@@ -390,7 +390,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       controller: _scrollController,
                       itemCount: allMessages.length + 1,
                       itemBuilder: (context, index) {
-                        if (index == allMessages.length - 1) {
+                        if (index == allMessages.length + 1) {
                           // print(
                           // widget.chatModels[index].id,
                           // );
