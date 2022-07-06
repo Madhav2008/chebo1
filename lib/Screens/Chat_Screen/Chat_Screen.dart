@@ -407,7 +407,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                     messageColor = transparent;
                                   });
                                 }
-                              }, 
+                              },
                               onLongPress: () {
                                 setState(() {
                                   messageColor = blue.withOpacity(0.5);
