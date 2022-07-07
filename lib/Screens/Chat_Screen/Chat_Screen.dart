@@ -400,7 +400,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         }
                         if (allMessages[index].type == "source") {
                           // if (allMessages[index].path != null) {
-                          if (allMessages[index].path != null) {
+                          if (allMessages[index] != null) {
                             return GestureDetector(
                               onTap: () {
                                 if (messageColor == blue.withOpacity(0.5)) {
