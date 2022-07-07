@@ -38,6 +38,7 @@ class OwnFileCard extends StatelessWidget {
             ),
             child: Image.file(
               File(path),
+              File(path),
             ),
           ),
         ),
