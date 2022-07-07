@@ -116,7 +116,7 @@ class _ChatScreenState extends State<ChatScreen> {
       "source",
       message,
       read,
-      path,
+      // path,
       // sendBy,
       // sourceId,
       // targetId,
