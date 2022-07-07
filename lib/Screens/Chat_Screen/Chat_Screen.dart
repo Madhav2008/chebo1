@@ -449,7 +449,8 @@ class _ChatScreenState extends State<ChatScreen> {
                             );
                           }
                         } else {
-                          if (allMessages[index].path != null) {return GestureDetector(
+                          if (allMessages[index].path != null) {
+                            return GestureDetector(
                               onTap: () {
                                 if (messageColor == blue.withOpacity(0.5)) {
                                   setState(() {
@@ -495,9 +496,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 ),
                               ),
                             );
-                          } else {
-                            
-                          }
+                          } else {}
                         }
                       },
                     ),
