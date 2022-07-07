@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 class OwnFileCard extends StatelessWidget {
   OwnFileCard({
     Key? key,
-    // required this.path,
+    required this.path,
     required this.fileColor,
   }) : super(key: key);
 
-  // final String path;
+  final String path;
   final Color fileColor;
 
   @override
@@ -36,10 +36,8 @@ class OwnFileCard extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
-            child: Text(
-            // child: Image.file(
-              'hi'
-              // File(path),
+            child: Image.file(
+              File(path),
             ),
           ),
         ),
