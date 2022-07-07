@@ -127,7 +127,7 @@ class _ChatScreenState extends State<ChatScreen> {
     String type,
     String message,
     bool read,
-    String path,
+    // String path,
     // User sendBy,
     // int sourceId,
     // int targetId,
