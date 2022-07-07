@@ -36,7 +36,7 @@ class OwnFileCard extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
-            child: Text(toStringShallow()
+            child: Text(
             // child: Image.file(
               File(path),
               // File(path),
