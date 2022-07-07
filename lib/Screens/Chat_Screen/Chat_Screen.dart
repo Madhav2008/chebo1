@@ -107,7 +107,7 @@ class _ChatScreenState extends State<ChatScreen> {
   void sendMessage(
     String message,
     bool read,
-    // String path,
+    String path,
     // User sendBy,
     // int sourceId,
     // int targetId,
@@ -116,7 +116,7 @@ class _ChatScreenState extends State<ChatScreen> {
       "source",
       message,
       read,
-      // path,
+      path,
       // sendBy,
       // sourceId,
       // targetId,
@@ -127,7 +127,7 @@ class _ChatScreenState extends State<ChatScreen> {
     String type,
     String message,
     bool read,
-    // String path,
+    String path,
     // User sendBy,
     // int sourceId,
     // int targetId,
@@ -140,7 +140,7 @@ class _ChatScreenState extends State<ChatScreen> {
             16,
           ),
       unread: read,
-      // path: path,
+      path: path,
     );
     setState(() {
       setState(() {
@@ -399,8 +399,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           );
                         }
                         if (allMessages[index].type == "source") {
-                          // if (allMessages[index].path != null) {
-                          if (allMessages[index] != null) {
+                          if (allMessages[index].path != null) {
                             return GestureDetector(
                               onTap: () {
                                 if (messageColor == blue.withOpacity(0.5)) {
@@ -418,7 +417,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 color: messageColor,
                                 width: MediaQuery.of(context).size.width,
                                 child: OwnFileCard(
-                                  // path: allMessages[index].path,
+                                  path: allMessages[index].path,
                                   fileColor: own,
                                 ),
                               ),
@@ -450,8 +449,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             );
                           }
                         } else {
-                          // if (allMessages[index].path != null) {
-                          if (allMessages[index] != null) {
+                          if (allMessages[index].path != null) {
                             return GestureDetector(
                               onTap: () {
                                 if (messageColor == blue.withOpacity(0.5)) {
@@ -469,7 +467,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 color: messageColor,
                                 width: MediaQuery.of(context).size.width,
                                 child: ReplyFileCard(
-                                  // path: allMessages[index].path,
+                                  path: allMessages[index].path,
                                   fileColor: reply,
                                 ),
                               ),
