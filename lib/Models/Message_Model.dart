@@ -5,12 +5,12 @@ class MessageModel {
   String message;
   String time;
   bool unread;
-  // String path;
+  String path;
   MessageModel({
     required this.message,
     required this.type,
     required this.time,
     required this.unread,
-    // required this.path,
+    required this.path,
   });
 }
