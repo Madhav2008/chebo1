@@ -450,7 +450,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             );
                           }
                         } else {
-                          if (allMessages[index].path != null) {
+                          // if (allMessages[index].path != null) {
                           if (allMessages[index].path != null) {
                             return GestureDetector(
                               onTap: () {
