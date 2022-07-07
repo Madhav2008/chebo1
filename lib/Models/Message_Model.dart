@@ -11,6 +11,6 @@ class MessageModel {
     required this.type,
     required this.time,
     required this.unread,
-    required this.path,
+    // required this.path,
   });
 }
