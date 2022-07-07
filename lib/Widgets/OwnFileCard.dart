@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class OwnFileCard extends StatelessWidget {
   OwnFileCard({
     Key? key,
-    required this.path,
+    // required this.path,
     required this.fileColor,
   }) : super(key: key);
 
