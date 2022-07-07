@@ -471,9 +471,6 @@ class _ChatScreenState extends State<ChatScreen> {
                                   textColor: text,
                                   message: allMessages[index].message,
                                   messageTime: allMessages[index].time,
-                                ),ReplyFileCard(
-                                  path: allMessages[index].path,
-                                  fileColor: reply,
                                 ),
                               ),
                             );
