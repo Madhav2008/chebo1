@@ -418,7 +418,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 color: messageColor,
                                 width: MediaQuery.of(context).size.width,
                                 child: OwnFileCard(
-                                  path: allMessages[index].path,
+                                  // path: allMessages[index].path,
                                   fileColor: own,
                                 ),
                               ),
