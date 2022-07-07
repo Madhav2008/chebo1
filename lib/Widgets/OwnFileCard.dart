@@ -10,7 +10,7 @@ class OwnFileCard extends StatelessWidget {
     required this.fileColor,
   }) : super(key: key);
 
-  final String path;
+  // final String path;
   final Color fileColor;
 
   @override
