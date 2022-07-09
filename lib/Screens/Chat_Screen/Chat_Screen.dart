@@ -496,7 +496,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                   fileColor: reply,
                                 ),
                               ),
-                            );
+                            ); 
                           }
                         }
                       },
