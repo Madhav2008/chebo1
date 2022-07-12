@@ -115,27 +115,26 @@ class _ContactSupportState extends State<ContactSupport> {
                     height: 1,
                   ),
                 ),
-                
-                    GestureDetector(
-                        onTap: () {
-                          _launchURL();
-                        },
-                        child: Container(
-                          color: Colors.green,
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 30,
-                              vertical: 10,
-                            ),
-                            child: Text(
-                              "Next",
-                              style: TextStyle(
-                                fontSize: 20,
-                              ),
-                            ),
-                          ),
+                GestureDetector(
+                  onTap: () {
+                    _launchURL();
+                  },
+                  child: Container(
+                    color: Colors.green,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 30,
+                        vertical: 10,
+                      ),
+                      child: Text(
+                        "Next",
+                        style: TextStyle(
+                          fontSize: 20,
                         ),
                       ),
+                    ),
+                  ),
+                ),
                 SizedBox(
                   height: 40,
                 ),
