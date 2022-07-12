@@ -116,26 +116,7 @@ class _ContactSupportState extends State<ContactSupport> {
                   ),
                 ),
                 _bodyController.text.isEmpty
-                    ? GestureDetector(
-                        onTap: () {
-                          send();
-                        },
-                        child: Container(
-                          color: Colors.green,
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 30,
-                              vertical: 10,
-                            ),
-                            child: Text(
-                              "Next",
-                              style: TextStyle(
-                                fontSize: 20,
-                              ),
-                            ),
-                          ),
-                        ),
-                      )
+                    ? 
                     : Container(
                         color: grey.withOpacity(0.3),
                         child: Padding(
