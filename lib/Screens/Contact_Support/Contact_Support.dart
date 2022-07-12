@@ -116,8 +116,8 @@ class _ContactSupportState extends State<ContactSupport> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () {_bodyController.text.isNotEmpty?
-                    _launchURL():
+                  onTap: () {
+                    _bodyController.text.isNotEmpty ? _launchURL() : null;
                   },
                   child: Container(
                     color: Colors.green,
