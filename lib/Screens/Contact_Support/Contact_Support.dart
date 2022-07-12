@@ -121,7 +121,7 @@ class _ContactSupportState extends State<ContactSupport> {
                           send();
                         },
                         child: Container(
-                          color: one,
+                          color: Colors.green,
                           child: Padding(
                             padding: EdgeInsets.symmetric(
                               horizontal: 30,
