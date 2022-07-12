@@ -115,7 +115,7 @@ class _ContactSupportState extends State<ContactSupport> {
                     height: 1,
                   ),
                 ),
-                _bodyController.text.isNotEmpty
+                _bodyController.text.isEmpty
                     ? GestureDetector(
                         onTap: () {
                           send();
