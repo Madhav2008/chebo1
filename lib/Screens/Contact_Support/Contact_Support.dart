@@ -77,7 +77,7 @@ class _ContactSupportState extends State<ContactSupport> {
               focusNode: focusNode,
               textAlignVertical: TextAlignVertical.center,
               keyboardType: TextInputType.multiline,
-              maxLines: 200,
+              maxLines: 20,
               minLines: 5,
               decoration: InputDecoration(
                 hintText: "Describe your problem",
