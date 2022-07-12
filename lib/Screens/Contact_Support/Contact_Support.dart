@@ -120,7 +120,7 @@ class _ContactSupportState extends State<ContactSupport> {
                     _bodyController.text.isNotEmpty ? send() : null;
                   },
                   child: Container(
-                    color: Colors.green,
+                    color: one,
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 30,
