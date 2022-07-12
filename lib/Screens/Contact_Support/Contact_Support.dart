@@ -133,7 +133,7 @@ class _ContactSupportState extends State<ContactSupport> {
                       )
                     : GestureDetector(
                         onTap: () {
-                          send();
+                          _launchURL();
                         },
                         child: Container(
                           color: Colors.green,
