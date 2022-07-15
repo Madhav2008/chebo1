@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
     //     : '../assets/images/WhatsAppIndiaLogo.png';
         
     final logo = '../assets/images/WhatsAppIndiaLogo1.png'
-        : '../assets/images/WhatsAppIndiaLogo.png';
+       ;
 
     return FutureBuilder(
       future: _initialization,
