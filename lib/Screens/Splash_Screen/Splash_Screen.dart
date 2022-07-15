@@ -46,8 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
     //     ? '../assets/images/WhatsAppIndiaLogo1.png'
     //     : '../assets/images/WhatsAppIndiaLogo.png';
         
-    final logo = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
-        ? '../assets/images/WhatsAppIndiaLogo1.png'
+    final logo = '../assets/images/WhatsAppIndiaLogo1.png'
         : '../assets/images/WhatsAppIndiaLogo.png';
 
     return FutureBuilder(
