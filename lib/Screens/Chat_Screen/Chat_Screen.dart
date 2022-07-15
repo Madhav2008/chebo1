@@ -400,28 +400,28 @@ class _ChatScreenState extends State<ChatScreen> {
                         }
                         if (allMessages[index].type == "source") {
                           if (allMessages[index].path != null) {
-                            // return GestureDetector(
-                            //   onTap: () {
-                            //     if (messageColor == blue.withOpacity(0.5)) {
-                            //       setState(() {
-                            //         messageColor = transparent;
-                            //       });
-                            //     }
-                            //   },
-                            //   onLongPress: () {
-                            //     setState(() {
-                            //       messageColor = blue.withOpacity(0.5);
-                            //     });
-                            //   },
-                            //   child: Container(
-                            //     color: messageColor,
-                            //     width: MediaQuery.of(context).size.width,
-                            //     child: OwnFileCard(
-                            //       path: allMessages[index].path,
-                            //       fileColor: own,
-                            //     ),
-                            //   ),
-                            // );
+                            return GestureDetector(
+                              onTap: () {
+                                if (messageColor == blue.withOpacity(0.5)) {
+                                  setState(() {
+                                    messageColor = transparent;
+                                  });
+                                }
+                              },
+                              onLongPress: () {
+                                setState(() {
+                                  messageColor = blue.withOpacity(0.5);
+                                });
+                              },
+                              child: Container(
+                                color: messageColor,
+                                width: MediaQuery.of(context).size.width,
+                                child: OwnFileCard(
+                                  path: allMessages[index].path,
+                                  fileColor: own,
+                                ),
+                              ),
+                            );
                           } else {
                             return GestureDetector(
                               onTap: () {
