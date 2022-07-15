@@ -439,12 +439,12 @@ class _ChatScreenState extends State<ChatScreen> {
                               // child: Container(
                               //   color: messageColor,
                               //   width: MediaQuery.of(context).size.width,
-                                child: OwnMessageCard(
-                                  color: own,
-                                  textColor: text,
-                                  message: allMessages[index].message,
-                                  messageTime: allMessages[index].time,
-                                ),
+                              child: OwnMessageCard(
+                                color: own,
+                                textColor: text,
+                                message: allMessages[index].message,
+                                messageTime: allMessages[index].time,
+                              ),
                               // ),
                             );
                           }
