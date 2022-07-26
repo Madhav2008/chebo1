@@ -91,7 +91,7 @@ class _CustomCardState extends State<CustomCard> {
               ),
             ],
           ),
-          subtitle: Container(
+          subtitle: Padding(
             padding: EdgeInsets.only(top: 5.0),
             child: Row(
               children: [
