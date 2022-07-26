@@ -103,7 +103,7 @@ class _CustomCardState extends State<CustomCard> {
             //     SizedBox(
             //       width: 5,
             //     ),
-                Text(
+                child:Text(
                   widget.message,
                   style: TextStyle(
                     color: grey,
