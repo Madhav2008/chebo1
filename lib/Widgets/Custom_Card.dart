@@ -93,16 +93,16 @@ class _CustomCardState extends State<CustomCard> {
           ),
           subtitle: Container(
             padding: EdgeInsets.only(top: 5.0),
-            child: Row(
-              children: [
-                Icon(
-                  Icons.done_all,
-                  size: 20,
-                  color: blue,
-                ),
-                SizedBox(
-                  width: 5,
-                ),
+            // child: Row(
+            //   children: [
+            //     Icon(
+            //       Icons.done_all,
+            //       size: 20,
+            //       color: blue,
+            //     ),
+            //     SizedBox(
+            //       width: 5,
+            //     ),
                 Text(
                   widget.message,
                   style: TextStyle(
