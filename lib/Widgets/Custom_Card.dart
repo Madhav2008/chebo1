@@ -103,14 +103,14 @@ class _CustomCardState extends State<CustomCard> {
             //     SizedBox(
             //       width: 5,
             //     ),
-                child:Text(
-                  widget.message,
-                  style: TextStyle(
-                    color: grey,
-                    fontSize: 15.0,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
+            child: Text(
+              widget.message,
+              style: TextStyle(
+                color: grey,
+                fontSize: 15.0,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
             //   ],
             // ),
           ),
