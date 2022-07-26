@@ -104,7 +104,7 @@ class _CustomCardState extends State<CustomCard> {
                   width: 5,
                 ),
                 Text(
-                  widget.message,
+                  widget.message.toString(),
                   style: TextStyle(
                     color: grey,
                     fontSize: 15.0,
