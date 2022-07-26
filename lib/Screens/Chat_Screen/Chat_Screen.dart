@@ -447,7 +447,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 ),
                               ),
                             );
-                          }
+                          }else{
                         // } else {
                           // if (allMessages[index].path != null) {
                             return GestureDetector(
