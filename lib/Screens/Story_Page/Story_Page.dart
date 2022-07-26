@@ -103,7 +103,6 @@ class StoryPageView extends StatelessWidget {
       ),
     );
   }
-
 }
 
 // final controller controller = controller();
