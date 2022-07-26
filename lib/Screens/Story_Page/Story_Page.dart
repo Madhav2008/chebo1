@@ -104,9 +104,6 @@ class StoryPageView extends StatelessWidget {
     );
   }
 
-  _go(context) {
-    Navigator.pop(context, true);
-  }
 }
 
 // final controller controller = controller();
