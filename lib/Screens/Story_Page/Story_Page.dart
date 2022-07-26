@@ -92,10 +92,10 @@ class StoryPageView extends StatelessWidget {
           controller: controller,
           inline: true,
           onVerticalSwipeComplete: (direction) {
-                if (direction == Direction.down) {
-                  Navigator.pop(context);
-                }
-              },
+            if (direction == Direction.down) {
+              Navigator.pop(context);
+            }
+          },
           onComplete: () {
             Navigator.pop(context, true);
           },
