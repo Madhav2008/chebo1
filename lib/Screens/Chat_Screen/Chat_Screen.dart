@@ -507,7 +507,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     child: Container(
                       height: 70,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
                             children: [
