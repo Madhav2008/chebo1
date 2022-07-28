@@ -887,15 +887,15 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Widget emojiSelect() {
     return
-         EmojiPicker(
-            rows: 4,
-            columns: 7,
-            onEmojiSelected: (emoji, category) {
-              print(emoji);
-              setState(() {
-                _controller.text = _controller.text + emoji.emoji;
-              });
-            });
+        //  EmojiPicker(
+        //     rows: 4,
+        //     columns: 7,
+        //     onEmojiSelected: (emoji, category) {
+        //       print(emoji);
+        //       setState(() {
+        //         _controller.text = _controller.text + emoji.emoji;
+        //       });
+        //     });
         EmojiPicker(
       onEmojiSelected: (category, emoji) {
         print(emoji);
