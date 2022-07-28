@@ -113,7 +113,8 @@ class _QRCodeScreenState extends State<QRCodeScreen>
         result = scanData;
       });
     });
-  }@override
+  }
+  @override
   void dispose() {
     controller?.dispose();
     super.dispose();
