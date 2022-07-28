@@ -84,7 +84,8 @@ class _QRCodeScreenState extends State<QRCodeScreen>
           ),
           ScanQRCodeScreen(
             cameras: [],
-          ),Expanded(
+          ),
+          Expanded(
             flex: 5,
             child: QRView(
               key: qrKey,
