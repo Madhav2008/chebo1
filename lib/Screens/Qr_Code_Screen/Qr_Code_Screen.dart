@@ -43,7 +43,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
     if (Platform.isAndroid) {
       controller1!.pauseCamera();
     } else if (Platform.isIOS) {
-      controller!.resumeCamera();
+      controller1!.resumeCamera();
     }
   }
 
