@@ -34,7 +34,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   @override
   void initState() {
     super.initState();
-    _controller = TabController(vsync: this);
+    _controller = TabController(vsync: this, length: null);
   }
 
   @override
