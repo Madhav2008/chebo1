@@ -33,7 +33,9 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   void initState() {
     super.initState();
     _controller = TabController(length: 2, vsync: this);
-  }@override
+  }
+
+  @override
   void reassemble() {
     super.reassemble();
     if (Platform.isAndroid) {
@@ -122,6 +124,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
       });
     });
   }
+
   @override
   void dispose() {
     controller?.dispose();
