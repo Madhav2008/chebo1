@@ -504,174 +504,171 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   Align(
                     alignment: Alignment.bottomCenter,
-                    child: Container(
-                      // height: 70,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                width: MediaQuery.of(context).size.width - 60,
-                                child: Card(
-                                  margin: EdgeInsets.only(
-                                    left: 2,
-                                    right: 2,
-                                    bottom: 8,
-                                  ),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                  ),
-                                  child: TextFormField(
-                                    controller: _controller,
-                                    autofocus: true,
-                                    focusNode: focusNode,
-                                    textAlignVertical: TextAlignVertical.center,
-                                    keyboardType: TextInputType.multiline,
-                                    maxLines: 2,
-                                    minLines: 1,
-                                    onChanged: (value) {
-                                      if (value.isNotEmpty) {
-                                        setState(() {
-                                          sendButton = true;
-                                        });
-                                      } else {
-                                        setState(() {
-                                          sendButton = false;
-                                        });
-                                      }
-                                    },
-                                    decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: "Type a message",
-                                      hintStyle: TextStyle(
-                                        color: grey,
-                                      ),
-                                      prefixIcon: IconButton(
-                                        icon: Icon(
-                                          show
-                                              ? Icons.keyboard
-                                              : Icons.emoji_emotions_outlined,
-                                        ),
-                                        onPressed: () {
-                                          if (!show) {
-                                            focusNode.unfocus();
-                                            focusNode.canRequestFocus = false;
-                                          }
-                                          setState(() {
-                                            show = !show;
-                                          });
-                                        },
-                                      ),
-                                      suffixIcon: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          IconButton(
-                                            icon: Icon(Icons.attach_file),
-                                            onPressed: () {
-                                              showModalBottomSheet(
-                                                backgroundColor: transparent,
-                                                context: context,
-                                                builder: (builder) {
-                                                  return bottomSheet();
-                                                },
-                                              );
-                                            },
-                                          ),
-                                          IconButton(
-                                            icon: Icon(
-                                              Icons.monetization_on,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (builder) {
-                                                    return PaymentScreen();
-                                                  },
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                          IconButton(
-                                            icon: Icon(
-                                              Icons.camera_alt,
-                                            ),
-                                            onPressed: () {
-                                              Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (builder) {
-                                                    return CameraScreen(
-                                                      cameras: [],
-                                                    );
-                                                  },
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                        ],
-                                      ),
-                                      contentPadding: EdgeInsets.all(5),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(
-                                  bottom: 8,
-                                  right: 2,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width - 60,
+                              child: Card(
+                                margin: EdgeInsets.only(
                                   left: 2,
+                                  right: 2,
+                                  bottom: 8,
                                 ),
-                                child: CircleAvatar(
-                                  radius: 25,
-                                  backgroundColor: one,
-                                  child: IconButton(
-                                    icon: Icon(
-                                      sendButton ? Icons.send : Icons.mic,
-                                      color: white,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(25),
+                                ),
+                                child: TextFormField(
+                                  controller: _controller,
+                                  autofocus: true,
+                                  focusNode: focusNode,
+                                  textAlignVertical: TextAlignVertical.center,
+                                  keyboardType: TextInputType.multiline,
+                                  maxLines: 2,
+                                  minLines: 1,
+                                  onChanged: (value) {
+                                    if (value.isNotEmpty) {
+                                      setState(() {
+                                        sendButton = true;
+                                      });
+                                    } else {
+                                      setState(() {
+                                        sendButton = false;
+                                      });
+                                    }
+                                  },
+                                  decoration: InputDecoration(
+                                    border: InputBorder.none,
+                                    hintText: "Type a message",
+                                    hintStyle: TextStyle(
+                                      color: grey,
                                     ),
-                                    onPressed: () {
-                                      if (sendButton) {
-                                        send = true;
-                                        // AssetsAudioPlayer.newPlayer().open(
-                                        //   Audio(
-                                        //     "../assets/sounds/message_received.mp3",
-                                        //   ),
-                                        //   autoStart: true,
-                                        //   showNotification: true,
-                                        // );
-                                        _scrollController.animateTo(
-                                          _scrollController
-                                              .position.maxScrollExtent,
-                                          duration: Duration(
-                                            milliseconds: 300,
-                                          ),
-                                          curve: Curves.easeOut,
-                                        );
-                                        sendMessage(
-                                          _controller.text,
-                                          true,
-                                          '',
-                                          // widget.user,
-                                          // widget.sourceChat.id,
-                                          // 2,
-                                          // 2,
-                                        );
-                                        _controller.clear();
+                                    prefixIcon: IconButton(
+                                      icon: Icon(
+                                        show
+                                            ? Icons.keyboard
+                                            : Icons.emoji_emotions_outlined,
+                                      ),
+                                      onPressed: () {
+                                        if (!show) {
+                                          focusNode.unfocus();
+                                          focusNode.canRequestFocus = false;
+                                        }
                                         setState(() {
-                                          sendButton = false;
+                                          show = !show;
                                         });
-                                      }
-                                    },
+                                      },
+                                    ),
+                                    suffixIcon: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        IconButton(
+                                          icon: Icon(Icons.attach_file),
+                                          onPressed: () {
+                                            showModalBottomSheet(
+                                              backgroundColor: transparent,
+                                              context: context,
+                                              builder: (builder) {
+                                                return bottomSheet();
+                                              },
+                                            );
+                                          },
+                                        ),
+                                        IconButton(
+                                          icon: Icon(
+                                            Icons.monetization_on,
+                                          ),
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (builder) {
+                                                  return PaymentScreen();
+                                                },
+                                              ),
+                                            );
+                                          },
+                                        ),
+                                        IconButton(
+                                          icon: Icon(
+                                            Icons.camera_alt,
+                                          ),
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (builder) {
+                                                  return CameraScreen(
+                                                    cameras: [],
+                                                  );
+                                                },
+                                              ),
+                                            );
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                    contentPadding: EdgeInsets.all(5),
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
-                          show ? emojiSelect() : Container(),
-                        ],
-                      ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                bottom: 8,
+                                right: 2,
+                                left: 2,
+                              ),
+                              child: CircleAvatar(
+                                radius: 25,
+                                backgroundColor: one,
+                                child: IconButton(
+                                  icon: Icon(
+                                    sendButton ? Icons.send : Icons.mic,
+                                    color: white,
+                                  ),
+                                  onPressed: () {
+                                    if (sendButton) {
+                                      send = true;
+                                      // AssetsAudioPlayer.newPlayer().open(
+                                      //   Audio(
+                                      //     "../assets/sounds/message_received.mp3",
+                                      //   ),
+                                      //   autoStart: true,
+                                      //   showNotification: true,
+                                      // );
+                                      _scrollController.animateTo(
+                                        _scrollController
+                                            .position.maxScrollExtent,
+                                        duration: Duration(
+                                          milliseconds: 300,
+                                        ),
+                                        curve: Curves.easeOut,
+                                      );
+                                      sendMessage(
+                                        _controller.text,
+                                        true,
+                                        '',
+                                        // widget.user,
+                                        // widget.sourceChat.id,
+                                        // 2,
+                                        // 2,
+                                      );
+                                      _controller.clear();
+                                      setState(() {
+                                        sendButton = false;
+                                      });
+                                    }
+                                  },
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        show ? emojiSelect() : Container(),
+                      ],
                     ),
                   ),
                 ],
