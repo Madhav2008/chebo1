@@ -27,7 +27,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
   Barcode? result;
   QRViewController? controller;
-  
+
   @override
   void initState() {
     super.initState();
@@ -83,7 +83,22 @@ class _QRCodeScreenState extends State<QRCodeScreen>
           ),
           ScanQRCodeScreen(
             cameras: [],
+          ),Expanded(
+            flex: 5,
+            child: QRView(
+              key: qrKey,
+              onQRViewCreated: _onQRViewCreated,
+            ),
           ),
+          Expanded(
+            flex: 1,
+            child: Center(
+              child: (result != null)
+                  ? Text(
+                      'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}')
+                  : Text('Scan a code'),
+            ),
+          )
         ],
       ),
     );
