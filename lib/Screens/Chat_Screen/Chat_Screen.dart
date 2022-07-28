@@ -61,7 +61,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
   final phoneNo = '7982880636';
   Color messageColor = transparent;
-  
 
   List<MessageModel> allMessages = [];
 
