@@ -41,7 +41,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   void reassemble() {
     super.reassemble();
     if (Platform.isAndroid) {
-      controller!.pauseCamera();
+      controller1!.pauseCamera();
     } else if (Platform.isIOS) {
       controller!.resumeCamera();
     }
