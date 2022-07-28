@@ -529,13 +529,13 @@ class _ChatScreenState extends State<ChatScreen> {
                                   maxLines: 2,
                                   minLines: 1,
                                   onChanged: (value) {
-                                    if (value.isEmpty || value == ' ' ' ') {
+                                    if (value.isNotEmpty || value == '') {
                                       setState(() {
-                                        sendButton = false;
+                                        sendButton = true;
                                       });
                                     } else {
                                       setState(() {
-                                        sendButton = true;
+                                        sendButton = false;
                                       });
                                     }
                                   },
