@@ -33,6 +33,14 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   void initState() {
     super.initState();
     _controller = TabController(length: 2, vsync: this);
+  }@override
+  void reassemble() {
+    super.reassemble();
+    if (Platform.isAndroid) {
+      controller!.pauseCamera();
+    } else if (Platform.isIOS) {
+      controller!.resumeCamera();
+    }
   }
 
   @override
