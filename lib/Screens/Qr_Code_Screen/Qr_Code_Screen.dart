@@ -29,21 +29,21 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   late TabController _controller;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
   Barcode? result;
-  QRViewController? controller1;
+  QRViewController? controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = TabController(vsync: this, length: 2);
+    _controller = TabController(length: 4, vsync: this);
   }
 
   @override
   void reassemble() {
     super.reassemble();
     if (Platform.isAndroid) {
-      controller1!.pauseCamera();
+      controller!.pauseCamera();
     } else if (Platform.isIOS) {
-      controller1!.resumeCamera();
+      controller!.resumeCamera();
     }
   }
 
@@ -63,7 +63,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
           ),
           PopupMenuButton<String>(
             onSelected: (value) {},
-            itemBuilder: (BuildContext context) {
+            itemBuilder: (BuildContext contesxt) {
               return [
                 PopupMenuItem(
                   child: Text("Reset QR code"),
@@ -119,7 +119,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   }
 
   void _onQRViewCreated(QRViewController controller) {
-    this.controller1 = controller1;
+    this.controller = controller;
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
@@ -129,7 +129,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
 
   @override
   void dispose() {
-    controller1?.dispose();
+    controller?.dispose();
     super.dispose();
   }
 }
