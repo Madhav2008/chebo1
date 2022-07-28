@@ -29,7 +29,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   late TabController _controller;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
   Barcode? result;
-  QRViewController? controller;
+  QRViewController? controller1;
 
   @override
   void initState() {
