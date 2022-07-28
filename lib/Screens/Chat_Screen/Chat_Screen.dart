@@ -529,7 +529,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                   maxLines: 2,
                                   minLines: 1,
                                   onChanged: (value) {
-                                    if (value.isNotEmpty ||) {
+                                    if (value.isNotEmpty || ) {
                                       setState(() {
                                         sendButton = true;
                                       });
