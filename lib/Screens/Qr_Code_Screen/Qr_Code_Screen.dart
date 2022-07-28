@@ -63,7 +63,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
           ),
           PopupMenuButton<String>(
             onSelected: (value) {},
-            itemBuilder: (BuildContext contesxt) {
+            itemBuilder: (BuildContext context) {
               return [
                 PopupMenuItem(
                   child: Text("Reset QR code"),
