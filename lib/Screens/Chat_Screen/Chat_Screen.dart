@@ -517,7 +517,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                   margin: EdgeInsets.only(
                                     left: 2,
                                     right: 2,
-                                    top: 8,
+                                    bottom: 8,
                                   ),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25),
