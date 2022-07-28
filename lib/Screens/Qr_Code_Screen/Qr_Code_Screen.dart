@@ -104,7 +104,9 @@ class _QRCodeScreenState extends State<QRCodeScreen>
         ],
       ),
     );
-  }void _onQRViewCreated(QRViewController controller) {
+  }
+
+  void _onQRViewCreated(QRViewController controller) {
     this.controller = controller;
     controller.scannedDataStream.listen((scanData) {
       setState(() {
