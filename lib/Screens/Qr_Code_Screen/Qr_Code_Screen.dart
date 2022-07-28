@@ -27,6 +27,7 @@ class _QRCodeScreenState extends State<QRCodeScreen>
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
   Barcode? result;
   QRViewController? controller;
+  
   @override
   void initState() {
     super.initState();
