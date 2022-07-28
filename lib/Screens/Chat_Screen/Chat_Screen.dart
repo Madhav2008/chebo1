@@ -61,9 +61,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   final phoneNo = '7982880636';
   Color messageColor = transparent;
-  final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
-  Barcode? result;
-  QRViewController? controller;
+  
 
   List<MessageModel> allMessages = [];
 
