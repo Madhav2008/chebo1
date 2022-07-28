@@ -23,7 +23,9 @@ class QRCodeScreen extends StatefulWidget {
 class _QRCodeScreenState extends State<QRCodeScreen>
     with SingleTickerProviderStateMixin {
   late TabController _controller;
-
+final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
+  Barcode? result;
+  QRViewController? controller;
   @override
   void initState() {
     super.initState();
