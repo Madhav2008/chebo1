@@ -58,7 +58,8 @@ dependencies:
   flutter_local_notifications: 
   # audio_recorder: 
   country_picker: 
-  story_view: qr_code_scanner: 
+  story_view: 
+  qr_code_scanner: 
 
 dev_dependencies:
   flutter_test:
