@@ -535,7 +535,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       });
                                     } else {
                                       setState(() {
-                                        sendButton = false;
+                                        sendButton = true;
                                       });
                                     }
                                   },
