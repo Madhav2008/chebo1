@@ -94,7 +94,7 @@ class _ChatScreenState extends State<ChatScreen> {
     focusNode.addListener(() {
       if (focusNode.hasFocus) {
         setState(() {
-          show = false;
+          show = true;
         });
       }
     });
